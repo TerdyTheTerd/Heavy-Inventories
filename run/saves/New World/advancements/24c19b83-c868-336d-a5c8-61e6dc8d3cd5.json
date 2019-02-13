@@ -1,0 +1,9 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "extreme_hills_with_trees": "2018-12-17 15:36:23 -0800",
+      "extreme_hills": "2018-12-17 15:36:55 -0800"
+    },
+    "done": false
+  }
+}

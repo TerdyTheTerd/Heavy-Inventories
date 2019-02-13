@@ -1,0 +1,1615 @@
+[01:56:24] [main/INFO]: Extra: []
+[01:56:24] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/wylan/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[01:56:24] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[01:56:24] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[01:56:24] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[01:56:24] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[01:56:24] [main/INFO]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
+[01:56:24] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_181, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_181\jre
+[01:56:24] [main/ERROR]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[01:56:24] [main/ERROR]: Full: C:\Users\wylan\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
+[01:56:24] [main/ERROR]: Trimmed: c:/users/wylan/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[01:56:24] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[01:56:24] [main/INFO]: Detected deobfuscated environment, loading log configs for colored console logs.
+[01:56:25] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[01:56:25] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[01:56:25] [main/INFO] [FML]: Searching F:\Minecraft Forge\Projects\1.12.2\Heavy Inventories\run\.\mods for mods
+[01:56:25] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[01:56:25] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[01:56:25] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[01:56:25] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[01:56:25] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[01:56:25] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[01:56:25] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[01:56:25] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[01:56:25] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[01:56:26] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[01:56:26] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[01:56:26] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[01:56:27] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[01:56:27] [main/INFO] [GradleStart]: Remapping AccessTransformer rules...
+[01:56:27] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[01:56:27] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[01:56:27] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[01:56:27] [main/INFO] [net.minecraft.client.Minecraft]: Setting user: Player383
+[01:56:30] [main/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[01:56:30] [main/INFO] [FML]: -- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_181, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 297253208 bytes (283 MB) / 778567680 bytes (742 MB) up to 7621050368 bytes (7268 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 417.22' Renderer: 'GeForce GTX 1070/PCIe/SSE2'
+[01:56:30] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 Initialized
+[01:56:30] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[01:56:30] [main/INFO] [FML]: Replaced 1036 ore ingredients
+[01:56:31] [main/INFO] [FML]: Searching F:\Minecraft Forge\Projects\1.12.2\Heavy Inventories\run\.\mods for mods
+[01:56:32] [main/INFO] [FML]: Forge Mod Loader has identified 11 mods to load
+[01:56:32] [main/WARN] [FML]: ****************************************
+[01:56:32] [main/WARN] [FML]: * The API Baubles|API from source F:\Minecraft Forge\Projects\1.12.2\Heavy Inventories\out\production\Heavy_Inventories is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[01:56:32] [main/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[01:56:32] [main/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[01:56:32] [main/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[01:56:32] [main/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:567)
+[01:56:32] [main/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[01:56:32] [main/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:513)...
+[01:56:32] [main/WARN] [FML]: ****************************************
+[01:56:32] [main/WARN] [FML]: ****************************************
+[01:56:32] [main/WARN] [FML]: * The API theoneprobe_api from source F:\Minecraft Forge\Projects\1.12.2\Heavy Inventories\out\production\Heavy_Inventories is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[01:56:32] [main/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:114)
+[01:56:32] [main/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:174)
+[01:56:32] [main/WARN] [FML]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:232)
+[01:56:32] [main/WARN] [FML]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:567)
+[01:56:32] [main/WARN] [FML]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+[01:56:32] [main/WARN] [FML]: *  at net.minecraft.client.Minecraft.init(Minecraft.java:513)...
+[01:56:32] [main/WARN] [FML]: ****************************************
+[01:56:33] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, heavyinventories, supercore, appliedenergistics2, baubles, jei, thaumcraft, theoneprobe] at CLIENT
+[01:56:33] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, heavyinventories, supercore, appliedenergistics2, baubles, jei, thaumcraft, theoneprobe] at SERVER
+[01:56:33] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 147729967 nanos
+[01:56:33] [main/WARN] [FML]: ****************************************
+[01:56:33] [main/WARN] [FML]: * Could not determine owning mod for @EventBusSubscriber on superscary.heavyinventories.configs.builder.ConfigBuilder for mod supercore
+[01:56:33] [main/WARN] [FML]: *  at net.minecraftforge.fml.common.AutomaticEventSubscriber.inject(AutomaticEventSubscriber.java:71)
+[01:56:33] [main/WARN] [FML]: *  at net.minecraftforge.fml.common.FMLModContainer.constructMod(FMLModContainer.java:601)
+[01:56:33] [main/WARN] [FML]: *  at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[01:56:33] [main/WARN] [FML]: *  at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[01:56:33] [main/WARN] [FML]: *  at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[01:56:33] [main/WARN] [FML]: *  at java.lang.reflect.Method.invoke(Method.java:498)...
+[01:56:33] [main/WARN] [FML]: ****************************************
+[01:56:33] [main/WARN] [FML]: ****************************************
+[01:56:33] [main/WARN] [FML]: * Could not determine owning mod for @EventBusSubscriber on superscary.heavyinventories.configs.builder.ConfigBuilder for mod heavyinventories
+[01:56:33] [main/WARN] [FML]: *  at net.minecraftforge.fml.common.AutomaticEventSubscriber.inject(AutomaticEventSubscriber.java:71)
+[01:56:33] [main/WARN] [FML]: *  at net.minecraftforge.fml.common.FMLModContainer.constructMod(FMLModContainer.java:601)
+[01:56:33] [main/WARN] [FML]: *  at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[01:56:33] [main/WARN] [FML]: *  at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[01:56:33] [main/WARN] [FML]: *  at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[01:56:33] [main/WARN] [FML]: *  at java.lang.reflect.Method.invoke(Method.java:498)...
+[01:56:33] [main/WARN] [FML]: ****************************************
+[01:56:35] [main/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Heavy Inventories, FMLFileResourcePack:SuperCore, FMLFileResourcePack:Applied Energistics 2, FMLFileResourcePack:Baubles, FMLFileResourcePack:Just Enough Items, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:The One Probe
+[01:56:35] [main/INFO] [FML]: Processing ObjectHolder annotations
+[01:56:35] [main/INFO] [FML]: Found 1169 ObjectHolder annotations
+[01:56:35] [main/INFO] [FML]: Identifying ItemStackHolder annotations
+[01:56:35] [main/INFO] [FML]: Found 0 ItemStackHolder annotations
+[01:56:35] [main/INFO] [FML]: Configured a dormant chunk cache size of 0
+[01:56:35] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[01:56:35] [main/INFO] [theoneprobe]: The One Probe Detected Baubles: enabling support
+[01:56:35] [main/INFO] [heavyinventories]: PreInit...
+[01:56:35] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: UP_TO_DATE Target: null
+[01:56:35] [main/INFO] [AE2:C]: Pre Initialization ( started )
+[01:56:39] [main/INFO] [AE2:C]: Starting AE2 VersionChecker
+[01:56:39] [main/INFO] [AE2:C]: Pre Initialization ( ended after 3647ms )
+[01:56:39] [main/INFO] [FML]: OBJLoader: Domain thaumcraft has been added.
+[01:56:40] [AE2 VersionChecker/INFO] [AE2:C]: No newer version is available: rv6-stable-4(found) < rv6-stable-4 (current)
+[01:56:40] [AE2 VersionChecker/INFO] [AE2:C]: Stopping AE2 VersionChecker
+[01:56:40] [main/INFO] [FML]: Applying holder lookups
+[01:56:40] [main/INFO] [FML]: Holder lookups applied
+[01:56:41] [main/INFO] [FML]: Applying holder lookups
+[01:56:41] [main/INFO] [FML]: Holder lookups applied
+[01:56:41] [main/INFO] [FML]: Applying holder lookups
+[01:56:41] [main/INFO] [FML]: Holder lookups applied
+[01:56:41] [main/INFO] [FML]: Applying holder lookups
+[01:56:41] [main/INFO] [FML]: Holder lookups applied
+[01:56:41] [main/INFO] [FML]: Injecting itemstacks
+[01:56:41] [main/INFO] [FML]: Itemstack injection complete
+[01:56:44] [main/WARN] [net.minecraft.client.audio.SoundManager]: Missing sound for event: thaumcraft:runicshieldcharge
+[01:56:44] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
+[01:56:44] [Thread-6/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
+[01:56:44] [Thread-6/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[01:56:44] [Thread-6/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
+[01:56:44] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
+[01:56:48] [main/INFO] [FML]: OBJLoader.MaterialLibrary: key '' (model: 'thaumcraft:models/block/arcane_workbench_charger.mtl') is not currently supported, skipping
+[01:56:48] [main/INFO] [FML]: OBJLoader.MaterialLibrary: key '' (model: 'thaumcraft:models/block/pillar.mtl') is not currently supported, skipping
+[01:56:48] [main/INFO] [FML]: OBJLoader.MaterialLibrary: key '' (model: 'thaumcraft:models/block/thaumatorium.mtl') is not currently supported, skipping
+[01:56:51] [main/INFO] [FML]: OBJLoader.MaterialLibrary: key '' (model: 'thaumcraft:models/block/golembuilder.mtl') is not currently supported, skipping
+[01:56:51] [main/INFO] [FML]: OBJLoader.MaterialLibrary: key '' (model: 'thaumcraft:models/item/scanner.mtl') is not currently supported, skipping
+[01:56:51] [main/INFO] [FML]: Max texture size: 16384
+[01:56:52] [main/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 1024x1024 textures-atlas
+[01:56:54] [main/INFO] [THAUMCRAFT]: Checking for mod & oredict compatibilities
+[01:56:54] [main/INFO] [THAUMCRAFT]: Adding entities to MFR safari net blacklist.
+[01:56:54] [main/INFO] [FML]: Applying holder lookups
+[01:56:54] [main/INFO] [FML]: Holder lookups applied
+[01:56:54] [main/INFO] [heavyinventories]: Init...
+[01:56:54] [main/INFO] [AE2:C]: Initialization ( started )
+[01:56:54] [main/INFO] [AE2:C]: Starting AE2 CSV Export
+[01:56:54] [AE2 CSV Export/INFO] [AE2:C]: Cache is enabled. Checking for new mod configurations.
+[01:56:54] [AE2 CSV Export/INFO] [AE2:C]: New mod configuration was found. Commencing exporting.
+[01:56:54] [AE2 CSV Export/INFO] [AE2:C]: Item Exporting ( started )
+[01:56:54] [AE2 CSV Export/INFO] [AE2:C]: Exported successfully 831 items into items.csv
+[01:56:54] [AE2 CSV Export/INFO] [AE2:C]: Item Exporting ( ended after 156 ms)
+[01:56:54] [main/INFO] [AE2:C]: Initialization ( ended after 297ms )
+[01:56:55] [main/INFO] [heavyinventories]: Oh I see you, The One Probe
+[01:56:55] [main/INFO] [heavyinventories]: Loading compat for The One Probe...
+[01:56:55] [main/INFO] [FML]: Injecting itemstacks
+[01:56:55] [main/INFO] [FML]: Itemstack injection complete
+[01:56:55] [main/WARN] [FML]: No types have been added to Biome appliedenergistics2:storage_biome, types have been assigned on a best-effort guess: [PLAINS, COLD]
+[01:56:55] [main/INFO] [heavyinventories]: PostInit...
+[01:56:55] [main/INFO] [heavyinventories]: Building minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building config for minecraft.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Created config at F:\Minecraft Forge\Projects\1.12.2\Heavy Inventories\run\config\Heavy Inventories\Weights\minecraft.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:air in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stone in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:grass in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:dirt in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cobblestone in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:planks in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:sapling in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:bedrock in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:sand in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:gravel in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:gold_ore in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_ore in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:coal_ore in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:log in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:leaves in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:sponge in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:glass in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:lapis_ore in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:lapis_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:dispenser in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:sandstone in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:noteblock in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:golden_rail in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:detector_rail in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:sticky_piston in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:web in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:tallgrass in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:deadbush in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:piston in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wool in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:yellow_flower in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:red_flower in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:brown_mushroom in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:red_mushroom in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:gold_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stone_slab in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:brick_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:tnt in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:bookshelf in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:mossy_cobblestone in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:obsidian in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:torch in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:mob_spawner in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:oak_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:chest in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:diamond_ore in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:diamond_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:crafting_table in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:farmland in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:furnace in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:ladder in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:rail in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stone_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:lever in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stone_pressure_plate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wooden_pressure_plate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:redstone_ore in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:redstone_torch in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stone_button in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:snow_layer in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:ice in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:snow in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cactus in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:clay in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:jukebox in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:fence in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:pumpkin in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:netherrack in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:soul_sand in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:glowstone in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:lit_pumpkin in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stained_glass in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:trapdoor in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:monster_egg in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stonebrick in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:brown_mushroom_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:red_mushroom_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_bars in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:glass_pane in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:melon_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:vine in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:fence_gate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:brick_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stone_brick_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:mycelium in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:waterlily in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:nether_brick in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:nether_brick_fence in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:nether_brick_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:enchanting_table in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:end_portal_frame in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:end_stone in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:dragon_egg in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:redstone_lamp in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wooden_slab in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:sandstone_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:emerald_ore in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:ender_chest in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:tripwire_hook in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:emerald_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:spruce_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:birch_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:jungle_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:command_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:beacon in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cobblestone_wall in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wooden_button in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:anvil in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:trapped_chest in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:light_weighted_pressure_plate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:heavy_weighted_pressure_plate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:daylight_detector in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:redstone_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:quartz_ore in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:hopper in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:quartz_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:quartz_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:activator_rail in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:dropper in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stained_hardened_clay in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stained_glass_pane in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:leaves2 in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:log2 in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:acacia_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:dark_oak_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:slime in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:barrier in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_trapdoor in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:prismarine in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:sea_lantern in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:hay_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:carpet in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:hardened_clay in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:coal_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:packed_ice in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:double_plant in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:red_sandstone in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:red_sandstone_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stone_slab2 in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:spruce_fence_gate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:birch_fence_gate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:jungle_fence_gate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:dark_oak_fence_gate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:acacia_fence_gate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:spruce_fence in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:birch_fence in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:jungle_fence in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:dark_oak_fence in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:acacia_fence in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:end_rod in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:chorus_plant in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:chorus_flower in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:purpur_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:purpur_pillar in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:purpur_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:purpur_slab in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:end_bricks in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:grass_path in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:repeating_command_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:chain_command_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:magma in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:nether_wart_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:red_nether_brick in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:bone_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:structure_void in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:observer in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:white_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:orange_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:magenta_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:light_blue_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:yellow_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:lime_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:pink_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:gray_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:silver_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cyan_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:purple_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:blue_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:brown_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:green_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:red_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:black_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:white_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:orange_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:magenta_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:light_blue_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:yellow_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:lime_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:pink_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:gray_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:silver_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cyan_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:purple_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:blue_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:brown_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:green_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:red_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:black_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:concrete in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:concrete_powder in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:structure_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_shovel in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_pickaxe in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_axe in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:flint_and_steel in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:apple in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:bow in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:arrow in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:coal in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:diamond in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_ingot in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:gold_ingot in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_sword in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wooden_sword in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wooden_shovel in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wooden_pickaxe in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wooden_axe in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stone_sword in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stone_shovel in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stone_pickaxe in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stone_axe in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:diamond_sword in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:diamond_shovel in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:diamond_pickaxe in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:diamond_axe in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stick in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:bowl in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:mushroom_stew in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:golden_sword in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:golden_shovel in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:golden_pickaxe in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:golden_axe in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:string in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:feather in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:gunpowder in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wooden_hoe in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stone_hoe in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_hoe in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:diamond_hoe in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:golden_hoe in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wheat_seeds in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wheat in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:bread in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:leather_helmet in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:leather_chestplate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:leather_leggings in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:leather_boots in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:chainmail_helmet in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:chainmail_chestplate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:chainmail_leggings in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:chainmail_boots in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_helmet in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_chestplate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_leggings in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_boots in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:diamond_helmet in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:diamond_chestplate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:diamond_leggings in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:diamond_boots in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:golden_helmet in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:golden_chestplate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:golden_leggings in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:golden_boots in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:flint in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:porkchop in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cooked_porkchop in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:painting in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:golden_apple in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:sign in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wooden_door in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:bucket in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:water_bucket in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:lava_bucket in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:minecart in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:saddle in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_door in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:redstone in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:snowball in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:boat in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:leather in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:milk_bucket in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:brick in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:clay_ball in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:reeds in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:paper in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:book in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:slime_ball in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:chest_minecart in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:furnace_minecart in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:egg in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:compass in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:fishing_rod in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:clock in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:glowstone_dust in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:fish in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cooked_fish in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:dye in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:bone in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:sugar in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cake in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:bed in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:repeater in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cookie in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:filled_map in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:shears in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:melon in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:pumpkin_seeds in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:melon_seeds in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:beef in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cooked_beef in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:chicken in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cooked_chicken in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:rotten_flesh in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:ender_pearl in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:blaze_rod in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:ghast_tear in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:gold_nugget in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:nether_wart in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:potion in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:glass_bottle in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:spider_eye in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:fermented_spider_eye in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:blaze_powder in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:magma_cream in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:brewing_stand in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cauldron in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:ender_eye in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:speckled_melon in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:spawn_egg in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:experience_bottle in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:fire_charge in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:writable_book in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:written_book in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:emerald in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:item_frame in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:flower_pot in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:carrot in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:potato in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:baked_potato in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:poisonous_potato in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:map in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:golden_carrot in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:skull in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:carrot_on_a_stick in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:nether_star in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:pumpkin_pie in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:fireworks in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:firework_charge in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:enchanted_book in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:comparator in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:netherbrick in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:quartz in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:tnt_minecart in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:hopper_minecart in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:prismarine_shard in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:prismarine_crystals in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:rabbit in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cooked_rabbit in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:rabbit_stew in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:rabbit_foot in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:rabbit_hide in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:armor_stand in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_horse_armor in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:golden_horse_armor in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:diamond_horse_armor in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:lead in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:name_tag in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:command_block_minecart in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:mutton in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cooked_mutton in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:banner in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:end_crystal in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:spruce_door in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:birch_door in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:jungle_door in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:acacia_door in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:dark_oak_door in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:chorus_fruit in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:chorus_fruit_popped in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:beetroot in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:beetroot_seeds in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:beetroot_soup in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:dragon_breath in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:splash_potion in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:spectral_arrow in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:tipped_arrow in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:lingering_potion in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:shield in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:elytra in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:spruce_boat in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:birch_boat in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:jungle_boat in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:acacia_boat in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:dark_oak_boat in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:totem_of_undying in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:shulker_shell in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_nugget in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:knowledge_book in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:record_13 in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:record_cat in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:record_blocks in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:record_chirp in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:record_far in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:record_mall in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:record_mellohi in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:record_stal in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:record_strad in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:record_ward in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:record_11 in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:record_wait in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:air in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stone in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:grass in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:dirt in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cobblestone in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:planks in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:sapling in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:bedrock in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:flowing_water in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:water in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:flowing_lava in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:lava in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:sand in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:gravel in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:gold_ore in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_ore in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:coal_ore in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:log in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:leaves in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:sponge in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:glass in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:lapis_ore in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:lapis_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:dispenser in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:sandstone in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:noteblock in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:bed in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:golden_rail in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:detector_rail in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:sticky_piston in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:web in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:tallgrass in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:deadbush in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:piston in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:piston_head in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wool in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:piston_extension in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:yellow_flower in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:red_flower in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:brown_mushroom in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:red_mushroom in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:gold_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:double_stone_slab in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stone_slab in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:brick_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:tnt in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:bookshelf in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:mossy_cobblestone in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:obsidian in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:torch in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:fire in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:mob_spawner in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:oak_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:chest in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:redstone_wire in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:diamond_ore in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:diamond_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:crafting_table in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wheat in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:farmland in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:furnace in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:lit_furnace in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:standing_sign in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wooden_door in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:ladder in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:rail in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stone_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wall_sign in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:lever in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stone_pressure_plate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_door in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wooden_pressure_plate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:redstone_ore in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:lit_redstone_ore in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:unlit_redstone_torch in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:redstone_torch in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stone_button in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:snow_layer in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:ice in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:snow in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cactus in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:clay in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:reeds in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:jukebox in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:fence in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:pumpkin in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:netherrack in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:soul_sand in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:glowstone in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:portal in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:lit_pumpkin in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cake in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:unpowered_repeater in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:powered_repeater in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stained_glass in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:trapdoor in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:monster_egg in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stonebrick in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:brown_mushroom_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:red_mushroom_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_bars in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:glass_pane in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:melon_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:pumpkin_stem in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:melon_stem in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:vine in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:fence_gate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:brick_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stone_brick_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:mycelium in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:waterlily in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:nether_brick in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:nether_brick_fence in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:nether_brick_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:nether_wart in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:enchanting_table in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:brewing_stand in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cauldron in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:end_portal in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:end_portal_frame in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:end_stone in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:dragon_egg in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:redstone_lamp in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:lit_redstone_lamp in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:double_wooden_slab in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wooden_slab in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cocoa in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:sandstone_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:emerald_ore in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:ender_chest in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:tripwire_hook in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:tripwire in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:emerald_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:spruce_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:birch_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:jungle_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:command_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:beacon in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cobblestone_wall in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:flower_pot in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:carrots in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:potatoes in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wooden_button in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:skull in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:anvil in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:trapped_chest in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:light_weighted_pressure_plate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:heavy_weighted_pressure_plate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:unpowered_comparator in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:powered_comparator in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:daylight_detector in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:redstone_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:quartz_ore in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:hopper in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:quartz_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:quartz_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:activator_rail in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:dropper in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stained_hardened_clay in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stained_glass_pane in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:leaves2 in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:log2 in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:acacia_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:dark_oak_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:slime in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:barrier in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:iron_trapdoor in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:prismarine in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:sea_lantern in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:hay_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:carpet in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:hardened_clay in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:coal_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:packed_ice in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:double_plant in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:standing_banner in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:wall_banner in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:daylight_detector_inverted in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:red_sandstone in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:red_sandstone_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:double_stone_slab2 in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:stone_slab2 in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:spruce_fence_gate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:birch_fence_gate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:jungle_fence_gate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:dark_oak_fence_gate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:acacia_fence_gate in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:spruce_fence in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:birch_fence in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:jungle_fence in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:dark_oak_fence in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:acacia_fence in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:spruce_door in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:birch_door in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:jungle_door in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:acacia_door in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:dark_oak_door in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:end_rod in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:chorus_plant in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:chorus_flower in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:purpur_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:purpur_pillar in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:purpur_stairs in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:purpur_double_slab in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:purpur_slab in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:end_bricks in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:beetroots in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:grass_path in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:end_gateway in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:repeating_command_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:chain_command_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:frosted_ice in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:magma in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:nether_wart_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:red_nether_brick in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:bone_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:structure_void in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:observer in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:white_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:orange_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:magenta_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:light_blue_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:yellow_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:lime_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:pink_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:gray_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:silver_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cyan_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:purple_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:blue_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:brown_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:green_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:red_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:black_shulker_box in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:white_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:orange_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:magenta_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:light_blue_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:yellow_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:lime_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:pink_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:gray_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:silver_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:cyan_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:purple_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:blue_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:brown_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:green_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:red_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:black_glazed_terracotta in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:concrete in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:concrete_powder in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @minecraft:structure_block in config minecraft
+[01:56:55] [main/INFO] [heavyinventories]: Building thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building config for thaumcraft.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Created config at F:\Minecraft Forge\Projects\1.12.2\Heavy Inventories\run\config\Heavy Inventories\Weights\thaumcraft.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:ore_amber in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:ore_cinnabar in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:ore_quartz in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crystal_aer in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crystal_ignis in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crystal_aqua in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crystal_terra in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crystal_ordo in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crystal_perditio in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crystal_vitium in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stone_arcane in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stone_arcane_brick in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stone_ancient in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stone_ancient_tile in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stone_ancient_rock in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stone_ancient_glyphed in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stone_ancient_doorway in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stone_eldritch_tile in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stone_porous in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stairs_arcane in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stairs_arcane_brick in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stairs_ancient in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:slab_arcane_stone in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:slab_arcane_brick in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:slab_ancient in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:slab_eldritch in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:sapling_greatwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:sapling_silverwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:log_greatwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:log_silverwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:leaves_greatwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:leaves_silverwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:shimmerleaf in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:cinderpearl in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:vishroom in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:plank_greatwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:plank_silverwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stairs_greatwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stairs_silverwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:slab_greatwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:slab_silverwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:amber_block in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:amber_brick in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:flesh_block in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:loot_crate_common in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:loot_crate_uncommon in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:loot_crate_rare in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:loot_urn_common in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:loot_urn_uncommon in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:loot_urn_rare in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:taint_fibre in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:taint_crust in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:taint_soil in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:taint_rock in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:taint_geyser in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:taint_feature in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:taint_log in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:grass_ambient in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:table_wood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:table_stone in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:pedestal_arcane in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:pedestal_ancient in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:pedestal_eldritch in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:metal_brass in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:metal_thaumium in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:metal_void in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:metal_alchemical in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:metal_alchemical_advanced in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:paving_stone_travel in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:paving_stone_barrier in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:pillar_arcane in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:pillar_ancient in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:pillar_eldritch in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:matrix_speed in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:matrix_cost in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_white in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_orange in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_magenta in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_lightblue in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_yellow in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_lime in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_pink in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_gray in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_silver in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_cyan in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_purple in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_blue in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_brown in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_green in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_red in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_black in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_white in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_orange in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_magenta in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_lightblue in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_yellow in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_lime in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_pink in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_gray in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_silver in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_cyan in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_purple in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_blue in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_brown in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_green in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_red in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_black in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_crimson_cult in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_white in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_orange in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_magenta in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_lightblue in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_yellow in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_lime in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_pink in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_gray in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_silver in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_cyan in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_purple in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_blue in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_brown in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_green in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_red in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_black in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:vis_battery in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:inlay in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:arcane_workbench in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:arcane_workbench_charger in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:dioptra in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:research_table in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crucible in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:arcane_ear in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:arcane_ear_toggle in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:lamp_arcane in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:lamp_fertility in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:lamp_growth in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:levitator in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:centrifuge in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:bellows in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:smelter_basic in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:smelter_thaumium in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:smelter_void in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:smelter_aux in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:smelter_vent in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:alembic in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:recharge_pedestal in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:wand_workbench in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:hungry_chest in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:tube in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:tube_valve in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:tube_restrict in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:tube_oneway in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:tube_filter in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:tube_buffer in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:jar_normal in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:jar_void in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:jar_brain in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:infusion_matrix in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:infernal_furnace in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:everfull_urn in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:thaumatorium in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:thaumatorium_top in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:brain_box in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:spa in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:golem_builder in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:mirror in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:mirror_essentia in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:essentia_input in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:essentia_output in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:redstone_relay in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:pattern_crafter in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:potion_sprayer in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:activator_rail in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stabilizer in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:vis_generator in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:condenser in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:condenser_lattice in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:condenser_lattice_dirty in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:void_siphon in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:hole in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:effect_shock in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:effect_sap in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:effect_glimmer in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:placeholder_brick in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:placeholder_obsidian in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:placeholder_bars in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:placeholder_anvil in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:placeholder_cauldron in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:placeholder_table in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:empty in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:barrier in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:thaumonomicon in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:curio in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:loot_bag in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:primordial_pearl in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:pech_wand in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:celestial_notes in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:amber in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:quicksilver in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:ingot in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nugget in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:cluster in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:fabric in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:vis_resonator in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:tallow in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:mechanism_simple in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:mechanism_complex in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:plate in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:filter in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:morphic_resonator in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:salis_mundus in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:mirrored_glass in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:void_seed in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:mind in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:module in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crystal_essence in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:chunk in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:triple_meat_treat in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:brain in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:label in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:phial in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:alumentum in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:jar_brace in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:bottle_taint in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:sanity_soap in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:bath_salts in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:turret in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:causality_collapser in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:scribing_tools in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:thaumometer in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:resonator in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:sanity_checker in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:hand_mirror in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:thaumium_axe in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:thaumium_sword in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:thaumium_shovel in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:thaumium_pick in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:thaumium_hoe in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:void_axe in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:void_sword in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:void_shovel in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:void_pick in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:void_hoe in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:elemental_axe in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:elemental_sword in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:elemental_shovel in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:elemental_pick in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:elemental_hoe in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:primal_crusher in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crimson_blade in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:grapple_gun in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:grapple_gun_tip in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:grapple_gun_spool in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:goggles in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:thaumium_helm in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:thaumium_chest in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:thaumium_legs in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:thaumium_boots in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:cloth_chest in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:cloth_legs in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:cloth_boots in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:traveller_boots in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:fortress_helm in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:fortress_chest in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:fortress_legs in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:void_helm in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:void_chest in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:void_legs in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:void_boots in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:void_robe_helm in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:void_robe_chest in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:void_robe_legs in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crimson_plate_helm in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crimson_plate_chest in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crimson_plate_legs in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crimson_boots in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crimson_robe_helm in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crimson_robe_chest in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crimson_robe_legs in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crimson_praetor_helm in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crimson_praetor_chest in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crimson_praetor_legs in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:baubles in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:amulet_vis in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:verdant_charm in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:curiosity_band in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:voidseer_charm in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:cloud_ring in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:charm_undying in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:creative_flux_sponge in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:enchanted_placeholder in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:caster_basic in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:focus_1 in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:focus_2 in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:focus_3 in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:focus_pouch in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:golem_bell in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:golem in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:seal in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:ore_amber in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:ore_cinnabar in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:ore_quartz in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crystal_aer in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crystal_ignis in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crystal_aqua in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crystal_terra in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crystal_ordo in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crystal_perditio in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crystal_vitium in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stone_arcane in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stone_arcane_brick in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stone_ancient in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stone_ancient_tile in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stone_ancient_rock in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stone_ancient_glyphed in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stone_ancient_doorway in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stone_eldritch_tile in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stone_porous in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stairs_arcane in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stairs_arcane_brick in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stairs_ancient in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:slab_arcane_stone in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:slab_double_arcane_stone in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:slab_arcane_brick in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:slab_double_arcane_brick in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:slab_ancient in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:slab_double_ancient in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:slab_eldritch in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:slab_double_eldritch in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:sapling_greatwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:sapling_silverwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:log_greatwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:log_silverwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:leaves_greatwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:leaves_silverwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:shimmerleaf in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:cinderpearl in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:vishroom in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:plank_greatwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:plank_silverwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stairs_greatwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stairs_silverwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:slab_greatwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:slab_double_greatwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:slab_silverwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:slab_double_silverwood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:amber_block in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:amber_brick in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:flesh_block in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:loot_crate_common in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:loot_crate_uncommon in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:loot_crate_rare in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:loot_urn_common in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:loot_urn_uncommon in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:loot_urn_rare in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:taint_fibre in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:taint_crust in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:taint_soil in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:taint_rock in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:taint_geyser in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:taint_feature in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:taint_log in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:grass_ambient in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:table_wood in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:table_stone in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:pedestal_arcane in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:pedestal_ancient in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:pedestal_eldritch in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:metal_brass in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:metal_thaumium in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:metal_void in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:metal_alchemical in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:metal_alchemical_advanced in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:paving_stone_travel in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:paving_stone_barrier in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:pillar_arcane in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:pillar_ancient in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:pillar_eldritch in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:matrix_speed in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:matrix_cost in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_white in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_orange in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_magenta in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_lightblue in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_yellow in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_lime in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_pink in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_gray in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_silver in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_cyan in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_purple in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_blue in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_brown in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_green in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_red in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:candle_black in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_white in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_orange in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_magenta in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_lightblue in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_yellow in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_lime in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_pink in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_gray in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_silver in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_cyan in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_purple in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_blue in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_brown in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_green in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_red in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_black in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:banner_crimson_cult in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_white in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_orange in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_magenta in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_lightblue in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_yellow in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_lime in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_pink in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_gray in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_silver in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_cyan in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_purple in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_blue in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_brown in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_green in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_red in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:nitor_black in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:vis_battery in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:inlay in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:arcane_workbench in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:arcane_workbench_charger in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:dioptra in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:research_table in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:crucible in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:arcane_ear in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:arcane_ear_toggle in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:lamp_arcane in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:lamp_fertility in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:lamp_growth in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:levitator in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:centrifuge in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:bellows in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:smelter_basic in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:smelter_thaumium in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:smelter_void in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:smelter_aux in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:smelter_vent in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:alembic in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:recharge_pedestal in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:wand_workbench in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:hungry_chest in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:tube in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:tube_valve in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:tube_restrict in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:tube_oneway in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:tube_filter in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:tube_buffer in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:jar_normal in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:jar_void in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:jar_brain in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:infusion_matrix in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:infernal_furnace in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:everfull_urn in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:thaumatorium in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:thaumatorium_top in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:brain_box in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:spa in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:golem_builder in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:mirror in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:mirror_essentia in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:essentia_input in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:essentia_output in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:redstone_relay in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:pattern_crafter in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:potion_sprayer in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:activator_rail in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:stabilizer in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:vis_generator in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:condenser in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:condenser_lattice in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:condenser_lattice_dirty in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:void_siphon in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:flux_goo in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:liquid_death in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:purifying_fluid in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:hole in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:effect_shock in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:effect_sap in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:effect_glimmer in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:placeholder_brick in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:placeholder_obsidian in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:placeholder_bars in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:placeholder_anvil in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:placeholder_cauldron in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:placeholder_table in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:empty in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @thaumcraft:barrier in config thaumcraft
+[01:56:55] [main/INFO] [heavyinventories]: Found: thaumcraft.cfg in the loading directory! Loading...
+[01:56:55] [main/INFO] [heavyinventories]: Read thaumcraft.cfg into memory.
+[01:56:55] [main/INFO] [heavyinventories]: Loaded: thaumcraft.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Building forge
+[01:56:55] [main/INFO] [heavyinventories]: Building config for forge.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Created config at F:\Minecraft Forge\Projects\1.12.2\Heavy Inventories\run\config\Heavy Inventories\Weights\forge.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @forge:bucketfilled in config forge
+[01:56:55] [main/INFO] [heavyinventories]: Found: forge.cfg in the loading directory! Loading...
+[01:56:55] [main/INFO] [heavyinventories]: Read forge.cfg into memory.
+[01:56:55] [main/INFO] [heavyinventories]: Loaded: forge.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Building appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building config for appliedenergistics2.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Created config at F:\Minecraft Forge\Projects\1.12.2\Heavy Inventories\run\config\Heavy Inventories\Weights\appliedenergistics2.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_ore in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:charged_quartz_ore in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:matrix_frame in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_block in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_pillar in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:chiseled_quartz_block in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_glass in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_vibrant_glass in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_fixture in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:fluix_block in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_block in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:smooth_sky_stone_block in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_brick in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_small_brick in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_chest in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:smooth_sky_stone_chest in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_compass in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:grindstone in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:crank in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:inscriber in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:wireless_access_point in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:charger in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:tiny_tnt in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:security_station in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quantum_ring in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quantum_link in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:spatial_pylon in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:spatial_io_port in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:controller in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:drive in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:chest in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:interface in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:fluid_interface in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:cell_workbench in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:io_port in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:condenser in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:energy_acceptor in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:vibration_chamber in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_growth_accelerator in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:energy_cell in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:dense_energy_cell in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:creative_energy_cell in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:crafting_unit in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:crafting_accelerator in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:crafting_storage_1k in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:crafting_storage_4k in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:crafting_storage_16k in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:crafting_storage_64k in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:crafting_monitor in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:molecular_assembler in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:light_detector in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:paint in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_stairs in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:smooth_sky_stone_stairs in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_brick_stairs in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_small_brick_stairs in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:fluix_stairs in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_stairs in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:chiseled_quartz_stairs in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_pillar_stairs in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:cable_bus in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:smooth_sky_stone_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_brick_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_small_brick_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:fluix_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:chiseled_quartz_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_pillar_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:certus_quartz_axe in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:certus_quartz_hoe in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:certus_quartz_spade in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:certus_quartz_pickaxe in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:certus_quartz_sword in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:certus_quartz_wrench in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:certus_quartz_cutting_knife in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:nether_quartz_axe in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:nether_quartz_hoe in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:nether_quartz_spade in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:nether_quartz_pickaxe in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:nether_quartz_sword in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:nether_quartz_wrench in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:nether_quartz_cutting_knife in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:entropy_manipulator in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:wireless_terminal in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:charged_staff in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:matter_cannon in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:portable_cell in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:color_applicator in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:biometric_card in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:memory_card in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:network_tool in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:creative_storage_cell in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:view_cell in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:storage_cell_1k in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:storage_cell_4k in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:storage_cell_16k in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:storage_cell_64k in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:fluid_storage_cell_1k in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:fluid_storage_cell_4k in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:fluid_storage_cell_16k in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:fluid_storage_cell_64k in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:spatial_storage_cell_2_cubed in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:spatial_storage_cell_16_cubed in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:spatial_storage_cell_128_cubed in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:facade in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:crystal_seed in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:encoded_pattern in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:paint_ball in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:dummy_fluid_item in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:material in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:part in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_ore in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:charged_quartz_ore in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:matrix_frame in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_block in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_pillar in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:chiseled_quartz_block in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_glass in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_vibrant_glass in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_fixture in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:fluix_block in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_block in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:smooth_sky_stone_block in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_brick in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_small_brick in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_chest in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:smooth_sky_stone_chest in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_compass in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:grindstone in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:crank in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:inscriber in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:wireless_access_point in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:charger in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:tiny_tnt in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:security_station in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quantum_ring in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quantum_link in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:spatial_pylon in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:spatial_io_port in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:controller in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:drive in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:chest in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:interface in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:fluid_interface in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:cell_workbench in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:io_port in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:condenser in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:energy_acceptor in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:vibration_chamber in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_growth_accelerator in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:energy_cell in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:dense_energy_cell in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:creative_energy_cell in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:crafting_unit in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:crafting_accelerator in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:crafting_storage_1k in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:crafting_storage_4k in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:crafting_storage_16k in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:crafting_storage_64k in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:crafting_monitor in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:molecular_assembler in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:light_detector in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:paint in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_stairs in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:smooth_sky_stone_stairs in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_brick_stairs in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_small_brick_stairs in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:fluix_stairs in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_stairs in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:chiseled_quartz_stairs in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_pillar_stairs in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:cable_bus in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_double_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:smooth_sky_stone_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:smooth_sky_stone_double_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_brick_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_brick_double_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_small_brick_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:sky_stone_small_brick_double_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:fluix_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:fluix_double_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_double_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:chiseled_quartz_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:chiseled_quartz_double_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_pillar_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @appliedenergistics2:quartz_pillar_double_slab in config appliedenergistics2
+[01:56:55] [main/INFO] [heavyinventories]: Found: appliedenergistics2.cfg in the loading directory! Loading...
+[01:56:55] [main/INFO] [heavyinventories]: Read appliedenergistics2.cfg into memory.
+[01:56:55] [main/INFO] [heavyinventories]: Loaded: appliedenergistics2.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Building baubles
+[01:56:55] [main/INFO] [heavyinventories]: Building config for baubles.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Created config at F:\Minecraft Forge\Projects\1.12.2\Heavy Inventories\run\config\Heavy Inventories\Weights\baubles.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @baubles:ring in config baubles
+[01:56:55] [main/INFO] [heavyinventories]: Found: baubles.cfg in the loading directory! Loading...
+[01:56:55] [main/INFO] [heavyinventories]: Read baubles.cfg into memory.
+[01:56:55] [main/INFO] [heavyinventories]: Loaded: baubles.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Building theoneprobe
+[01:56:55] [main/INFO] [heavyinventories]: Building config for theoneprobe.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Created config at F:\Minecraft Forge\Projects\1.12.2\Heavy Inventories\run\config\Heavy Inventories\Weights\theoneprobe.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @theoneprobe:probe in config theoneprobe
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @theoneprobe:creativeprobe in config theoneprobe
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @theoneprobe:probenote in config theoneprobe
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @theoneprobe:diamond_helmet_probe in config theoneprobe
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @theoneprobe:gold_helmet_probe in config theoneprobe
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @theoneprobe:iron_helmet_probe in config theoneprobe
+[01:56:55] [main/INFO] [heavyinventories]: Building weight @theoneprobe:probe_goggles in config theoneprobe
+[01:56:55] [main/INFO] [heavyinventories]: Found: theoneprobe.cfg in the loading directory! Loading...
+[01:56:55] [main/INFO] [heavyinventories]: Read theoneprobe.cfg into memory.
+[01:56:55] [main/INFO] [heavyinventories]: Loaded: theoneprobe.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Found: TheOneProbe.cfg in the loading directory! Loading...
+[01:56:55] [main/INFO] [STDOUT]: [superscary.heavyinventories.configs.reader.ConfigReader:handshake:56]: Found: F:\Minecraft Forge\Projects\1.12.2\Heavy Inventories\run\config\Heavy Inventories\Weights\TheOneProbe.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Found: Baubles.cfg in the loading directory! Loading...
+[01:56:55] [main/INFO] [STDOUT]: [superscary.heavyinventories.configs.reader.ConfigReader:handshake:56]: Found: F:\Minecraft Forge\Projects\1.12.2\Heavy Inventories\run\config\Heavy Inventories\Weights\Baubles.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Found: Forge.cfg in the loading directory! Loading...
+[01:56:55] [main/INFO] [STDOUT]: [superscary.heavyinventories.configs.reader.ConfigReader:handshake:56]: Found: F:\Minecraft Forge\Projects\1.12.2\Heavy Inventories\run\config\Heavy Inventories\Weights\Forge.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Found: Thaumcraft.cfg in the loading directory! Loading...
+[01:56:55] [main/INFO] [STDOUT]: [superscary.heavyinventories.configs.reader.ConfigReader:handshake:56]: Found: F:\Minecraft Forge\Projects\1.12.2\Heavy Inventories\run\config\Heavy Inventories\Weights\Thaumcraft.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Read: thaumcraft.cfg into memory.
+[01:56:55] [main/INFO] [heavyinventories]: Read: forge.cfg into memory.
+[01:56:55] [main/INFO] [heavyinventories]: Read: appliedenergistics2.cfg into memory.
+[01:56:55] [main/INFO] [heavyinventories]: Read: baubles.cfg into memory.
+[01:56:55] [main/INFO] [heavyinventories]: Read: theoneprobe.cfg into memory.
+[01:56:55] [main/INFO] [heavyinventories]: Read: TheOneProbe.cfg into memory.
+[01:56:55] [main/INFO] [heavyinventories]: Read: Baubles.cfg into memory.
+[01:56:55] [main/INFO] [heavyinventories]: Read: Forge.cfg into memory.
+[01:56:55] [main/INFO] [heavyinventories]: Read: Thaumcraft.cfg into memory.
+[01:56:55] [main/INFO] [heavyinventories]: Loaded: thaumcraft.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Loaded: forge.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Loaded: appliedenergistics2.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Loaded: baubles.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Loaded: theoneprobe.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Loaded: TheOneProbe.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Loaded: Baubles.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Loaded: Forge.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Loaded: Thaumcraft.cfg
+[01:56:55] [main/INFO] [heavyinventories]: Finding compatible mods...
+[01:56:55] [main/INFO] [heavyinventories]: Found theoneprobe!
+[01:56:55] [main/INFO] [heavyinventories]: Found baubles!
+[01:56:55] [main/INFO] [heavyinventories]: Oh I see you, The One Probe
+[01:56:55] [main/INFO] [heavyinventories]: Loading compat for The One Probe...
+[01:56:55] [main/INFO] [heavyinventories]: Disabled compatability for waila
+[01:56:55] [main/INFO] [AE2:C]: Post Initialization ( started )
+[01:56:55] [main/INFO] [AE2:C]: Industrial Craft 2 - Integration Disabled
+[01:56:55] [main/INFO] [AE2:C]: Railcraft - Integration Disabled
+[01:56:55] [main/INFO] [AE2:C]: Mine Factory Reloaded - Integration Disabled
+[01:56:55] [main/INFO] [AE2:C]: Waila - Integration Disabled
+[01:56:55] [main/INFO] [AE2:C]: Inventory Tweaks - Integration Disabled
+[01:56:55] [main/INFO] [AE2:C]: Just Enough Items - Integration Enable
+[01:56:55] [main/INFO] [AE2:C]: Mekanism - Integration Disabled
+[01:56:55] [main/INFO] [AE2:C]: OpenComputers - Integration Disabled
+[01:56:55] [main/INFO] [AE2:C]: TheOneProbe - Integration Enable
+[01:56:55] [main/INFO] [AE2:C]: Tesla - Integration Disabled
+[01:56:55] [main/INFO] [AE2:C]: CraftTweaker - Integration Disabled
+[01:56:56] [main/INFO] [AE2:C]: Post Initialization ( ended after 582ms )
+[01:56:56] [main/INFO] [THAUMCRAFT]: Loaded 22 research entries from thaumcraft:research/alchemy
+[01:56:56] [main/INFO] [THAUMCRAFT]: Loaded 5 research entries from thaumcraft:research/eldritch
+[01:56:56] [main/INFO] [THAUMCRAFT]: Loaded 20 research entries from thaumcraft:research/basics
+[01:56:56] [main/INFO] [THAUMCRAFT]: Loaded 23 research entries from thaumcraft:research/auromancy
+[01:56:56] [main/INFO] [THAUMCRAFT]: Loaded 12 research entries from thaumcraft:research/scans
+[01:56:56] [main/INFO] [THAUMCRAFT]: Loaded 20 research entries from thaumcraft:research/artifice
+[01:56:56] [main/INFO] [THAUMCRAFT]: Loaded 17 research entries from thaumcraft:research/infusion
+[01:56:56] [main/INFO] [THAUMCRAFT]: Loaded 29 research entries from thaumcraft:research/golemancy
+[01:56:56] [main/INFO] [jei]: Starting JEI...
+[01:56:56] [main/INFO] [jei]: Registering recipe categories...
+[01:56:56] [main/INFO] [jei]: Registering recipe categories took 57.13 ms
+[01:56:56] [main/INFO] [jei]: Registering mod plugins...
+[01:56:56] [main/INFO] [jei]: Added recipe registry plugin: class appeng.integration.modules.jei.FacadeRegistryPlugin
+[01:56:56] [main/INFO] [jei]: Registering mod plugins took 216.6 ms
+[01:56:56] [main/INFO] [jei]: Building recipe registry...
+[01:56:57] [main/INFO] [jei]: Building recipe registry took 108.9 ms
+[01:56:57] [main/INFO] [jei]: Building ingredient list...
+[01:56:57] [main/INFO] [jei]: Building ingredient list took 98.79 ms
+[01:56:57] [main/INFO] [jei]: Building ingredient filter...
+[01:56:57] [main/INFO] [jei]: Building ingredient filter took 236.0 ms
+[01:56:57] [main/INFO] [jei]: Building runtime...
+[01:56:57] [main/INFO] [jei]: Building runtime took 126.1 ms
+[01:56:57] [main/INFO] [jei]: Starting JEI took 1.084 s
+[01:56:57] [main/INFO] [FML]: Forge Mod Loader has successfully loaded 11 mods
+[01:56:58] [main/INFO] [com.mojang.text2speech.NarratorWindows]: Narrator library for x64 successfully loaded
+[01:56:58] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient]: Could not authorize you against Realms server: Invalid session id

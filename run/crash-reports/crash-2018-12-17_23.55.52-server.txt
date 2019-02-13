@@ -1,0 +1,110 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 12/17/18 11:55 PM
+Description: Ticking player
+
+java.lang.RuntimeException: 'r' has no scope in '/config/Heavy Inventories/Weights/minecraft.cfg:1074'
+	at net.minecraftforge.common.config.Configuration.load(Configuration.java:961)
+	at superscary.heavyinventories.configs.builder.ConfigBuilder.loadConfig(ConfigBuilder.java:38)
+	at superscary.heavyinventories.configs.builder.ConfigBuilder.build(ConfigBuilder.java:30)
+	at superscary.heavyinventories.configs.weights.CustomConfigLoader.getItemWeight(CustomConfigLoader.java:37)
+	at superscary.heavyinventories.calc.PlayerWeightCalculator.getWeight(PlayerWeightCalculator.java:93)
+	at superscary.heavyinventories.calc.PlayerWeightCalculator.calculateWeightForBaublesInventory(PlayerWeightCalculator.java:69)
+	at superscary.heavyinventories.calc.PlayerWeightCalculator.calculateWeight(PlayerWeightCalculator.java:52)
+	at superscary.heavyinventories.client.event.ClientEventHandler.onPlayerMove(ClientEventHandler.java:222)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_97_ClientEventHandler_onPlayerMove_PlayerTickEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPlayerPreTick(FMLCommonHandler.java:365)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:228)
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdateEntity(EntityPlayerMP.java:423)
+	at net.minecraft.network.NetHandlerPlayServer.update(NetHandlerPlayServer.java:185)
+	at net.minecraftforge.fml.common.network.handshake.NetworkDispatcher$1.update(NetworkDispatcher.java:212)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:307)
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:197)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:865)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraftforge.common.config.Configuration.load(Configuration.java:961)
+	at superscary.heavyinventories.configs.builder.ConfigBuilder.loadConfig(ConfigBuilder.java:38)
+	at superscary.heavyinventories.configs.builder.ConfigBuilder.build(ConfigBuilder.java:30)
+	at superscary.heavyinventories.configs.weights.CustomConfigLoader.getItemWeight(CustomConfigLoader.java:37)
+	at superscary.heavyinventories.calc.PlayerWeightCalculator.getWeight(PlayerWeightCalculator.java:93)
+	at superscary.heavyinventories.calc.PlayerWeightCalculator.calculateWeightForBaublesInventory(PlayerWeightCalculator.java:69)
+	at superscary.heavyinventories.calc.PlayerWeightCalculator.calculateWeight(PlayerWeightCalculator.java:52)
+	at superscary.heavyinventories.client.event.ClientEventHandler.onPlayerMove(ClientEventHandler.java:222)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_97_ClientEventHandler_onPlayerMove_PlayerTickEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPlayerPreTick(FMLCommonHandler.java:365)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:228)
+
+-- Player being ticked --
+Details:
+	Entity Type: null (net.minecraft.entity.player.EntityPlayerMP)
+	Entity ID: 143
+	Entity Name: Player63
+	Entity's Exact location: -40.48, 84.00, -15.94
+	Entity's Block location: World: (-41,84,-16), Chunk: (at 7,5,0 in -3,-1; contains blocks -48,0,-16 to -33,255,-1), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,0,-512 to -1,255,-1)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdateEntity(EntityPlayerMP.java:423)
+	at net.minecraft.network.NetHandlerPlayServer.update(NetHandlerPlayServer.java:185)
+	at net.minecraftforge.fml.common.network.handshake.NetworkDispatcher$1.update(NetworkDispatcher.java:212)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:307)
+
+-- Ticking connection --
+Details:
+	Connection: net.minecraft.network.NetworkManager@dc3b51d
+Stacktrace:
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:197)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:865)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_181, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 291962472 bytes (278 MB) / 2030567424 bytes (1936 MB) up to 7621050368 bytes (7268 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 10 mods loaded, 10 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State     | ID               | Version      | Source                           | Signature |
+	|:--------- |:---------------- |:------------ |:-------------------------------- |:--------- |
+	| UCHIJAAAA | minecraft        | 1.12.2       | minecraft.jar                    | None      |
+	| UCHIJAAAA | mcp              | 9.42         | minecraft.jar                    | None      |
+	| UCHIJAAAA | FML              | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2768.jar | None      |
+	| UCHIJAAAA | forge            | 14.23.5.2768 | forgeSrc-1.12.2-14.23.5.2768.jar | None      |
+	| UCHIJAAAA | theoneprobe      | 1.4.22       | theoneprobe-1.12-1.4.22.jar      | None      |
+	| UCHIJAAAA | supercore        | 1.3.1        | Heavy_Inventories                | None      |
+	| UCHIJAAAA | heavyinventories | 2.2.2        | Heavy_Inventories                | None      |
+	| UCHIJAAAA | baubles          | 1.5.2        | Baubles-1.12-1.5.2.jar           | None      |
+	| UCHIJAAAA | jei              | 4.13.1.225   | jei_1.12.2-4.13.1.225.jar        | None      |
+	| UCHIJAAAA | thaumcraft       | 6.1.BETA26   | Thaumcraft-1.12.2-6.1.BETA26.jar | None      |
+
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player63'/143, l='New World', x=-40.48, y=84.00, z=-15.94]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

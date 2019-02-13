@@ -1,0 +1,230 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  EnderCorePlugin (EnderCore-1.12.2-0.5.43.jar)
+  ForgelinPlugin (Forgelin-1.8.2.jar)
+  OpenModsCorePlugin (OpenModsLib-1.12.2-0.12.1.jar)
+  CTMCorePlugin (CTM-MC1.12.2-0.3.3.22.jar)
+Contact their authors BEFORE contacting forge
+
+// Quite honestly, I wouldn't worry myself about that.
+
+Time: 2/11/19 7:48 PM
+Description: Unexpected error
+
+java.lang.ArithmeticException: / by zero
+	at superscary.heavyinventories.client.gui.meter.GuiDrawMeter.renderMeter(GuiDrawMeter.java:55)
+	at superscary.heavyinventories.client.gui.meter.GuiDrawMeter.<init>(GuiDrawMeter.java:37)
+	at superscary.heavyinventories.client.event.ClientEventHandler.renderHUD(ClientEventHandler.java:363)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_500_ClientEventHandler_renderHUD_RenderGameOverlayEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.client.GuiIngameForge.pre(GuiIngameForge.java:910)
+	at net.minecraftforge.client.GuiIngameForge.renderGameOverlay(GuiIngameForge.java:119)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1151)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1208)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:441)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at superscary.heavyinventories.client.gui.meter.GuiDrawMeter.renderMeter(GuiDrawMeter.java:55)
+	at superscary.heavyinventories.client.gui.meter.GuiDrawMeter.<init>(GuiDrawMeter.java:37)
+	at superscary.heavyinventories.client.event.ClientEventHandler.renderHUD(ClientEventHandler.java:363)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_500_ClientEventHandler_renderHUD_RenderGameOverlayEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.client.GuiIngameForge.pre(GuiIngameForge.java:910)
+	at net.minecraftforge.client.GuiIngameForge.renderGameOverlay(GuiIngameForge.java:119)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player590'/167, l='MpServer', x=-93.92, y=87.00, z=-21.71]]
+	Chunk stats: MultiplayerChunkCache: 597, 597
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-46,64,-8), Chunk: (at 2,4,8 in -3,-1; contains blocks -48,0,-16 to -33,255,-1), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,0,-512 to -1,255,-1)
+	Level time: 670429 game time, 272218 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 66 total; [EntityItem['item.tile.concretePowder.brown'/449159, l='MpServer', x=-95.36, y=87.00, z=-24.61], EntityItem['item.tile.clayHardenedStained.pink'/448772, l='MpServer', x=-95.12, y=87.00, z=-24.54], EntityItem['item.tile.concretePowder.brown'/449666, l='MpServer', x=-94.98, y=87.00, z=-24.48], EntitySheep['Sheep'/134, l='MpServer', x=-46.21, y=106.00, z=56.51], EntityItem['item.tile.concretePowder.brown'/449295, l='MpServer', x=-95.06, y=87.00, z=-24.31], EntitySheep['Sheep'/138, l='MpServer', x=-21.52, y=101.00, z=54.71], EntityItem['item.tile.clayHardenedStained.pink'/448012, l='MpServer', x=-95.41, y=87.00, z=-24.63], EntitySheep['Sheep'/139, l='MpServer', x=-19.50, y=103.00, z=53.73], EntityItem['item.tile.oreIron'/449933, l='MpServer', x=-95.03, y=87.00, z=-24.32], EntityItem['item.tile.concretePowder.brown'/449034, l='MpServer', x=-95.04, y=87.00, z=-24.38], EntityBat['Bat'/439688, l='MpServer', x=-107.28, y=22.77, z=-52.70], EntityItem['item.tile.thinStainedGlass.yellow'/449288, l='MpServer', x=-95.24, y=87.00, z=-24.80], EntityItem['item.tile.concretePowder.brown'/449172, l='MpServer', x=-95.43, y=87.00, z=-25.20], EntityItem['item.tile.concrete.lightBlue'/446623, l='MpServer', x=-95.12, y=87.00, z=-24.57], EntityCow['Cow'/30, l='MpServer', x=-167.78, y=98.00, z=30.57], EntityCow['Cow'/33, l='MpServer', x=-145.55, y=97.00, z=34.64], EntityBat['Bat'/444844, l='MpServer', x=-19.75, y=18.10, z=-98.66], EntityBat['Bat'/447916, l='MpServer', x=-113.49, y=47.36, z=-83.25], EntityItem['item.tile.clayHardenedStained.pink'/448556, l='MpServer', x=-94.98, y=87.00, z=-24.43], EntitySheep['Sheep'/44, l='MpServer', x=-140.23, y=84.00, z=-28.52], EntityCow['Cow'/45, l='MpServer', x=-140.83, y=102.00, z=28.75], EntityPlayerSP['Player590'/167, l='MpServer', x=-93.92, y=87.00, z=-21.71], EntityBat['Bat'/447913, l='MpServer', x=-117.44, y=41.04, z=-90.89], EntityBat['Bat'/450230, l='MpServer', x=-67.50, y=32.10, z=-37.50], EntityItem['item.tile.concretePowder.brown'/449332, l='MpServer', x=-95.05, y=87.00, z=-24.40], EntityItem['item.tile.clayHardenedStained.pink'/447797, l='MpServer', x=-95.36, y=87.00, z=-24.96], EntityBat['Bat'/450229, l='MpServer', x=-66.50, y=32.10, z=-39.50], EntityItem['item.tile.concretePowder.brown'/447154, l='MpServer', x=-95.25, y=87.00, z=-24.82], EntityItem['item.tile.concretePowder.brown'/449587, l='MpServer', x=-95.07, y=87.00, z=-24.31], EntitySheep['Sheep'/54, l='MpServer', x=-120.20, y=93.00, z=-83.67], EntitySheep['Sheep'/56, l='MpServer', x=-114.58, y=97.00, z=26.12], EntitySheep['Sheep'/57, l='MpServer', x=-115.45, y=84.00, z=37.45], EntitySheep['Sheep'/58, l='MpServer', x=-123.21, y=85.00, z=35.72], EntityItem['item.tile.concretePowder.brown'/448698, l='MpServer', x=-95.05, y=87.00, z=-24.51], EntityItem['item.tile.clayHardenedStained.pink'/447672, l='MpServer', x=-94.97, y=87.00, z=-24.47], EntityItem['item.tile.oreIron'/450119, l='MpServer', x=-94.83, y=87.17, z=-23.76], EntitySheep['Sheep'/69, l='MpServer', x=-98.19, y=83.00, z=15.50], EntityBat['Bat'/432067, l='MpServer', x=-122.25, y=19.10, z=-63.25], EntitySheep['Sheep'/70, l='MpServer', x=-102.19, y=86.00, z=16.49], EntitySheep['Sheep'/71, l='MpServer', x=-109.50, y=94.00, z=19.27], EntityItem['item.tile.oreIron'/449998, l='MpServer', x=-95.03, y=87.00, z=-24.65], EntityItem['item.tile.clayHardenedStained.pink'/449615, l='MpServer', x=-95.02, y=87.00, z=-24.30], EntityItem['item.tile.clayHardenedStained.pink'/449485, l='MpServer', x=-95.19, y=87.00, z=-24.21], EntitySheep['Sheep'/78, l='MpServer', x=-92.29, y=86.00, z=-69.17], EntitySheep['Sheep'/79, l='MpServer', x=-95.38, y=87.00, z=-67.76], EntityItem['item.tile.concretePowder.brown'/448841, l='MpServer', x=-95.23, y=87.00, z=-24.93], EntitySheep['Sheep'/80, l='MpServer', x=-85.74, y=85.00, z=-61.49], EntityBat['Bat'/444631, l='MpServer', x=-71.25, y=35.03, z=-25.39], EntityItem['item.tile.concretePowder.brown'/448337, l='MpServer', x=-94.96, y=87.00, z=-24.46], EntityBat['Bat'/428122, l='MpServer', x=-68.52, y=21.03, z=-98.51], EntityBat['Bat'/435684, l='MpServer', x=-104.34, y=23.05, z=-54.38], EntityBat['Bat'/435685, l='MpServer', x=-111.63, y=22.80, z=-56.21], EntityItem['item.tile.concretePowder.brown'/446819, l='MpServer', x=-95.10, y=87.00, z=-24.29], EntityItem['item.tile.concretePowder.brown'/449006, l='MpServer', x=-95.13, y=87.00, z=-24.56], EntityItem['item.tile.concretePowder.brown'/450026, l='MpServer', x=-95.24, y=87.00, z=-24.84], EntityItem['item.tile.concretePowder.brown'/447339, l='MpServer', x=-95.25, y=87.00, z=-24.76], EntityItem['item.tile.concretePowder.red'/447465, l='MpServer', x=-95.20, y=87.00, z=-24.61], EntitySheep['Sheep'/117, l='MpServer', x=-70.48, y=81.00, z=20.53], EntitySheep['Sheep'/122, l='MpServer', x=-54.27, y=108.00, z=33.29], EntitySheep['Sheep'/123, l='MpServer', x=-60.52, y=111.00, z=46.72], EntitySheep['Sheep'/124, l='MpServer', x=-56.47, y=111.00, z=36.73], EntityItem['item.tile.concretePowder.brown'/449402, l='MpServer', x=-95.14, y=87.00, z=-24.57], EntitySheep['Sheep'/125, l='MpServer', x=-61.19, y=114.00, z=37.51], EntitySheep['Sheep'/126, l='MpServer', x=-56.50, y=110.00, z=49.73], EntitySheep['Sheep'/127, l='MpServer', x=-61.17, y=111.00, z=55.36], EntityItem['item.tile.thinStainedGlass.lime'/446969, l='MpServer', x=-95.25, y=87.00, z=-24.78]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:461)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2888)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:470)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_181, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1264742232 bytes (1206 MB) / 6386876416 bytes (6091 MB) up to 7621050368 bytes (7268 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 67 mods loaded, 67 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State     | ID                                | Version           | Source                                             | Signature                                |
+	|:--------- |:--------------------------------- |:----------------- |:-------------------------------------------------- |:---------------------------------------- |
+	| UCHIJAAAA | minecraft                         | 1.12.2            | minecraft.jar                                      | None                                     |
+	| UCHIJAAAA | mcp                               | 9.42              | minecraft.jar                                      | None                                     |
+	| UCHIJAAAA | FML                               | 8.0.99.99         | forgeSrc-1.12.2-14.23.5.2768.jar                   | None                                     |
+	| UCHIJAAAA | forge                             | 14.23.5.2768      | forgeSrc-1.12.2-14.23.5.2768.jar                   | None                                     |
+	| UCHIJAAAA | openmodscore                      | 0.12.1            | minecraft.jar                                      | None                                     |
+	| UCHIJAAAA | theoneprobe                       | 1.4.22            | theoneprobe-1.12-1.4.22.jar                        | None                                     |
+	| UCHIJAAAA | supercore                         | 1.3.1             | Heavy_Inventories                                  | None                                     |
+	| UCHIJAAAA | heavyinventories                  | 2.2.5             | Heavy_Inventories                                  | None                                     |
+	| UCHIJAAAA | actuallyadditions                 | 1.12.2-r144       | ActuallyAdditions-1.12.2-r144.jar                  | None                                     |
+	| UCHIJAAAA | appliedenergistics2               | rv6-stable-4      | appliedenergistics2-rv6-stable-4.jar               | dfa4d3ac143316c6f32aa1a1beda1e34d42132e5 |
+	| UCHIJAAAA | baubles                           | 1.5.2             | Baubles-1.12-1.5.2.jar                             | None                                     |
+	| UCHIJAAAA | betterbuilderswands               | 0.11.1            | BetterBuildersWands-1.12-0.11.1.245+69d0d70.jar    | None                                     |
+	| UCHIJAAAA | bibliocraft                       | 2.4.5             | BiblioCraft[v2.4.5][MC1.12.2].jar                  | None                                     |
+	| UCHIJAAAA | jei                               | 4.13.1.225        | jei_1.12.2-4.13.1.225.jar                          | None                                     |
+	| UCHIJAAAA | thaumcraft                        | 6.1.BETA26        | Thaumcraft-1.12.2-6.1.BETA26.jar                   | None                                     |
+	| UCHIJAAAA | botania                           | r1.10-358         | Botania r1.10-358.jar                              | None                                     |
+	| UCHIJAAAA | codechickenlib                    | 3.2.2.353         | CodeChickenLib-1.12.2-3.2.2.353-universal.jar      | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| UCHIJAAAA | redstoneflux                      | 2.1.0             | RedstoneFlux-1.12-2.1.0.6-universal.jar            | 8a6abf2cb9e141b866580d369ba6548732eff25f |
+	| UCHIJAAAA | brandonscore                      | 2.4.9             | BrandonsCore-1.12.2-2.4.9.195-universal.jar        | None                                     |
+	| UCHIJAAAA | chameleon                         | 1.12-4.1.3        | Chameleon-1.12-4.1.3.jar                           | None                                     |
+	| UCHIJAAAA | ctm                               | MC1.12.2-0.3.3.22 | CTM-MC1.12.2-0.3.3.22.jar                          | None                                     |
+	| UCHIJAAAA | chisel                            | MC1.12.2-0.2.1.35 | Chisel-MC1.12.2-0.2.1.35.jar                       | None                                     |
+	| UCHIJAAAA | chiselsandbits                    | 14.29             | chiselsandbits-14.29.jar                           | None                                     |
+	| UCHIJAAAA | cofhcore                          | 4.6.1             | CoFHCore-1.12.2-4.6.1.22-universal.jar             | None                                     |
+	| UCHIJAAAA | cofhworld                         | 1.3.0             | CoFHWorld-1.12.2-1.3.0.6-universal.jar             | 8a6abf2cb9e141b866580d369ba6548732eff25f |
+	| UCHIJAAAA | thermalfoundation                 | 2.6.1             | ThermalFoundation-1.12.2-2.6.1.22-universal.jar    | 8a6abf2cb9e141b866580d369ba6548732eff25f |
+	| UCHIJAAAA | draconicevolution                 | 2.3.18            | Draconic-Evolution-1.12.2-2.3.18.329-universal.jar | None                                     |
+	| UCHIJAAAA | endercore                         | 1.12.2-0.5.43     | EnderCore-1.12.2-0.5.43.jar                        | None                                     |
+	| UCHIJAAAA | thermalexpansion                  | 5.5.2             | ThermalExpansion-1.12.2-5.5.2.39-universal.jar     | 8a6abf2cb9e141b866580d369ba6548732eff25f |
+	| UCHIJAAAA | enderio                           | 5.0.38            | EnderIO-1.12.2-5.0.38.jar                          | None                                     |
+	| UCHIJAAAA | enderiointegrationtic             | 5.0.38            | EnderIO-1.12.2-5.0.38.jar                          | None                                     |
+	| UCHIJAAAA | enderiobase                       | 5.0.38            | EnderIO-1.12.2-5.0.38.jar                          | None                                     |
+	| UCHIJAAAA | enderioconduits                   | 5.0.38            | EnderIO-1.12.2-5.0.38.jar                          | None                                     |
+	| UCHIJAAAA | enderioconduitsappliedenergistics | 5.0.38            | EnderIO-1.12.2-5.0.38.jar                          | None                                     |
+	| UCHIJAAAA | enderioconduitsopencomputers      | 5.0.38            | EnderIO-1.12.2-5.0.38.jar                          | None                                     |
+	| UCHIJAAAA | refinedstorage                    | 1.6.12            | refinedstorage-1.6.12.jar                          | 57893d5b90a7336e8c63fe1c1e1ce472c3d59578 |
+	| UCHIJAAAA | enderioconduitsrefinedstorage     | 5.0.38            | EnderIO-1.12.2-5.0.38.jar                          | None                                     |
+	| UCHIJAAAA | forestry                          | 5.8.1.322         | forestry_1.12.2-5.8.1.322.jar                      | None                                     |
+	| UCHIJAAAA | enderiointegrationforestry        | 5.0.38            | EnderIO-1.12.2-5.0.38.jar                          | None                                     |
+	| UCHIJAAAA | mantle                            | 1.12-1.3.3.39     | Mantle-1.12-1.3.3.39.jar                           | None                                     |
+	| UCHIJAAAA | twilightforest                    | 3.8.689           | twilightforest-1.12.2-3.8.689-universal.jar        | None                                     |
+	| UCHIJAAAA | tconstruct                        | 1.12.2-2.11.0.106 | TConstruct-1.12.2-2.11.0.106.jar                   | None                                     |
+	| UCHIJAAAA | enderiointegrationticlate         | 5.0.38            | EnderIO-1.12.2-5.0.38.jar                          | None                                     |
+	| UCHIJAAAA | enderiomachines                   | 5.0.38            | EnderIO-1.12.2-5.0.38.jar                          | None                                     |
+	| UCHIJAAAA | enderiopowertools                 | 5.0.38            | EnderIO-1.12.2-5.0.38.jar                          | None                                     |
+	| UCHIJAAAA | enderstorage                      | 2.4.5.135         | EnderStorage-1.12.2-2.4.5.135-universal.jar        | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| UCHIJAAAA | valkyrielib                       | 1.12.2-2.0.18.3   | valkyrielib-1.12.2-2.0.18.3.jar                    | None                                     |
+	| UCHIJAAAA | environmentaltech                 | 1.12.2-2.0.18.2   | environmentaltech-1.12.2-2.0.18.2.jar              | None                                     |
+	| UCHIJAAAA | extracells                        | 2.6.1             | ExtraCells-1.12.2-2.6.1a.jar                       | None                                     |
+	| UCHIJAAAA | extrautils2                       | 1.0               | extrautils2-1.12-1.9.8.jar                         | None                                     |
+	| UCHIJAAAA | zerocore                          | 1.12-0.1.2.3      | zerocore-1.12-0.1.2.3.jar                          | None                                     |
+	| UCHIJAAAA | bigreactors                       | 1.12.2-0.4.5.50   | ExtremeReactors-1.12.2-0.4.5.50.jar                | None                                     |
+	| UCHIJAAAA | forgelin                          | 1.8.2             | Forgelin-1.8.2.jar                                 | None                                     |
+	| UCHIJAAAA | teslacorelib                      | 1.0.15            | tesla-core-lib-1.12.2-1.0.15.jar                   | d476d1b22b218a10d845928d1665d45fce301b27 |
+	| UCHIJAAAA | industrialforegoing               | 1.12.2-1.12.2     | industrialforegoing-1.12.2-1.11.10-223.jar         | None                                     |
+	| UCHIJAAAA | ironbackpacks                     | 1.12.2-3.0.8-12   | IronBackpacks-1.12.2-3.0.8-12.jar                  | None                                     |
+	| UCHIJAAAA | ironchest                         | 1.12.2-7.0.54.838 | ironchest-1.12.2-7.0.54.838.jar                    | None                                     |
+	| UCHIJAAAA | journeymap                        | 1.12.2-5.5.3      | journeymap-1.12.2-5.5.3.jar                        | None                                     |
+	| UCHIJAAAA | mcjtylib_ng                       | 3.0.7             | mcjtylib-1.12-3.0.7.jar                            | None                                     |
+	| UCHIJAAAA | openmods                          | 0.12.1            | OpenModsLib-1.12.2-0.12.1.jar                      | d2a9a8e8440196e26a268d1f3ddc01b2e9c572a5 |
+	| UCHIJAAAA | openblocks                        | 1.8               | OpenBlocks-1.12.2-1.8.jar                          | d2a9a8e8440196e26a268d1f3ddc01b2e9c572a5 |
+	| UCHIJAAAA | harvestcraft                      | 1.12.2zb          | Pam's HarvestCraft 1.12.2zb.jar                    | None                                     |
+	| UCHIJAAAA | rftools                           | 7.59              | rftools-1.12-7.59.jar                              | None                                     |
+	| UCHIJAAAA | storagedrawers                    | 1.12-5.3.5        | StorageDrawers-1.12.2-5.3.8.jar                    | None                                     |
+	| UCHIJAAAA | thermaldynamics                   | 2.5.3             | ThermalDynamics-1.12.2-2.5.3.16-universal.jar      | 8a6abf2cb9e141b866580d369ba6548732eff25f |
+	| UCHIJAAAA | universalmodifiers                | 1.12.2-1.0.16.1   | valkyrielib-1.12.2-2.0.18.3.jar                    | None                                     |
+	| UCHIJAAAA | teslacorelib_registries           | 1.0.15            | tesla-core-lib-1.12.2-1.0.15.jar                   | None                                     |
+
+	Loaded coremods (and transformers): 
+EnderCorePlugin (EnderCore-1.12.2-0.5.43.jar)
+  com.enderio.core.common.transform.EnderCoreTransformer
+  com.enderio.core.common.transform.SimpleMixinPatcher
+ForgelinPlugin (Forgelin-1.8.2.jar)
+  
+OpenModsCorePlugin (OpenModsLib-1.12.2-0.12.1.jar)
+  openmods.core.OpenModsClassTransformer
+CTMCorePlugin (CTM-MC1.12.2-0.3.3.22.jar)
+  team.chisel.ctm.client.asm.CTMTransformer
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 417.22' Renderer: 'GeForce GTX 1070/PCIe/SSE2'
+	OpenModsLib class transformers: [llama_null_fix:FINISHED],[horse_base_null_fix:FINISHED],[pre_world_render_hook:FINISHED],[player_render_hook:FINISHED],[horse_null_fix:FINISHED]
+	AE2 Version: stable rv6-stable-4 for Forge 14.23.5.2768
+	Pulsar/tconstruct loaded Pulses: 
+		- TinkerCommons (Enabled/Forced)
+		- TinkerWorld (Enabled/Not Forced)
+		- TinkerTools (Enabled/Not Forced)
+		- TinkerHarvestTools (Enabled/Forced)
+		- TinkerMeleeWeapons (Enabled/Forced)
+		- TinkerRangedWeapons (Enabled/Forced)
+		- TinkerModifiers (Enabled/Forced)
+		- TinkerSmeltery (Enabled/Not Forced)
+		- TinkerGadgets (Enabled/Not Forced)
+		- TinkerOredict (Enabled/Forced)
+		- TinkerIntegration (Enabled/Forced)
+		- TinkerFluids (Enabled/Forced)
+		- TinkerMaterials (Enabled/Forced)
+		- TinkerModelRegister (Enabled/Forced)
+		- chiselIntegration (Enabled/Not Forced)
+		- chiselsandbitsIntegration (Enabled/Not Forced)
+		- theoneprobeIntegration (Enabled/Not Forced)
+
+	Ender IO: No known problems detected.
+
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!You are looking at the diagnostics information, not at the crash.       !!!
+	!!!Scroll up until you see the line with '---- Minecraft Crash Report ----'!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+	AE2 Integration: IC2:OFF, RC:OFF, MFR:OFF, Waila:OFF, InvTweaks:OFF, JEI:ON, Mekanism:OFF, OpenComputers:OFF, THE_ONE_PROBE:ON, TESLA:OFF, CRAFTTWEAKER:OFF
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: GeForce GTX 1070/PCIe/SSE2 GL version 4.6.0 NVIDIA 417.22, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 16x AMD Ryzen 7 1700X Eight-Core Processor 
