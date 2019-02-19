@@ -1206,7 +1206,7 @@ Class Start: superscary.heavyinventories.client.gui.ModGuiFactory
 Class End  : superscary.heavyinventories.client.gui.ModGuiFactory
 endProcessing "superscary\heavyinventories\client\gui\ModGuiFactory.java"
 
-startProcessing "superscary\heavyinventories\client\gui\Toast.java" md5: 2996218ad37f1a6a7482da6813dd02f9
+startProcessing "superscary\heavyinventories\client\gui\Toast.java" md5: c791178431eb888a19bd6bc0d6ec733a
 Cache Hit!
 @|superscary\heavyinventories\client\gui\Toast.java|8|46|superscary.heavyinventories.client.gui|package|superscary.heavyinventories.client.gui|(file)
 Class Start: superscary.heavyinventories.client.gui.Toast
@@ -1252,7 +1252,7 @@ Class Start: superscary.heavyinventories.client.gui.Toast
       @|superscary\heavyinventories\client\gui\Toast.java|1007|1025|renderTextToScreen|method|superscary.heavyinventories.client.gui.Toast|renderTextToScreen|(Lnet/minecraft/client/Minecraft;Ljava/lang/String;)V
       @|superscary\heavyinventories\client\gui\Toast.java|1026|1035|Minecraft|class|net.minecraft.client.Minecraft
       @|superscary\heavyinventories\client\gui\Toast.java|1047|1053|String|class|java.lang.String
-      @|superscary\heavyinventories\client\gui\Toast.java|1074|1083|minecraft|param|superscary.heavyinventories.client.gui.Toast|renderTextToScreen|(Lnet/minecraft/client/Minecraft;Ljava/lang/String;)V|minecraft|0
+      @|superscary\heavyinventories\client\gui\Toast.java|1074|1083|Minecraft|class|net.minecraft.client.Minecraft
       @|superscary\heavyinventories\client\gui\Toast.java|1084|1096|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
       @|superscary\heavyinventories\client\gui\Toast.java|1099|1109|mcProfiler|field|net.minecraft.client.Minecraft|mcProfiler
       @|superscary\heavyinventories\client\gui\Toast.java|1110|1122|startSection|method|net.minecraft.profiler.Profiler|startSection|(Ljava/lang/String;)V
@@ -1322,7 +1322,7 @@ Class Start: superscary.heavyinventories.client.gui.Toast
 Class End  : superscary.heavyinventories.client.gui.Toast
 endProcessing "superscary\heavyinventories\client\gui\Toast.java"
 
-startProcessing "superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java" md5: 2653b74eec748ee6d367246bc531631c
+startProcessing "superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java" md5: 9b02c519affa0b003d441e99b3224171
 Cache Hit!
 @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|8|52|superscary.heavyinventories.client.gui.meter|package|superscary.heavyinventories.client.gui.meter|(file)
 Class Start: superscary.heavyinventories.client.gui.meter.GuiDrawMeter
@@ -1332,58 +1332,55 @@ Class Start: superscary.heavyinventories.client.gui.meter.GuiDrawMeter
    @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1038|1050|GuiDrawMeter|class|superscary.heavyinventories.client.gui.meter.GuiDrawMeter
    @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1059|1062|Gui|class|net.minecraft.client.gui.Gui
    Method Start: GuiDrawMeter(Lnet/minecraft/client/Minecraft;)V
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1097|1106|minecraft|param|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|GuiDrawMeter|(Lnet/minecraft/client/Minecraft;)V|minecraft|0
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1074|1086|GuiDrawMeter|method|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|GuiDrawMeter|(Lnet/minecraft/client/Minecraft;)V
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1087|1096|Minecraft|class|net.minecraft.client.Minecraft
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1113|1124|renderMeter|method|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|renderMeter|(Lnet/minecraft/client/Minecraft;)V
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1125|1134|minecraft|param|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|GuiDrawMeter|(Lnet/minecraft/client/Minecraft;)V|minecraft|0
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1100|1109|minecraft|param|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|GuiDrawMeter|(Lnet/minecraft/client/Minecraft;)V|minecraft|0
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1077|1089|GuiDrawMeter|method|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|GuiDrawMeter|(Lnet/minecraft/client/Minecraft;)V
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1090|1099|Minecraft|class|net.minecraft.client.Minecraft
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1125|1136|renderMeter|method|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|renderMeter|(Lnet/minecraft/client/Minecraft;)V
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1137|1146|minecraft|param|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|GuiDrawMeter|(Lnet/minecraft/client/Minecraft;)V|minecraft|0
    Method End: GuiDrawMeter(Lnet/minecraft/client/Minecraft;)V
    Method Start: renderMeter(Lnet/minecraft/client/Minecraft;)V
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1176|1185|minecraft|param|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|renderMeter|(Lnet/minecraft/client/Minecraft;)V|minecraft|0
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1154|1165|renderMeter|method|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|renderMeter|(Lnet/minecraft/client/Minecraft;)V
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1166|1175|Minecraft|class|net.minecraft.client.Minecraft
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1196|1218|HeavyInventoriesConfig|class|superscary.heavyinventories.configs.HeavyInventoriesConfig
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1219|1232|showWeightBar|field|superscary.heavyinventories.configs.HeavyInventoriesConfig|showWeightBar
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1241|1257|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1281|1297|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1298|1307|minecraft|param|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|renderMeter|(Lnet/minecraft/client/Minecraft;)V|minecraft|0
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1313|1329|ResourceLocation|class|net.minecraft.util.ResourceLocation
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1353|1369|ResourceLocation|class|net.minecraft.util.ResourceLocation
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1400|1409|minecraft|param|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|renderMeter|(Lnet/minecraft/client/Minecraft;)V|minecraft|0
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1410|1420|mcProfiler|field|net.minecraft.client.Minecraft|mcProfiler
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1421|1433|startSection|method|net.minecraft.profiler.Profiler|startSection|(Ljava/lang/String;)V
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1453|1462|minecraft|param|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|renderMeter|(Lnet/minecraft/client/Minecraft;)V|minecraft|0
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1463|1480|getTextureManager|method|net.minecraft.client.Minecraft|getTextureManager|()Lnet/minecraft/client/renderer/texture/TextureManager;
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1483|1494|bindTexture|method|net.minecraft.client.renderer.texture.TextureManager|bindTexture|(Lnet/minecraft/util/ResourceLocation;)V
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1518|1528|IWeighable|class|superscary.heavyinventories.common.capability.weight.IWeighable
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1541|1550|minecraft|param|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|renderMeter|(Lnet/minecraft/client/Minecraft;)V|minecraft|0
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1551|1557|player|field|net.minecraft.client.Minecraft|player
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1558|1571|getCapability|method|net.minecraftforge.common.capabilities.ICapabilityProvider|getCapability|(Lnet/minecraftforge/common/capabilities/Capability;Lnet/minecraft/util/EnumFacing;)Ljava/lang/Object;
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1572|1586|WeightProvider|class|superscary.heavyinventories.common.capability.weight.WeightProvider
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1587|1607|WEIGHABLE_CAPABILITY|field|superscary.heavyinventories.common.capability.weight.WeightProvider|WEIGHABLE_CAPABILITY
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1643|1655|getMaxWeight|method|superscary.heavyinventories.common.capability.weight.IWeighable|getMaxWeight|()D
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1686|1695|getWeight|method|superscary.heavyinventories.common.capability.weight.IWeighable|getWeight|()D
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1716|1725|minecraft|param|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|renderMeter|(Lnet/minecraft/client/Minecraft;)V|minecraft|0
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1726|1732|player|field|net.minecraft.client.Minecraft|player
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1733|1746|getCapability|method|net.minecraftforge.common.capabilities.ICapabilityProvider|getCapability|(Lnet/minecraftforge/common/capabilities/Capability;Lnet/minecraft/util/EnumFacing;)Ljava/lang/Object;
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1747|1761|WeightProvider|class|superscary.heavyinventories.common.capability.weight.WeightProvider
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1762|1782|WEIGHABLE_CAPABILITY|field|superscary.heavyinventories.common.capability.weight.WeightProvider|WEIGHABLE_CAPABILITY
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1790|1799|getWeight|method|superscary.heavyinventories.common.capability.weight.IWeighable|getWeight|()D
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1963|1978|getScaledHeight|method|net.minecraft.client.gui.ScaledResolution|getScaledHeight|()I
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2064|2070|System|class|java.lang.System
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2071|2074|out|field|java.lang.System|out
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2075|2082|println|method|java.io.PrintStream|println|(I)V
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2116|2132|isOverEncumbered|method|superscary.heavyinventories.common.capability.weight.IWeighable|isOverEncumbered|()Z
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2149|2170|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2188|2202|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2273|2285|isEncumbered|method|superscary.heavyinventories.common.capability.weight.IWeighable|isEncumbered|()Z
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2302|2323|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2341|2355|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2425|2446|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2464|2478|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2540|2549|minecraft|param|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|renderMeter|(Lnet/minecraft/client/Minecraft;)V|minecraft|0
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2550|2560|mcProfiler|field|net.minecraft.client.Minecraft|mcProfiler
-      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2561|2571|endSection|method|net.minecraft.profiler.Profiler|endSection|()V
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1194|1203|minecraft|param|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|renderMeter|(Lnet/minecraft/client/Minecraft;)V|minecraft|0
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1172|1183|renderMeter|method|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|renderMeter|(Lnet/minecraft/client/Minecraft;)V
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1184|1193|Minecraft|class|net.minecraft.client.Minecraft
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1223|1245|HeavyInventoriesConfig|class|superscary.heavyinventories.configs.HeavyInventoriesConfig
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1246|1259|showWeightBar|field|superscary.heavyinventories.configs.HeavyInventoriesConfig|showWeightBar
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1283|1299|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1323|1339|ScaledResolution|class|net.minecraft.client.gui.ScaledResolution
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1340|1349|minecraft|param|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|renderMeter|(Lnet/minecraft/client/Minecraft;)V|minecraft|0
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1364|1380|ResourceLocation|class|net.minecraft.util.ResourceLocation
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1404|1420|ResourceLocation|class|net.minecraft.util.ResourceLocation
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1460|1469|minecraft|param|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|renderMeter|(Lnet/minecraft/client/Minecraft;)V|minecraft|0
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1470|1480|mcProfiler|field|net.minecraft.client.Minecraft|mcProfiler
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1481|1493|startSection|method|net.minecraft.profiler.Profiler|startSection|(Ljava/lang/String;)V
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1522|1531|minecraft|param|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|renderMeter|(Lnet/minecraft/client/Minecraft;)V|minecraft|0
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1532|1549|getTextureManager|method|net.minecraft.client.Minecraft|getTextureManager|()Lnet/minecraft/client/renderer/texture/TextureManager;
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1552|1563|bindTexture|method|net.minecraft.client.renderer.texture.TextureManager|bindTexture|(Lnet/minecraft/util/ResourceLocation;)V
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1596|1606|IWeighable|class|superscary.heavyinventories.common.capability.weight.IWeighable
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1619|1628|minecraft|param|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|renderMeter|(Lnet/minecraft/client/Minecraft;)V|minecraft|0
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1629|1635|player|field|net.minecraft.client.Minecraft|player
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1636|1649|getCapability|method|net.minecraftforge.common.capabilities.ICapabilityProvider|getCapability|(Lnet/minecraftforge/common/capabilities/Capability;Lnet/minecraft/util/EnumFacing;)Ljava/lang/Object;
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1650|1664|WeightProvider|class|superscary.heavyinventories.common.capability.weight.WeightProvider
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1665|1685|WEIGHABLE_CAPABILITY|field|superscary.heavyinventories.common.capability.weight.WeightProvider|WEIGHABLE_CAPABILITY
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1730|1742|getMaxWeight|method|superscary.heavyinventories.common.capability.weight.IWeighable|getMaxWeight|()D
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1782|1791|getWeight|method|superscary.heavyinventories.common.capability.weight.IWeighable|getWeight|()D
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1821|1830|minecraft|param|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|renderMeter|(Lnet/minecraft/client/Minecraft;)V|minecraft|0
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1831|1837|player|field|net.minecraft.client.Minecraft|player
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1838|1851|getCapability|method|net.minecraftforge.common.capabilities.ICapabilityProvider|getCapability|(Lnet/minecraftforge/common/capabilities/Capability;Lnet/minecraft/util/EnumFacing;)Ljava/lang/Object;
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1852|1866|WeightProvider|class|superscary.heavyinventories.common.capability.weight.WeightProvider
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1867|1887|WEIGHABLE_CAPABILITY|field|superscary.heavyinventories.common.capability.weight.WeightProvider|WEIGHABLE_CAPABILITY
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|1895|1904|getWeight|method|superscary.heavyinventories.common.capability.weight.IWeighable|getWeight|()D
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2125|2140|getScaledHeight|method|net.minecraft.client.gui.ScaledResolution|getScaledHeight|()I
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2315|2331|isOverEncumbered|method|superscary.heavyinventories.common.capability.weight.IWeighable|isOverEncumbered|()Z
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2381|2402|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2420|2434|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2515|2527|isEncumbered|method|superscary.heavyinventories.common.capability.weight.IWeighable|isEncumbered|()Z
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2577|2598|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2616|2630|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2743|2764|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2782|2796|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2903|2912|minecraft|param|superscary.heavyinventories.client.gui.meter.GuiDrawMeter|renderMeter|(Lnet/minecraft/client/Minecraft;)V|minecraft|0
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2913|2923|mcProfiler|field|net.minecraft.client.Minecraft|mcProfiler
+      @|superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java|2924|2934|endSection|method|net.minecraft.profiler.Profiler|endSection|()V
    Method End: renderMeter(Lnet/minecraft/client/Minecraft;)V
 Class End  : superscary.heavyinventories.client.gui.meter.GuiDrawMeter
 endProcessing "superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java"
@@ -2429,7 +2426,7 @@ Class Start: superscary.heavyinventories.compat.mods.ironbackpacks.HIIronBackpac
 Class End  : superscary.heavyinventories.compat.mods.ironbackpacks.HIIronBackpacksConfig
 endProcessing "superscary\heavyinventories\compat\mods\ironbackpacks\HIIronBackpacksConfig.java"
 
-startProcessing "superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java" md5: fb9312c0d6d8449448b68317b81bca14
+startProcessing "superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java" md5: 6bfcb8c61ceb6a4372b65b47bac34883
 Cache Hit!
     Compile Error! Pb(390) The import mcjty cannot be resolved
     Compile Error! Pb(390) The import mcjty cannot be resolved
@@ -2470,53 +2467,66 @@ Class Start: superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvid
       @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1819|1827|getBlock|method|net.minecraft.block.state.IBlockState|getBlock|()Lnet/minecraft/block/Block;
       @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1854|1861|Toolkit|class|superscary.heavyinventories.util.Toolkit
       @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1862|1873|roundDouble|method|superscary.heavyinventories.util.Toolkit|roundDouble|(DI)D
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1874|1896|PlayerWeightCalculator|class|superscary.heavyinventories.calc.PlayerWeightCalculator
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1897|1906|getWeight|method|superscary.heavyinventories.calc.PlayerWeightCalculator|getWeight|(Lnet/minecraft/item/ItemStack;)D
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1911|1920|ItemStack|class|net.minecraft.item.ItemStack
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1921|1925|Item|class|net.minecraft.item.Item
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1926|1942|getItemFromBlock|method|net.minecraft.item.Item|getItemFromBlock|(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1959|1963|info|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|addProbeInfo|(ProbeModeIProbeInfoLnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/block/state/IBlockState;IProbeHitData)V|info|1
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1874|1890|getWeightOfBlock|method|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getWeightOfBlock|(Lnet/minecraft/block/Block;)D
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1905|1909|info|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|addProbeInfo|(ProbeModeIProbeInfoLnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/block/state/IBlockState;IProbeHitData)V|info|1
       ERROR SimpleName: horizontal null
       ERROR SimpleName: text null
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1982|1994|getColorText|method|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1995|2001|player|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|addProbeInfo|(ProbeModeIProbeInfoLnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/block/state/IBlockState;IProbeHitData)V|player|2
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2028|2032|info|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|addProbeInfo|(ProbeModeIProbeInfoLnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/block/state/IBlockState;IProbeHitData)V|info|1
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1928|1940|getColorText|method|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1941|1947|player|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|addProbeInfo|(ProbeModeIProbeInfoLnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/block/state/IBlockState;IProbeHitData)V|player|2
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1974|1978|info|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|addProbeInfo|(ProbeModeIProbeInfoLnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/block/state/IBlockState;IProbeHitData)V|info|1
       ERROR SimpleName: defaultTextStyle null
    Method End: addProbeInfo(ProbeModeIProbeInfoLnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/block/state/IBlockState;IProbeHitData)V
    Method Start: getColorText(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2318|2324|player|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|player|0
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2333|2344|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2285|2291|String|class|java.lang.String
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2292|2304|getColorText|method|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2305|2317|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2351|2361|IWeighable|class|superscary.heavyinventories.common.capability.weight.IWeighable
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2374|2380|player|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|player|0
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2381|2394|getCapability|method|net.minecraftforge.common.capabilities.ICapabilityProvider|getCapability|(Lnet/minecraftforge/common/capabilities/Capability;Lnet/minecraft/util/EnumFacing;)Ljava/lang/Object;
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2395|2409|WeightProvider|class|superscary.heavyinventories.common.capability.weight.WeightProvider
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2410|2430|WEIGHABLE_CAPABILITY|field|superscary.heavyinventories.common.capability.weight.WeightProvider|WEIGHABLE_CAPABILITY
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2441|2448|IOffset|class|superscary.heavyinventories.common.capability.offsets.IOffset
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2458|2464|player|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|player|0
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2465|2478|getCapability|method|net.minecraftforge.common.capabilities.ICapabilityProvider|getCapability|(Lnet/minecraftforge/common/capabilities/Capability;Lnet/minecraft/util/EnumFacing;)Ljava/lang/Object;
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2479|2493|OffsetProvider|class|superscary.heavyinventories.common.capability.offsets.OffsetProvider
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2494|2511|OFFSET_CAPABILITY|field|superscary.heavyinventories.common.capability.offsets.OffsetProvider|OFFSET_CAPABILITY
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2557|2569|getMaxWeight|method|superscary.heavyinventories.common.capability.weight.IWeighable|getMaxWeight|()D
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2581|2590|getOffset|method|superscary.heavyinventories.common.capability.offsets.IOffset|getOffset|()D
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2652|2658|player|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|player|0
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2659|2669|isCreative|method|net.minecraft.entity.player.EntityPlayer|isCreative|()Z
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2675|2697|HeavyInventoriesConfig|class|superscary.heavyinventories.configs.HeavyInventoriesConfig
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2698|2713|allowInCreative|field|superscary.heavyinventories.configs.HeavyInventoriesConfig|allowInCreative
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2729|2743|TextFormatting|class|net.minecraft.util.text.TextFormatting
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2744|2750|ITALIC|field|net.minecraft.util.text.TextFormatting|ITALIC
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2758|2769|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2878|2887|getWeight|method|superscary.heavyinventories.common.capability.weight.IWeighable|getWeight|()D
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2892|2903|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2942|2953|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3086|3095|getWeight|method|superscary.heavyinventories.common.capability.weight.IWeighable|getWeight|()D
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3100|3111|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3146|3160|TextFormatting|class|net.minecraft.util.text.TextFormatting
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3161|3164|RED|field|net.minecraft.util.text.TextFormatting|RED
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3172|3183|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2264|2270|player|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|player|0
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2279|2290|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2231|2237|String|class|java.lang.String
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2238|2250|getColorText|method|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2251|2263|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2297|2307|IWeighable|class|superscary.heavyinventories.common.capability.weight.IWeighable
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2320|2326|player|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|player|0
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2327|2340|getCapability|method|net.minecraftforge.common.capabilities.ICapabilityProvider|getCapability|(Lnet/minecraftforge/common/capabilities/Capability;Lnet/minecraft/util/EnumFacing;)Ljava/lang/Object;
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2341|2355|WeightProvider|class|superscary.heavyinventories.common.capability.weight.WeightProvider
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2356|2376|WEIGHABLE_CAPABILITY|field|superscary.heavyinventories.common.capability.weight.WeightProvider|WEIGHABLE_CAPABILITY
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2387|2394|IOffset|class|superscary.heavyinventories.common.capability.offsets.IOffset
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2404|2410|player|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|player|0
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2411|2424|getCapability|method|net.minecraftforge.common.capabilities.ICapabilityProvider|getCapability|(Lnet/minecraftforge/common/capabilities/Capability;Lnet/minecraft/util/EnumFacing;)Ljava/lang/Object;
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2425|2439|OffsetProvider|class|superscary.heavyinventories.common.capability.offsets.OffsetProvider
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2440|2457|OFFSET_CAPABILITY|field|superscary.heavyinventories.common.capability.offsets.OffsetProvider|OFFSET_CAPABILITY
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2503|2515|getMaxWeight|method|superscary.heavyinventories.common.capability.weight.IWeighable|getMaxWeight|()D
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2527|2536|getOffset|method|superscary.heavyinventories.common.capability.offsets.IOffset|getOffset|()D
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2598|2604|player|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|player|0
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2605|2615|isCreative|method|net.minecraft.entity.player.EntityPlayer|isCreative|()Z
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2621|2643|HeavyInventoriesConfig|class|superscary.heavyinventories.configs.HeavyInventoriesConfig
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2644|2659|allowInCreative|field|superscary.heavyinventories.configs.HeavyInventoriesConfig|allowInCreative
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2675|2689|TextFormatting|class|net.minecraft.util.text.TextFormatting
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2690|2696|ITALIC|field|net.minecraft.util.text.TextFormatting|ITALIC
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2704|2715|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2824|2833|getWeight|method|superscary.heavyinventories.common.capability.weight.IWeighable|getWeight|()D
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2838|2849|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2888|2899|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3032|3041|getWeight|method|superscary.heavyinventories.common.capability.weight.IWeighable|getWeight|()D
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3046|3057|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3092|3106|TextFormatting|class|net.minecraft.util.text.TextFormatting
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3107|3110|RED|field|net.minecraft.util.text.TextFormatting|RED
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3118|3129|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
    Method End: getColorText(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;
+   Method Start: getWeightOfBlock(Lnet/minecraft/block/Block;)D
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3267|3272|block|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getWeightOfBlock|(Lnet/minecraft/block/Block;)D|block|0
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3244|3260|getWeightOfBlock|method|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getWeightOfBlock|(Lnet/minecraft/block/Block;)D
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3261|3266|Block|class|net.minecraft.block.Block
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3279|3285|String|class|java.lang.String
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3294|3301|Toolkit|class|superscary.heavyinventories.util.Toolkit
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3302|3321|getModNameFromBlock|method|superscary.heavyinventories.util.Toolkit|getModNameFromBlock|(Lnet/minecraft/block/Block;)Ljava/lang/String;
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3322|3327|block|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getWeightOfBlock|(Lnet/minecraft/block/Block;)D|block|0
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3342|3358|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3387|3409|PlayerWeightCalculator|class|superscary.heavyinventories.calc.PlayerWeightCalculator
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3410|3419|getWeight|method|superscary.heavyinventories.calc.PlayerWeightCalculator|getWeight|(Lnet/minecraft/item/ItemStack;)D
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3424|3433|ItemStack|class|net.minecraft.item.ItemStack
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3434|3439|block|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getWeightOfBlock|(Lnet/minecraft/block/Block;)D|block|0
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3468|3490|PlayerWeightCalculator|class|superscary.heavyinventories.calc.PlayerWeightCalculator
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3491|3500|getWeight|method|superscary.heavyinventories.calc.PlayerWeightCalculator|getWeight|(Ljava/lang/String;Lnet/minecraft/block/Block;)D
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|3508|3513|block|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getWeightOfBlock|(Lnet/minecraft/block/Block;)D|block|0
+   Method End: getWeightOfBlock(Lnet/minecraft/block/Block;)D
 Class End  : superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider
 endProcessing "superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java"
 
@@ -2701,7 +2711,7 @@ Class Start: superscary.heavyinventories.configs.HeavyInventoriesConfig
 Class End  : superscary.heavyinventories.configs.HeavyInventoriesConfig
 endProcessing "superscary\heavyinventories\configs\HeavyInventoriesConfig.java"
 
-startProcessing "superscary\heavyinventories\configs\builder\ConfigBuilder.java" md5: fbb63fe57880e2067275c94b1279f8dc
+startProcessing "superscary\heavyinventories\configs\builder\ConfigBuilder.java" md5: c757875498b61b7a90e88857c55fc241
 Cache Hit!
 @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|8|51|superscary.heavyinventories.configs.builder|package|superscary.heavyinventories.configs.builder|(file)
 Class Start: superscary.heavyinventories.configs.builder.ConfigBuilder
@@ -2784,113 +2794,110 @@ Class Start: superscary.heavyinventories.configs.builder.ConfigBuilder
       @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2261|2264|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
       @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2265|2268|mod|field|superscary.heavyinventories.configs.builder.ConfigBuilder|mod
       @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2353|2363|loadConfig|method|superscary.heavyinventories.configs.builder.ConfigBuilder|loadConfig|()V
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2400|2415|checkBuiltFiles|method|superscary.heavyinventories.configs.builder.ConfigBuilder|checkBuiltFiles|(Ljava/util/ArrayList;Ljava/io/File;)V
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2426|2430|File|class|java.io.File
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2431|2435|file|field|superscary.heavyinventories.configs.builder.ConfigBuilder|file
    Method End: build(Ljava/lang/String;)V
    Method Start: loadConfig()V
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2501|2511|loadConfig|method|superscary.heavyinventories.configs.builder.ConfigBuilder|loadConfig|()V
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2528|2537|ArrayList|class|java.util.ArrayList
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2538|2544|String|class|java.lang.String
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2557|2566|ArrayList|class|java.util.ArrayList
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2585|2591|String|class|java.lang.String
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2596|2618|HeavyInventoriesConfig|class|superscary.heavyinventories.configs.HeavyInventoriesConfig
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2619|2630|ignoredMods|field|superscary.heavyinventories.configs.HeavyInventoriesConfig|ignoredMods
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2659|2662|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2696|2704|contains|method|java.util.Collection|contains|(Ljava/lang/Object;)Z
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2705|2711|config|field|superscary.heavyinventories.configs.builder.ConfigBuilder|config
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2712|2725|getConfigFile|method|net.minecraftforge.common.config.Configuration|getConfigFile|()Ljava/io/File;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2728|2735|getName|method|java.io.File|getName|()Ljava/lang/String;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2762|2768|config|field|superscary.heavyinventories.configs.builder.ConfigBuilder|config
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2769|2773|load|method|net.minecraftforge.common.config.Configuration|load|()V
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2795|2802|ignored|field|superscary.heavyinventories.configs.builder.ConfigBuilder|ignored
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2803|2811|contains|method|java.util.Collection|contains|(Ljava/lang/Object;)Z
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2812|2818|config|field|superscary.heavyinventories.configs.builder.ConfigBuilder|config
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2819|2832|getConfigFile|method|net.minecraftforge.common.config.Configuration|getConfigFile|()Ljava/io/File;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2835|2842|getName|method|java.io.File|getName|()Ljava/lang/String;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2877|2881|List|class|java.util.List
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2882|2886|Item|class|net.minecraft.item.Item
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2899|2912|ImmutableList|class|com.google.common.collect.ImmutableList
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2913|2919|copyOf|method|com.google.common.collect.ImmutableList|copyOf|(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2920|2924|Item|class|net.minecraft.item.Item
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2925|2933|REGISTRY|field|net.minecraft.item.Item|REGISTRY
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2957|2961|Item|class|net.minecraft.item.Item
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3026|3041|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3044|3061|getResourceDomain|method|net.minecraft.util.ResourceLocation|getResourceDomain|()Ljava/lang/String;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3064|3080|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3081|3084|mod|field|superscary.heavyinventories.configs.builder.ConfigBuilder|mod
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3133|3139|Logger|class|superscary.heavyinventories.util.Logger
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3140|3143|log|method|superscary.heavyinventories.util.Logger|log|(Lorg/apache/logging/log4j/Level;Ljava/lang/String;[Ljava/lang/Object;)V
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3144|3149|Level|class|org.apache.logging.log4j.Level
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3150|3154|INFO|field|org.apache.logging.log4j.Level|INFO
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3197|3212|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3215|3223|toString|method|java.lang.Object|toString|()Ljava/lang/String;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3227|3230|mod|field|superscary.heavyinventories.configs.builder.ConfigBuilder|mod
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3257|3263|config|field|superscary.heavyinventories.configs.builder.ConfigBuilder|config
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3264|3272|getFloat|method|net.minecraftforge.common.config.Configuration|getFloat|(Ljava/lang/String;Ljava/lang/String;FFFLjava/lang/String;)F
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3278|3293|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3296|3304|toString|method|java.lang.Object|toString|()Ljava/lang/String;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3307|3312|split|method|java.lang.String|split|(Ljava/lang/String;)[Ljava/lang/String;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3322|3329|GENERAL|field|superscary.heavyinventories.configs.builder.ConfigBuilder|GENERAL
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3339|3361|HeavyInventoriesConfig|class|superscary.heavyinventories.configs.HeavyInventoriesConfig
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3362|3376|DEFAULT_WEIGHT|field|superscary.heavyinventories.configs.HeavyInventoriesConfig|DEFAULT_WEIGHT
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3459|3474|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3536|3540|List|class|java.util.List
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3541|3546|Block|class|net.minecraft.block.Block
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3560|3573|ImmutableList|class|com.google.common.collect.ImmutableList
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3574|3580|copyOf|method|com.google.common.collect.ImmutableList|copyOf|(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3581|3586|Block|class|net.minecraft.block.Block
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3587|3595|REGISTRY|field|net.minecraft.block.Block|REGISTRY
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3619|3624|Block|class|net.minecraft.block.Block
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3692|3707|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3710|3727|getResourceDomain|method|net.minecraft.util.ResourceLocation|getResourceDomain|()Ljava/lang/String;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3730|3746|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3747|3750|mod|field|superscary.heavyinventories.configs.builder.ConfigBuilder|mod
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3799|3805|Logger|class|superscary.heavyinventories.util.Logger
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3806|3809|log|method|superscary.heavyinventories.util.Logger|log|(Lorg/apache/logging/log4j/Level;Ljava/lang/String;[Ljava/lang/Object;)V
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3810|3815|Level|class|org.apache.logging.log4j.Level
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3816|3820|INFO|field|org.apache.logging.log4j.Level|INFO
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3864|3879|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3882|3890|toString|method|java.lang.Object|toString|()Ljava/lang/String;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3894|3897|mod|field|superscary.heavyinventories.configs.builder.ConfigBuilder|mod
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3924|3930|config|field|superscary.heavyinventories.configs.builder.ConfigBuilder|config
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3931|3939|getFloat|method|net.minecraftforge.common.config.Configuration|getFloat|(Ljava/lang/String;Ljava/lang/String;FFFLjava/lang/String;)F
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3946|3961|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3964|3972|toString|method|java.lang.Object|toString|()Ljava/lang/String;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3975|3980|split|method|java.lang.String|split|(Ljava/lang/String;)[Ljava/lang/String;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3990|3997|GENERAL|field|superscary.heavyinventories.configs.builder.ConfigBuilder|GENERAL
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4039|4061|HeavyInventoriesConfig|class|superscary.heavyinventories.configs.HeavyInventoriesConfig
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4062|4076|DEFAULT_WEIGHT|field|superscary.heavyinventories.configs.HeavyInventoriesConfig|DEFAULT_WEIGHT
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4129|4144|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4216|4222|config|field|superscary.heavyinventories.configs.builder.ConfigBuilder|config
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4223|4227|save|method|net.minecraftforge.common.config.Configuration|save|()V
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4243|4254|addToConfig|method|superscary.heavyinventories.configs.builder.ConfigBuilder|addToConfig|()V
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2422|2432|loadConfig|method|superscary.heavyinventories.configs.builder.ConfigBuilder|loadConfig|()V
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2449|2458|ArrayList|class|java.util.ArrayList
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2459|2465|String|class|java.lang.String
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2478|2487|ArrayList|class|java.util.ArrayList
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2506|2512|String|class|java.lang.String
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2517|2539|HeavyInventoriesConfig|class|superscary.heavyinventories.configs.HeavyInventoriesConfig
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2540|2551|ignoredMods|field|superscary.heavyinventories.configs.HeavyInventoriesConfig|ignoredMods
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2580|2583|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2617|2625|contains|method|java.util.Collection|contains|(Ljava/lang/Object;)Z
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2626|2632|config|field|superscary.heavyinventories.configs.builder.ConfigBuilder|config
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2633|2646|getConfigFile|method|net.minecraftforge.common.config.Configuration|getConfigFile|()Ljava/io/File;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2649|2656|getName|method|java.io.File|getName|()Ljava/lang/String;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2683|2689|config|field|superscary.heavyinventories.configs.builder.ConfigBuilder|config
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2690|2694|load|method|net.minecraftforge.common.config.Configuration|load|()V
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2716|2723|ignored|field|superscary.heavyinventories.configs.builder.ConfigBuilder|ignored
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2724|2732|contains|method|java.util.Collection|contains|(Ljava/lang/Object;)Z
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2733|2739|config|field|superscary.heavyinventories.configs.builder.ConfigBuilder|config
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2740|2753|getConfigFile|method|net.minecraftforge.common.config.Configuration|getConfigFile|()Ljava/io/File;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2756|2763|getName|method|java.io.File|getName|()Ljava/lang/String;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2798|2802|List|class|java.util.List
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2803|2807|Item|class|net.minecraft.item.Item
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2820|2833|ImmutableList|class|com.google.common.collect.ImmutableList
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2834|2840|copyOf|method|com.google.common.collect.ImmutableList|copyOf|(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2841|2845|Item|class|net.minecraft.item.Item
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2846|2854|REGISTRY|field|net.minecraft.item.Item|REGISTRY
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2878|2882|Item|class|net.minecraft.item.Item
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2947|2962|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2965|2982|getResourceDomain|method|net.minecraft.util.ResourceLocation|getResourceDomain|()Ljava/lang/String;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|2985|3001|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3002|3005|mod|field|superscary.heavyinventories.configs.builder.ConfigBuilder|mod
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3054|3060|Logger|class|superscary.heavyinventories.util.Logger
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3061|3064|log|method|superscary.heavyinventories.util.Logger|log|(Lorg/apache/logging/log4j/Level;Ljava/lang/String;[Ljava/lang/Object;)V
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3065|3070|Level|class|org.apache.logging.log4j.Level
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3071|3075|INFO|field|org.apache.logging.log4j.Level|INFO
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3118|3133|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3136|3144|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3148|3151|mod|field|superscary.heavyinventories.configs.builder.ConfigBuilder|mod
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3178|3184|config|field|superscary.heavyinventories.configs.builder.ConfigBuilder|config
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3185|3193|getFloat|method|net.minecraftforge.common.config.Configuration|getFloat|(Ljava/lang/String;Ljava/lang/String;FFFLjava/lang/String;)F
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3199|3214|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3217|3225|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3228|3233|split|method|java.lang.String|split|(Ljava/lang/String;)[Ljava/lang/String;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3243|3250|GENERAL|field|superscary.heavyinventories.configs.builder.ConfigBuilder|GENERAL
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3260|3282|HeavyInventoriesConfig|class|superscary.heavyinventories.configs.HeavyInventoriesConfig
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3283|3297|DEFAULT_WEIGHT|field|superscary.heavyinventories.configs.HeavyInventoriesConfig|DEFAULT_WEIGHT
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3380|3395|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3457|3461|List|class|java.util.List
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3462|3467|Block|class|net.minecraft.block.Block
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3481|3494|ImmutableList|class|com.google.common.collect.ImmutableList
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3495|3501|copyOf|method|com.google.common.collect.ImmutableList|copyOf|(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3502|3507|Block|class|net.minecraft.block.Block
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3508|3516|REGISTRY|field|net.minecraft.block.Block|REGISTRY
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3540|3545|Block|class|net.minecraft.block.Block
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3613|3628|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3631|3648|getResourceDomain|method|net.minecraft.util.ResourceLocation|getResourceDomain|()Ljava/lang/String;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3651|3667|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3668|3671|mod|field|superscary.heavyinventories.configs.builder.ConfigBuilder|mod
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3720|3726|Logger|class|superscary.heavyinventories.util.Logger
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3727|3730|log|method|superscary.heavyinventories.util.Logger|log|(Lorg/apache/logging/log4j/Level;Ljava/lang/String;[Ljava/lang/Object;)V
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3731|3736|Level|class|org.apache.logging.log4j.Level
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3737|3741|INFO|field|org.apache.logging.log4j.Level|INFO
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3785|3800|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3803|3811|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3815|3818|mod|field|superscary.heavyinventories.configs.builder.ConfigBuilder|mod
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3845|3851|config|field|superscary.heavyinventories.configs.builder.ConfigBuilder|config
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3852|3860|getFloat|method|net.minecraftforge.common.config.Configuration|getFloat|(Ljava/lang/String;Ljava/lang/String;FFFLjava/lang/String;)F
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3867|3882|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3885|3893|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3896|3901|split|method|java.lang.String|split|(Ljava/lang/String;)[Ljava/lang/String;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3911|3918|GENERAL|field|superscary.heavyinventories.configs.builder.ConfigBuilder|GENERAL
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3960|3982|HeavyInventoriesConfig|class|superscary.heavyinventories.configs.HeavyInventoriesConfig
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|3983|3997|DEFAULT_WEIGHT|field|superscary.heavyinventories.configs.HeavyInventoriesConfig|DEFAULT_WEIGHT
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4050|4065|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4137|4143|config|field|superscary.heavyinventories.configs.builder.ConfigBuilder|config
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4144|4148|save|method|net.minecraftforge.common.config.Configuration|save|()V
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4164|4175|addToConfig|method|superscary.heavyinventories.configs.builder.ConfigBuilder|addToConfig|()V
    Method End: loadConfig()V
    Method Start: checkBuiltFiles(Ljava/util/ArrayList;Ljava/io/File;)V
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4334|4338|list|param|superscary.heavyinventories.configs.builder.ConfigBuilder|checkBuiltFiles|(Ljava/util/ArrayList;Ljava/io/File;)V|list|0
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4345|4354|directory|param|superscary.heavyinventories.configs.builder.ConfigBuilder|checkBuiltFiles|(Ljava/util/ArrayList;Ljava/io/File;)V|directory|1
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4300|4315|checkBuiltFiles|method|superscary.heavyinventories.configs.builder.ConfigBuilder|checkBuiltFiles|(Ljava/util/ArrayList;Ljava/io/File;)V
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4316|4325|ArrayList|class|java.util.ArrayList
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4326|4332|String|class|java.lang.String
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4340|4344|File|class|java.io.File
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4370|4374|File|class|java.io.File
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4385|4394|directory|param|superscary.heavyinventories.configs.builder.ConfigBuilder|checkBuiltFiles|(Ljava/util/ArrayList;Ljava/io/File;)V|directory|1
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4395|4404|listFiles|method|java.io.File|listFiles|()[Ljava/io/File;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4255|4259|list|param|superscary.heavyinventories.configs.builder.ConfigBuilder|checkBuiltFiles|(Ljava/util/ArrayList;Ljava/io/File;)V|list|0
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4266|4275|directory|param|superscary.heavyinventories.configs.builder.ConfigBuilder|checkBuiltFiles|(Ljava/util/ArrayList;Ljava/io/File;)V|directory|1
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4221|4236|checkBuiltFiles|method|superscary.heavyinventories.configs.builder.ConfigBuilder|checkBuiltFiles|(Ljava/util/ArrayList;Ljava/io/File;)V
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4237|4246|ArrayList|class|java.util.ArrayList
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4247|4253|String|class|java.lang.String
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4261|4265|File|class|java.io.File
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4291|4295|File|class|java.io.File
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4306|4315|directory|param|superscary.heavyinventories.configs.builder.ConfigBuilder|checkBuiltFiles|(Ljava/util/ArrayList;Ljava/io/File;)V|directory|1
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4316|4325|listFiles|method|java.io.File|listFiles|()[Ljava/io/File;
       Field: Array Length, skipping
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4498|4502|list|param|superscary.heavyinventories.configs.builder.ConfigBuilder|checkBuiltFiles|(Ljava/util/ArrayList;Ljava/io/File;)V|list|0
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4503|4507|size|method|java.util.Collection|size|()I
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4559|4566|getName|method|java.io.File|getName|()Ljava/lang/String;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4569|4577|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4578|4582|list|param|superscary.heavyinventories.configs.builder.ConfigBuilder|checkBuiltFiles|(Ljava/util/ArrayList;Ljava/io/File;)V|list|0
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4583|4586|get|method|java.util.List|get|(I)Ljava/lang/Object;
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4639|4645|delete|method|java.io.File|delete|()Z
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4419|4423|list|param|superscary.heavyinventories.configs.builder.ConfigBuilder|checkBuiltFiles|(Ljava/util/ArrayList;Ljava/io/File;)V|list|0
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4424|4428|size|method|java.util.Collection|size|()I
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4480|4487|getName|method|java.io.File|getName|()Ljava/lang/String;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4490|4506|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4507|4511|list|param|superscary.heavyinventories.configs.builder.ConfigBuilder|checkBuiltFiles|(Ljava/util/ArrayList;Ljava/io/File;)V|list|0
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4512|4515|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4568|4574|delete|method|java.io.File|delete|()Z
    Method End: checkBuiltFiles(Ljava/util/ArrayList;Ljava/io/File;)V
    Method Start: addToConfig()V
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4722|4733|addToConfig|method|superscary.heavyinventories.configs.builder.ConfigBuilder|addToConfig|()V
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4750|4762|ConfigReader|class|superscary.heavyinventories.configs.reader.ConfigReader
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4763|4772|addConfig|method|superscary.heavyinventories.configs.reader.ConfigReader|addConfig|(Ljava/lang/String;Lnet/minecraftforge/common/config/Configuration;)V
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4773|4776|mod|field|superscary.heavyinventories.configs.builder.ConfigBuilder|mod
-      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4787|4793|config|field|superscary.heavyinventories.configs.builder.ConfigBuilder|config
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4651|4662|addToConfig|method|superscary.heavyinventories.configs.builder.ConfigBuilder|addToConfig|()V
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4679|4691|ConfigReader|class|superscary.heavyinventories.configs.reader.ConfigReader
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4692|4701|addConfig|method|superscary.heavyinventories.configs.reader.ConfigReader|addConfig|(Ljava/lang/String;Lnet/minecraftforge/common/config/Configuration;)V
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4702|4705|mod|field|superscary.heavyinventories.configs.builder.ConfigBuilder|mod
+      @|superscary\heavyinventories\configs\builder\ConfigBuilder.java|4716|4722|config|field|superscary.heavyinventories.configs.builder.ConfigBuilder|config
    Method End: addToConfig()V
 Class End  : superscary.heavyinventories.configs.builder.ConfigBuilder
 endProcessing "superscary\heavyinventories\configs\builder\ConfigBuilder.java"
@@ -3317,7 +3324,7 @@ Class Start: superscary.heavyinventories.server.ServerProxy
 Class End  : superscary.heavyinventories.server.ServerProxy
 endProcessing "superscary\heavyinventories\server\ServerProxy.java"
 
-startProcessing "superscary\heavyinventories\util\Constants.java" md5: ed8964358b4db32d3930eedac031c688
+startProcessing "superscary\heavyinventories\util\Constants.java" md5: b2ff49f5ce231dea707200138db7ecb7
 @|superscary\heavyinventories\util\Constants.java|8|40|superscary.heavyinventories.util|package|superscary.heavyinventories.util|(file)
 Class Start: superscary.heavyinventories.util.Constants
    @|superscary\heavyinventories\util\Constants.java|519|528|Constants|class|superscary.heavyinventories.util.Constants

@@ -80,7 +80,6 @@ public class ConfigBuilder
             }
         }
 
-        checkBuiltFiles(list, new File(file + "/Heavy Inventories/Weights/"));
     }
 
     public static void loadConfig()
@@ -134,7 +133,7 @@ public class ConfigBuilder
         {
             for (int j = 0; j < list.size(); j++)
             {
-                if (files[i].getName().contains(list.get(j)))
+                if (files[i].getName().equalsIgnoreCase(list.get(j)))
                 {
                     files[i].delete();
                 }

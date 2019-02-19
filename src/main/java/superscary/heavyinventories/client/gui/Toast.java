@@ -36,7 +36,7 @@ public class Toast extends Gui
 
     public static void renderTextToScreen(Minecraft minecraft, String text)
     {
-        minecraft.getMinecraft().mcProfiler.startSection("weightText");
+        Minecraft.getMinecraft().mcProfiler.startSection("weightText");
         ScaledResolution scaledResolution = new ScaledResolution(Minecraft.getMinecraft());
 
         int i = scaledResolution.getScaledWidth();

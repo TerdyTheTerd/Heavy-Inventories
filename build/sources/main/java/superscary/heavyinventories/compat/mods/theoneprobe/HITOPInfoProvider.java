@@ -44,7 +44,7 @@ public class HITOPInfoProvider implements IProbeInfoProvider
 	public void addProbeInfo(ProbeMode mode, IProbeInfo info, EntityPlayer player, World world, IBlockState state, IProbeHitData data)
 	{
 		Block block = state.getBlock();
-		double blockWeight = Toolkit.roundDouble(PlayerWeightCalculator.getWeight(new ItemStack(Item.getItemFromBlock(block))), 1);
+		double blockWeight = Toolkit.roundDouble(getWeightOfBlock(block), 1);
 		info.horizontal().text(getColorText(player, blockWeight) + " stone", info.defaultTextStyle());
 	}
 
@@ -85,6 +85,24 @@ public class HITOPInfoProvider implements IProbeInfoProvider
 
 		return null;
 
+	}
+
+	/**
+	 * Gets the weight of the block
+	 * @param block
+	 * @return
+	 */
+	private double getWeightOfBlock(Block block)
+	{
+		String modid = Toolkit.getModNameFromBlock(block);
+		if (modid.equalsIgnoreCase("minecraft"))
+		{
+			return PlayerWeightCalculator.getWeight(new ItemStack(block));
+		}
+		else
+		{
+			return PlayerWeightCalculator.getWeight(modid, block);
+		}
 	}
 
 }
