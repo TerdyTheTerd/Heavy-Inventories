@@ -1,6 +1,6 @@
 {
 
-	"homepage": "https://raw.githubusercontent.com/SuperScary/Heavy-Inventories/master/update.json",
+	"homepage": "https://minecraft.curseforge.com/projects/heavy-inventories",
 	"1.12.2": {
 		"2.3.2": "- Fixed deletion of weight files 
 				  - Fixed The One Probe compatability",

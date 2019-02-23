@@ -43,7 +43,7 @@ import static superscary.heavyinventories.util.Constants.*;
  */
 
 @SuppressWarnings("unused")
-@Mod(modid = MODID, version = VERSION, name = NAME, guiFactory = "superscary.heavyinventories.client.gui.ModGuiFactory", dependencies = SuperCore.SET_REQUIRED_AFTER)
+@Mod(modid = MODID, version = VERSION, name = NAME, guiFactory = "superscary.heavyinventories.client.gui.ModGuiFactory", dependencies = SuperCore.SET_REQUIRED_AFTER, updateJSON = "https://raw.githubusercontent.com/SuperScary/Heavy-Inventories/master/update.json")
 public class HeavyInventories
 {
 
