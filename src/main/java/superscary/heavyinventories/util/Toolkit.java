@@ -3,6 +3,7 @@ package superscary.heavyinventories.util;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
@@ -12,9 +13,11 @@ import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.ModContainer;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import superscary.heavyinventories.calc.PlayerWeightCalculator;
 import superscary.heavyinventories.common.capability.weight.IWeighable;
 import superscary.heavyinventories.common.capability.weight.WeightProvider;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
+import superscary.heavyinventories.configs.weights.CustomConfigLoader;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -163,6 +166,21 @@ public class Toolkit
 		else
 		{
 			return Integer.parseInt("FFFFFF", 16);
+		}
+	}
+
+	public static double getWeightFromStack(ItemStack stack)
+	{
+		Item item = stack.getItem();
+		String modid = getModNameFromItem(item);
+
+		if (modid.equalsIgnoreCase("minecraft"))
+		{
+			return PlayerWeightCalculator.getWeight(stack) * stack.getCount();
+		}
+		else
+		{
+			return CustomConfigLoader.getItemWeight(modid, item) * stack.getCount();
 		}
 	}
 

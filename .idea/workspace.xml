@@ -1,78 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2706616b-c6ca-4d0e-95d0-59c00add78c8" name="Default Changelist" comment="- Automatically generates config files for mods that add items (doesn't add them to the Heavy Inventories Config)&#10;- Fixed baubles implementation">
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterDir="false" />
+    <list default="true" id="2706616b-c6ca-4d0e-95d0-59c00add78c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/gradle.log" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/gradle.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minecraftforge_forgeSrc_1_12_2_14_23_5_2768.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minecraftforge_forgeSrc_1_12_2_14_23_5_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Heavy_Inventories.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Heavy_Inventories.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/superscary/heavyinventories/client/gui/Toast.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/superscary/heavyinventories/client/gui/Toast.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/superscary/heavyinventories/client/gui/meter/GuiDrawMeter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/superscary/heavyinventories/client/gui/meter/GuiDrawMeter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/superscary/heavyinventories/compat/mods/theoneprobe/HITOPInfoProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/superscary/heavyinventories/compat/mods/theoneprobe/HITOPInfoProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/superscary/heavyinventories/configs/builder/ConfigBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/superscary/heavyinventories/configs/builder/ConfigBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/retromapping/replacedMain.rangemap" beforeDir="false" afterPath="$PROJECT_DIR$/build/retromapping/replacedMain.rangemap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/retromapping/retromappedReplacedMain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/retromapping/retromappedReplacedMain.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/superscary/heavyinventories/client/gui/Toast.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/superscary/heavyinventories/client/gui/Toast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/superscary/heavyinventories/client/gui/meter/GuiDrawMeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/superscary/heavyinventories/client/gui/meter/GuiDrawMeter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/superscary/heavyinventories/compat/mods/theoneprobe/HITOPInfoProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/superscary/heavyinventories/compat/mods/theoneprobe/HITOPInfoProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/superscary/heavyinventories/configs/builder/ConfigBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/superscary/heavyinventories/configs/builder/ConfigBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/superscary/heavyinventories/util/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/superscary/heavyinventories/util/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/taskLogs/extractRangemapReplacedMain.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/taskLogs/extractRangemapReplacedMain.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/taskLogs/retromapReplacedMain.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/taskLogs/retromapReplacedMain.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/makeStart/extracted/net/minecraftforge/gradle/GradleForgeHacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/makeStart/extracted/net/minecraftforge/gradle/GradleForgeHacks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/makeStart/extracted/net/minecraftforge/gradle/GradleStartCommon.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/makeStart/extracted/net/minecraftforge/gradle/GradleStartCommon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/makeStart/extracted/net/minecraftforge/gradle/tweakers/AccessTransformerTweaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/makeStart/extracted/net/minecraftforge/gradle/tweakers/AccessTransformerTweaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/makeStart/extracted/net/minecraftforge/gradle/tweakers/CoremodTweaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/makeStart/extracted/net/minecraftforge/gradle/tweakers/CoremodTweaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/HeavyInventories.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/HeavyInventories.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/client/gui/Toast.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/client/gui/Toast.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/client/gui/meter/GuiDrawMeter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/client/gui/meter/GuiDrawMeter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/compat/mods/theoneprobe/HITOPInfoProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/compat/mods/theoneprobe/HITOPInfoProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/configs/builder/ConfigBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/configs/builder/ConfigBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/util/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/util/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/config/AppliedEnergistics2/CustomRecipes.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/AppliedEnergistics2/CustomRecipes.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/config/AppliedEnergistics2/VersionChecker.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/AppliedEnergistics2/VersionChecker.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/config/AppliedEnergistics2/items.csv" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/AppliedEnergistics2/items.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/config/Heavy Inventories/Heavy Inventories.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/Heavy Inventories/Heavy Inventories.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/config/splash.properties" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/splash.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/day/-1,-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/day/-1,-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/day/-1,0.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/day/-1,0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/night/-1,-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/night/-1,-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/night/-1,0.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/night/-1,0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/journeymap/journeymap.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/journeymap/journeymap.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-9999/data/villages_extrautilsquarrydim.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-9999/data/villages_extrautilsquarrydim.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM2/data/villages_cell.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM2/data/villages_cell.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/9437feb6-e095-39c6-ab98-841789b04719.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/advancements/9437feb6-e095-39c6-ab98-841789b04719.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/XU2SaveData.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/XU2SaveData.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/actuallyadditionsdata.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/actuallyadditionsdata.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/villages.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/villages.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/9437feb6-e095-39c6-ab98-841789b04719.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/9437feb6-e095-39c6-ab98-841789b04719.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/session.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/9437feb6-e095-39c6-ab98-841789b04719.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/9437feb6-e095-39c6-ab98-841789b04719.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/usernamecache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usernamecache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/gui/Toast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/gui/Toast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/gui/meter/GuiDrawMeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/gui/meter/GuiDrawMeter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/compat/mods/theoneprobe/HITOPInfoProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/compat/mods/theoneprobe/HITOPInfoProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/configs/builder/ConfigBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/configs/builder/ConfigBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/superscary/heavyinventories/HeavyInventories.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/superscary/heavyinventories/HeavyInventories.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/superscary/heavyinventories/util/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/superscary/heavyinventories/util/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/calc/PlayerWeightCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/calc/PlayerWeightCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/event/ClientEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/event/ClientEventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Toolkit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Toolkit.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -140,15 +76,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/configs/builder/ConfigBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="81" selection-start-line="81" selection-end-line="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/compat/mods/theoneprobe/HITheOneProbe.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -169,12 +96,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Toolkit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+            <state relative-caret-position="1057">
+              <caret line="182" column="83" selection-start-line="182" selection-start-column="83" selection-end-line="182" selection-end-column="83" />
               <folding>
                 <element signature="e#2012#2013#0" expanded="true" />
                 <element signature="e#2069#2070#0" expanded="true" />
+                <element signature="e#2229#2230#0" expanded="true" />
+                <element signature="e#2285#2286#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/configs/weights/CustomConfigLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -182,17 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/calc/PlayerWeightCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/configs/HeavyInventoriesConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+            <state relative-caret-position="904">
+              <caret line="87" column="41" lean-forward="true" selection-start-line="87" selection-start-column="41" selection-end-line="87" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -200,7 +129,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/gui/Toast.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
+            <state relative-caret-position="238">
               <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -212,7 +141,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/HeavyInventories.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
+            <state relative-caret-position="629">
               <caret line="81" column="50" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
               <folding>
                 <element signature="method#preInit#0;class#HeavyInventories#0" />
@@ -227,7 +156,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/gui/meter/GuiDrawMeter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="357">
               <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -239,8 +168,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="58" lean-forward="true" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+            <state relative-caret-position="442">
+              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/event/ClientEventHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-68">
+              <caret line="71" column="21" lean-forward="true" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -291,13 +229,11 @@
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/command/commands/HeavyInventoriesBuildModWeight.java" />
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/configs/weights/MinecraftConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/command/HeavyInventoriesCommandRegistry.java" />
-        <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Toolkit.java" />
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/configs/loader/DynamicLibraryLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/compat/CompatLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/configs/weights/CustomConfigLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/configs/reader/ConfigReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/gui/Toast.java" />
-        <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/event/ClientEventHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/HeavyInventories.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/configs/HeavyInventoriesConfig.java" />
@@ -305,6 +241,9 @@
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/compat/mods/theoneprobe/HITOPInfoProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/gui/meter/GuiDrawMeter.java" />
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/calc/PlayerWeightCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Toolkit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/event/ClientEventHandler.java" />
       </list>
     </option>
   </component>
@@ -315,10 +254,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1937" />
+    <option name="height" value="1067" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -328,6 +267,44 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Heavy Inventories" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Heavy Inventories" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Heavy Inventories" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Heavy Inventories" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Heavy Inventories" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Heavy Inventories" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Heavy Inventories" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Heavy Inventories" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Heavy Inventories" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Heavy Inventories" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="heavyinventories" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -549,44 +526,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Heavy Inventories" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Heavy Inventories" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Heavy Inventories" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Heavy Inventories" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Heavy Inventories" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Heavy Inventories" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Heavy Inventories" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Heavy Inventories" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Heavy Inventories" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Heavy Inventories" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="heavyinventories" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -763,7 +702,8 @@
       <workItem from="1550179297784" duration="137000" />
       <workItem from="1550179524653" duration="1200000" />
       <workItem from="1550472629220" duration="1330000" />
-      <workItem from="1550528021997" duration="3600000" />
+      <workItem from="1550528021997" duration="4593000" />
+      <workItem from="1550880098490" duration="1815000" />
     </task>
     <task id="LOCAL-00001" summary="Updating to gitlab">
       <created>1536735214577</created>
@@ -835,11 +775,18 @@
       <option name="project" value="LOCAL" />
       <updated>1545285187162</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- Fixed files being deleted&#10;- Fixed TOP integration">
+      <created>1550539754465</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1550539754465</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82881000" />
+    <option name="totallyTimeSpent" value="85689000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -851,9 +798,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-7" y="-7" width="2575" height="1424" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19509594" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19681908" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -868,7 +816,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32939914" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3290461" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" weight="0.39871383" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.3986068" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32939914" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49946696" weight="0.3290461" />
@@ -923,11 +871,14 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Updating to gitlab" />
     <MESSAGE value="Fixed The One Probe integration" />
     <MESSAGE value="Annotating classes for future reference" />
     <MESSAGE value="- Automatically generates config files for mods that add items (doesn't add them to the Heavy Inventories Config)&#10;- Fixed baubles implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Automatically generates config files for mods that add items (doesn't add them to the Heavy Inventories Config)&#10;- Fixed baubles implementation" />
+    <MESSAGE value="- Fixed files being deleted&#10;- Fixed TOP integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Fixed files being deleted&#10;- Fixed TOP integration" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -968,13 +919,6 @@
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/common/config/Configuration.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/fml/common/Mod.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/command/commands/HeavyInventoriesBuildModWeight.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="492" column="9" selection-start-line="492" selection-start-column="9" selection-end-line="492" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/util/ResourceLocation.java" />
     <entry file="file://$PROJECT_DIR$/run/logs/2018-12-18-4.log.gz">
       <provider selected="true" editor-type-id="text-editor">
@@ -1067,13 +1011,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/event/ClientEventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5474">
-          <caret line="358" column="74" selection-start-line="358" selection-start-column="74" selection-end-line="358" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/client/gui/GuiBossOverlay.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/client/renderer/texture/TextureManager.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768.jar!/assets/minecraft/textures/gui/bars.png" />
@@ -1089,13 +1026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/configs/weights/CustomConfigLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
@@ -1120,9 +1050,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2656">
+          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/configs/builder/ConfigBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
+        <state relative-caret-position="1122">
           <caret line="81" selection-start-line="81" selection-end-line="81" />
         </state>
       </provider>
@@ -1134,9 +1071,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/compat/mods/theoneprobe/HITOPInfoProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/gui/Toast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/HeavyInventories.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
+        <state relative-caret-position="629">
           <caret line="81" column="50" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
           <folding>
             <element signature="method#preInit#0;class#HeavyInventories#0" />
@@ -1147,44 +1101,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Toolkit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
-          <folding>
-            <element signature="e#2012#2013#0" expanded="true" />
-            <element signature="e#2069#2070#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/calc/PlayerWeightCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/gui/Toast.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/compat/mods/theoneprobe/HITOPInfoProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/gui/meter/GuiDrawMeter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="357">
           <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1192,10 +1111,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/calc/PlayerWeightCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="904">
+          <caret line="87" column="41" lean-forward="true" selection-start-line="87" selection-start-column="41" selection-end-line="87" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Toolkit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1057">
+          <caret line="182" column="83" selection-start-line="182" selection-start-column="83" selection-end-line="182" selection-end-column="83" />
+          <folding>
+            <element signature="e#2012#2013#0" expanded="true" />
+            <element signature="e#2069#2070#0" expanded="true" />
+            <element signature="e#2229#2230#0" expanded="true" />
+            <element signature="e#2285#2286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/configs/weights/CustomConfigLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/event/ClientEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="71" column="21" lean-forward="true" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="58" lean-forward="true" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+        <state relative-caret-position="442">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
         </state>
       </provider>
     </entry>

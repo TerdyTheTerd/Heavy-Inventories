@@ -1,0 +1,12 @@
+{
+
+	"homepage": "",
+	"1.12.2": {
+		"2.3.2": "- Fixed deletion of weight files 
+				  - Fixed The One Probe compatability",
+	},
+	"promos": {
+		"1.12.2-recommended": "2.3.2",
+	}
+
+}

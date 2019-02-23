@@ -64,7 +64,7 @@ public class ClientEventHandler
 			{
 				if (stack.getItem().getRegistryName().toString().split(":")[0].equalsIgnoreCase("minecraft"))
 				{
-					double weight = PlayerWeightCalculator.getWeight(stack);
+					double weight = Toolkit.getWeightFromStack(stack);
 					event.getToolTip().add(form(weight));
 					if (stack.getCount() > 1)
 					{
@@ -90,7 +90,7 @@ public class ClientEventHandler
 				{
 					String modid = Toolkit.getModNameFromItem(stack.getItem());
 
-					double weight = CustomConfigLoader.getItemWeight(modid, stack.getItem());
+					double weight = Toolkit.getWeightFromStack(stack);
 					event.getToolTip().add(form(weight));
 					if (stack.getCount() > 1)
 					{
@@ -312,13 +312,11 @@ public class ClientEventHandler
 		if (!HeavyInventoriesConfig.canSleepWhileOverEncumbered && weighable.isOverEncumbered())
 		{
 			event.setResult(EntityPlayer.SleepResult.OTHER_PROBLEM);
-			//event.getEntityPlayer().sendMessage(new TextComponentTranslation("hi.splash.loseWeightMax"));
 			new Toast(new TextComponentTranslation("hi.splash.loseWeightMax"));
 		}
 		else if (!HeavyInventoriesConfig.canSleepWhileEncumbered && weighable.isEncumbered())
 		{
 			event.setResult(EntityPlayer.SleepResult.OTHER_PROBLEM);
-			//event.getEntityPlayer().sendMessage(new TextComponentTranslation("hi.splash.loseWeight"));
 			new Toast(new TextComponentTranslation("hi.splash.loseWeight"));
 		}
 	}
@@ -403,7 +401,6 @@ public class ClientEventHandler
 
 			if (!sendRunMessage && canPlayerRun(player))
 			{
-				//player.sendMessage(new TextComponentTranslation("hi.splash.noRun"));
 				new Toast(new TextComponentTranslation("hi.splash.noRun"));
 				sendRunMessage = true;
 			}
