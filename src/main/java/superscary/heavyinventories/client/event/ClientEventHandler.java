@@ -4,10 +4,12 @@ import com.mojang.realmsclient.gui.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.event.entity.EntityMountEvent;
+import net.minecraftforge.event.entity.living.EnderTeleportEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
@@ -30,9 +32,7 @@ import superscary.heavyinventories.common.capability.weight.WeightProvider;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.configs.reader.ConfigReader;
 import superscary.heavyinventories.configs.weights.CustomConfigLoader;
-import superscary.heavyinventories.util.EnumTagID;
-import superscary.heavyinventories.util.Logger;
-import superscary.heavyinventories.util.Toolkit;
+import superscary.heavyinventories.util.*;
 import superscary.supercore.tools.EnumColor;
 
 /**
@@ -142,7 +142,8 @@ public class ClientEventHandler
 	 */
 	private void addNoShift(ItemTooltipEvent event)
 	{
-		event.getToolTip().add(I18n.format("hi.gui.shift", EnumColor.YELLOW + "SHIFT" + EnumColor.GREY));
+		Item item = event.getItemStack().getItem();
+		if (item.getItemStackLimit(event.getItemStack()) > 1)event.getToolTip().add(I18n.format("hi.gui.shift", EnumColor.YELLOW + "SHIFT" + EnumColor.GREY));
 	}
 
 	/**
@@ -183,33 +184,32 @@ public class ClientEventHandler
 	@SubscribeEvent
 	public void handleEncumberance(TickEvent.PlayerTickEvent event)
 	{
-		EntityPlayer player = event.player;
-		IWeighable weighable = player.getCapability(WeightProvider.WEIGHABLE_CAPABILITY, null);
+		PlayerHelper player = new PlayerHelper(event.player);
 
-		if (weighable.getWeight() != playersCalculatedWeight)
+		if (player.getWeight() != playersCalculatedWeight)
 		{
 			playersCalculatedWeight = getPlayersCalculatedWeight(player);
-			weighable.setWeight(playersCalculatedWeight);
+			player.setWeight(playersCalculatedWeight);
 		}
 
-		if (weighable.getRelativeWeight() >= 1.0)
+		if (player.getRelativeWeight() >= 1.0)
 		{
-			weighable.setOverEncumbered(true);
+			player.setOverEncumbered(true);
 		}
-		else if (weighable.getRelativeWeight() < 1.0 && weighable.getRelativeWeight() >= 0.85)
+		else if (player.getRelativeWeight() < 1.0 && player.getRelativeWeight() >= 0.85)
 		{
-			weighable.setEncumbered(true);
-			weighable.setOverEncumbered(false);
+			player.setEncumbered(true);
+			player.setOverEncumbered(false);
 		}
 		else
 		{
-			weighable.setEncumbered(false);
+			player.setEncumbered(false);
 		}
 	}
 
-	public double getPlayersCalculatedWeight(EntityPlayer player)
+	public double getPlayersCalculatedWeight(PlayerHelper player)
 	{
-		return PlayerWeightCalculator.calculateWeight(player);
+		return PlayerWeightCalculator.calculateWeight(player.getPlayer());
 	}
 
 	/**
@@ -219,18 +219,17 @@ public class ClientEventHandler
 	@SubscribeEvent
 	public void onPlayerMove(TickEvent.PlayerTickEvent event)
 	{
-		EntityPlayer player = event.player;
-		IWeighable weighable = player.getCapability(WeightProvider.WEIGHABLE_CAPABILITY, null);
-		weighable.setWeight(PlayerWeightCalculator.calculateWeight(player));
+		PlayerHelper player = new PlayerHelper(event.player);
+		player.getWeightCapability().setWeight(PlayerWeightCalculator.calculateWeight(player.getPlayer()));
 
-		if (!player.isCreative())
+		if (!player.getPlayer().isCreative())
 		{
-			reduceSpeed(weighable, player);
+			reduceSpeed(player);
 		}
 
 		if (HeavyInventoriesConfig.allowInCreative == true)
 		{
-			reduceSpeed(weighable, player);
+			reduceSpeed(player);
 		}
 	}
 
@@ -239,19 +238,19 @@ public class ClientEventHandler
 	 * @param weighable
 	 * @param player
 	 */
-	public void reduceSpeed(IWeighable weighable, EntityPlayer player)
+	public void reduceSpeed(PlayerHelper player)
 	{
-		if (weighable.isOverEncumbered())
+		if (player.isOverEncumbered())
 		{
-			player.capabilities.setPlayerWalkSpeed(HeavyInventoriesConfig.overEncumberedSpeed);
+			player.getPlayer().capabilities.setPlayerWalkSpeed(HeavyInventoriesConfig.overEncumberedSpeed);
 		}
-		else if (weighable.isEncumbered())
+		else if (player.isEncumbered())
 		{
-			player.capabilities.setPlayerWalkSpeed(HeavyInventoriesConfig.encumberedSpeed / 10);
+			player.getPlayer().capabilities.setPlayerWalkSpeed(HeavyInventoriesConfig.encumberedSpeed / 10);
 		}
 		else
 		{
-			player.capabilities.setPlayerWalkSpeed((float) 0.1);
+			player.getPlayer().capabilities.setPlayerWalkSpeed((float) 0.1);
 		}
 	}
 
@@ -264,18 +263,17 @@ public class ClientEventHandler
 	{
 		if (event.getEntity() instanceof EntityPlayer)
 		{
-			EntityPlayer player = (EntityPlayer) event.getEntity();
-			IWeighable weighable = player.getCapability(WeightProvider.WEIGHABLE_CAPABILITY, null);
+			PlayerHelper player = new PlayerHelper((EntityPlayer) event.getEntityLiving());
 
-			if (!player.isCreative())
+			if (!player.getPlayer().isCreative())
 			{
-				disableJumping(weighable, player);
-				player.addExhaustion(HeavyInventoriesConfig.jumpExhaustion);
+				disableJumping(player);
+				player.getPlayer().addExhaustion(HeavyInventoriesConfig.jumpExhaustion);
 			}
 
-			if (HeavyInventoriesConfig.allowInCreative && player.isCreative() && weighable.isOverEncumbered())
+			if (HeavyInventoriesConfig.allowInCreative && player.getPlayer().isCreative() && player.isOverEncumbered())
 			{
-				disableJumping(weighable, player);
+				disableJumping(player);
 			}
 		}
 	}
@@ -286,17 +284,17 @@ public class ClientEventHandler
 	 * @param player
 	 */
 	@SideOnly(Side.CLIENT)
-	public void disableJumping(IWeighable weighable, EntityPlayer player)
+	public void disableJumping(PlayerHelper player)
 	{
-		if (weighable.isOverEncumbered())
+		if (player.isOverEncumbered())
 		{
-			if (player.isServerWorld()) new Toast(new TextComponentTranslation("hi.splash.noJump"));
-			player.motionY = 0D;
+			if (player.getPlayer().isServerWorld()) new Toast(new TextComponentTranslation("hi.splash.noJump"));
+			player.getPlayer().motionY = 0D;
 		}
-		else if (weighable.isEncumbered())
+		else if (player.isEncumbered())
 		{
-			if (player.isServerWorld()) new Toast(new TextComponentTranslation("hi.splash.noJumpEncumbered"));
-			player.motionY /= 5;
+			if (player.getPlayer().isServerWorld()) new Toast(new TextComponentTranslation("hi.splash.noJumpEncumbered"));
+			player.getPlayer().motionY /= 5;
 		}
 	}
 
@@ -307,14 +305,14 @@ public class ClientEventHandler
 	@SubscribeEvent
 	public void onPlayerSleep(PlayerSleepInBedEvent event)
 	{
-		EntityPlayer player = event.getEntityPlayer();
-		IWeighable weighable = player.getCapability(WeightProvider.WEIGHABLE_CAPABILITY, null);
-		if (!HeavyInventoriesConfig.canSleepWhileOverEncumbered && weighable.isOverEncumbered())
+		PlayerHelper player = new PlayerHelper(event.getEntityPlayer());
+
+		if (!HeavyInventoriesConfig.canSleepWhileOverEncumbered && player.isOverEncumbered())
 		{
 			event.setResult(EntityPlayer.SleepResult.OTHER_PROBLEM);
 			new Toast(new TextComponentTranslation("hi.splash.loseWeightMax"));
 		}
-		else if (!HeavyInventoriesConfig.canSleepWhileEncumbered && weighable.isEncumbered())
+		else if (!HeavyInventoriesConfig.canSleepWhileEncumbered && player.isEncumbered())
 		{
 			event.setResult(EntityPlayer.SleepResult.OTHER_PROBLEM);
 			new Toast(new TextComponentTranslation("hi.splash.loseWeight"));
@@ -370,16 +368,15 @@ public class ClientEventHandler
 	@SubscribeEvent
 	public void attackStamina(TickEvent.PlayerTickEvent event)
 	{
-		EntityPlayer player = event.player;
-		IWeighable weighable = player.getCapability(WeightProvider.WEIGHABLE_CAPABILITY, null);
+		PlayerHelper player = new PlayerHelper(event.player);
 
-		if (weighable.isOverEncumbered() && isPlayerMoving(player))
+		if (player.isOverEncumbered() && isPlayerMoving(player.getPlayer()))
 		{
-			player.addExhaustion(HeavyInventoriesConfig.overEncumberedExhaustion);
+			player.getPlayer().addExhaustion(HeavyInventoriesConfig.overEncumberedExhaustion);
 		}
-		else if (weighable.isEncumbered() && isPlayerMoving(player))
+		else if (player.isEncumbered() && isPlayerMoving(player.getPlayer()))
 		{
-			player.addExhaustion(HeavyInventoriesConfig.encumberedExhaustion);
+			player.getPlayer().addExhaustion(HeavyInventoriesConfig.encumberedExhaustion);
 		}
 	}
 
@@ -392,20 +389,19 @@ public class ClientEventHandler
 	@SubscribeEvent
 	public void playerRun(TickEvent.PlayerTickEvent event)
 	{
-		EntityPlayer player = event.player;
-		IWeighable weighable = player.getCapability(WeightProvider.WEIGHABLE_CAPABILITY, null);
+		PlayerHelper player = new PlayerHelper(event.player);
 
-		if (player.isSprinting() && !player.isCreative() && (weighable.isOverEncumbered() || weighable.isEncumbered()))
+		if (player.getPlayer().isSprinting() && !player.getPlayer().isCreative() && (player.isOverEncumbered() || player.isEncumbered()))
 		{
-			player.setSprinting(canPlayerRun(player));
+			player.getPlayer().setSprinting(canPlayerRun(player.getPlayer()));
 
-			if (!sendRunMessage && canPlayerRun(player))
+			if (!sendRunMessage && canPlayerRun(player.getPlayer()))
 			{
 				new Toast(new TextComponentTranslation("hi.splash.noRun"));
 				sendRunMessage = true;
 			}
 		}
-		else if (!player.isSprinting() && sendRunMessage)
+		else if (!player.getPlayer().isSprinting() && sendRunMessage)
 		{
 			sendRunMessage = false;
 		}
@@ -512,14 +508,28 @@ public class ClientEventHandler
 	{
 		if (event.isMounting() && event.getEntityMounting() instanceof EntityPlayer)
 		{
-			EntityPlayer player = (EntityPlayer) event.getEntityMounting();
-			IWeighable weighable = player.getCapability(WeightProvider.WEIGHABLE_CAPABILITY, null);
+			PlayerHelper player = new PlayerHelper((EntityPlayer) event.getEntityMounting());
 
-			if (weighable.isEncumbered() || weighable.isOverEncumbered())
+			if (player.isEncumbered() || player.isOverEncumbered())
 			{
 				event.setResult(Event.Result.DENY);
 				new Toast(new TextComponentTranslation("hi.splash.entityMount"));
 			}
+		}
+	}
+
+	@SubscribeEvent
+	public void playerTeleportEnderPearl(EnderTeleportEvent event)
+	{
+		if (event.getEntityLiving() instanceof EntityPlayer)
+		{
+			EntityPlayer player = (EntityPlayer) event.getEntityLiving();
+			Coords thrownCoords = new Coords(event);
+			Coords playerCoords = new Coords(player.posX, player.posY, player.posZ);
+			PlayerHelper helper = new PlayerHelper(player);
+			double distance = Toolkit.getDistance(thrownCoords, playerCoords);
+
+
 		}
 	}
 

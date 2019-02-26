@@ -176,12 +176,39 @@ public class Toolkit
 
 		if (modid.equalsIgnoreCase("minecraft"))
 		{
-			return PlayerWeightCalculator.getWeight(stack) * stack.getCount();
+			return PlayerWeightCalculator.getWeight(stack);
 		}
 		else
 		{
-			return CustomConfigLoader.getItemWeight(modid, item) * stack.getCount();
+			return CustomConfigLoader.getItemWeight(modid, item);
 		}
+	}
+
+	/**
+	 * Does the calculation between 2 points in a 3D environment
+	 * @param coords1
+	 * @param coords2
+	 * @return
+	 */
+	public static Coords distanceHelper(Coords coords1, Coords coords2)
+	{
+		double distanceX = Math.pow(coords2.getX() - coords1.getX(), 2);
+		double distanceY = Math.pow(coords2.getY() - coords1.getY(), 2);
+		double distanceZ = Math.pow(coords2.getZ() - coords1.getZ(), 2);
+
+		return new Coords(distanceX, distanceY, distanceZ);
+	}
+
+	/**
+	 * Calculates the distance between 2 points in a 3D environment
+	 * @param coords1
+	 * @param coords2
+	 * @return
+	 */
+	public static double getDistance(Coords coords1, Coords coords2)
+	{
+		Coords coords = distanceHelper(coords1, coords2);
+		return Math.sqrt(coords.getX() + coords.getY() + coords.getZ());
 	}
 
 }
