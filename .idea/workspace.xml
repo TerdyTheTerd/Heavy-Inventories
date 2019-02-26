@@ -2,28 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2706616b-c6ca-4d0e-95d0-59c00add78c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Coords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/PlayerHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/HeavyInventories.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/HeavyInventories.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/calc/PlayerWeightCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/calc/PlayerWeightCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/client/ClientProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/client/ClientProxy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/client/event/ClientEventHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/client/event/ClientEventHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/client/gui/meter/GuiDrawMeter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/client/gui/meter/GuiDrawMeter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/common/CommonProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/common/CommonProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/util/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/util/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/util/Toolkit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Heavy_Inventories/superscary/heavyinventories/util/Toolkit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/config/AppliedEnergistics2/CustomRecipes.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/AppliedEnergistics2/CustomRecipes.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/config/AppliedEnergistics2/VersionChecker.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/AppliedEnergistics2/VersionChecker.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/config/AppliedEnergistics2/items.csv" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/AppliedEnergistics2/items.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/config/Heavy Inventories/Weights/Minecraft.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/Heavy Inventories/Weights/Minecraft.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/config/jei/worldSettings.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/jei/worldSettings.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/config/splash.properties" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/splash.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/journeymap/config/5.5/journeymap.minimap.config" beforeDir="false" afterPath="$PROJECT_DIR$/run/journeymap/config/5.5/journeymap.minimap.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/day/-1,-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/day/-1,-1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/day/-1,0.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/day/-1,0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/day/0,-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/day/0,-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/day/0,0.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/day/0,0.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/night/-1,-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/night/-1,-1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/night/-1,0.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/night/-1,0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/night/0,-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/night/0,-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/night/0,0.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/night/0,0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/topo/-1,-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/topo/-1,-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/topo/-1,0.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/topo/-1,0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/topo/0,-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/topo/0,-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/topo/0,0.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/journeymap/data/sp/New World/DIM0/topo/0,0.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/journeymap/journeymap.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/journeymap/journeymap.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
@@ -32,7 +26,8 @@
       <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/AE2/spawndata/0_-2_-1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/AE2/spawndata/0_-2_-1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/AE2/spawndata/0_-2_0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/AE2/spawndata/0_-2_0.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-9999/data/villages_extrautilsquarrydim.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-9999/data/villages_extrautilsquarrydim.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM2/data/villages_cell.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM2/data/villages_cell.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/data/XU2SaveData.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/XU2SaveData.dat" afterDir="false" />
@@ -47,13 +42,9 @@
       <change beforePath="$PROJECT_DIR$/run/saves/New World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/session.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usernamecache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usernamecache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/HeavyInventories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/HeavyInventories.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/calc/PlayerWeightCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/calc/PlayerWeightCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/ClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/ClientProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/event/ClientEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/event/ClientEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/gui/meter/GuiDrawMeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/gui/meter/GuiDrawMeter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/common/CommonProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/common/CommonProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Toolkit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Toolkit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/configs/loader/DynamicLibraryLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Constants.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -124,7 +115,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Toolkit.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="530">
-              <caret line="178" column="48" lean-forward="true" selection-start-line="178" selection-start-column="48" selection-end-line="178" selection-end-column="48" />
+              <caret line="178" column="48" selection-start-line="178" selection-start-column="48" selection-end-line="178" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -132,30 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/calc/PlayerWeightCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="802">
-              <caret line="81" column="123" lean-forward="true" selection-start-line="81" selection-start-column="123" selection-end-line="81" selection-end-column="123" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.0/snapshot/20171003/forgeSrc-1.12.2-14.23.5.0-sources.jar!/net/minecraft/util/ResourceLocation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="46" column="68" lean-forward="true" selection-start-line="46" selection-start-column="68" selection-end-line="46" selection-end-column="68" />
-              <folding>
-                <element signature="e#1875#1876#0" expanded="true" />
-                <element signature="e#1915#1916#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.0/snapshot/20171003/forgeSrc-1.12.2-14.23.5.0-sources.jar!/net/minecraftforge/common/config/Configuration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="433" column="20" selection-start-line="433" selection-start-column="20" selection-end-line="433" selection-end-column="20" />
+            <state relative-caret-position="1142">
+              <caret line="107" selection-start-line="107" selection-end-line="107" />
             </state>
           </provider>
         </entry>
@@ -173,7 +142,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/configs/weights/CustomConfigLoader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="595">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -183,6 +152,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
               <caret line="81" selection-start-line="81" selection-end-line="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -204,8 +182,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/event/ClientEventHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="66" column="48" selection-start-line="66" selection-start-column="48" selection-end-line="66" selection-end-column="48" />
+            <state relative-caret-position="243">
+              <caret line="170" column="20" selection-start-line="170" selection-start-column="20" selection-end-line="170" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -279,7 +257,6 @@
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/configs/HeavyInventoriesConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/configs/builder/ConfigBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/compat/mods/theoneprobe/HITOPInfoProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/event/UpdateHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Coords.java" />
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/PlayerHelper.java" />
@@ -294,8 +271,9 @@
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/HeavyInventories.java" />
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/ClientProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/common/CommonProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/event/ClientEventHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/calc/PlayerWeightCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/event/ClientEventHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Constants.java" />
       </list>
     </option>
   </component>
@@ -504,14 +482,6 @@
               <item name="superscary" type="1f31426a:PackageElementNode" />
               <item name="heavyinventories" type="1f31426a:PackageElementNode" />
               <item name="configs" type="1f31426a:PackageElementNode" />
-              <item name="loader" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="Heavy Inventories" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Heavy_Inventories" type="616d4139:PackageViewModuleNode" />
-              <item name="superscary" type="1f31426a:PackageElementNode" />
-              <item name="heavyinventories" type="1f31426a:PackageElementNode" />
-              <item name="configs" type="1f31426a:PackageElementNode" />
               <item name="reader" type="1f31426a:PackageElementNode" />
             </path>
             <path>
@@ -626,7 +596,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551146246666" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551150359362" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
@@ -799,7 +769,7 @@
       <workItem from="1550472629220" duration="1330000" />
       <workItem from="1550528021997" duration="4593000" />
       <workItem from="1550880098490" duration="9841000" />
-      <workItem from="1551138508519" duration="7643000" />
+      <workItem from="1551138508519" duration="8699000" />
     </task>
     <task id="LOCAL-00001" summary="Updating to gitlab">
       <created>1536735214577</created>
@@ -899,11 +869,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550886872647</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="- Fixed the stupid i done did">
+      <created>1551146275140</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1551146275140</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101358000" />
+    <option name="totallyTimeSpent" value="102414000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -928,7 +905,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3290461" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.3986068" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" visible="true" weight="0.3986068" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4998012" weight="0.32894737" />
@@ -995,7 +972,8 @@
     <MESSAGE value="Annotating classes for future reference" />
     <MESSAGE value="- Automatically generates config files for mods that add items (doesn't add them to the Heavy Inventories Config)&#10;- Fixed baubles implementation" />
     <MESSAGE value="- Fixed files being deleted&#10;- Fixed TOP integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Fixed files being deleted&#10;- Fixed TOP integration" />
+    <MESSAGE value="- Fixed the stupid i done did" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Fixed the stupid i done did" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1090,13 +1068,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="56" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -1269,18 +1240,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/HeavyInventories.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="63" column="54" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
-          <folding>
-            <element signature="method#preInit#0;class#HeavyInventories#0" />
-            <element signature="method#init#0;class#HeavyInventories#0" />
-            <element signature="method#postInit#0;class#HeavyInventories#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.0/snapshot/20171003/forgeSrc-1.12.2-14.23.5.0-sources.jar!/net/minecraft/item/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
@@ -1289,13 +1248,6 @@
             <element signature="e#36705#36706#0" expanded="true" />
             <element signature="e#36752#36753#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/event/ClientEventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="66" column="48" selection-start-line="66" selection-start-column="48" selection-end-line="66" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1316,14 +1268,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/configs/weights/CustomConfigLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Toolkit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="530">
-          <caret line="178" column="48" lean-forward="true" selection-start-line="178" selection-start-column="48" selection-end-line="178" selection-end-column="48" />
+          <caret line="178" column="48" selection-start-line="178" selection-start-column="48" selection-end-line="178" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1334,21 +1286,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/calc/PlayerWeightCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="802">
-          <caret line="81" column="123" lean-forward="true" selection-start-line="81" selection-start-column="123" selection-end-line="81" selection-end-column="123" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.0/snapshot/20171003/forgeSrc-1.12.2-14.23.5.0-sources.jar!/net/minecraft/util/ResourceLocation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
-          <caret line="46" column="68" lean-forward="true" selection-start-line="46" selection-start-column="68" selection-end-line="46" selection-end-column="68" />
+          <caret line="46" column="68" selection-start-line="46" selection-start-column="68" selection-end-line="46" selection-end-column="68" />
           <folding>
             <element signature="e#1875#1876#0" expanded="true" />
             <element signature="e#1915#1916#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/calc/PlayerWeightCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1142">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/HeavyInventories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="63" column="54" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
+          <folding>
+            <element signature="method#preInit#0;class#HeavyInventories#0" />
+            <element signature="method#init#0;class#HeavyInventories#0" />
+            <element signature="method#postInit#0;class#HeavyInventories#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/client/event/ClientEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="170" column="20" selection-start-line="170" selection-start-column="20" selection-end-line="170" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/superscary/heavyinventories/util/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
         </state>
       </provider>
     </entry>

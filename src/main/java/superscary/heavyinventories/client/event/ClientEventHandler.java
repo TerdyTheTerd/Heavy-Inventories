@@ -73,7 +73,7 @@ public class ClientEventHandler
 
 					if (Minecraft.getMinecraft().currentScreen != null)
 					{
-						if (tooltipKeyCheck())
+						if (tooltipKeyCheck(event.getItemStack()))
 						{
 							addShiftTip(event, stack, weight);
 						}
@@ -99,7 +99,7 @@ public class ClientEventHandler
 
 					if (Minecraft.getMinecraft().currentScreen != null)
 					{
-						if (tooltipKeyCheck())
+						if (tooltipKeyCheck(event.getItemStack()))
 						{
 							addShiftTip(event, stack, weight);
 						}
@@ -112,7 +112,7 @@ public class ClientEventHandler
 				else
 				{
 					addShiftTip(event, stack, 0.1);
-					if (tooltipKeyCheck())
+					if (tooltipKeyCheck(event.getItemStack()))
 					{
 						addTextToTooltip(event, I18n.format("hi.defaultWeight"));
 					}
@@ -143,7 +143,7 @@ public class ClientEventHandler
 	private void addNoShift(ItemTooltipEvent event)
 	{
 		Item item = event.getItemStack().getItem();
-		if (item.getItemStackLimit(event.getItemStack()) > 1)event.getToolTip().add(I18n.format("hi.gui.shift", EnumColor.YELLOW + "SHIFT" + EnumColor.GREY));
+		if (item.getItemStackLimit(event.getItemStack()) > 1) event.getToolTip().add(I18n.format("hi.gui.shift", EnumColor.YELLOW + "SHIFT" + EnumColor.GREY));
 	}
 
 	/**
@@ -160,9 +160,10 @@ public class ClientEventHandler
 	 * Checks if either shift keys are pressed (for tooltips)
 	 * @return
 	 */
-	private boolean tooltipKeyCheck()
+	private boolean tooltipKeyCheck(ItemStack stack)
 	{
-		return Keyboard.isKeyDown(Keyboard.KEY_RSHIFT) || Keyboard.isKeyDown(Keyboard.KEY_LSHIFT);
+		Item item = stack.getItem();
+		return (Keyboard.isKeyDown(Keyboard.KEY_RSHIFT) || Keyboard.isKeyDown(Keyboard.KEY_LSHIFT)) && (item.getItemStackLimit(stack) > 1);
 	}
 
 	/**
