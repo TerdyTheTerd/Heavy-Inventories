@@ -4,9 +4,10 @@
 	"1.12.2": {
 		"2.3.2": "- Fixed deletion of weight files 
 				  - Fixed The One Probe compatability",
+		"2.3.3": "- Fixed item weight not being read correctly"
 	},
 	"promos": {
-		"1.12.2-recommended": "2.3.2",
+		"1.12.2-recommended": "2.3.3",
 	}
 
 }
