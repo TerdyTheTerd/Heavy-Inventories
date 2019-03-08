@@ -12,15 +12,14 @@ import net.minecraftforge.event.entity.EntityMountEvent;
 import net.minecraftforge.event.entity.living.EnderTeleportEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
-import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.entity.player.PlayerSleepInBedEvent;
 import net.minecraftforge.fml.common.eventhandler.Event;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import org.lwjgl.input.Keyboard;
-import superscary.heavyinventories.HeavyInventories;
 import superscary.heavyinventories.calc.PlayerWeightCalculator;
 import superscary.heavyinventories.client.gui.InventoryWeightText;
 import superscary.heavyinventories.client.gui.Toast;
@@ -31,20 +30,8 @@ import superscary.heavyinventories.common.capability.weight.IWeighable;
 import superscary.heavyinventories.common.capability.weight.WeightProvider;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.configs.reader.ConfigReader;
-import superscary.heavyinventories.configs.weights.CustomConfigLoader;
 import superscary.heavyinventories.util.*;
 import superscary.supercore.tools.EnumColor;
-
-/**
- * Copyright (c) 2018 by SuperScary(ERBF)
- * <p>
- * All rights reserved. No part of this software may be reproduced,
- * distributed, or transmitted in any form or by any means, including
- * photocopying, recording, or other electronic or mechanical methods,
- * without the prior written permission of the publisher, except in
- * the case of brief quotations embodied in critical reviews and
- * certain other noncommercial uses permitted by copyright law.
- */
 
 @SuppressWarnings("all")
 public class ClientEventHandler

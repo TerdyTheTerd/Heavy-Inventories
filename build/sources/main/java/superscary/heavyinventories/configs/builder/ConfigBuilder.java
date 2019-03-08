@@ -102,7 +102,7 @@ public class ConfigBuilder
                     if (item.getRegistryName().getResourceDomain().equalsIgnoreCase(mod))
                     {
                         Logger.log(Level.INFO, "Building weight @%s in config %s", item.getRegistryName().toString(), mod);
-                        config.getFloat(item.getRegistryName().toString().split(":")[1], GENERAL, (float) HeavyInventoriesConfig.DEFAULT_WEIGHT, 0, 1000,
+                        config.getFloat(item.getRegistryName().getResourcePath(), GENERAL, (float) HeavyInventoriesConfig.DEFAULT_WEIGHT, 0, 1000,
                                 "Sets the carry weight of item " + item.getRegistryName());
                     }
                 }
@@ -113,7 +113,7 @@ public class ConfigBuilder
                     if (block.getRegistryName().getResourceDomain().equalsIgnoreCase(mod))
                     {
                         Logger.log(Level.INFO, "Building weight @%s in config %s", block.getRegistryName().toString(), mod);
-                        config.getFloat(block.getRegistryName().toString().split(":")[1], GENERAL,
+                        config.getFloat(block.getRegistryName().getResourcePath(), GENERAL,
                                 (float) HeavyInventoriesConfig.DEFAULT_WEIGHT, 0, 1000, "Sets the carry weight of block " + block.getRegistryName());
                     }
                 }

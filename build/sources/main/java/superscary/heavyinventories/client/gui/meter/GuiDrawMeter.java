@@ -55,15 +55,16 @@ public class GuiDrawMeter extends Gui
                  */
                 if (k > 0)
                 {
+                    int width = (k + 1) * k < 182 ? (k + 1) * k : 182;
                     if (weighable.isOverEncumbered())
                     {
-                        drawTexturedModalRect(scaledResolution.getScaledWidth() / 2 - 91, l, 0, 25, (k + 1) * k, 3);
+                        drawTexturedModalRect(scaledResolution.getScaledWidth() / 2 - 91, l, 0, 25, width, 3);
                     } else if (weighable.isEncumbered())
                     {
-                        drawTexturedModalRect(scaledResolution.getScaledWidth() / 2 - 91, l, 0, 45, (k + 1) * k, 3);
+                        drawTexturedModalRect(scaledResolution.getScaledWidth() / 2 - 91, l, 0, 45, width, 3);
                     } else
                     {
-                        drawTexturedModalRect(scaledResolution.getScaledWidth() / 2 - 91, l, 0, 35, (k + 1) * k, 3);
+                        drawTexturedModalRect(scaledResolution.getScaledWidth() / 2 - 91, l, 0, 35, width, 3);
                     }
                 }
             }

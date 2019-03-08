@@ -79,7 +79,7 @@ public class PlayerWeightCalculator
 	 */
 	public static double getWeight(ItemStack stack)
 	{
-		return MinecraftConfig.getConfig().get(Configuration.CATEGORY_GENERAL, stack.getItem().getUnlocalizedName().substring(5), 0.5).getDouble();
+		return MinecraftConfig.getConfig().get(Configuration.CATEGORY_GENERAL, stack.getItem().getRegistryName().getResourcePath(), 0.5).getDouble();
 	}
 
 	/**

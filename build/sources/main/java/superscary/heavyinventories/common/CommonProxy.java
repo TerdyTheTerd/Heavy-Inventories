@@ -2,11 +2,8 @@ package superscary.heavyinventories.common;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.capabilities.CapabilityManager;
-import net.minecraftforge.fml.common.Loader;
-import net.minecraftforge.fml.common.ModContainer;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.relauncher.Side;
-import org.apache.logging.log4j.Level;
 import superscary.heavyinventories.common.capability.CapabilityHandler;
 import superscary.heavyinventories.common.capability.offsets.IOffset;
 import superscary.heavyinventories.common.capability.offsets.OffsetStorage;
@@ -21,8 +18,6 @@ import superscary.heavyinventories.common.network.PlayerOverEncumberedMessage;
 import superscary.heavyinventories.common.network.handlers.PlayerEncumberedMessageHandler;
 import superscary.heavyinventories.common.network.handlers.PlayerNotEncumberedMessageHandler;
 import superscary.heavyinventories.common.network.handlers.PlayerOverEncumberedMessageHandler;
-import superscary.heavyinventories.configs.builder.ConfigBuilder;
-import superscary.heavyinventories.util.Logger;
 
 import static superscary.heavyinventories.HeavyInventories.networkWrapper;
 import static superscary.heavyinventories.util.Constants.MODID;

@@ -3,6 +3,7 @@ package superscary.heavyinventories.util;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
@@ -12,9 +13,11 @@ import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.ModContainer;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import superscary.heavyinventories.calc.PlayerWeightCalculator;
 import superscary.heavyinventories.common.capability.weight.IWeighable;
 import superscary.heavyinventories.common.capability.weight.WeightProvider;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
+import superscary.heavyinventories.configs.weights.CustomConfigLoader;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -164,6 +167,48 @@ public class Toolkit
 		{
 			return Integer.parseInt("FFFFFF", 16);
 		}
+	}
+
+	public static double getWeightFromStack(ItemStack stack)
+	{
+		Item item = stack.getItem();
+		String modid = getModNameFromItem(item);
+
+		if (modid.equalsIgnoreCase("minecraft"))
+		{
+			return PlayerWeightCalculator.getWeight(stack);
+		}
+		else
+		{
+			return CustomConfigLoader.getItemWeight(modid, item);
+		}
+	}
+
+	/**
+	 * Does the calculation between 2 points in a 3D environment
+	 * @param coords1
+	 * @param coords2
+	 * @return
+	 */
+	public static Coords distanceHelper(Coords coords1, Coords coords2)
+	{
+		double distanceX = Math.pow(coords2.getX() - coords1.getX(), 2);
+		double distanceY = Math.pow(coords2.getY() - coords1.getY(), 2);
+		double distanceZ = Math.pow(coords2.getZ() - coords1.getZ(), 2);
+
+		return new Coords(distanceX, distanceY, distanceZ);
+	}
+
+	/**
+	 * Calculates the distance between 2 points in a 3D environment
+	 * @param coords1
+	 * @param coords2
+	 * @return
+	 */
+	public static double getDistance(Coords coords1, Coords coords2)
+	{
+		Coords coords = distanceHelper(coords1, coords2);
+		return Math.sqrt(coords.getX() + coords.getY() + coords.getZ());
 	}
 
 }

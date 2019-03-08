@@ -1,14 +1,14 @@
 Symbol range map extraction starting
-Processing 51 files
-startProcessing "superscary\heavyinventories\HeavyInventories.java" md5: e502ea5c6be5a722201ae011bf1d1595
+Processing 52 files
+startProcessing "superscary\heavyinventories\HeavyInventories.java" md5: 818ec2bbe29081324df2dbfe701df51e
 Cache Hit!
 endProcessing "superscary\heavyinventories\HeavyInventories.java"
 
-startProcessing "superscary\heavyinventories\calc\PlayerWeightCalculator.java" md5: 25989ead208e39c532b2cf5f2a17bfa9
+startProcessing "superscary\heavyinventories\calc\PlayerWeightCalculator.java" md5: d884cc553d2a833a37e1019d4d18446e
 Cache Hit!
 endProcessing "superscary\heavyinventories\calc\PlayerWeightCalculator.java"
 
-startProcessing "superscary\heavyinventories\client\ClientProxy.java" md5: 0a6b8c5fac2999e5f84ad4f55a7a6ab3
+startProcessing "superscary\heavyinventories\client\ClientProxy.java" md5: 81ebe511f134fb3fe26979a34d442b5e
 Cache Hit!
 endProcessing "superscary\heavyinventories\client\ClientProxy.java"
 
@@ -20,7 +20,7 @@ startProcessing "superscary\heavyinventories\client\command\commands\HeavyInvent
 Cache Hit!
 endProcessing "superscary\heavyinventories\client\command\commands\HeavyInventoriesOpenConfigGui.java"
 
-startProcessing "superscary\heavyinventories\client\event\ClientEventHandler.java" md5: a940393ffe451b4467e6e4a3a951ddec
+startProcessing "superscary\heavyinventories\client\event\ClientEventHandler.java" md5: 43143e569918547d1f7c164c28bb2c55
 Cache Hit!
 endProcessing "superscary\heavyinventories\client\event\ClientEventHandler.java"
 
@@ -44,7 +44,7 @@ startProcessing "superscary\heavyinventories\client\gui\Toast.java" md5: c791178
 Cache Hit!
 endProcessing "superscary\heavyinventories\client\gui\Toast.java"
 
-startProcessing "superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java" md5: 9b02c519affa0b003d441e99b3224171
+startProcessing "superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java" md5: 7bf17bf9cc9d4c7e8b1cb2cb3568fb93
 Cache Hit!
 endProcessing "superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java"
 
@@ -52,7 +52,7 @@ startProcessing "superscary\heavyinventories\client\gui\meter\GuiMeterLocationCa
 Cache Hit!
 endProcessing "superscary\heavyinventories\client\gui\meter\GuiMeterLocationCalculator.java"
 
-startProcessing "superscary\heavyinventories\common\CommonProxy.java" md5: 41dd6e2f4c876e8b7a18f038382e6bb0
+startProcessing "superscary\heavyinventories\common\CommonProxy.java" md5: dc9175e89f1e70f46e2768c02ec13b44
 Cache Hit!
 endProcessing "superscary\heavyinventories\common\CommonProxy.java"
 
@@ -164,13 +164,8 @@ startProcessing "superscary\heavyinventories\configs\HeavyInventoriesConfig.java
 Cache Hit!
 endProcessing "superscary\heavyinventories\configs\HeavyInventoriesConfig.java"
 
-startProcessing "superscary\heavyinventories\configs\builder\ConfigBuilder.java" md5: c757875498b61b7a90e88857c55fc241
-Cache Hit!
+startProcessing "superscary\heavyinventories\configs\builder\ConfigBuilder.java" md5: 75048ffb789de50f59d079117fee9d2f
 endProcessing "superscary\heavyinventories\configs\builder\ConfigBuilder.java"
-
-startProcessing "superscary\heavyinventories\configs\loader\DynamicLibraryLoader.java" md5: 80159f3adc501ee3ed610e1ed9b0fc9a
-Cache Hit!
-endProcessing "superscary\heavyinventories\configs\loader\DynamicLibraryLoader.java"
 
 startProcessing "superscary\heavyinventories\configs\reader\ConfigReader.java" md5: e69cd97e3757d5e406b59d907db9a58b
 Cache Hit!
@@ -188,8 +183,12 @@ startProcessing "superscary\heavyinventories\server\ServerProxy.java" md5: 3e266
 Cache Hit!
 endProcessing "superscary\heavyinventories\server\ServerProxy.java"
 
-startProcessing "superscary\heavyinventories\util\Constants.java" md5: b2ff49f5ce231dea707200138db7ecb7
+startProcessing "superscary\heavyinventories\util\Constants.java" md5: 0654d277ff1137921b8e1aa48fcc9af7
 endProcessing "superscary\heavyinventories\util\Constants.java"
+
+startProcessing "superscary\heavyinventories\util\Coords.java" md5: 92d6fa9a10832b2acd83035e27d35e79
+Cache Hit!
+endProcessing "superscary\heavyinventories\util\Coords.java"
 
 startProcessing "superscary\heavyinventories\util\EnumTagID.java" md5: e186800d778475255a958ac0034040df
 Cache Hit!
@@ -199,7 +198,11 @@ startProcessing "superscary\heavyinventories\util\Logger.java" md5: 03c0ddd14bba
 Cache Hit!
 endProcessing "superscary\heavyinventories\util\Logger.java"
 
-startProcessing "superscary\heavyinventories\util\Toolkit.java" md5: 164699f06364ca0e5a390865e50fc3d8
+startProcessing "superscary\heavyinventories\util\PlayerHelper.java" md5: 0e83dbb29ccd1479077f9d6e6336cf20
+Cache Hit!
+endProcessing "superscary\heavyinventories\util\PlayerHelper.java"
+
+startProcessing "superscary\heavyinventories\util\Toolkit.java" md5: 1880f571a07673cb7d24ecebb403861f
 Cache Hit!
 endProcessing "superscary\heavyinventories\util\Toolkit.java"
 

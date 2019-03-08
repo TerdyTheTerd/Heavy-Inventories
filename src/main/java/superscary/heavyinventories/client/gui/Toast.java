@@ -29,6 +29,11 @@ public class Toast extends Gui
         this(component.getFormattedText());
     }
 
+    public Toast(String string, boolean bool)
+    {
+        this(new TextComponentTranslation(string));
+    }
+
     public static void renderText(Minecraft minecraft)
     {
         renderTextToScreen(minecraft, theText);
