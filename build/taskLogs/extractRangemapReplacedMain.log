@@ -1,27 +1,37 @@
 Symbol range map extraction starting
-Processing 52 files
-startProcessing "superscary\heavyinventories\HeavyInventories.java" md5: 9a415a03313a7f688504030d4cc5c806
-Cache Hit!
+Processing 53 files
+startProcessing "superscary\heavyinventories\HeavyInventories.java" md5: 3a3c078a79ef442d13da18dcbe92c8ed
+    Compile Error! Pb(390) The import superscary.supercore cannot be resolved
+    Compile Error! Pb(390) The import superscary.supercore cannot be resolved
+    Compile Error! Pb(83) SuperCore cannot be resolved to a variable
+    Compile Error! Pb(50) Generator cannot be resolved
 endProcessing "superscary\heavyinventories\HeavyInventories.java"
 
-startProcessing "superscary\heavyinventories\calc\PlayerWeightCalculator.java" md5: 0099652f807f38d7f499c620c862aa6b
-Cache Hit!
+startProcessing "superscary\heavyinventories\calc\PlayerWeightCalculator.java" md5: 5a0ce6e85817994b0c06c063a9b2acdd
+    Compile Error! Pb(390) The import baubles cannot be resolved
+    Compile Error! Pb(390) The import baubles cannot be resolved
+    Compile Error! Pb(2) IBaublesItemHandler cannot be resolved to a type
+    Compile Error! Pb(50) BaublesApi cannot be resolved
 endProcessing "superscary\heavyinventories\calc\PlayerWeightCalculator.java"
 
-startProcessing "superscary\heavyinventories\client\ClientProxy.java" md5: d6fb42796382f0776362c86b240c8f0e
-Cache Hit!
+startProcessing "superscary\heavyinventories\client\ClientProxy.java" md5: 4602cfb4d4c78e663b850bb792c61fce
 endProcessing "superscary\heavyinventories\client\ClientProxy.java"
 
-startProcessing "superscary\heavyinventories\client\command\HeavyInventoriesCommandRegistry.java" md5: 979d4953249828eea0713f51bd4f68b7
-Cache Hit!
+startProcessing "superscary\heavyinventories\client\command\HeavyInventoriesCommandRegistry.java" md5: 639a4b8bab0ee47c3270968dd18ead8a
 endProcessing "superscary\heavyinventories\client\command\HeavyInventoriesCommandRegistry.java"
 
 startProcessing "superscary\heavyinventories\client\command\commands\HeavyInventoriesOpenConfigGui.java" md5: 08c25bb3a6dedfa4f8a00605a1fc7224
 Cache Hit!
 endProcessing "superscary\heavyinventories\client\command\commands\HeavyInventoriesOpenConfigGui.java"
 
-startProcessing "superscary\heavyinventories\client\event\ClientEventHandler.java" md5: f4826396c0b26ef742c387cf4583aa85
-Cache Hit!
+startProcessing "superscary\heavyinventories\client\command\commands\HeavyInventoriesSetNewWeight.java" md5: 3f786f10c6f0561feabf57130197ece8
+    Compile Error! Pb(390) The import superscary.supercore cannot be resolved
+endProcessing "superscary\heavyinventories\client\command\commands\HeavyInventoriesSetNewWeight.java"
+
+startProcessing "superscary\heavyinventories\client\event\ClientEventHandler.java" md5: d4b5fe9977d5b28f94435b528b6ee44c
+    Compile Error! Pb(390) The import superscary.supercore cannot be resolved
+    Compile Error! Pb(83) EnumColor cannot be resolved to a variable
+    Compile Error! Pb(83) EnumColor cannot be resolved to a variable
 endProcessing "superscary\heavyinventories\client\event\ClientEventHandler.java"
 
 startProcessing "superscary\heavyinventories\client\event\PumpingIronHandler.java" md5: 3ac0dc065bf59e8083c6dbd7cf3eed9a
@@ -32,25 +42,19 @@ startProcessing "superscary\heavyinventories\client\gui\HeavyInventoriesGuiConfi
 Cache Hit!
 endProcessing "superscary\heavyinventories\client\gui\HeavyInventoriesGuiConfig.java"
 
-startProcessing "superscary\heavyinventories\client\gui\InventoryWeightText.java" md5: dd56579e7da8a746333c9223c70cb778
-Cache Hit!
+startProcessing "superscary\heavyinventories\client\gui\InventoryWeightText.java" md5: a28756e5a74cbd03e3a89d6bc3c104d6
 endProcessing "superscary\heavyinventories\client\gui\InventoryWeightText.java"
 
 startProcessing "superscary\heavyinventories\client\gui\ModGuiFactory.java" md5: 31b321ac05b21e98adb83e8271f2d64f
 Cache Hit!
 endProcessing "superscary\heavyinventories\client\gui\ModGuiFactory.java"
 
-startProcessing "superscary\heavyinventories\client\gui\Toast.java" md5: 3f261d93cd57323c8971caff07724257
-Cache Hit!
+startProcessing "superscary\heavyinventories\client\gui\Toast.java" md5: 02b783d8499a698465ac4e7f58aeb55e
 endProcessing "superscary\heavyinventories\client\gui\Toast.java"
 
 startProcessing "superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java" md5: a3c7f220c72a27cef468cf20609086d8
 Cache Hit!
 endProcessing "superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java"
-
-startProcessing "superscary\heavyinventories\client\gui\meter\GuiMeterLocationCalculator.java" md5: f0fb348c3ddbb71671454515eef84ed9
-Cache Hit!
-endProcessing "superscary\heavyinventories\client\gui\meter\GuiMeterLocationCalculator.java"
 
 startProcessing "superscary\heavyinventories\common\CommonProxy.java" md5: bbd4dc94d881e3ebde5202c74e9b5bdc
 Cache Hit!
@@ -120,12 +124,10 @@ startProcessing "superscary\heavyinventories\common\network\handlers\PlayerOverE
 Cache Hit!
 endProcessing "superscary\heavyinventories\common\network\handlers\PlayerOverEncumberedMessageHandler.java"
 
-startProcessing "superscary\heavyinventories\compat\CompatLoader.java" md5: df11d996c91127de43d820b9c5b0860d
-Cache Hit!
+startProcessing "superscary\heavyinventories\compat\CompatLoader.java" md5: 56c8807b687ca72b9ebcd77aed2dd4af
 endProcessing "superscary\heavyinventories\compat\CompatLoader.java"
 
-startProcessing "superscary\heavyinventories\compat\EnumCompatMods.java" md5: dd81dac5775e371bb548205359c08554
-Cache Hit!
+startProcessing "superscary\heavyinventories\compat\EnumCompatMods.java" md5: 1d5a34f9e87aa7f2c241b79bb95aaf0c
 endProcessing "superscary\heavyinventories\compat\EnumCompatMods.java"
 
 startProcessing "superscary\heavyinventories\compat\event\IPlayerCompatEvent.java" md5: fc921bc156bda3fd6a3cbf51a4e023c2
@@ -140,10 +142,6 @@ startProcessing "superscary\heavyinventories\compat\mods\HIJei.java" md5: e66966
 Cache Hit!
 endProcessing "superscary\heavyinventories\compat\mods\HIJei.java"
 
-startProcessing "superscary\heavyinventories\compat\mods\HIWaila.java" md5: 72d4779bf2a0be2ba56d17729bcc3e47
-Cache Hit!
-endProcessing "superscary\heavyinventories\compat\mods\HIWaila.java"
-
 startProcessing "superscary\heavyinventories\compat\mods\ironbackpacks\HIIronBackpacks.java" md5: 5f4bae38c9c53e4bb37f2a7124f1009f
 Cache Hit!
 endProcessing "superscary\heavyinventories\compat\mods\ironbackpacks\HIIronBackpacks.java"
@@ -152,40 +150,87 @@ startProcessing "superscary\heavyinventories\compat\mods\ironbackpacks\HIIronBac
 Cache Hit!
 endProcessing "superscary\heavyinventories\compat\mods\ironbackpacks\HIIronBackpacksConfig.java"
 
-startProcessing "superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java" md5: 30ab629567a0512c4778c0568ffbf691
-Cache Hit!
+startProcessing "superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java" md5: 65ee9a5e90fe9a9dab6730e87a6a85ae
+    Compile Error! Pb(390) The import mcjty cannot be resolved
+    Compile Error! Pb(390) The import mcjty cannot be resolved
+    Compile Error! Pb(390) The import mcjty cannot be resolved
+    Compile Error! Pb(390) The import mcjty cannot be resolved
+    Compile Error! Pb(2) IProbeInfoProvider cannot be resolved to a type
+    Compile Error! Pb(634) The method getID() of type HITOPInfoProvider must override or implement a supertype method
+    Compile Error! Pb(2) ProbeMode cannot be resolved to a type
+    Compile Error! Pb(2) IProbeInfo cannot be resolved to a type
+    Compile Error! Pb(2) IProbeHitData cannot be resolved to a type
 endProcessing "superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java"
 
 startProcessing "superscary\heavyinventories\compat\mods\theoneprobe\HITheOneProbe.java" md5: 65b9f7310a2b985b3eee41ea87bfae21
 Cache Hit!
 endProcessing "superscary\heavyinventories\compat\mods\theoneprobe\HITheOneProbe.java"
 
-startProcessing "superscary\heavyinventories\configs\HeavyInventoriesConfig.java" md5: be84b6e19e194917cec3813ac7a37572
-Cache Hit!
+startProcessing "superscary\heavyinventories\compat\mods\waila\HIWaila.java" md5: 7e455f63c70dddb2dc821bf39b2c41e6
+    Compile Error! Pb(390) The import mcp.mobius cannot be resolved
+    Compile Error! Pb(390) The import mcp.mobius cannot be resolved
+    Compile Error! Pb(390) The import mcp.mobius cannot be resolved
+    Compile Error! Pb(2) WailaPlugin cannot be resolved to a type
+    Compile Error! Pb(2) IWailaPlugin cannot be resolved to a type
+    Compile Error! Pb(2) IWailaRegistrar cannot be resolved to a type
+endProcessing "superscary\heavyinventories\compat\mods\waila\HIWaila.java"
+
+startProcessing "superscary\heavyinventories\compat\mods\waila\HIWailaInfoProvider.java" md5: 13f9b26b7fc5b49c82f3fefd918e36d1
+    Compile Error! Pb(390) The import mcp.mobius cannot be resolved
+    Compile Error! Pb(390) The import mcp.mobius cannot be resolved
+    Compile Error! Pb(390) The import mcp.mobius cannot be resolved
+    Compile Error! Pb(2) IWailaDataProvider cannot be resolved to a type
+    Compile Error! Pb(2) IWailaDataAccessor cannot be resolved to a type
+    Compile Error! Pb(2) IWailaConfigHandler cannot be resolved to a type
+endProcessing "superscary\heavyinventories\compat\mods\waila\HIWailaInfoProvider.java"
+
+startProcessing "superscary\heavyinventories\compat\mods\waila\HIWailaRegistrar.java" md5: 9a009c3d879fc68ed77d51c5cdfb4179
+    Compile Error! Pb(390) The import mcp.mobius cannot be resolved
+    Compile Error! Pb(2) IWailaRegistrar cannot be resolved to a type
+    Compile Error! Pb(634) The method addConfig(String, String, String) of type HIWailaRegistrar must override or implement a supertype method
+    Compile Error! Pb(634) The method addConfig(String, String, String, boolean) of type HIWailaRegistrar must override or implement a supertype method
+    Compile Error! Pb(634) The method addConfigRemote(String, String, String) of type HIWailaRegistrar must override or implement a supertype method
+    Compile Error! Pb(634) The method addConfigRemote(String, String, String, boolean) of type HIWailaRegistrar must override or implement a supertype method
+    Compile Error! Pb(634) The method addConfig(String, String) of type HIWailaRegistrar must override or implement a supertype method
+    Compile Error! Pb(634) The method addConfig(String, String, boolean) of type HIWailaRegistrar must override or implement a supertype method
+    Compile Error! Pb(634) The method addConfigRemote(String, String) of type HIWailaRegistrar must override or implement a supertype method
+    Compile Error! Pb(634) The method addConfigRemote(String, String, boolean) of type HIWailaRegistrar must override or implement a supertype method
+    Compile Error! Pb(2) IWailaDataProvider cannot be resolved to a type
+    Compile Error! Pb(2) IWailaDataProvider cannot be resolved to a type
+    Compile Error! Pb(2) IWailaDataProvider cannot be resolved to a type
+    Compile Error! Pb(2) IWailaDataProvider cannot be resolved to a type
+    Compile Error! Pb(2) IWailaDataProvider cannot be resolved to a type
+    Compile Error! Pb(2) IWailaEntityProvider cannot be resolved to a type
+    Compile Error! Pb(2) IWailaEntityProvider cannot be resolved to a type
+    Compile Error! Pb(2) IWailaEntityProvider cannot be resolved to a type
+    Compile Error! Pb(2) IWailaEntityProvider cannot be resolved to a type
+    Compile Error! Pb(2) IWailaEntityProvider cannot be resolved to a type
+    Compile Error! Pb(2) IWailaFMPProvider cannot be resolved to a type
+    Compile Error! Pb(2) IWailaFMPProvider cannot be resolved to a type
+    Compile Error! Pb(2) IWailaFMPProvider cannot be resolved to a type
+    Compile Error! Pb(2) IWailaBlockDecorator cannot be resolved to a type
+    Compile Error! Pb(2) IWailaFMPDecorator cannot be resolved to a type
+    Compile Error! Pb(2) IWailaTooltipRenderer cannot be resolved to a type
+endProcessing "superscary\heavyinventories\compat\mods\waila\HIWailaRegistrar.java"
+
+startProcessing "superscary\heavyinventories\configs\HeavyInventoriesConfig.java" md5: a13bc21f99eaba3939dde803ae722e62
 endProcessing "superscary\heavyinventories\configs\HeavyInventoriesConfig.java"
 
 startProcessing "superscary\heavyinventories\configs\builder\ConfigBuilder.java" md5: 75048ffb789de50f59d079117fee9d2f
 Cache Hit!
 endProcessing "superscary\heavyinventories\configs\builder\ConfigBuilder.java"
 
-startProcessing "superscary\heavyinventories\configs\reader\ConfigReader.java" md5: db83ea629214fede10692c37a01b32cd
-Cache Hit!
+startProcessing "superscary\heavyinventories\configs\reader\ConfigReader.java" md5: 4f06cc57f56557b43dbae7cf8979186e
 endProcessing "superscary\heavyinventories\configs\reader\ConfigReader.java"
 
 startProcessing "superscary\heavyinventories\configs\weights\CustomConfigLoader.java" md5: 508f35f8e88f2a023112470edde98ece
 Cache Hit!
 endProcessing "superscary\heavyinventories\configs\weights\CustomConfigLoader.java"
 
-startProcessing "superscary\heavyinventories\configs\weights\MinecraftConfig.java" md5: bf0fad493d7cc9661d77b1c79889320c
-Cache Hit!
-endProcessing "superscary\heavyinventories\configs\weights\MinecraftConfig.java"
-
-startProcessing "superscary\heavyinventories\server\ServerProxy.java" md5: 2b54c71ba5caa220aa02b61c8f67093e
-Cache Hit!
+startProcessing "superscary\heavyinventories\server\ServerProxy.java" md5: 0c564dad1fcfef8674ad47301b3ee5f7
 endProcessing "superscary\heavyinventories\server\ServerProxy.java"
 
-startProcessing "superscary\heavyinventories\util\Constants.java" md5: ca6cc88232f6e15bb25aba0a85f7b1f5
-Cache Hit!
+startProcessing "superscary\heavyinventories\util\Constants.java" md5: 94840788efbcd4d44bfc0f6f4da5a619
 endProcessing "superscary\heavyinventories\util\Constants.java"
 
 startProcessing "superscary\heavyinventories\util\Coords.java" md5: 92d6fa9a10832b2acd83035e27d35e79
@@ -204,7 +249,6 @@ startProcessing "superscary\heavyinventories\util\PlayerHelper.java" md5: 0e83db
 Cache Hit!
 endProcessing "superscary\heavyinventories\util\PlayerHelper.java"
 
-startProcessing "superscary\heavyinventories\util\Toolkit.java" md5: a5b40edeb0621b4d341c082ee810b939
-Cache Hit!
+startProcessing "superscary\heavyinventories\util\Toolkit.java" md5: ed2e650b3036accc10ee0af7530a58de
 endProcessing "superscary\heavyinventories\util\Toolkit.java"
 

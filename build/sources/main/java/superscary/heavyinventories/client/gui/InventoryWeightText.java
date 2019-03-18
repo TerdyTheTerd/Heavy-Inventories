@@ -8,13 +8,14 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import superscary.heavyinventories.client.event.ClientEventHandler;
 import superscary.heavyinventories.common.capability.weight.IWeighable;
 import superscary.heavyinventories.common.capability.weight.WeightProvider;
+import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.util.Toolkit;
 
 @SideOnly(Side.CLIENT)
 public class InventoryWeightText extends Gui
 {
 
-	private static String label = " stone";
+	private static String label = Toolkit.checkFormatOfRenderText(HeavyInventoriesConfig.weightText);
 
 	public static void renderText(Minecraft minecraft)
 	{

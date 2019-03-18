@@ -68,6 +68,16 @@ public class Toolkit
 		return net.minecraft.client.resources.I18n.format(par1Str);
 	}
 
+	public static String getString(String name, String category, String defaultValue, String comment)
+	{
+		return HeavyInventoriesConfig.getConfig().getString(name, category, defaultValue, comment);
+	}
+
+	public static String getString(String name, String category, String defaultValue)
+	{
+		return getString(name, category, defaultValue, "Default comment for value " + name);
+	}
+
 	public static float getFloat(String name, String category, float defaultValue, float minValue, float maxValue)
 	{
 		return HeavyInventoriesConfig.getConfig().getFloat(name, category, defaultValue, minValue, maxValue, name);
@@ -164,14 +174,7 @@ public class Toolkit
 		Item item = stack.getItem();
 		String modid = getModNameFromItem(item);
 
-		if (modid.equalsIgnoreCase("minecraft"))
-		{
-			return PlayerWeightCalculator.getWeight(stack);
-		}
-		else
-		{
-			return CustomConfigLoader.getItemWeight(modid, item);
-		}
+		return CustomConfigLoader.getItemWeight(modid, item);
 	}
 
 	/**
@@ -199,6 +202,15 @@ public class Toolkit
 	{
 		Coords coords = distanceHelper(coords1, coords2);
 		return Math.sqrt(coords.getX() + coords.getY() + coords.getZ());
+	}
+
+	public static String checkFormatOfRenderText(String string)
+	{
+		if (string.charAt(0) != ' ')
+		{
+			return " " + string;
+		}
+		return string;
 	}
 
 }

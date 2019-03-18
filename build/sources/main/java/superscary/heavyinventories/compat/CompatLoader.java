@@ -3,7 +3,7 @@ package superscary.heavyinventories.compat;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.ModContainer;
 import superscary.heavyinventories.compat.mods.HIBaubles;
-import superscary.heavyinventories.compat.mods.HIWaila;
+import superscary.heavyinventories.compat.mods.waila.HIWaila;
 import superscary.heavyinventories.compat.mods.theoneprobe.HITheOneProbe;
 import superscary.heavyinventories.util.Logger;
 
@@ -66,6 +66,9 @@ public class CompatLoader
 				case "waila": new HIWaila();
 								unloaded.remove(s);
 								break;
+				/*case "hwyla": new HIWaila();
+				              unloaded.remove(s);
+				              break;*/
 				default: break;
 			}
 		}

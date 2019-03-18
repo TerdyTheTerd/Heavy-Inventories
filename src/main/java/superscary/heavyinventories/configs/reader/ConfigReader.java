@@ -47,10 +47,7 @@ public class ConfigReader
 				if (!loadedMods.contains(s) && !list.contains(s))
 				{
 					s += ".cfg";
-					if (!s.equals("Minecraft.cfg"))
-					{
-						loadedMods.add(s);
-					}
+					loadedMods.add(s);
 				}
 			}
 		}

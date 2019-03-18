@@ -6,10 +6,8 @@ import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.Loader;
 import superscary.heavyinventories.configs.weights.CustomConfigLoader;
-import superscary.heavyinventories.configs.weights.MinecraftConfig;
 import superscary.heavyinventories.util.Toolkit;
 
 public class PlayerWeightCalculator
@@ -28,14 +26,7 @@ public class PlayerWeightCalculator
 			ItemStack stack = player.inventory.getStackInSlot(i);
 			if (stack != null)
 			{
-				if (Toolkit.getModNameFromItem(stack.getItem()).equalsIgnoreCase("minecraft"))
-				{
-					weight += (getWeight(stack) * stack.getCount());
-				}
-				else
-				{
-					weight += (getWeight(Toolkit.getModNameFromItem(stack.getItem()), stack.getItem()) * stack.getCount());
-				}
+				weight += (getWeight(Toolkit.getModNameFromItem(stack.getItem()), stack.getItem()) * stack.getCount());
 			}
 		}
 
@@ -67,10 +58,10 @@ public class PlayerWeightCalculator
 	 * @param stack
 	 * @return
 	 */
-	public static double getWeight(ItemStack stack)
+	/*public static double getWeight(ItemStack stack)
 	{
 		return MinecraftConfig.getConfig().get(Configuration.CATEGORY_GENERAL, stack.getItem().getRegistryName().getResourcePath(), 0.5).getDouble();
-	}
+	}*/
 
 	/**
 	 * Gets the weight for custom items

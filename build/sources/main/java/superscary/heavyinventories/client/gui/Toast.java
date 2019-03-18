@@ -2,6 +2,7 @@ package superscary.heavyinventories.client.gui;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
+import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.util.text.TextComponentTranslation;
@@ -10,7 +11,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import superscary.heavyinventories.util.Toolkit;
 
 @SideOnly(Side.CLIENT)
-public class Toast extends Gui
+public class Toast extends GuiScreen
 {
 
     private static String theText;
@@ -36,7 +37,7 @@ public class Toast extends Gui
 
     public static void renderText(Minecraft minecraft)
     {
-        renderTextToScreen(minecraft, theText);
+        if (minecraft.world.isRemote) renderTextToScreen(minecraft, theText);
     }
 
     public static void renderTextToScreen(Minecraft minecraft, String text)

@@ -44,6 +44,7 @@ public class HeavyInventoriesConfig
 	public static double maxCarryWeight;
 
 	public static String[] ignoredMods;
+	public static String weightText;
 
 	public static void init(File file)
 	{
@@ -81,6 +82,8 @@ public class HeavyInventoriesConfig
 
 		String[] files = config.getStringList("Files", "Files", new String[] {"Minecraft.cfg"}, "The custom weight files for other mods. Put each new file on a new line.");
 		ignoredMods = config.getStringList("Ignored Mods", "Ignored Mods", new String[] {""}, "Mods to be ignored when custom generating weights.");
+
+		weightText = Toolkit.getString("weightText", SETUP, "Stone", "The weight text to be rendered to the screen");
 
 		config.save();
 	}

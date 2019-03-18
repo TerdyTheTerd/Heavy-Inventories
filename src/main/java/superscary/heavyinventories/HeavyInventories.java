@@ -1,15 +1,9 @@
 package superscary.heavyinventories;
 
 import net.minecraft.block.Block;
-import net.minecraft.client.Minecraft;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.ModContainer;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.*;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
@@ -21,8 +15,6 @@ import superscary.heavyinventories.common.CommonProxy;
 import superscary.heavyinventories.compat.CompatLoader;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.configs.builder.ConfigBuilder;
-import superscary.heavyinventories.configs.reader.ConfigReader;
-import superscary.heavyinventories.configs.weights.MinecraftConfig;
 import superscary.heavyinventories.util.Constants;
 import superscary.heavyinventories.util.Logger;
 import superscary.heavyinventories.util.Toolkit;
@@ -60,13 +52,13 @@ public class HeavyInventories
         Logger.info("PreInit...");
 
         Generator.Info.create(Constants.class, event);
-        MinecraftConfig.init(event.getModConfigurationDirectory());
         ConfigBuilder.setFile(event.getModConfigurationDirectory());
         HeavyInventoriesConfig.init(event.getModConfigurationDirectory());
 
         readerDirectory = event.getModConfigurationDirectory();
 
         FMLInterModComms.sendFunctionMessage("theoneprobe", "getTheOneProbe", "superscary.heavyinventories.compat.mods.theoneprobe.HITheOneProbe");
+        FMLInterModComms.sendMessage("Waila", "register", "superscary.heavyinventories.compat.mods.waila.HIWaila");
 
         proxy.preInit();
     }

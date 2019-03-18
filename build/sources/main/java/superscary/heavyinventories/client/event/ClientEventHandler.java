@@ -37,6 +37,8 @@ import superscary.supercore.tools.EnumColor;
 public class ClientEventHandler
 {
 
+	public static String label = Toolkit.checkFormatOfRenderText(HeavyInventoriesConfig.weightText);
+
 	/**
 	 * For adding the weights to the items tooltip
 	 * @param event
@@ -55,7 +57,7 @@ public class ClientEventHandler
 					event.getToolTip().add(form(weight));
 					if (stack.getCount() > 1)
 					{
-						event.getToolTip().add(I18n.format("hi.gui.weight") + " " + (weight * stack.getCount()) + " Stone");
+						event.getToolTip().add(I18n.format("hi.gui.weight") + " " + (weight * stack.getCount()) + label);
 					}
 
 					if (Minecraft.getMinecraft().currentScreen != null)
@@ -81,7 +83,7 @@ public class ClientEventHandler
 					event.getToolTip().add(form(weight));
 					if (stack.getCount() > 1)
 					{
-						event.getToolTip().add(I18n.format("hi.gui.weight") + " " + (weight * stack.getCount()) + " Stone");
+						event.getToolTip().add(I18n.format("hi.gui.weight") + " " + (weight * stack.getCount()) + label);
 					}
 
 					if (Minecraft.getMinecraft().currentScreen != null)
@@ -120,7 +122,7 @@ public class ClientEventHandler
 	 */
 	private void addShiftTip(ItemTooltipEvent event, ItemStack stack, double weight)
 	{
-		event.getToolTip().add(I18n.format("hi.gui.maxStackWeight", stack.getMaxStackSize()) + " " + (weight * stack.getMaxStackSize()) + " Stone");
+		event.getToolTip().add(I18n.format("hi.gui.maxStackWeight", stack.getMaxStackSize()) + " " + (weight * stack.getMaxStackSize()) + label);
 	}
 
 	/**
@@ -160,7 +162,7 @@ public class ClientEventHandler
 	 */
 	private String form(double weight)
 	{
-		return ChatFormatting.BOLD + "" + ChatFormatting.WHITE + "Weight: " + weight + " Stone";
+		return ChatFormatting.BOLD + "" + ChatFormatting.WHITE + "Weight: " + weight + label;
 	}
 
 	private double playersCalculatedWeight = -1;

@@ -5,6 +5,7 @@ import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import superscary.heavyinventories.client.command.commands.HeavyInventoriesOpenConfigGui;
+import superscary.heavyinventories.client.command.commands.HeavyInventoriesSetNewWeight;
 
 @SideOnly(Side.CLIENT)
 public class HeavyInventoriesCommandRegistry
@@ -21,6 +22,7 @@ public class HeavyInventoriesCommandRegistry
 	private void registerAll()
 	{
 		register(new HeavyInventoriesOpenConfigGui());
+		register(new HeavyInventoriesSetNewWeight());
 	}
 
 	private void register(ICommand command)

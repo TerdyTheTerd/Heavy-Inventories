@@ -3,11 +3,9 @@ package superscary.heavyinventories.server;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import superscary.heavyinventories.client.event.ClientEventHandler;
 import superscary.heavyinventories.client.event.PumpingIronHandler;
 import superscary.heavyinventories.common.CommonProxy;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
-import superscary.heavyinventories.configs.weights.MinecraftConfig;
 
 public class ServerProxy extends CommonProxy
 {
@@ -16,8 +14,6 @@ public class ServerProxy extends CommonProxy
 	public void preInit()
 	{
 		super.preInit();
-		//MinecraftForge.EVENT_BUS.register(new ClientEventHandler());
-		MinecraftForge.EVENT_BUS.register(new MinecraftConfig());
 		MinecraftForge.EVENT_BUS.register(new HeavyInventoriesConfig());
 		MinecraftForge.EVENT_BUS.register(new PumpingIronHandler());
 	}
