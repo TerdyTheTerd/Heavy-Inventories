@@ -4,10 +4,13 @@
 	"1.12.2": {
 		"2.3.2": "- Fixed deletion of weight files 
 				  - Fixed The One Probe compatability",
-		"2.3.3": "- Fixed item weight not being read correctly"
+		"2.3.3": "- Fixed item weight not being read correctly",
+		"2.4": "- SHOULD have fixed OpenGL error
+			- Added ability to change weight of held block through commands (/heavyinventories set <double value>)
+			- Added ability to change weight value text from stone"
 	},
 	"promos": {
-		"1.12.2-recommended": "2.3.3",
+		"1.12.2-recommended": "2.4",
 	}
 
 }
