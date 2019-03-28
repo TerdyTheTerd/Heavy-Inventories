@@ -8,13 +8,9 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraftforge.common.config.Configuration;
 import org.apache.logging.log4j.Level;
 import superscary.heavyinventories.calc.PlayerWeightCalculator;
-import superscary.heavyinventories.client.gui.HeavyInventoriesGuiConfig;
-import superscary.heavyinventories.client.gui.Toast;
-import superscary.heavyinventories.configs.builder.ConfigBuilder;
 import superscary.heavyinventories.configs.reader.ConfigReader;
 import superscary.heavyinventories.util.Logger;
 import superscary.heavyinventories.util.Toolkit;
-import superscary.supercore.tools.gui.DisplayDelayedGui;
 
 public class HeavyInventoriesSetNewWeight extends CommandBase
 {
@@ -48,7 +44,7 @@ public class HeavyInventoriesSetNewWeight extends CommandBase
 
                     configuration.load();
 
-                    configuration.get("general", item.getRegistryName().getResourcePath(), "0.1", null).set(newWeight);
+                    configuration.get("general", item.getRegistryName().getResourcePath(), "", null).set(newWeight);
 
                     configuration.save();
 

@@ -52,34 +52,56 @@ public class ConfigBuilder
             list.add(s);
         }
 
+        File folder = new File(file + "/Heavy Inventories/Weights/");
+        File[] listOfFiles = folder.listFiles();
+
         if (!list.contains(modid))
         {
+
             if (HeavyInventoriesConfig.autoGenerateWeightConfigFiles)
             {
                 if (ignored.size() == 0) buildList();
                 mod = modid;
                 modid += ".cfg";
 
-                File folder = new File(file + "/Heavy Inventories/Weights/");
-                File[] listOfFiles = folder.listFiles();
-
                 File configFile = new File(file + "/Heavy Inventories/Weights/", modid);
                 config = new Configuration(configFile);
 
-                if (config != null && ignored.stream().noneMatch(mod::equalsIgnoreCase))
-                {
-                    for (int i = 0; i < listOfFiles.length; i++)
-                    {
-                        if (!listOfFiles[i].isFile())
-                        {
-                            ignored.add(mod);
-                        }
-                    }
-                }
+                doCheck(listOfFiles);
                 loadConfig();
+            }
+            else
+            {
+                buildExisting(modid, listOfFiles);
             }
         }
 
+    }
+
+    public static void buildExisting(String modid, File[] listOfFiles)
+    {
+        for (File file : listOfFiles)
+        {
+            if (ignored.size() == 0) buildList();
+            mod = modid;
+            modid += ".cfg";
+
+            config = new Configuration(new File(file + "/Heavy Inventories/Weights/", modid));
+            doCheck(listOfFiles);
+            loadConfig();
+        }
+
+    }
+
+    public static void doCheck(File[] listOfFiles)
+    {
+        if (config != null && ignored.stream().noneMatch(mod::equalsIgnoreCase))
+        {
+            for (int i = 0; i < listOfFiles.length; i++)
+            {
+                if (!listOfFiles[i].isFile()) ignored.add(mod);
+            }
+        }
     }
 
     public static void loadConfig()

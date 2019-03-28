@@ -74,7 +74,6 @@ public class HITOPInfoProvider implements IProbeInfoProvider
 		}
 
 		return null;
-
 	}
 
 	/**

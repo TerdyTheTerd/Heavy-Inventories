@@ -1,6 +1,7 @@
 Symbol range map extraction starting
 Processing 53 files
 startProcessing "superscary\heavyinventories\HeavyInventories.java" md5: 3a3c078a79ef442d13da18dcbe92c8ed
+Cache Hit!
     Compile Error! Pb(390) The import superscary.supercore cannot be resolved
     Compile Error! Pb(390) The import superscary.supercore cannot be resolved
     Compile Error! Pb(83) SuperCore cannot be resolved to a variable
@@ -173,6 +174,7 @@ Class End  : superscary.heavyinventories.HeavyInventories
 endProcessing "superscary\heavyinventories\HeavyInventories.java"
 
 startProcessing "superscary\heavyinventories\calc\PlayerWeightCalculator.java" md5: 5a0ce6e85817994b0c06c063a9b2acdd
+Cache Hit!
     Compile Error! Pb(390) The import baubles cannot be resolved
     Compile Error! Pb(390) The import baubles cannot be resolved
     Compile Error! Pb(2) IBaublesItemHandler cannot be resolved to a type
@@ -249,6 +251,7 @@ Class End  : superscary.heavyinventories.calc.PlayerWeightCalculator
 endProcessing "superscary\heavyinventories\calc\PlayerWeightCalculator.java"
 
 startProcessing "superscary\heavyinventories\client\ClientProxy.java" md5: 4602cfb4d4c78e663b850bb792c61fce
+Cache Hit!
 @|superscary\heavyinventories\client\ClientProxy.java|8|42|superscary.heavyinventories.client|package|superscary.heavyinventories.client|(file)
 Class Start: superscary.heavyinventories.client.ClientProxy
    @|superscary\heavyinventories\client\ClientProxy.java|526|537|ClientProxy|class|superscary.heavyinventories.client.ClientProxy
@@ -292,6 +295,7 @@ Class End  : superscary.heavyinventories.client.ClientProxy
 endProcessing "superscary\heavyinventories\client\ClientProxy.java"
 
 startProcessing "superscary\heavyinventories\client\command\HeavyInventoriesCommandRegistry.java" md5: 639a4b8bab0ee47c3270968dd18ead8a
+Cache Hit!
 @|superscary\heavyinventories\client\command\HeavyInventoriesCommandRegistry.java|8|50|superscary.heavyinventories.client.command|package|superscary.heavyinventories.client.command|(file)
 Class Start: superscary.heavyinventories.client.command.HeavyInventoriesCommandRegistry
    @|superscary\heavyinventories\client\command\HeavyInventoriesCommandRegistry.java|438|446|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly
@@ -365,6 +369,7 @@ Class End  : superscary.heavyinventories.client.command.commands.HeavyInventorie
 endProcessing "superscary\heavyinventories\client\command\commands\HeavyInventoriesOpenConfigGui.java"
 
 startProcessing "superscary\heavyinventories\client\command\commands\HeavyInventoriesSetNewWeight.java" md5: 3f786f10c6f0561feabf57130197ece8
+Cache Hit!
     Compile Error! Pb(390) The import superscary.supercore cannot be resolved
 @|superscary\heavyinventories\client\command\commands\HeavyInventoriesSetNewWeight.java|8|59|superscary.heavyinventories.client.command.commands|package|superscary.heavyinventories.client.command.commands|(file)
 Class Start: superscary.heavyinventories.client.command.commands.HeavyInventoriesSetNewWeight
@@ -448,6 +453,7 @@ Class End  : superscary.heavyinventories.client.command.commands.HeavyInventorie
 endProcessing "superscary\heavyinventories\client\command\commands\HeavyInventoriesSetNewWeight.java"
 
 startProcessing "superscary\heavyinventories\client\event\ClientEventHandler.java" md5: d4b5fe9977d5b28f94435b528b6ee44c
+Cache Hit!
     Compile Error! Pb(390) The import superscary.supercore cannot be resolved
     Compile Error! Pb(83) EnumColor cannot be resolved to a variable
     Compile Error! Pb(83) EnumColor cannot be resolved to a variable
@@ -1185,6 +1191,7 @@ Class End  : superscary.heavyinventories.client.gui.HeavyInventoriesGuiConfig
 endProcessing "superscary\heavyinventories\client\gui\HeavyInventoriesGuiConfig.java"
 
 startProcessing "superscary\heavyinventories\client\gui\InventoryWeightText.java" md5: a28756e5a74cbd03e3a89d6bc3c104d6
+Cache Hit!
 @|superscary\heavyinventories\client\gui\InventoryWeightText.java|8|46|superscary.heavyinventories.client.gui|package|superscary.heavyinventories.client.gui|(file)
 Class Start: superscary.heavyinventories.client.gui.InventoryWeightText
    @|superscary\heavyinventories\client\gui\InventoryWeightText.java|607|615|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly
@@ -1319,6 +1326,7 @@ Class End  : superscary.heavyinventories.client.gui.ModGuiFactory
 endProcessing "superscary\heavyinventories\client\gui\ModGuiFactory.java"
 
 startProcessing "superscary\heavyinventories\client\gui\Toast.java" md5: 02b783d8499a698465ac4e7f58aeb55e
+Cache Hit!
 @|superscary\heavyinventories\client\gui\Toast.java|8|46|superscary.heavyinventories.client.gui|package|superscary.heavyinventories.client.gui|(file)
 Class Start: superscary.heavyinventories.client.gui.Toast
    @|superscary\heavyinventories\client\gui\Toast.java|477|485|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly
@@ -2294,6 +2302,7 @@ Class End  : superscary.heavyinventories.common.network.handlers.PlayerOverEncum
 endProcessing "superscary\heavyinventories\common\network\handlers\PlayerOverEncumberedMessageHandler.java"
 
 startProcessing "superscary\heavyinventories\compat\CompatLoader.java" md5: 56c8807b687ca72b9ebcd77aed2dd4af
+Cache Hit!
 @|superscary\heavyinventories\compat\CompatLoader.java|8|42|superscary.heavyinventories.compat|package|superscary.heavyinventories.compat|(file)
 Class Start: superscary.heavyinventories.compat.CompatLoader
    @|superscary\heavyinventories\compat\CompatLoader.java|426|438|CompatLoader|class|superscary.heavyinventories.compat.CompatLoader
@@ -2351,6 +2360,7 @@ Class End  : superscary.heavyinventories.compat.CompatLoader
 endProcessing "superscary\heavyinventories\compat\CompatLoader.java"
 
 startProcessing "superscary\heavyinventories\compat\EnumCompatMods.java" md5: 1d5a34f9e87aa7f2c241b79bb95aaf0c
+Cache Hit!
 @|superscary\heavyinventories\compat\EnumCompatMods.java|8|42|superscary.heavyinventories.compat|package|superscary.heavyinventories.compat|(file)
 Enum Start: superscary.heavyinventories.compat.EnumCompatMods
    @|superscary\heavyinventories\compat\EnumCompatMods.java|57|71|EnumCompatMods|class|superscary.heavyinventories.compat.EnumCompatMods
@@ -2475,7 +2485,7 @@ Class Start: superscary.heavyinventories.compat.mods.ironbackpacks.HIIronBackpac
 Class End  : superscary.heavyinventories.compat.mods.ironbackpacks.HIIronBackpacksConfig
 endProcessing "superscary\heavyinventories\compat\mods\ironbackpacks\HIIronBackpacksConfig.java"
 
-startProcessing "superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java" md5: 65ee9a5e90fe9a9dab6730e87a6a85ae
+startProcessing "superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java" md5: 4d7d0d432b9238b52146b30b9221924f
     Compile Error! Pb(390) The import mcjty cannot be resolved
     Compile Error! Pb(390) The import mcjty cannot be resolved
     Compile Error! Pb(390) The import mcjty cannot be resolved
@@ -2521,54 +2531,58 @@ Class Start: superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvid
       ERROR SimpleName: text null
       @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1465|1477|getColorText|method|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;
       @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1478|1484|player|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|addProbeInfo|(ProbeModeIProbeInfoLnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/block/state/IBlockState;IProbeHitData)V|player|2
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1511|1515|info|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|addProbeInfo|(ProbeModeIProbeInfoLnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/block/state/IBlockState;IProbeHitData)V|info|1
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1501|1508|Toolkit|class|superscary.heavyinventories.util.Toolkit
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1509|1532|checkFormatOfRenderText|method|superscary.heavyinventories.util.Toolkit|checkFormatOfRenderText|(Ljava/lang/String;)Ljava/lang/String;
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1533|1555|HeavyInventoriesConfig|class|superscary.heavyinventories.configs.HeavyInventoriesConfig
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1556|1566|weightText|field|superscary.heavyinventories.configs.HeavyInventoriesConfig|weightText
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1569|1573|info|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|addProbeInfo|(ProbeModeIProbeInfoLnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/block/state/IBlockState;IProbeHitData)V|info|1
       ERROR SimpleName: defaultTextStyle null
    Method End: addProbeInfo(ProbeModeIProbeInfoLnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/block/state/IBlockState;IProbeHitData)V
    Method Start: getColorText(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1801|1807|player|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|player|0
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1816|1827|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1768|1774|String|class|java.lang.String
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1775|1787|getColorText|method|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1788|1800|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1834|1844|IWeighable|class|superscary.heavyinventories.common.capability.weight.IWeighable
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1857|1863|player|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|player|0
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1864|1877|getCapability|method|net.minecraftforge.common.capabilities.ICapabilityProvider|getCapability|(Lnet/minecraftforge/common/capabilities/Capability;Lnet/minecraft/util/EnumFacing;)Ljava/lang/Object;
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1878|1892|WeightProvider|class|superscary.heavyinventories.common.capability.weight.WeightProvider
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1893|1913|WEIGHABLE_CAPABILITY|field|superscary.heavyinventories.common.capability.weight.WeightProvider|WEIGHABLE_CAPABILITY
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1924|1931|IOffset|class|superscary.heavyinventories.common.capability.offsets.IOffset
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1941|1947|player|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|player|0
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1948|1961|getCapability|method|net.minecraftforge.common.capabilities.ICapabilityProvider|getCapability|(Lnet/minecraftforge/common/capabilities/Capability;Lnet/minecraft/util/EnumFacing;)Ljava/lang/Object;
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1962|1976|OffsetProvider|class|superscary.heavyinventories.common.capability.offsets.OffsetProvider
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1977|1994|OFFSET_CAPABILITY|field|superscary.heavyinventories.common.capability.offsets.OffsetProvider|OFFSET_CAPABILITY
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2040|2052|getMaxWeight|method|superscary.heavyinventories.common.capability.weight.IWeighable|getMaxWeight|()D
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2064|2073|getOffset|method|superscary.heavyinventories.common.capability.offsets.IOffset|getOffset|()D
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2135|2141|player|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|player|0
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2142|2152|isCreative|method|net.minecraft.entity.player.EntityPlayer|isCreative|()Z
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2158|2180|HeavyInventoriesConfig|class|superscary.heavyinventories.configs.HeavyInventoriesConfig
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2181|2196|allowInCreative|field|superscary.heavyinventories.configs.HeavyInventoriesConfig|allowInCreative
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2212|2226|TextFormatting|class|net.minecraft.util.text.TextFormatting
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2227|2233|ITALIC|field|net.minecraft.util.text.TextFormatting|ITALIC
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2241|2252|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2361|2370|getWeight|method|superscary.heavyinventories.common.capability.weight.IWeighable|getWeight|()D
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2375|2386|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2425|2436|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2569|2578|getWeight|method|superscary.heavyinventories.common.capability.weight.IWeighable|getWeight|()D
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2583|2594|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2629|2643|TextFormatting|class|net.minecraft.util.text.TextFormatting
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2644|2647|RED|field|net.minecraft.util.text.TextFormatting|RED
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2655|2666|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1859|1865|player|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|player|0
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1874|1885|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1826|1832|String|class|java.lang.String
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1833|1845|getColorText|method|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1846|1858|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1892|1902|IWeighable|class|superscary.heavyinventories.common.capability.weight.IWeighable
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1915|1921|player|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|player|0
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1922|1935|getCapability|method|net.minecraftforge.common.capabilities.ICapabilityProvider|getCapability|(Lnet/minecraftforge/common/capabilities/Capability;Lnet/minecraft/util/EnumFacing;)Ljava/lang/Object;
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1936|1950|WeightProvider|class|superscary.heavyinventories.common.capability.weight.WeightProvider
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1951|1971|WEIGHABLE_CAPABILITY|field|superscary.heavyinventories.common.capability.weight.WeightProvider|WEIGHABLE_CAPABILITY
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1982|1989|IOffset|class|superscary.heavyinventories.common.capability.offsets.IOffset
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|1999|2005|player|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|player|0
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2006|2019|getCapability|method|net.minecraftforge.common.capabilities.ICapabilityProvider|getCapability|(Lnet/minecraftforge/common/capabilities/Capability;Lnet/minecraft/util/EnumFacing;)Ljava/lang/Object;
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2020|2034|OffsetProvider|class|superscary.heavyinventories.common.capability.offsets.OffsetProvider
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2035|2052|OFFSET_CAPABILITY|field|superscary.heavyinventories.common.capability.offsets.OffsetProvider|OFFSET_CAPABILITY
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2098|2110|getMaxWeight|method|superscary.heavyinventories.common.capability.weight.IWeighable|getMaxWeight|()D
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2122|2131|getOffset|method|superscary.heavyinventories.common.capability.offsets.IOffset|getOffset|()D
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2193|2199|player|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|player|0
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2200|2210|isCreative|method|net.minecraft.entity.player.EntityPlayer|isCreative|()Z
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2216|2238|HeavyInventoriesConfig|class|superscary.heavyinventories.configs.HeavyInventoriesConfig
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2239|2254|allowInCreative|field|superscary.heavyinventories.configs.HeavyInventoriesConfig|allowInCreative
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2270|2284|TextFormatting|class|net.minecraft.util.text.TextFormatting
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2285|2291|ITALIC|field|net.minecraft.util.text.TextFormatting|ITALIC
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2299|2310|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2419|2428|getWeight|method|superscary.heavyinventories.common.capability.weight.IWeighable|getWeight|()D
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2433|2444|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2483|2494|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2627|2636|getWeight|method|superscary.heavyinventories.common.capability.weight.IWeighable|getWeight|()D
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2641|2652|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2687|2701|TextFormatting|class|net.minecraft.util.text.TextFormatting
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2702|2705|RED|field|net.minecraft.util.text.TextFormatting|RED
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2713|2724|blockWeight|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getColorText|(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;|blockWeight|1
    Method End: getColorText(Lnet/minecraft/entity/player/EntityPlayer;D)Ljava/lang/String;
    Method Start: getWeightOfBlock(Lnet/minecraft/block/Block;)D
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2804|2809|block|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getWeightOfBlock|(Lnet/minecraft/block/Block;)D|block|0
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2781|2797|getWeightOfBlock|method|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getWeightOfBlock|(Lnet/minecraft/block/Block;)D
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2798|2803|Block|class|net.minecraft.block.Block
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2816|2822|String|class|java.lang.String
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2831|2838|Toolkit|class|superscary.heavyinventories.util.Toolkit
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2839|2858|getModNameFromBlock|method|superscary.heavyinventories.util.Toolkit|getModNameFromBlock|(Lnet/minecraft/block/Block;)Ljava/lang/String;
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2859|2864|block|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getWeightOfBlock|(Lnet/minecraft/block/Block;)D|block|0
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2876|2898|PlayerWeightCalculator|class|superscary.heavyinventories.calc.PlayerWeightCalculator
-      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2899|2908|getWeight|method|superscary.heavyinventories.calc.PlayerWeightCalculator|getWeight|(Ljava/lang/String;Lnet/minecraft/block/Block;)D
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2861|2866|block|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getWeightOfBlock|(Lnet/minecraft/block/Block;)D|block|0
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2838|2854|getWeightOfBlock|method|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getWeightOfBlock|(Lnet/minecraft/block/Block;)D
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2855|2860|Block|class|net.minecraft.block.Block
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2873|2879|String|class|java.lang.String
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2888|2895|Toolkit|class|superscary.heavyinventories.util.Toolkit
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2896|2915|getModNameFromBlock|method|superscary.heavyinventories.util.Toolkit|getModNameFromBlock|(Lnet/minecraft/block/Block;)Ljava/lang/String;
       @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2916|2921|block|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getWeightOfBlock|(Lnet/minecraft/block/Block;)D|block|0
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2933|2955|PlayerWeightCalculator|class|superscary.heavyinventories.calc.PlayerWeightCalculator
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2956|2965|getWeight|method|superscary.heavyinventories.calc.PlayerWeightCalculator|getWeight|(Ljava/lang/String;Lnet/minecraft/block/Block;)D
+      @|superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java|2973|2978|block|param|superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider|getWeightOfBlock|(Lnet/minecraft/block/Block;)D|block|0
    Method End: getWeightOfBlock(Lnet/minecraft/block/Block;)D
 Class End  : superscary.heavyinventories.compat.mods.theoneprobe.HITOPInfoProvider
 endProcessing "superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java"
@@ -2612,6 +2626,7 @@ Class End  : superscary.heavyinventories.compat.mods.theoneprobe.HITheOneProbe
 endProcessing "superscary\heavyinventories\compat\mods\theoneprobe\HITheOneProbe.java"
 
 startProcessing "superscary\heavyinventories\compat\mods\waila\HIWaila.java" md5: 7e455f63c70dddb2dc821bf39b2c41e6
+Cache Hit!
     Compile Error! Pb(390) The import mcp.mobius cannot be resolved
     Compile Error! Pb(390) The import mcp.mobius cannot be resolved
     Compile Error! Pb(390) The import mcp.mobius cannot be resolved
@@ -2664,6 +2679,7 @@ Class End  : superscary.heavyinventories.compat.mods.waila.HIWaila
 endProcessing "superscary\heavyinventories\compat\mods\waila\HIWaila.java"
 
 startProcessing "superscary\heavyinventories\compat\mods\waila\HIWailaInfoProvider.java" md5: 13f9b26b7fc5b49c82f3fefd918e36d1
+Cache Hit!
     Compile Error! Pb(390) The import mcp.mobius cannot be resolved
     Compile Error! Pb(390) The import mcp.mobius cannot be resolved
     Compile Error! Pb(390) The import mcp.mobius cannot be resolved
@@ -2704,6 +2720,7 @@ Class End  : superscary.heavyinventories.compat.mods.waila.HIWailaInfoProvider
 endProcessing "superscary\heavyinventories\compat\mods\waila\HIWailaInfoProvider.java"
 
 startProcessing "superscary\heavyinventories\compat\mods\waila\HIWailaRegistrar.java" md5: 9a009c3d879fc68ed77d51c5cdfb4179
+Cache Hit!
     Compile Error! Pb(390) The import mcp.mobius cannot be resolved
     Compile Error! Pb(2) IWailaRegistrar cannot be resolved to a type
     Compile Error! Pb(634) The method addConfig(String, String, String) of type HIWailaRegistrar must override or implement a supertype method
@@ -2945,6 +2962,7 @@ Class End  : superscary.heavyinventories.compat.mods.waila.HIWailaRegistrar
 endProcessing "superscary\heavyinventories\compat\mods\waila\HIWailaRegistrar.java"
 
 startProcessing "superscary\heavyinventories\configs\HeavyInventoriesConfig.java" md5: a13bc21f99eaba3939dde803ae722e62
+Cache Hit!
 @|superscary\heavyinventories\configs\HeavyInventoriesConfig.java|8|43|superscary.heavyinventories.configs|package|superscary.heavyinventories.configs|(file)
 Class Start: superscary.heavyinventories.configs.HeavyInventoriesConfig
    @|superscary\heavyinventories\configs\HeavyInventoriesConfig.java|543|565|HeavyInventoriesConfig|class|superscary.heavyinventories.configs.HeavyInventoriesConfig
@@ -3283,6 +3301,7 @@ Class End  : superscary.heavyinventories.configs.builder.ConfigBuilder
 endProcessing "superscary\heavyinventories\configs\builder\ConfigBuilder.java"
 
 startProcessing "superscary\heavyinventories\configs\reader\ConfigReader.java" md5: 4f06cc57f56557b43dbae7cf8979186e
+Cache Hit!
 @|superscary\heavyinventories\configs\reader\ConfigReader.java|8|50|superscary.heavyinventories.configs.reader|package|superscary.heavyinventories.configs.reader|(file)
 Class Start: superscary.heavyinventories.configs.reader.ConfigReader
    @|superscary\heavyinventories\configs\reader\ConfigReader.java|415|427|ConfigReader|class|superscary.heavyinventories.configs.reader.ConfigReader
@@ -3447,6 +3466,7 @@ Class End  : superscary.heavyinventories.configs.weights.CustomConfigLoader
 endProcessing "superscary\heavyinventories\configs\weights\CustomConfigLoader.java"
 
 startProcessing "superscary\heavyinventories\server\ServerProxy.java" md5: 0c564dad1fcfef8674ad47301b3ee5f7
+Cache Hit!
 @|superscary\heavyinventories\server\ServerProxy.java|8|42|superscary.heavyinventories.server|package|superscary.heavyinventories.server|(file)
 Class Start: superscary.heavyinventories.server.ServerProxy
    @|superscary\heavyinventories\server\ServerProxy.java|410|421|ServerProxy|class|superscary.heavyinventories.server.ServerProxy
@@ -3482,6 +3502,7 @@ Class End  : superscary.heavyinventories.server.ServerProxy
 endProcessing "superscary\heavyinventories\server\ServerProxy.java"
 
 startProcessing "superscary\heavyinventories\util\Constants.java" md5: 94840788efbcd4d44bfc0f6f4da5a619
+Cache Hit!
 @|superscary\heavyinventories\util\Constants.java|8|40|superscary.heavyinventories.util|package|superscary.heavyinventories.util|(file)
 Class Start: superscary.heavyinventories.util.Constants
    @|superscary\heavyinventories\util\Constants.java|56|65|Constants|class|superscary.heavyinventories.util.Constants
@@ -4034,6 +4055,7 @@ Class End  : superscary.heavyinventories.util.PlayerHelper
 endProcessing "superscary\heavyinventories\util\PlayerHelper.java"
 
 startProcessing "superscary\heavyinventories\util\Toolkit.java" md5: ed2e650b3036accc10ee0af7530a58de
+Cache Hit!
 @|superscary\heavyinventories\util\Toolkit.java|8|40|superscary.heavyinventories.util|package|superscary.heavyinventories.util|(file)
 Class Start: superscary.heavyinventories.util.Toolkit
    @|superscary\heavyinventories\util\Toolkit.java|1036|1043|Toolkit|class|superscary.heavyinventories.util.Toolkit

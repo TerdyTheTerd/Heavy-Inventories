@@ -35,7 +35,7 @@ public class HITOPInfoProvider implements IProbeInfoProvider
 	{
 		Block block = state.getBlock();
 		double blockWeight = Toolkit.roundDouble(getWeightOfBlock(block), 2);
-		info.horizontal().text(getColorText(player, blockWeight) + " stone", info.defaultTextStyle());
+		info.horizontal().text(getColorText(player, blockWeight) + Toolkit.checkFormatOfRenderText(HeavyInventoriesConfig.weightText), info.defaultTextStyle());
 	}
 
 	/**
@@ -74,7 +74,6 @@ public class HITOPInfoProvider implements IProbeInfoProvider
 		}
 
 		return null;
-
 	}
 
 	/**
