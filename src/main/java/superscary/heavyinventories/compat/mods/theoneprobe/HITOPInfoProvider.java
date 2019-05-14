@@ -7,11 +7,9 @@ import mcjty.theoneprobe.api.ProbeMode;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
-import superscary.heavyinventories.calc.PlayerWeightCalculator;
+import superscary.heavyinventories.calc.WeightCalculator;
 import superscary.heavyinventories.common.capability.offsets.IOffset;
 import superscary.heavyinventories.common.capability.offsets.OffsetProvider;
 import superscary.heavyinventories.common.capability.weight.IWeighable;
@@ -84,7 +82,7 @@ public class HITOPInfoProvider implements IProbeInfoProvider
 	private double getWeightOfBlock(Block block)
 	{
 		String modid = Toolkit.getModNameFromBlock(block);
-		return PlayerWeightCalculator.getWeight(modid, block);
+		return WeightCalculator.getWeight(modid, block);
 	}
 
 }

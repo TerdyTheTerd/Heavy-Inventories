@@ -5,7 +5,7 @@ Time: 12/19/18 1:27 AM
 Description: Initializing game
 
 java.lang.NullPointerException: Initializing game
-	at superscary.heavyinventories.calc.PlayerWeightCalculator.getWeight(PlayerWeightCalculator.java:82)
+	at superscary.heavyinventories.calc.WeightCalculator.getWeight(PlayerWeightCalculator.java:82)
 	at superscary.heavyinventories.client.event.ClientEventHandler.mouseOverTooltip(ClientEventHandler.java:64)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_94_ClientEventHandler_mouseOverTooltip_ItemTooltipEvent.invoke(.dynamic)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
@@ -40,7 +40,7 @@ A detailed walkthrough of the error, its code path and all known details is as f
 -- Head --
 Thread: Client thread
 Stacktrace:
-	at superscary.heavyinventories.calc.PlayerWeightCalculator.getWeight(PlayerWeightCalculator.java:82)
+	at superscary.heavyinventories.calc.WeightCalculator.getWeight(PlayerWeightCalculator.java:82)
 	at superscary.heavyinventories.client.event.ClientEventHandler.mouseOverTooltip(ClientEventHandler.java:64)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_94_ClientEventHandler_mouseOverTooltip_ItemTooltipEvent.invoke(.dynamic)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)

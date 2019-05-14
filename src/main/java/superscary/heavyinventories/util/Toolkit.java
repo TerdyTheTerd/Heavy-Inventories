@@ -5,22 +5,14 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
-import net.minecraft.util.registry.RegistryNamespaced;
 import net.minecraftforge.common.config.Configuration;
-import net.minecraftforge.fml.common.Loader;
-import net.minecraftforge.fml.common.ModContainer;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import superscary.heavyinventories.calc.PlayerWeightCalculator;
 import superscary.heavyinventories.common.capability.weight.IWeighable;
 import superscary.heavyinventories.common.capability.weight.WeightProvider;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.configs.weights.CustomConfigLoader;
-
-import java.io.File;
-import java.util.ArrayList;
 
 public class Toolkit
 {
@@ -60,6 +52,11 @@ public class Toolkit
 	public static String getModNameFromItem(Item item)
 	{
 		return item.getRegistryName().getResourceDomain();
+	}
+
+	public static String getModNameFromItem(ItemStack stack)
+	{
+		return getModNameFromItem(stack.getItem());
 	}
 
 	@SideOnly(Side.CLIENT)

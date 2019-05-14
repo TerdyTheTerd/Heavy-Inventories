@@ -19,8 +19,10 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.items.CapabilityItemHandler;
 import org.lwjgl.input.Keyboard;
-import superscary.heavyinventories.calc.PlayerWeightCalculator;
+import superscary.heavyinventories.calc.ItemInventoryWeight;
+import superscary.heavyinventories.calc.WeightCalculator;
 import superscary.heavyinventories.client.gui.InventoryWeightText;
 import superscary.heavyinventories.client.gui.Toast;
 import superscary.heavyinventories.client.gui.meter.GuiDrawMeter;
@@ -51,7 +53,8 @@ public class ClientEventHandler
 			ItemStack stack = event.getItemStack();
 			if (stack != null)
 			{
-				if (stack.getItem().getRegistryName().toString().split(":")[0].equalsIgnoreCase("minecraft"))
+
+				if (Toolkit.getModNameFromItem(stack).equalsIgnoreCase("minecraft"))
 				{
 					double weight = Toolkit.getWeightFromStack(stack);
 					event.getToolTip().add(form(weight));
@@ -71,6 +74,7 @@ public class ClientEventHandler
 							addNoShift(event);
 						}
 					}
+					doInventoryWeightCalc(event);
 				}
 				/**
 				 * Custom reader
@@ -97,6 +101,8 @@ public class ClientEventHandler
 							addNoShift(event);
 						}
 					}
+
+					doInventoryWeightCalc(event);
 				}
 				else
 				{
@@ -109,6 +115,7 @@ public class ClientEventHandler
 					{
 						addNoShift(event);
 					}
+					doInventoryWeightCalc(event);
 				}
 			}
 		}
@@ -165,6 +172,19 @@ public class ClientEventHandler
 		return ChatFormatting.BOLD + "" + ChatFormatting.WHITE + "Weight: " + weight + label;
 	}
 
+	private void doInventoryWeightCalc(ItemTooltipEvent event)
+	{
+		ItemStack stack = event.getItemStack();
+		if (stack != null)
+		{
+			if (stack.hasCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null))
+			{
+				double invWeight = ItemInventoryWeight.getWeight(stack);
+				event.getToolTip().add(I18n.format("hi.gui.invWeight", invWeight));
+			}
+		}
+	}
+
 	private double playersCalculatedWeight = -1;
 
 	/**
@@ -199,7 +219,7 @@ public class ClientEventHandler
 
 	public double getPlayersCalculatedWeight(PlayerHelper player)
 	{
-		return PlayerWeightCalculator.calculateWeight(player.getPlayer());
+		return WeightCalculator.calculateWeight(player.getPlayer());
 	}
 
 	/**
@@ -210,7 +230,7 @@ public class ClientEventHandler
 	public void onPlayerMove(TickEvent.PlayerTickEvent event)
 	{
 		PlayerHelper player = new PlayerHelper(event.player);
-		player.getWeightCapability().setWeight(PlayerWeightCalculator.calculateWeight(player.getPlayer()));
+		player.getWeightCapability().setWeight(WeightCalculator.calculateWeight(player.getPlayer()));
 
 		if (!player.getPlayer().isCreative())
 		{

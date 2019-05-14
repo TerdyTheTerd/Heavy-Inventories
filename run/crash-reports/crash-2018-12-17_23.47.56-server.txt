@@ -6,9 +6,9 @@ Description: Ticking player
 
 java.lang.NullPointerException: Ticking player
 	at superscary.heavyinventories.configs.weights.CustomConfigLoader.getItemWeight(CustomConfigLoader.java:40)
-	at superscary.heavyinventories.calc.PlayerWeightCalculator.getWeight(PlayerWeightCalculator.java:93)
-	at superscary.heavyinventories.calc.PlayerWeightCalculator.calculateWeightForBaublesInventory(PlayerWeightCalculator.java:69)
-	at superscary.heavyinventories.calc.PlayerWeightCalculator.calculateWeight(PlayerWeightCalculator.java:52)
+	at superscary.heavyinventories.calc.WeightCalculator.getWeight(PlayerWeightCalculator.java:93)
+	at superscary.heavyinventories.calc.WeightCalculator.calculateWeightForBaublesInventory(PlayerWeightCalculator.java:69)
+	at superscary.heavyinventories.calc.WeightCalculator.calculateWeight(PlayerWeightCalculator.java:52)
 	at superscary.heavyinventories.client.event.ClientEventHandler.getPlayersCalculatedWeight(ClientEventHandler.java:210)
 	at superscary.heavyinventories.client.event.ClientEventHandler.handleEncumberance(ClientEventHandler.java:188)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_93_ClientEventHandler_handleEncumberance_PlayerTickEvent.invoke(.dynamic)
@@ -35,9 +35,9 @@ A detailed walkthrough of the error, its code path and all known details is as f
 Thread: Server thread
 Stacktrace:
 	at superscary.heavyinventories.configs.weights.CustomConfigLoader.getItemWeight(CustomConfigLoader.java:40)
-	at superscary.heavyinventories.calc.PlayerWeightCalculator.getWeight(PlayerWeightCalculator.java:93)
-	at superscary.heavyinventories.calc.PlayerWeightCalculator.calculateWeightForBaublesInventory(PlayerWeightCalculator.java:69)
-	at superscary.heavyinventories.calc.PlayerWeightCalculator.calculateWeight(PlayerWeightCalculator.java:52)
+	at superscary.heavyinventories.calc.WeightCalculator.getWeight(PlayerWeightCalculator.java:93)
+	at superscary.heavyinventories.calc.WeightCalculator.calculateWeightForBaublesInventory(PlayerWeightCalculator.java:69)
+	at superscary.heavyinventories.calc.WeightCalculator.calculateWeight(PlayerWeightCalculator.java:52)
 	at superscary.heavyinventories.client.event.ClientEventHandler.getPlayersCalculatedWeight(ClientEventHandler.java:210)
 	at superscary.heavyinventories.client.event.ClientEventHandler.handleEncumberance(ClientEventHandler.java:188)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_93_ClientEventHandler_handleEncumberance_PlayerTickEvent.invoke(.dynamic)

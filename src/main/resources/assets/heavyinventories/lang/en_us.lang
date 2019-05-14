@@ -8,12 +8,14 @@ hi.splash.loseWeightMax=You are carrying to much to sleep!
 hi.splash.loseWeight=You are carrying to much to sleep!
 hi.splash.noRun=You're carrying to much to run!
 hi.splash.entityMount=You can't ride this while encumbered!
+hi.splash.setWeight=Set the weight of %s to %s
 
 # GUI
 hi.gui.shift=Hold %s for more information.
 hi.gui.weight=Stack Weight:
 hi.gui.maxStackWeight=Max Stack Weight (%s):
 hi.defaultWeight=This weight is the base weight due to a custom one not being provided or could not be read.
+hi.gui.invWeight=Weight of contents: %s
 
 # Commands
 hi.command.usage=heavyinventories

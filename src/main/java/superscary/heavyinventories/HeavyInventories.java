@@ -78,10 +78,18 @@ public class HeavyInventories
 
         findItemMods();
 
-        for (String s : itemMods)
+        if (HeavyInventoriesConfig.autoGenerateWeightConfigFiles)
         {
-            Logger.log(Level.INFO, "Building %s", s);
-            ConfigBuilder.build(s);
+            Logger.log(Level.INFO, "Auto Weight Generation is enabled!");
+            for (String s : itemMods)
+            {
+                Logger.log(Level.INFO, "Building %s", s);
+                ConfigBuilder.build(s);
+            }
+        }
+        else
+        {
+            ConfigBuilder.existing();
         }
 
         CompatLoader.build();

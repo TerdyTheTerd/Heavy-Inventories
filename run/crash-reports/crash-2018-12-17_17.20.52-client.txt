@@ -6,8 +6,8 @@ Description: Ticking entity
 
 java.lang.NullPointerException: Ticking entity
 	at superscary.heavyinventories.configs.weights.CustomConfigLoader.getItemWeight(CustomConfigLoader.java:31)
-	at superscary.heavyinventories.calc.PlayerWeightCalculator.getWeight(PlayerWeightCalculator.java:93)
-	at superscary.heavyinventories.calc.PlayerWeightCalculator.calculateWeight(PlayerWeightCalculator.java:47)
+	at superscary.heavyinventories.calc.WeightCalculator.getWeight(PlayerWeightCalculator.java:93)
+	at superscary.heavyinventories.calc.WeightCalculator.calculateWeight(PlayerWeightCalculator.java:47)
 	at superscary.heavyinventories.client.event.ClientEventHandler.getPlayersCalculatedWeight(ClientEventHandler.java:210)
 	at superscary.heavyinventories.client.event.ClientEventHandler.handleEncumberance(ClientEventHandler.java:188)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_92_ClientEventHandler_handleEncumberance_PlayerTickEvent.invoke(.dynamic)
@@ -44,8 +44,8 @@ A detailed walkthrough of the error, its code path and all known details is as f
 Thread: Client thread
 Stacktrace:
 	at superscary.heavyinventories.configs.weights.CustomConfigLoader.getItemWeight(CustomConfigLoader.java:31)
-	at superscary.heavyinventories.calc.PlayerWeightCalculator.getWeight(PlayerWeightCalculator.java:93)
-	at superscary.heavyinventories.calc.PlayerWeightCalculator.calculateWeight(PlayerWeightCalculator.java:47)
+	at superscary.heavyinventories.calc.WeightCalculator.getWeight(PlayerWeightCalculator.java:93)
+	at superscary.heavyinventories.calc.WeightCalculator.calculateWeight(PlayerWeightCalculator.java:47)
 	at superscary.heavyinventories.client.event.ClientEventHandler.getPlayersCalculatedWeight(ClientEventHandler.java:210)
 	at superscary.heavyinventories.client.event.ClientEventHandler.handleEncumberance(ClientEventHandler.java:188)
 	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_92_ClientEventHandler_handleEncumberance_PlayerTickEvent.invoke(.dynamic)
