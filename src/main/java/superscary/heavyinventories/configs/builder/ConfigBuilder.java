@@ -82,9 +82,6 @@ public class ConfigBuilder
 
     }
 
-    /**
-     * TODO: Causes a memory leak somehow
-     */
     public static void existing()
     {
         ArrayList<String> list = new ArrayList<>();
@@ -99,7 +96,7 @@ public class ConfigBuilder
 
         for (File file : files)
         {
-            if (file.getAbsoluteFile().toString().contains(".cfg"))
+            if (file.isFile() && !file.isDirectory() && file.getAbsoluteFile().toString().contains(".cfg"))
             {
                 config = new Configuration(new File(folder, file.getAbsoluteFile().getName()));
             }
