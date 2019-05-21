@@ -9,14 +9,18 @@ public class ItemInventoryWeight
 
     public static double getWeight(ItemStack itemStack)
     {
-        if (!itemStack.hasCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)) return WeightCalculator.getWeight(Toolkit.getModNameFromItem(itemStack.getItem()), itemStack.getItem()) * itemStack.getCount();
-        int slots = itemStack.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).getSlots();
         double stored = 0;
 
-        for (int i = 0; i < slots; i++)
+        if (!itemStack.hasCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)) return WeightCalculator.getWeight(Toolkit.getModNameFromItem(itemStack.getItem()), itemStack.getItem()) * itemStack.getCount();
+
+        if (itemStack.hasCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null))
         {
-            ItemStack item = itemStack.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).getStackInSlot(i);
-            stored += WeightCalculator.getWeight(Toolkit.getModNameFromItem(item), item) * item.getCount();
+            int slots = itemStack.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).getSlots();
+            for (int i = 0; i < slots; i++)
+            {
+                ItemStack item = itemStack.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).getStackInSlot(i);
+                stored += WeightCalculator.getWeight(Toolkit.getModNameFromItem(item), item) * item.getCount();
+            }
         }
 
         return stored;

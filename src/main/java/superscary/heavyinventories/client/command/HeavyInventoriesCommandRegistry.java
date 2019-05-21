@@ -6,7 +6,6 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import superscary.heavyinventories.client.command.commands.HeavyInventoriesOpenConfigGui;
 import superscary.heavyinventories.client.command.commands.HeavyInventoriesSetNewWeight;
-import superscary.heavyinventories.client.command.commands.HeavyInventoriesSetPumpingIronOffset;
 
 @SideOnly(Side.CLIENT)
 public class HeavyInventoriesCommandRegistry
@@ -24,7 +23,6 @@ public class HeavyInventoriesCommandRegistry
 	{
 		register(new HeavyInventoriesOpenConfigGui());
 		register(new HeavyInventoriesSetNewWeight());
-		register(new HeavyInventoriesSetPumpingIronOffset());
 	}
 
 	private void register(ICommand command)

@@ -5,6 +5,7 @@ import net.minecraftforge.fml.common.ModContainer;
 import superscary.heavyinventories.compat.mods.HIBaubles;
 import superscary.heavyinventories.compat.mods.waila.HIWaila;
 import superscary.heavyinventories.compat.mods.theoneprobe.HITheOneProbe;
+import superscary.heavyinventories.compat.mods.wearablebackpacks.HIWearableBackpacks;
 import superscary.heavyinventories.util.Logger;
 
 import java.util.ArrayList;

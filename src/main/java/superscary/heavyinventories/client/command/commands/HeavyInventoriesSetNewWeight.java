@@ -9,6 +9,8 @@ import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraftforge.common.config.Configuration;
 import org.apache.logging.log4j.Level;
 import superscary.heavyinventories.calc.WeightCalculator;
+import superscary.heavyinventories.configs.HeavyInventoriesConfig;
+import superscary.heavyinventories.configs.PumpingIronCustomOffsetConfig;
 import superscary.heavyinventories.configs.reader.ConfigReader;
 import superscary.heavyinventories.util.Logger;
 import superscary.heavyinventories.util.Toolkit;
@@ -35,15 +37,13 @@ public class HeavyInventoriesSetNewWeight extends CommandBase
         {
             if (sender.getCommandSenderEntity() instanceof EntityPlayer)
             {
-                if (args[0].equalsIgnoreCase("set") && (args[1] != null && Toolkit.checkNumericalWeight(args[1])))
+                if (args[0].equalsIgnoreCase("set") && args[1].equalsIgnoreCase("weight") && args[2] != null && Toolkit.checkNumericalWeight(args[2]))
                 {
                     EntityPlayer player = (EntityPlayer) sender.getCommandSenderEntity();
                     Item item = player.getHeldItem(player.getActiveHand()).getItem();
 
-                    if (item == null) return;
-
                     double currentWeight = WeightCalculator.getWeight(Toolkit.getModNameFromItem(item), item);
-                    double newWeight = Toolkit.checkNumericalWeight(args[1]) ? Double.valueOf(args[1]) : -1;
+                    double newWeight = Toolkit.checkNumericalWeight(args[2]) ? Double.valueOf(args[2]) : -1;
                     Configuration configuration = ConfigReader.getConfig(Toolkit.getModNameFromItem(item) + ".cfg");
 
                     configuration.load();
@@ -54,6 +54,21 @@ public class HeavyInventoriesSetNewWeight extends CommandBase
 
                     Logger.log(Level.INFO, "Player: %s changed %s from weight %s to %s", player.getDisplayNameString(), item.getRegistryName().getResourcePath(), currentWeight, newWeight);
                     player.sendMessage(new TextComponentTranslation("hi.splash.setWeight", item.getRegistryName().getResourceDomain() + ":" + item.getRegistryName().getResourcePath(), newWeight));
+                }
+                else if (args[0].equalsIgnoreCase("set") && args[1].equalsIgnoreCase("offset") && Toolkit.checkNumericalWeight(args[2]))
+                {
+                    EntityPlayer player = (EntityPlayer) sender.getCommandSenderEntity();
+                    Item item = player.getHeldItem(player.getActiveHand()).getItem();
+
+                    float currentOffset = PumpingIronCustomOffsetConfig.getOffsetFor(item);
+                    float newOffset = Toolkit.checkNumericalWeight(args[2]) ? Float.valueOf(args[2]) : HeavyInventoriesConfig.pumpingIronWeightIncrease;
+                    Configuration configuration = PumpingIronCustomOffsetConfig.getConfiguration();
+
+                    configuration.load();
+                    configuration.get(PumpingIronCustomOffsetConfig.GENERAL, PumpingIronCustomOffsetConfig.getSuit(item), "", null).set(newOffset);
+                    configuration.save();
+
+                    player.sendMessage(new TextComponentTranslation("hi.splash.setOffset", PumpingIronCustomOffsetConfig.getSuit(item), newOffset));
                 }
             }
         }
