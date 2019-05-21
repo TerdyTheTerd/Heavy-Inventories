@@ -104,8 +104,6 @@ key_enderio.keybind.fovminus:0
 key_enderio.keybind.fovplusfast:0
 key_enderio.keybind.fovminusfast:0
 key_key.xu2.searchforitems:20
-key_key.ironbackpacks.equip:35
-key_key.ironbackpacks.open:23
 key_openblocks.keybind.vario_switch:47
 key_openblocks.keybind.vario_vol_up:0
 key_openblocks.keybind.vario_vol_down:0

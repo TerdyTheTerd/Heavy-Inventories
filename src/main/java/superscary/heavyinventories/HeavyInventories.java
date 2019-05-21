@@ -14,6 +14,7 @@ import superscary.heavyinventories.client.command.HeavyInventoriesCommandRegistr
 import superscary.heavyinventories.common.CommonProxy;
 import superscary.heavyinventories.compat.CompatLoader;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
+import superscary.heavyinventories.configs.PumpingIronCustomOffsetConfig;
 import superscary.heavyinventories.configs.builder.ConfigBuilder;
 import superscary.heavyinventories.util.Constants;
 import superscary.heavyinventories.util.Logger;
@@ -54,6 +55,7 @@ public class HeavyInventories
         Generator.Info.create(Constants.class, event);
         ConfigBuilder.setFile(event.getModConfigurationDirectory());
         HeavyInventoriesConfig.init(event.getModConfigurationDirectory());
+        PumpingIronCustomOffsetConfig.init(event.getModConfigurationDirectory());
 
         readerDirectory = event.getModConfigurationDirectory();
 

@@ -23,6 +23,9 @@ public class ConfigBuilder
     public static Configuration config;
     public static final String GENERAL = Configuration.CATEGORY_GENERAL;
 
+    public static List<Item> itemList = ImmutableList.copyOf(Item.REGISTRY);
+    public static List<Block> blockList = ImmutableList.copyOf(Block.REGISTRY);
+
     /**
      * game directory
      */
@@ -82,6 +85,9 @@ public class ConfigBuilder
 
     }
 
+    /**
+     * Loads existing mod files without creating new ones
+     */
     public static void existing()
     {
         ArrayList<String> list = new ArrayList<>();
@@ -101,27 +107,6 @@ public class ConfigBuilder
                 config = new Configuration(new File(folder, file.getAbsoluteFile().getName()));
             }
             else config = new Configuration(new File(file + ".cfg"));
-            loadConfig(false);
-        }
-
-    }
-
-    /**
-     * Loads in the existing files is auto weight generation is disabled
-     * @param modid
-     * @param listOfFiles
-     * @param folder
-     */
-    public static void buildExisting(String modid, File[] listOfFiles, File folder)
-    {
-        for (File file : listOfFiles)
-        {
-            if (ignored.size() == 0) buildList();
-            mod = modid;
-            //modid += ".cfg";
-
-            config = new Configuration(new File(folder, modid));
-            doCheck(listOfFiles);
             loadConfig(false);
         }
 
@@ -166,7 +151,6 @@ public class ConfigBuilder
 
             if (!ignored.contains(config.getConfigFile().getName()))
             {
-                List<Item> itemList = ImmutableList.copyOf(Item.REGISTRY);
                 for (Item item : itemList)
                 {
                     if (item.getRegistryName().getResourceDomain().equalsIgnoreCase(mod))
@@ -177,7 +161,6 @@ public class ConfigBuilder
                     }
                 }
 
-                List<Block> blockList = ImmutableList.copyOf(Block.REGISTRY);
                 for (Block block : blockList)
                 {
                     if (block.getRegistryName().getResourceDomain().equalsIgnoreCase(mod))

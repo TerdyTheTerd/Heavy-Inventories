@@ -1,6 +1,10 @@
 package superscary.heavyinventories.util;
 
+import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
 import superscary.heavyinventories.common.capability.offsets.IOffset;
 import superscary.heavyinventories.common.capability.offsets.OffsetProvider;
 import superscary.heavyinventories.common.capability.weight.IWeighable;
@@ -69,6 +73,12 @@ public class PlayerHelper
     public IOffset getWeightOffset()
     {
         return player.getCapability(OffsetProvider.OFFSET_CAPABILITY, null);
+    }
+
+    public Block getBlockLookingAt()
+    {
+        Vec3d vec3d = Minecraft.getMinecraft().objectMouseOver.hitVec;
+        return Minecraft.getMinecraft().world.getBlockState(new BlockPos(vec3d)).getBlock();
     }
 
 }

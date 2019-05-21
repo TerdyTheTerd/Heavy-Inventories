@@ -2,6 +2,9 @@
 
 	"homepage": "https://minecraft.curseforge.com/projects/heavy-inventories",
 	"1.12.2": {
+		"2.4.2": "- IItemHandlers are now weighable
+				  - Pumping Iron Offsets are now configurable",
+		"2.4.1": "- Fixed memory leak issue",
 		"2.3.2": "- Fixed deletion of weight files 
 				  - Fixed The One Probe compatability",
 		"2.3.3": "- Fixed item weight not being read correctly",
@@ -10,7 +13,7 @@
 			- Added ability to change weight value text from stone"
 	},
 	"promos": {
-		"1.12.2-recommended": "2.4",
+		"1.12.2-recommended": "2.4.2",
 	}
 
 }

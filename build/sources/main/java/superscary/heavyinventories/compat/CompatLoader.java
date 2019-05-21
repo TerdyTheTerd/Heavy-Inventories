@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class CompatLoader
 {
 
-	// TODO: FINISH COMPATABILITY LOADER
+	// TODO: FINISH COMPATIBILITY LOADER
 
 	/**
 	 * This class will be used for default implemented mods to calculate weights of inventories

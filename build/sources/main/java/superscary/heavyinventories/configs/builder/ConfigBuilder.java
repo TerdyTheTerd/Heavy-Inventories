@@ -9,6 +9,7 @@ import org.apache.logging.log4j.Level;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.configs.reader.ConfigReader;
 import superscary.heavyinventories.util.Logger;
+import superscary.heavyinventories.util.Toolkit;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -22,10 +23,20 @@ public class ConfigBuilder
     public static Configuration config;
     public static final String GENERAL = Configuration.CATEGORY_GENERAL;
 
+    public static List<Item> itemList = ImmutableList.copyOf(Item.REGISTRY);
+    public static List<Block> blockList = ImmutableList.copyOf(Block.REGISTRY);
+
+    /**
+     * game directory
+     */
     private static File file;
 
     private static ArrayList<String> ignored = new ArrayList<>();
 
+    /**
+     * Sets the games directory
+     * @param theFile
+     */
     public static void setFile(File theFile)
     {
         file = theFile;
@@ -52,38 +63,82 @@ public class ConfigBuilder
             list.add(s);
         }
 
+        File folder = new File(file + "/Heavy Inventories/Weights/");
+        File[] listOfFiles = folder.listFiles();
+
         if (!list.contains(modid))
         {
+
             if (HeavyInventoriesConfig.autoGenerateWeightConfigFiles)
             {
                 if (ignored.size() == 0) buildList();
                 mod = modid;
                 modid += ".cfg";
 
-                File folder = new File(file + "/Heavy Inventories/Weights/");
-                File[] listOfFiles = folder.listFiles();
-
                 File configFile = new File(file + "/Heavy Inventories/Weights/", modid);
                 config = new Configuration(configFile);
 
-                if (config != null && ignored.stream().noneMatch(mod::equalsIgnoreCase))
-                {
-                    for (int i = 0; i < listOfFiles.length; i++)
-                    {
-                        if (!listOfFiles[i].isFile())
-                        {
-                            ignored.add(mod);
-                        }
-                    }
-                }
-                loadConfig();
+                doCheck(listOfFiles);
+                loadConfig(true);
             }
         }
 
     }
 
-    public static void loadConfig()
+    /**
+     * Loads existing mod files without creating new ones
+     */
+    public static void existing()
     {
+        ArrayList<String> list = new ArrayList<>();
+        for (String s : HeavyInventoriesConfig.ignoredMods)
+        {
+            list.add(s);
+        }
+
+        if (ignored.size() == 0) buildList();
+        File folder = new File(file + "/Heavy Inventories/Weights/");
+        File[] files = folder.listFiles();
+
+        for (File file : files)
+        {
+            if (file.isFile() && !file.isDirectory() && file.getAbsoluteFile().toString().contains(".cfg"))
+            {
+                config = new Configuration(new File(folder, file.getAbsoluteFile().getName()));
+            }
+            else config = new Configuration(new File(file + ".cfg"));
+            loadConfig(false);
+        }
+
+    }
+
+    public static void doCheck(File[] listOfFiles)
+    {
+        if (config != null && ignored.stream().noneMatch(mod::equalsIgnoreCase))
+        {
+            for (int i = 0; i < listOfFiles.length; i++)
+            {
+                if (!listOfFiles[i].isFile()) ignored.add(mod);
+            }
+        }
+    }
+
+    /**
+     * Loads the config
+     * @param bool true if loggers shows building
+     */
+    public static void loadConfig(boolean bool)
+    {
+        String log;
+        if (bool)
+        {
+            log = "Building weight @%s in config %s";
+        }
+        else
+        {
+            log = "Loading weight @%s in config %s";
+        }
+
         ArrayList<String> list = new ArrayList<>();
         for (String s : HeavyInventoriesConfig.ignoredMods)
         {
@@ -96,23 +151,21 @@ public class ConfigBuilder
 
             if (!ignored.contains(config.getConfigFile().getName()))
             {
-                List<Item> itemList = ImmutableList.copyOf(Item.REGISTRY);
                 for (Item item : itemList)
                 {
                     if (item.getRegistryName().getResourceDomain().equalsIgnoreCase(mod))
                     {
-                        Logger.log(Level.INFO, "Building weight @%s in config %s", item.getRegistryName().toString(), mod);
+                        Logger.log(Level.INFO, log, item.getRegistryName().toString(), mod);
                         config.getFloat(item.getRegistryName().getResourcePath(), GENERAL, (float) HeavyInventoriesConfig.DEFAULT_WEIGHT, 0, 1000,
                                 "Sets the carry weight of item " + item.getRegistryName());
                     }
                 }
 
-                List<Block> blockList = ImmutableList.copyOf(Block.REGISTRY);
                 for (Block block : blockList)
                 {
                     if (block.getRegistryName().getResourceDomain().equalsIgnoreCase(mod))
                     {
-                        Logger.log(Level.INFO, "Building weight @%s in config %s", block.getRegistryName().toString(), mod);
+                        Logger.log(Level.INFO, log, block.getRegistryName().toString(), mod);
                         config.getFloat(block.getRegistryName().getResourcePath(), GENERAL,
                                 (float) HeavyInventoriesConfig.DEFAULT_WEIGHT, 0, 1000, "Sets the carry weight of block " + block.getRegistryName());
                     }

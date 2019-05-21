@@ -1,35 +1,46 @@
 Symbol range map extraction starting
-Processing 53 files
-startProcessing "superscary\heavyinventories\HeavyInventories.java" md5: 3a3c078a79ef442d13da18dcbe92c8ed
+Processing 55 files
+startProcessing "superscary\heavyinventories\HeavyInventories.java" md5: 5cc08f4a037a3d56fa18f9ee9ad700cd
 Cache Hit!
 endProcessing "superscary\heavyinventories\HeavyInventories.java"
 
-startProcessing "superscary\heavyinventories\calc\PlayerWeightCalculator.java" md5: 5a0ce6e85817994b0c06c063a9b2acdd
-Cache Hit!
-endProcessing "superscary\heavyinventories\calc\PlayerWeightCalculator.java"
+startProcessing "superscary\heavyinventories\calc\ItemInventoryWeight.java" md5: 9a1d9572ac5dff735aed6c54b2c8efd6
+endProcessing "superscary\heavyinventories\calc\ItemInventoryWeight.java"
+
+startProcessing "superscary\heavyinventories\calc\WeightCalculator.java" md5: fc36b2831cd3cbaae8a90bafd2c00574
+    Compile Error! Pb(390) The import baubles cannot be resolved
+    Compile Error! Pb(390) The import baubles cannot be resolved
+    Compile Error! Pb(2) IBaublesItemHandler cannot be resolved to a type
+    Compile Error! Pb(50) BaublesApi cannot be resolved
+endProcessing "superscary\heavyinventories\calc\WeightCalculator.java"
 
 startProcessing "superscary\heavyinventories\client\ClientProxy.java" md5: 4602cfb4d4c78e663b850bb792c61fce
 Cache Hit!
 endProcessing "superscary\heavyinventories\client\ClientProxy.java"
 
-startProcessing "superscary\heavyinventories\client\command\HeavyInventoriesCommandRegistry.java" md5: 639a4b8bab0ee47c3270968dd18ead8a
-Cache Hit!
+startProcessing "superscary\heavyinventories\client\command\HeavyInventoriesCommandRegistry.java" md5: 61e4c360db3c4d4d1fd4e3573c8c8fe9
 endProcessing "superscary\heavyinventories\client\command\HeavyInventoriesCommandRegistry.java"
 
 startProcessing "superscary\heavyinventories\client\command\commands\HeavyInventoriesOpenConfigGui.java" md5: 08c25bb3a6dedfa4f8a00605a1fc7224
 Cache Hit!
 endProcessing "superscary\heavyinventories\client\command\commands\HeavyInventoriesOpenConfigGui.java"
 
-startProcessing "superscary\heavyinventories\client\command\commands\HeavyInventoriesSetNewWeight.java" md5: 3f786f10c6f0561feabf57130197ece8
-Cache Hit!
+startProcessing "superscary\heavyinventories\client\command\commands\HeavyInventoriesSetNewWeight.java" md5: 16ef0726c8090400bc6a70c6d353e49a
 endProcessing "superscary\heavyinventories\client\command\commands\HeavyInventoriesSetNewWeight.java"
 
-startProcessing "superscary\heavyinventories\client\event\ClientEventHandler.java" md5: d4b5fe9977d5b28f94435b528b6ee44c
-Cache Hit!
+startProcessing "superscary\heavyinventories\client\command\commands\HeavyInventoriesSetPumpingIronOffset.java" md5: 6892759f7ba0cec280451df272283184
+endProcessing "superscary\heavyinventories\client\command\commands\HeavyInventoriesSetPumpingIronOffset.java"
+
+startProcessing "superscary\heavyinventories\client\event\ClientEventHandler.java" md5: bc4f23514adcd5e74b4488a4935f6612
+    Compile Error! Pb(390) The import superscary.supercore cannot be resolved
+    Compile Error! Pb(83) EnumColor cannot be resolved to a variable
+    Compile Error! Pb(83) EnumColor cannot be resolved to a variable
 endProcessing "superscary\heavyinventories\client\event\ClientEventHandler.java"
 
-startProcessing "superscary\heavyinventories\client\event\PumpingIronHandler.java" md5: 3ac0dc065bf59e8083c6dbd7cf3eed9a
-Cache Hit!
+startProcessing "superscary\heavyinventories\client\event\ObjectInventory.java" md5: b0e8916d4360c3277ff69b6f464147d4
+endProcessing "superscary\heavyinventories\client\event\ObjectInventory.java"
+
+startProcessing "superscary\heavyinventories\client\event\PumpingIronHandler.java" md5: fb474d7c7aa40f8b2c72f4e46ecfc66a
 endProcessing "superscary\heavyinventories\client\event\PumpingIronHandler.java"
 
 startProcessing "superscary\heavyinventories\client\gui\HeavyInventoriesGuiConfig.java" md5: 5a511679f15d31f83be331e568c94428
@@ -48,7 +59,7 @@ startProcessing "superscary\heavyinventories\client\gui\Toast.java" md5: 02b783d
 Cache Hit!
 endProcessing "superscary\heavyinventories\client\gui\Toast.java"
 
-startProcessing "superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java" md5: a3c7f220c72a27cef468cf20609086d8
+startProcessing "superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java" md5: 61b2b525f091ab6b29d5f91eda8ae2ce
 Cache Hit!
 endProcessing "superscary\heavyinventories\client\gui\meter\GuiDrawMeter.java"
 
@@ -120,8 +131,7 @@ startProcessing "superscary\heavyinventories\common\network\handlers\PlayerOverE
 Cache Hit!
 endProcessing "superscary\heavyinventories\common\network\handlers\PlayerOverEncumberedMessageHandler.java"
 
-startProcessing "superscary\heavyinventories\compat\CompatLoader.java" md5: 56c8807b687ca72b9ebcd77aed2dd4af
-Cache Hit!
+startProcessing "superscary\heavyinventories\compat\CompatLoader.java" md5: cd66191377aec8b69e0a944df472d4b9
 endProcessing "superscary\heavyinventories\compat\CompatLoader.java"
 
 startProcessing "superscary\heavyinventories\compat\EnumCompatMods.java" md5: 1d5a34f9e87aa7f2c241b79bb95aaf0c
@@ -132,7 +142,7 @@ startProcessing "superscary\heavyinventories\compat\event\IPlayerCompatEvent.jav
 Cache Hit!
 endProcessing "superscary\heavyinventories\compat\event\IPlayerCompatEvent.java"
 
-startProcessing "superscary\heavyinventories\compat\mods\HIBaubles.java" md5: bbacdef61ff4c14d079e1d2bbc90a8a4
+startProcessing "superscary\heavyinventories\compat\mods\HIBaubles.java" md5: 0dfcdef60b838299d58f57ea795dd914
 Cache Hit!
 endProcessing "superscary\heavyinventories\compat\mods\HIBaubles.java"
 
@@ -140,24 +150,8 @@ startProcessing "superscary\heavyinventories\compat\mods\HIJei.java" md5: e66966
 Cache Hit!
 endProcessing "superscary\heavyinventories\compat\mods\HIJei.java"
 
-startProcessing "superscary\heavyinventories\compat\mods\ironbackpacks\HIIronBackpacks.java" md5: 5f4bae38c9c53e4bb37f2a7124f1009f
+startProcessing "superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java" md5: a69fe0e8990ec62a19c82fac191e953a
 Cache Hit!
-endProcessing "superscary\heavyinventories\compat\mods\ironbackpacks\HIIronBackpacks.java"
-
-startProcessing "superscary\heavyinventories\compat\mods\ironbackpacks\HIIronBackpacksConfig.java" md5: 29c1cf49d6d9d7ac447df2ff43f051ca
-Cache Hit!
-endProcessing "superscary\heavyinventories\compat\mods\ironbackpacks\HIIronBackpacksConfig.java"
-
-startProcessing "superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java" md5: 4d7d0d432b9238b52146b30b9221924f
-    Compile Error! Pb(390) The import mcjty cannot be resolved
-    Compile Error! Pb(390) The import mcjty cannot be resolved
-    Compile Error! Pb(390) The import mcjty cannot be resolved
-    Compile Error! Pb(390) The import mcjty cannot be resolved
-    Compile Error! Pb(2) IProbeInfoProvider cannot be resolved to a type
-    Compile Error! Pb(634) The method getID() of type HITOPInfoProvider must override or implement a supertype method
-    Compile Error! Pb(2) ProbeMode cannot be resolved to a type
-    Compile Error! Pb(2) IProbeInfo cannot be resolved to a type
-    Compile Error! Pb(2) IProbeHitData cannot be resolved to a type
 endProcessing "superscary\heavyinventories\compat\mods\theoneprobe\HITOPInfoProvider.java"
 
 startProcessing "superscary\heavyinventories\compat\mods\theoneprobe\HITheOneProbe.java" md5: 65b9f7310a2b985b3eee41ea87bfae21
@@ -168,7 +162,7 @@ startProcessing "superscary\heavyinventories\compat\mods\waila\HIWaila.java" md5
 Cache Hit!
 endProcessing "superscary\heavyinventories\compat\mods\waila\HIWaila.java"
 
-startProcessing "superscary\heavyinventories\compat\mods\waila\HIWailaInfoProvider.java" md5: 13f9b26b7fc5b49c82f3fefd918e36d1
+startProcessing "superscary\heavyinventories\compat\mods\waila\HIWailaInfoProvider.java" md5: faacb43013327148dafe1428f02767a2
 Cache Hit!
 endProcessing "superscary\heavyinventories\compat\mods\waila\HIWailaInfoProvider.java"
 
@@ -176,11 +170,13 @@ startProcessing "superscary\heavyinventories\compat\mods\waila\HIWailaRegistrar.
 Cache Hit!
 endProcessing "superscary\heavyinventories\compat\mods\waila\HIWailaRegistrar.java"
 
-startProcessing "superscary\heavyinventories\configs\HeavyInventoriesConfig.java" md5: a13bc21f99eaba3939dde803ae722e62
-Cache Hit!
+startProcessing "superscary\heavyinventories\configs\HeavyInventoriesConfig.java" md5: a869fca4f9d070305f57fbcc79cadd0b
 endProcessing "superscary\heavyinventories\configs\HeavyInventoriesConfig.java"
 
-startProcessing "superscary\heavyinventories\configs\builder\ConfigBuilder.java" md5: 75048ffb789de50f59d079117fee9d2f
+startProcessing "superscary\heavyinventories\configs\PumpingIronCustomOffsetConfig.java" md5: 9d1a88e1bb0c40f69db79bc1c1f50d59
+endProcessing "superscary\heavyinventories\configs\PumpingIronCustomOffsetConfig.java"
+
+startProcessing "superscary\heavyinventories\configs\builder\ConfigBuilder.java" md5: 5f8780842faea9ec92ebb835edd7b9f5
 Cache Hit!
 endProcessing "superscary\heavyinventories\configs\builder\ConfigBuilder.java"
 
@@ -196,8 +192,7 @@ startProcessing "superscary\heavyinventories\server\ServerProxy.java" md5: 0c564
 Cache Hit!
 endProcessing "superscary\heavyinventories\server\ServerProxy.java"
 
-startProcessing "superscary\heavyinventories\util\Constants.java" md5: 94840788efbcd4d44bfc0f6f4da5a619
-Cache Hit!
+startProcessing "superscary\heavyinventories\util\Constants.java" md5: dd6467c4aba9c101e6649ceaedc7d156
 endProcessing "superscary\heavyinventories\util\Constants.java"
 
 startProcessing "superscary\heavyinventories\util\Coords.java" md5: 92d6fa9a10832b2acd83035e27d35e79
@@ -212,11 +207,9 @@ startProcessing "superscary\heavyinventories\util\Logger.java" md5: 82a0cc23d7f9
 Cache Hit!
 endProcessing "superscary\heavyinventories\util\Logger.java"
 
-startProcessing "superscary\heavyinventories\util\PlayerHelper.java" md5: 0e83dbb29ccd1479077f9d6e6336cf20
-Cache Hit!
+startProcessing "superscary\heavyinventories\util\PlayerHelper.java" md5: a8bb32adc3923c17c5b675ec8a79f3f2
 endProcessing "superscary\heavyinventories\util\PlayerHelper.java"
 
-startProcessing "superscary\heavyinventories\util\Toolkit.java" md5: ed2e650b3036accc10ee0af7530a58de
-Cache Hit!
+startProcessing "superscary\heavyinventories\util\Toolkit.java" md5: 4b422e81df3727b771d43c4a077e89e0
 endProcessing "superscary\heavyinventories\util\Toolkit.java"
 

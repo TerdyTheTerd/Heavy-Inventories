@@ -40,6 +40,8 @@ public class HeavyInventoriesConfig
 	public static float encumberedExhaustion;
 	public static float jumpExhaustion;
 	public static boolean showWeightBar;
+	public static boolean loseOffsetOnDeath;
+	public static boolean addItemInventoryWeight;
 
 	public static double maxCarryWeight;
 
@@ -79,6 +81,8 @@ public class HeavyInventoriesConfig
 		encumberedExhaustion = Toolkit.getFloat("encumberedExhaustion", 0.3f, 0, 100);
 		jumpExhaustion = Toolkit.getFloat("jumpExhaustion", 1f, 0, 100);
 		showWeightBar = Toolkit.getBoolean("showWeightBar", true);
+		loseOffsetOnDeath = Toolkit.getBoolean("loseOffsetOnDeath", false);
+		addItemInventoryWeight = Toolkit.getBoolean("addItemInventoryWeight", true);
 
 		String[] files = config.getStringList("Files", "Files", new String[] {"Minecraft.cfg"}, "The custom weight files for other mods. Put each new file on a new line.");
 		ignoredMods = config.getStringList("Ignored Mods", "Ignored Mods", new String[] {""}, "Mods to be ignored when custom generating weights.");

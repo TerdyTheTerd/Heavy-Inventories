@@ -210,4 +210,9 @@ public class Toolkit
 		return string;
 	}
 
+	public static boolean checkNumericalWeight(String string)
+	{
+		return string.matches("^[0-9.]*$");
+	}
+
 }

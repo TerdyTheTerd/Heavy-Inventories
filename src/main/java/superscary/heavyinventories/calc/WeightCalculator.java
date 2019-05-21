@@ -7,6 +7,8 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Loader;
+import net.minecraftforge.items.CapabilityItemHandler;
+import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.configs.weights.CustomConfigLoader;
 import superscary.heavyinventories.util.Toolkit;
 
@@ -27,6 +29,13 @@ public class WeightCalculator
 			if (stack != null)
 			{
 				weight += (getWeight(Toolkit.getModNameFromItem(stack.getItem()), stack.getItem()) * stack.getCount());
+				if (HeavyInventoriesConfig.addItemInventoryWeight)
+				{
+					if (stack.hasCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null))
+					{
+						weight += ItemInventoryWeight.getWeight(stack);
+					}
+				}
 			}
 		}
 

@@ -16,10 +16,10 @@ public class ItemInventoryWeight
         for (int i = 0; i < slots; i++)
         {
             ItemStack item = itemStack.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).getStackInSlot(i);
-            stored += WeightCalculator.getWeight(Toolkit.getModNameFromItem(item), item);
+            stored += WeightCalculator.getWeight(Toolkit.getModNameFromItem(item), item) * item.getCount();
         }
 
-        return WeightCalculator.getWeight(Toolkit.getModNameFromItem(itemStack.getItem()), itemStack.getItem()) * itemStack.getCount();
+        return stored;
     }
 
 }

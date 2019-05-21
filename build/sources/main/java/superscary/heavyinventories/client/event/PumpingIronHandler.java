@@ -9,6 +9,7 @@ import superscary.heavyinventories.common.capability.offsets.OffsetProvider;
 import superscary.heavyinventories.common.capability.weight.IWeighable;
 import superscary.heavyinventories.common.capability.weight.WeightProvider;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
+import superscary.heavyinventories.configs.PumpingIronCustomOffsetConfig;
 import superscary.heavyinventories.util.EnumTagID;
 import superscary.heavyinventories.util.Logger;
 import superscary.heavyinventories.util.Toolkit;
@@ -23,12 +24,12 @@ public class PumpingIronHandler
 
 		IOffset offset = player.getCapability(OffsetProvider.OFFSET_CAPABILITY, null);
 
-		offset.setOffset(offset.getOffset() + HeavyInventoriesConfig.pumpingIronWeightIncrease);
+		offset.setOffset(offset.getOffset() + PumpingIronCustomOffsetConfig.getOffsetFor(event.getItemResult()));
 
 		IWeighable weighable = player.getCapability(WeightProvider.WEIGHABLE_CAPABILITY, null);
 		if (player.getEntityData().hasKey(EnumTagID.WEIGHT.getId()))
 		{
-			weighable.setMaxWeight(weighable.getMaxWeight() + HeavyInventoriesConfig.pumpingIronWeightIncrease);
+			weighable.setMaxWeight(weighable.getMaxWeight() + PumpingIronCustomOffsetConfig.getOffsetFor(event.getItemResult()));
 			player.getEntityData().setDouble(EnumTagID.WEIGHT.getId(), weighable.getMaxWeight());
 			ClientEventHandler.setPlayerWeight(weighable.getMaxWeight());
 			Logger.info("Updated Player: %s's Max Carry Weight To: %s %s", player.getName(), weighable.getMaxWeight(), "stone");

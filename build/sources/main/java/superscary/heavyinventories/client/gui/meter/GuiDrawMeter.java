@@ -49,10 +49,12 @@ public class GuiDrawMeter extends Gui
                     if (weighable.isOverEncumbered())
                     {
                         drawTexturedModalRect(scaledResolution.getScaledWidth() / 2 - 91, l, 0, 25, width, 3);
-                    } else if (weighable.isEncumbered())
+                    }
+                    else if (weighable.isEncumbered())
                     {
                         drawTexturedModalRect(scaledResolution.getScaledWidth() / 2 - 91, l, 0, 45, width, 3);
-                    } else
+                    }
+                    else
                     {
                         drawTexturedModalRect(scaledResolution.getScaledWidth() / 2 - 91, l, 0, 35, width, 3);
                     }

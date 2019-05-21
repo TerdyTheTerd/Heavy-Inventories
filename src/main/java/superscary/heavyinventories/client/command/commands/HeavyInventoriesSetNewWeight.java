@@ -35,12 +35,15 @@ public class HeavyInventoriesSetNewWeight extends CommandBase
         {
             if (sender.getCommandSenderEntity() instanceof EntityPlayer)
             {
-                if (args[0].equalsIgnoreCase("set") && (args[1] != null && checkNumericalWeight(args[1])))
+                if (args[0].equalsIgnoreCase("set") && (args[1] != null && Toolkit.checkNumericalWeight(args[1])))
                 {
                     EntityPlayer player = (EntityPlayer) sender.getCommandSenderEntity();
                     Item item = player.getHeldItem(player.getActiveHand()).getItem();
+
+                    if (item == null) return;
+
                     double currentWeight = WeightCalculator.getWeight(Toolkit.getModNameFromItem(item), item);
-                    double newWeight = checkNumericalWeight(args[1]) ? Double.valueOf(args[1]) : -1;
+                    double newWeight = Toolkit.checkNumericalWeight(args[1]) ? Double.valueOf(args[1]) : -1;
                     Configuration configuration = ConfigReader.getConfig(Toolkit.getModNameFromItem(item) + ".cfg");
 
                     configuration.load();
@@ -58,11 +61,6 @@ public class HeavyInventoriesSetNewWeight extends CommandBase
         {
             e.printStackTrace();
         }
-    }
-
-    public boolean checkNumericalWeight(String string)
-    {
-        return string.matches("^[0-9.]*$");
     }
 
 }

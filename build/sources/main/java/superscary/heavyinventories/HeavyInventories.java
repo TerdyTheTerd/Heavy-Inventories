@@ -14,6 +14,7 @@ import superscary.heavyinventories.client.command.HeavyInventoriesCommandRegistr
 import superscary.heavyinventories.common.CommonProxy;
 import superscary.heavyinventories.compat.CompatLoader;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
+import superscary.heavyinventories.configs.PumpingIronCustomOffsetConfig;
 import superscary.heavyinventories.configs.builder.ConfigBuilder;
 import superscary.heavyinventories.util.Constants;
 import superscary.heavyinventories.util.Logger;
@@ -54,6 +55,7 @@ public class HeavyInventories
         Generator.Info.create(Constants.class, event);
         ConfigBuilder.setFile(event.getModConfigurationDirectory());
         HeavyInventoriesConfig.init(event.getModConfigurationDirectory());
+        PumpingIronCustomOffsetConfig.init(event.getModConfigurationDirectory());
 
         readerDirectory = event.getModConfigurationDirectory();
 
@@ -78,10 +80,18 @@ public class HeavyInventories
 
         findItemMods();
 
-        for (String s : itemMods)
+        if (HeavyInventoriesConfig.autoGenerateWeightConfigFiles)
         {
-            Logger.log(Level.INFO, "Building %s", s);
-            ConfigBuilder.build(s);
+            Logger.log(Level.INFO, "Auto Weight Generation is enabled!");
+            for (String s : itemMods)
+            {
+                Logger.log(Level.INFO, "Building %s", s);
+                ConfigBuilder.build(s);
+            }
+        }
+        else
+        {
+            ConfigBuilder.existing();
         }
 
         CompatLoader.build();

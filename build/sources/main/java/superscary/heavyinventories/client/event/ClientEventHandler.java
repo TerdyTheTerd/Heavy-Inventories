@@ -1,12 +1,18 @@
 package superscary.heavyinventories.client.event;
 
 import com.mojang.realmsclient.gui.ChatFormatting;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockContainer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentTranslation;
+import net.minecraft.world.World;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.event.entity.EntityMountEvent;
 import net.minecraftforge.event.entity.living.EnderTeleportEvent;
@@ -19,8 +25,11 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.items.IItemHandler;
 import org.lwjgl.input.Keyboard;
-import superscary.heavyinventories.calc.PlayerWeightCalculator;
+import superscary.heavyinventories.calc.ItemInventoryWeight;
+import superscary.heavyinventories.calc.WeightCalculator;
 import superscary.heavyinventories.client.gui.InventoryWeightText;
 import superscary.heavyinventories.client.gui.Toast;
 import superscary.heavyinventories.client.gui.meter.GuiDrawMeter;
@@ -29,6 +38,7 @@ import superscary.heavyinventories.common.capability.offsets.OffsetProvider;
 import superscary.heavyinventories.common.capability.weight.IWeighable;
 import superscary.heavyinventories.common.capability.weight.WeightProvider;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
+import superscary.heavyinventories.configs.PumpingIronCustomOffsetConfig;
 import superscary.heavyinventories.configs.reader.ConfigReader;
 import superscary.heavyinventories.util.*;
 import superscary.supercore.tools.EnumColor;
@@ -51,31 +61,7 @@ public class ClientEventHandler
 			ItemStack stack = event.getItemStack();
 			if (stack != null)
 			{
-				if (stack.getItem().getRegistryName().toString().split(":")[0].equalsIgnoreCase("minecraft"))
-				{
-					double weight = Toolkit.getWeightFromStack(stack);
-					event.getToolTip().add(form(weight));
-					if (stack.getCount() > 1)
-					{
-						event.getToolTip().add(I18n.format("hi.gui.weight") + " " + (weight * stack.getCount()) + label);
-					}
-
-					if (Minecraft.getMinecraft().currentScreen != null)
-					{
-						if (tooltipKeyCheck(event.getItemStack()))
-						{
-							addShiftTip(event, stack, weight);
-						}
-						else
-						{
-							addNoShift(event);
-						}
-					}
-				}
-				/**
-				 * Custom reader
-				 */
-				else if (ConfigReader.getLoadedMods().contains(Toolkit.getModNameFromItem(stack.getItem()) + ".cfg"))
+				if (ConfigReader.getLoadedMods().contains(Toolkit.getModNameFromItem(stack) + ".cfg") && !isIgnored(Toolkit.getModNameFromItem(stack)))
 				{
 					String modid = Toolkit.getModNameFromItem(stack.getItem());
 
@@ -91,6 +77,7 @@ public class ClientEventHandler
 						if (tooltipKeyCheck(event.getItemStack()))
 						{
 							addShiftTip(event, stack, weight);
+							doInventoryWeightCalc(event);
 						}
 						else
 						{
@@ -114,6 +101,15 @@ public class ClientEventHandler
 		}
 	}
 
+	private boolean isIgnored(String modid)
+	{
+		for (String s : HeavyInventoriesConfig.ignoredMods)
+		{
+			if (s.equalsIgnoreCase(modid)) return true;
+		}
+		return false;
+	}
+
 	/**
 	 * Adds the tooltip to items when shift is being pressed
 	 * @param event
@@ -122,7 +118,8 @@ public class ClientEventHandler
 	 */
 	private void addShiftTip(ItemTooltipEvent event, ItemStack stack, double weight)
 	{
-		event.getToolTip().add(I18n.format("hi.gui.maxStackWeight", stack.getMaxStackSize()) + " " + (weight * stack.getMaxStackSize()) + label);
+		if (stack.getMaxStackSize() > 1) event.getToolTip().add(I18n.format("hi.gui.maxStackWeight", stack.getMaxStackSize()) + " " + (weight * stack.getMaxStackSize()) + label);
+		if (HeavyInventoriesConfig.pumpingIron && PumpingIronCustomOffsetConfig.hasItem(stack.getItem())) event.getToolTip().add(I18n.format("hi.gui.offset", PumpingIronCustomOffsetConfig.getOffsetFor(stack) + label));
 	}
 
 	/**
@@ -132,7 +129,10 @@ public class ClientEventHandler
 	private void addNoShift(ItemTooltipEvent event)
 	{
 		Item item = event.getItemStack().getItem();
-		if (item.getItemStackLimit(event.getItemStack()) > 1) event.getToolTip().add(I18n.format("hi.gui.shift", EnumColor.YELLOW + "SHIFT" + EnumColor.GREY));
+		if (item.getItemStackLimit(event.getItemStack()) >= 1)
+		{
+			event.getToolTip().add(I18n.format("hi.gui.shift", EnumColor.YELLOW + "SHIFT" + EnumColor.GREY));
+		}
 	}
 
 	/**
@@ -152,7 +152,7 @@ public class ClientEventHandler
 	private boolean tooltipKeyCheck(ItemStack stack)
 	{
 		Item item = stack.getItem();
-		return (Keyboard.isKeyDown(Keyboard.KEY_RSHIFT) || Keyboard.isKeyDown(Keyboard.KEY_LSHIFT)) && (item.getItemStackLimit(stack) > 1);
+		return (Keyboard.isKeyDown(Keyboard.KEY_RSHIFT) || Keyboard.isKeyDown(Keyboard.KEY_LSHIFT)) && (item.getItemStackLimit(stack) >= 1);
 	}
 
 	/**
@@ -163,6 +163,23 @@ public class ClientEventHandler
 	private String form(double weight)
 	{
 		return ChatFormatting.BOLD + "" + ChatFormatting.WHITE + "Weight: " + weight + label;
+	}
+
+	/**
+	 * Calculates weight of an items inventory
+	 * @param event
+	 */
+	private void doInventoryWeightCalc(ItemTooltipEvent event)
+	{
+		ItemStack stack = event.getItemStack();
+		if (stack != null)
+		{
+			if (stack.hasCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null))
+			{
+				double invWeight = ItemInventoryWeight.getWeight(stack);
+				event.getToolTip().add(I18n.format("hi.gui.invWeight", invWeight) + label);
+			}
+		}
 	}
 
 	private double playersCalculatedWeight = -1;
@@ -199,7 +216,7 @@ public class ClientEventHandler
 
 	public double getPlayersCalculatedWeight(PlayerHelper player)
 	{
-		return PlayerWeightCalculator.calculateWeight(player.getPlayer());
+		return WeightCalculator.calculateWeight(player.getPlayer());
 	}
 
 	/**
@@ -210,7 +227,7 @@ public class ClientEventHandler
 	public void onPlayerMove(TickEvent.PlayerTickEvent event)
 	{
 		PlayerHelper player = new PlayerHelper(event.player);
-		player.getWeightCapability().setWeight(PlayerWeightCalculator.calculateWeight(player.getPlayer()));
+		player.getWeightCapability().setWeight(WeightCalculator.calculateWeight(player.getPlayer()));
 
 		if (!player.getPlayer().isCreative())
 		{
@@ -280,6 +297,7 @@ public class ClientEventHandler
 		{
 			if (player.getPlayer().isServerWorld()) new Toast(new TextComponentTranslation("hi.splash.noJump"));
 			player.getPlayer().motionY = 0D;
+			player.getPlayer().jumpMovementFactor = 0;
 		}
 		else if (player.isEncumbered())
 		{
@@ -324,7 +342,7 @@ public class ClientEventHandler
 		IOffset offsetOld = event.getOriginal().getCapability(OffsetProvider.OFFSET_CAPABILITY, null);
 
 		weighable.setWeight(weighableOld.getWeight());
-		offset.setOffset(offsetOld.getOffset());
+		if (!HeavyInventoriesConfig.loseOffsetOnDeath) offset.setOffset(offsetOld.getOffset());
 	}
 
 	/**
@@ -453,6 +471,8 @@ public class ClientEventHandler
 			player.getEntityData().setDouble(EnumTagID.WEIGHT.getId(), HeavyInventoriesConfig.maxCarryWeight);
 			weighable.setMaxWeight(HeavyInventoriesConfig.maxCarryWeight);
 		}
+
+		weighable.setMaxWeight(Toolkit.roundDouble(weighable.getMaxWeight()));
 		playerWeight = weighable.getMaxWeight();
 	}
 
