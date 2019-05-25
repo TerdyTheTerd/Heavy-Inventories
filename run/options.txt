@@ -9,7 +9,7 @@ guiScale:3
 particles:0
 bobView:true
 anaglyph3d:false
-maxFps:120
+maxFps:260
 fboEnable:true
 difficulty:0
 fancyGraphics:true
@@ -26,7 +26,7 @@ chatLinksPrompt:true
 chatOpacity:1.0
 snooperEnabled:true
 fullscreen:false
-enableVsync:true
+enableVsync:false
 useVbo:true
 hideServerAddress:false
 advancedItemTooltips:false
@@ -109,6 +109,7 @@ key_openblocks.keybind.vario_vol_up:0
 key_openblocks.keybind.vario_vol_down:0
 key_key.toggleLiquids:38
 key_key.toggleVisible:0
+key_keys.travellersBackpack.inventory:48
 key_key.toggle_focus.desc:15
 key_bbw.key.mode:50
 key_bbw.key.fluidmode:33

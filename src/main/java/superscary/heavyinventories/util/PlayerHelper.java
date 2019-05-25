@@ -3,8 +3,13 @@ package superscary.heavyinventories.util;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.text.TextComponentTranslation;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+import superscary.heavyinventories.client.gui.Toast;
 import superscary.heavyinventories.common.capability.offsets.IOffset;
 import superscary.heavyinventories.common.capability.offsets.OffsetProvider;
 import superscary.heavyinventories.common.capability.weight.IWeighable;
@@ -18,6 +23,11 @@ public class PlayerHelper
     public PlayerHelper(EntityPlayer player)
     {
         this.player = player;
+    }
+
+    public PlayerHelper(EntityPlayerMP playerMP)
+    {
+        this.player = playerMP;
     }
 
     public IWeighable getWeightCapability()
@@ -70,6 +80,11 @@ public class PlayerHelper
         return getWeightCapability().isEncumbered();
     }
 
+    public boolean isNotEncumbered()
+    {
+        return !isOverEncumbered() && !isEncumbered();
+    }
+
     public IOffset getWeightOffset()
     {
         return player.getCapability(OffsetProvider.OFFSET_CAPABILITY, null);
@@ -79,6 +94,17 @@ public class PlayerHelper
     {
         Vec3d vec3d = Minecraft.getMinecraft().objectMouseOver.hitVec;
         return Minecraft.getMinecraft().world.getBlockState(new BlockPos(vec3d)).getBlock();
+    }
+
+    @SideOnly(Side.CLIENT)
+    public void sendToast(TextComponentTranslation component)
+    {
+        new Toast(component);
+    }
+
+    public void sendToast(String component)
+    {
+        sendToast(new TextComponentTranslation(component));
     }
 
 }

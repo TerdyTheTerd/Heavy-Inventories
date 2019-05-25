@@ -2,6 +2,7 @@
 
 	"homepage": "https://minecraft.curseforge.com/projects/heavy-inventories",
 	"1.12.2": {
+		"2.4.3": "- Traveller's Backpacks are now weighable.",
 		"2.4.2": "- IItemHandlers are now weighable
 				  - Pumping Iron Offsets are now configurable",
 		"2.4.1": "- Fixed memory leak issue",
@@ -13,7 +14,7 @@
 			- Added ability to change weight value text from stone"
 	},
 	"promos": {
-		"1.12.2-recommended": "2.4.2",
+		"1.12.2-recommended": "2.4.3",
 	}
 
 }

@@ -30,7 +30,7 @@ public class ClientProxy extends CommonProxy
 	@Override
 	public void postInit()
 	{
-
+		super.postInit();
 	}
 
 	public static EntityPlayer getPlayerFromContext(MessageContext context)
