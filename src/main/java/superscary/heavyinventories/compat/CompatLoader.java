@@ -70,6 +70,8 @@ public class CompatLoader
 				/*case "hwyla": new HIWaila();
 				              unloaded.remove(s);
 				              break;*/
+				case "travellersbackpack":
+								unloaded.remove(s);
 				default: break;
 			}
 		}

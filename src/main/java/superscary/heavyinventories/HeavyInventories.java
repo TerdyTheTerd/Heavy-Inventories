@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.ProgressManager;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.*;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
@@ -83,11 +84,17 @@ public class HeavyInventories
         if (HeavyInventoriesConfig.autoGenerateWeightConfigFiles)
         {
             Logger.log(Level.INFO, "Auto Weight Generation is enabled!");
+
+            ProgressManager.ProgressBar heavyBar = ProgressManager.push("Loading", itemMods.size());
+
             for (String s : itemMods)
             {
                 Logger.log(Level.INFO, "Building %s", s);
+                heavyBar.step("Building: " + s + ".cfg");
                 ConfigBuilder.build(s);
             }
+
+            ProgressManager.pop(heavyBar);
         }
         else
         {

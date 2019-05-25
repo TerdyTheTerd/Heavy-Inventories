@@ -1,18 +1,13 @@
 package superscary.heavyinventories.client.event;
 
 import com.mojang.realmsclient.gui.ChatFormatting;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockContainer;
+import com.tiviacz.travellersbackpack.items.ItemTravellersBackpack;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentTranslation;
-import net.minecraft.world.World;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.event.entity.EntityMountEvent;
 import net.minecraftforge.event.entity.living.EnderTeleportEvent;
@@ -26,8 +21,8 @@ import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.items.CapabilityItemHandler;
-import net.minecraftforge.items.IItemHandler;
 import org.lwjgl.input.Keyboard;
+import superscary.heavyinventories.HeavyInventories;
 import superscary.heavyinventories.calc.ItemInventoryWeight;
 import superscary.heavyinventories.calc.WeightCalculator;
 import superscary.heavyinventories.client.gui.InventoryWeightText;
@@ -37,6 +32,7 @@ import superscary.heavyinventories.common.capability.offsets.IOffset;
 import superscary.heavyinventories.common.capability.offsets.OffsetProvider;
 import superscary.heavyinventories.common.capability.weight.IWeighable;
 import superscary.heavyinventories.common.capability.weight.WeightProvider;
+import superscary.heavyinventories.compat.mods.travellersbackpack.HITravellersBackpack;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.configs.PumpingIronCustomOffsetConfig;
 import superscary.heavyinventories.configs.reader.ConfigReader;
@@ -176,7 +172,12 @@ public class ClientEventHandler
 		{
 			if (stack.hasCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null))
 			{
-				double invWeight = ItemInventoryWeight.getWeight(stack);
+				double invWeight = ItemInventoryWeight.getWeight(stack, 1);
+				event.getToolTip().add(I18n.format("hi.gui.invWeight", invWeight) + label);
+			}
+			else if (HITravellersBackpack.isLoaded() && stack.getItem() instanceof ItemTravellersBackpack)
+			{
+				double invWeight = ItemInventoryWeight.getWeight(stack, 1);
 				event.getToolTip().add(I18n.format("hi.gui.invWeight", invWeight) + label);
 			}
 		}
@@ -364,7 +365,14 @@ public class ClientEventHandler
 		{
 			if (HeavyInventoriesConfig.showWeightBar)
 			{
-				new GuiDrawMeter(Minecraft.getMinecraft());
+				if (Minecraft.getMinecraft().player.isCreative() && HeavyInventoriesConfig.allowInCreative)
+				{
+					new GuiDrawMeter(Minecraft.getMinecraft());
+				}
+				else
+				{
+					new GuiDrawMeter(Minecraft.getMinecraft());
+				}
 			}
 		}
 	}

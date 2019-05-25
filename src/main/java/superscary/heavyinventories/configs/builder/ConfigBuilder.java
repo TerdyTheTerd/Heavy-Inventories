@@ -4,12 +4,11 @@ import com.google.common.collect.ImmutableList;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.config.Configuration;
-import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.ProgressManager;
 import org.apache.logging.log4j.Level;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.configs.reader.ConfigReader;
 import superscary.heavyinventories.util.Logger;
-import superscary.heavyinventories.util.Toolkit;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -66,12 +65,14 @@ public class ConfigBuilder
         File folder = new File(file + "/Heavy Inventories/Weights/");
         File[] listOfFiles = folder.listFiles();
 
+
+
         if (!list.contains(modid))
         {
-
             if (HeavyInventoriesConfig.autoGenerateWeightConfigFiles)
             {
                 if (ignored.size() == 0) buildList();
+
                 mod = modid;
                 modid += ".cfg";
 
@@ -100,15 +101,20 @@ public class ConfigBuilder
         File folder = new File(file + "/Heavy Inventories/Weights/");
         File[] files = folder.listFiles();
 
+        ProgressManager.ProgressBar heavyBar = ProgressManager.push("Loading", files.length);
+
         for (File file : files)
         {
             if (file.isFile() && !file.isDirectory() && file.getAbsoluteFile().toString().contains(".cfg"))
             {
                 config = new Configuration(new File(folder, file.getAbsoluteFile().getName()));
+                heavyBar.step(file.getName());
             }
             else config = new Configuration(new File(file + ".cfg"));
             loadConfig(false);
         }
+
+        ProgressManager.pop(heavyBar);
 
     }
 
@@ -170,10 +176,12 @@ public class ConfigBuilder
                                 (float) HeavyInventoriesConfig.DEFAULT_WEIGHT, 0, 1000, "Sets the carry weight of block " + block.getRegistryName());
                     }
                 }
+
             }
 
             config.save();
             addToConfig();
+
         }
 
     }

@@ -6,7 +6,8 @@ public enum EnumCompatMods
 	BAUBLES("baubles"),
 	THE_ONE_PROBE("theoneprobe"),
 	WAILA("waila"),
-	HWYLA("hwyla");
+	HWYLA("hwyla"),
+	TRAVELLERS_BACKPACK("travellersbackpack");
 
 	private final String compatModid;
 	EnumCompatMods(String compatModid)

@@ -2,12 +2,16 @@ package superscary.heavyinventories.calc;
 
 import baubles.api.BaublesApi;
 import baubles.api.cap.IBaublesItemHandler;
+import com.tiviacz.travellersbackpack.blocks.BlockTravellersBackpack;
+import com.tiviacz.travellersbackpack.items.ItemTravellersBackpack;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.items.CapabilityItemHandler;
+import superscary.heavyinventories.compat.mods.travellersbackpack.HITravellersBackpack;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.configs.weights.CustomConfigLoader;
 import superscary.heavyinventories.util.Toolkit;
@@ -32,6 +36,10 @@ public class WeightCalculator
 				if (HeavyInventoriesConfig.addItemInventoryWeight)
 				{
 					if (stack.hasCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null))
+					{
+						weight += ItemInventoryWeight.getWeight(stack);
+					}
+					else if (HITravellersBackpack.isLoaded() && stack.getItem() instanceof ItemTravellersBackpack)
 					{
 						weight += ItemInventoryWeight.getWeight(stack);
 					}
