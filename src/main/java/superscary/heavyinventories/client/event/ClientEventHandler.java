@@ -13,10 +13,10 @@ import net.minecraftforge.event.entity.EntityMountEvent;
 import net.minecraftforge.event.entity.living.EnderTeleportEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.entity.player.PlayerSleepInBedEvent;
 import net.minecraftforge.fml.common.eventhandler.Event;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -68,7 +68,7 @@ public class ClientEventHandler
 					event.getToolTip().add(form(weight));
 					if (stack.getCount() > 1)
 					{
-						event.getToolTip().add(I18n.format("hi.gui.weight") + " " + (weight * stack.getCount()) + label);
+						event.getToolTip().add(I18n.format("hi.gui.weight") + " " + Toolkit.roundDouble(weight * stack.getCount()) + label);
 					}
 
 					if (Minecraft.getMinecraft().currentScreen != null)
@@ -86,7 +86,7 @@ public class ClientEventHandler
 				}
 				else
 				{
-					addShiftTip(event, stack, 0.1);
+					addShiftTip(event, stack, Toolkit.getWeightFromStack(stack));
 					if (tooltipKeyCheck(event.getItemStack()))
 					{
 						addTextToTooltip(event, I18n.format("hi.defaultWeight"));
@@ -117,7 +117,7 @@ public class ClientEventHandler
 	 */
 	private void addShiftTip(ItemTooltipEvent event, ItemStack stack, double weight)
 	{
-		if (stack.getMaxStackSize() > 1) event.getToolTip().add(I18n.format("hi.gui.maxStackWeight", stack.getMaxStackSize()) + " " + (weight * stack.getMaxStackSize()) + label);
+		if (stack.getMaxStackSize() > 1) event.getToolTip().add(I18n.format("hi.gui.maxStackWeight", stack.getMaxStackSize()) + " " + Toolkit.roundDouble(weight * stack.getMaxStackSize()) + label);
 		if (HeavyInventoriesConfig.pumpingIron && PumpingIronCustomOffsetConfig.hasItem(stack.getItem())) event.getToolTip().add(I18n.format("hi.gui.offset", PumpingIronCustomOffsetConfig.getOffsetFor(stack) + label));
 	}
 
