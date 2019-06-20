@@ -35,11 +35,24 @@ public class Toolkit
 	}
 
 	/**
+	 * Get the modid of an item, itemstack, or block
+	 * @param object
+	 * @return
+	 */
+	public static String getModName(Object object)
+	{
+		if (object instanceof Block) return getModNameFromBlock((Block) object);
+		if (object instanceof Item) return getModNameFromItem((Item) object);
+		if (object instanceof ItemStack) return getModNameFromItem((ItemStack) object);
+		return null;
+	}
+
+	/**
 	 * Gets the modid in which a Block exists
 	 * @param block the block to be checked
 	 * @return
 	 */
-	public static String getModNameFromBlock(Block block)
+	private static String getModNameFromBlock(Block block)
 	{
 		return block.getRegistryName().getResourceDomain();
 	}
@@ -49,12 +62,12 @@ public class Toolkit
 	 * @param item the item to be checked
 	 * @return
 	 */
-	public static String getModNameFromItem(Item item)
+	private static String getModNameFromItem(Item item)
 	{
 		return item.getRegistryName().getResourceDomain();
 	}
 
-	public static String getModNameFromItem(ItemStack stack)
+	private static String getModNameFromItem(ItemStack stack)
 	{
 		return getModNameFromItem(stack.getItem());
 	}

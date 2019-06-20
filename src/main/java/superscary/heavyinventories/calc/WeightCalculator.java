@@ -2,12 +2,10 @@ package superscary.heavyinventories.calc;
 
 import baubles.api.BaublesApi;
 import baubles.api.cap.IBaublesItemHandler;
-import com.tiviacz.travellersbackpack.blocks.BlockTravellersBackpack;
 import com.tiviacz.travellersbackpack.items.ItemTravellersBackpack;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.items.CapabilityItemHandler;
@@ -32,7 +30,7 @@ public class WeightCalculator
 			ItemStack stack = player.inventory.getStackInSlot(i);
 			if (stack != null)
 			{
-				weight += (getWeight(Toolkit.getModNameFromItem(stack.getItem()), stack.getItem()) * stack.getCount());
+				weight += (getWeight(Toolkit.getModName(stack.getItem()), stack.getItem()) * stack.getCount());
 				if (HeavyInventoriesConfig.addItemInventoryWeight)
 				{
 					if (stack.hasCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null))
@@ -64,21 +62,11 @@ public class WeightCalculator
 			ItemStack stack = handler.getStackInSlot(i);
 			if (handler.getStackInSlot(i) != null)
 			{
-				weight += (getWeight(Toolkit.getModNameFromItem(stack.getItem()), stack.getItem()) * stack.getCount());
+				weight += (getWeight(Toolkit.getModName(stack.getItem()), stack.getItem()) * stack.getCount());
 			}
 		}
 		return Toolkit.roundDouble(weight);
 	}
-
-	/**
-	 * Gets the weight for {@link net.minecraft.client.Minecraft} items
-	 * @param stack
-	 * @return
-	 */
-	/*public static double getWeight(ItemStack stack)
-	{
-		return MinecraftConfig.getConfig().get(Configuration.CATEGORY_GENERAL, stack.getItem().getRegistryName().getResourcePath(), 0.5).getDouble();
-	}*/
 
 	/**
 	 * Gets the weight for custom items
@@ -105,6 +93,21 @@ public class WeightCalculator
 	public static double getWeight(String modid, Block block)
 	{
 		return getWeight(modid, Item.getItemFromBlock(block));
+	}
+
+	public static double getWeight(Item item)
+	{
+		return getWeight(Toolkit.getModName(item), item);
+	}
+
+	public static double getWeight(ItemStack stack)
+	{
+		return getWeight(Toolkit.getModName(stack), stack);
+	}
+
+	public static double getWeight(Block block)
+	{
+		return getWeight(Toolkit.getModName(block), block);
 	}
 
 }

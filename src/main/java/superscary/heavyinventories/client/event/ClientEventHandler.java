@@ -60,9 +60,9 @@ public class ClientEventHandler
 			ItemStack stack = event.getItemStack();
 			if (stack != null)
 			{
-				if (ConfigReader.getLoadedMods().contains(Toolkit.getModNameFromItem(stack) + ".cfg") && !isIgnored(Toolkit.getModNameFromItem(stack)))
+				if (ConfigReader.getLoadedMods().contains(Toolkit.getModName(stack) + ".cfg") && !isIgnored(Toolkit.getModName(stack)))
 				{
-					String modid = Toolkit.getModNameFromItem(stack.getItem());
+					String modid = Toolkit.getModName(stack.getItem());
 
 					double weight = Toolkit.getWeightFromStack(stack);
 					event.getToolTip().add(form(weight));

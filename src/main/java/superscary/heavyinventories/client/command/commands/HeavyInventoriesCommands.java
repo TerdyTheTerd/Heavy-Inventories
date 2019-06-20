@@ -44,9 +44,9 @@ public class HeavyInventoriesCommands extends CommandBase
                     EntityPlayer player = (EntityPlayer) sender.getCommandSenderEntity();
                     Item item = player.getHeldItem(player.getActiveHand()).getItem();
 
-                    double currentWeight = WeightCalculator.getWeight(Toolkit.getModNameFromItem(item), item);
+                    double currentWeight = WeightCalculator.getWeight(item);
                     double newWeight = Toolkit.checkNumericalWeight(args[2]) ? Double.valueOf(args[2]) : -1;
-                    Configuration configuration = ConfigReader.getConfig(Toolkit.getModNameFromItem(item) + ".cfg");
+                    Configuration configuration = ConfigReader.getConfig(Toolkit.getModName(item) + ".cfg");
 
                     configuration.load();
 

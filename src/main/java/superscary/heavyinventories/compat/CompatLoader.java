@@ -3,9 +3,8 @@ package superscary.heavyinventories.compat;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.ModContainer;
 import superscary.heavyinventories.compat.mods.HIBaubles;
-import superscary.heavyinventories.compat.mods.waila.HIWaila;
 import superscary.heavyinventories.compat.mods.theoneprobe.HITheOneProbe;
-import superscary.heavyinventories.compat.mods.wearablebackpacks.HIWearableBackpacks;
+import superscary.heavyinventories.compat.mods.waila.HIWaila;
 import superscary.heavyinventories.util.Logger;
 
 import java.util.ArrayList;
@@ -71,6 +70,8 @@ public class CompatLoader
 				              unloaded.remove(s);
 				              break;*/
 				case "travellersbackpack":
+								unloaded.remove(s);
+				case "wearablebackpacks":
 								unloaded.remove(s);
 				default: break;
 			}

@@ -1,6 +1,7 @@
 package superscary.heavyinventories.configs.builder;
 
 import com.google.common.collect.ImmutableList;
+import com.google.gson.JsonObject;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.config.Configuration;
@@ -65,8 +66,6 @@ public class ConfigBuilder
         File folder = new File(file + "/Heavy Inventories/Weights/");
         File[] listOfFiles = folder.listFiles();
 
-
-
         if (!list.contains(modid))
         {
             if (HeavyInventoriesConfig.autoGenerateWeightConfigFiles)
@@ -102,6 +101,11 @@ public class ConfigBuilder
         File[] files = folder.listFiles();
 
         ProgressManager.ProgressBar heavyBar = ProgressManager.push("Loading", files.length);
+
+        if (heavyBar == null)
+        {
+            heavyBar = ProgressManager.push("Loading", files.length);
+        }
 
         for (File file : files)
         {

@@ -6,6 +6,9 @@ import net.minecraft.item.Item;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.ProgressManager;
 import org.apache.logging.log4j.Level;
+import org.json.simple.JSONObject;
+import superscary.heavyinventories.HeavyInventories;
+import superscary.heavyinventories.JsonUtils;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.configs.reader.ConfigReader;
 import superscary.heavyinventories.util.Logger;
@@ -65,8 +68,6 @@ public class ConfigBuilder
         File folder = new File(file + "/Heavy Inventories/Weights/");
         File[] listOfFiles = folder.listFiles();
 
-
-
         if (!list.contains(modid))
         {
             if (HeavyInventoriesConfig.autoGenerateWeightConfigFiles)
@@ -82,6 +83,39 @@ public class ConfigBuilder
                 doCheck(listOfFiles);
                 loadConfig(true);
             }
+        }
+
+    }
+
+    public static void buildJson(String modid)
+    {
+        Logger.log(Level.INFO, modid);
+
+        mod = modid;
+        JSONObject object = new JSONObject();
+
+        for (Item item : Item.REGISTRY)
+        {
+            if (item.getRegistryName().getResourceDomain().equalsIgnoreCase(modid))
+            {
+                object.putIfAbsent(item.getRegistryName().getResourcePath(), HeavyInventoriesConfig.DEFAULT_WEIGHT);
+            }
+        }
+
+        for (Block block : Block.REGISTRY)
+        {
+            if (block.getRegistryName().getResourceDomain().equalsIgnoreCase(modid))
+            {
+                object.putIfAbsent(block.getRegistryName().getResourcePath(), HeavyInventoriesConfig.DEFAULT_WEIGHT);
+            }
+        }
+
+        try
+        {
+            JsonUtils.writeJsonToFile(object, HeavyInventories.getWeightFileDirectory(), modid + ".json");
+        } catch (Exception e)
+        {
+            e.printStackTrace();
         }
 
     }
@@ -102,6 +136,11 @@ public class ConfigBuilder
         File[] files = folder.listFiles();
 
         ProgressManager.ProgressBar heavyBar = ProgressManager.push("Loading", files.length);
+
+        if (heavyBar == null)
+        {
+            heavyBar = ProgressManager.push("Loading", files.length);
+        }
 
         for (File file : files)
         {

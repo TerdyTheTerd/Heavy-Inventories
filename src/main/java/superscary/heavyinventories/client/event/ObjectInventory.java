@@ -1,6 +1,5 @@
 package superscary.heavyinventories.client.event;
 
-import net.minecraft.client.Minecraft;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.items.CapabilityItemHandler;
@@ -59,7 +58,7 @@ public class ObjectInventory
 
         for (ItemStack stack : list)
         {
-            weight += WeightCalculator.getWeight(Toolkit.getModNameFromItem(stack), stack) * stack.getCount();
+            weight += WeightCalculator.getWeight(Toolkit.getModName(stack), stack) * stack.getCount();
         }
 
         return weight;

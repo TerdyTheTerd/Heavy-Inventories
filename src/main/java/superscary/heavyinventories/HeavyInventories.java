@@ -81,20 +81,21 @@ public class HeavyInventories
 
         findItemMods();
 
+        ProgressManager.ProgressBar heavyBar = ProgressManager.push("Loading", itemMods.size());
+
+        for (String s : itemMods)
+        {
+            //Logger.log(Level.INFO, "Building %s", s);
+            heavyBar.step("Building: " + s + ".json");
+            //ConfigBuilder.build(s);
+            ConfigBuilder.buildJson(s);
+        }
+
+        ProgressManager.pop(heavyBar);
+
         if (HeavyInventoriesConfig.autoGenerateWeightConfigFiles)
         {
             Logger.log(Level.INFO, "Auto Weight Generation is enabled!");
-
-            ProgressManager.ProgressBar heavyBar = ProgressManager.push("Loading", itemMods.size());
-
-            for (String s : itemMods)
-            {
-                Logger.log(Level.INFO, "Building %s", s);
-                heavyBar.step("Building: " + s + ".cfg");
-                ConfigBuilder.build(s);
-            }
-
-            ProgressManager.pop(heavyBar);
         }
         else
         {
@@ -111,18 +112,18 @@ public class HeavyInventories
         for (Object item : Item.REGISTRY)
         {
             Item i = (Item) item;
-            if (!itemMods.contains(Toolkit.getModNameFromItem(i)))
+            if (!itemMods.contains(Toolkit.getModName(i)))
             {
-                itemMods.add(i.getRegistryName().getResourceDomain());
+                itemMods.add(Toolkit.getModName(i));
             }
         }
 
         for (Object block : Block.REGISTRY)
         {
             Block b = (Block) block;
-            if (!itemMods.contains(Toolkit.getModNameFromBlock(b)))
+            if (!itemMods.contains(Toolkit.getModName(b)))
             {
-                itemMods.add(b.getRegistryName().getResourceDomain());
+                itemMods.add(Toolkit.getModName(b));
             }
         }
 
@@ -144,6 +145,11 @@ public class HeavyInventories
     public static File getReaderDirectory()
     {
         return readerDirectory;
+    }
+
+    public static File getWeightFileDirectory()
+    {
+        return new File(getReaderDirectory() + File.separator + "Heavy Inventories" + File.separator + "Weights");
     }
 
     public static ArrayList<String> getItemMods()

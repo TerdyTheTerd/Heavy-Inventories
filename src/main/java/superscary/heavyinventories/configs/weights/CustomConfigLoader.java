@@ -2,16 +2,17 @@ package superscary.heavyinventories.configs.weights;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.common.config.Configuration;
-import superscary.heavyinventories.configs.builder.ConfigBuilder;
-import superscary.heavyinventories.configs.reader.ConfigReader;
+import superscary.heavyinventories.HeavyInventories;
+import superscary.heavyinventories.JsonUtils;
+import superscary.heavyinventories.util.Toolkit;
 
-import java.util.ArrayList;
+import java.io.File;
 
 public class CustomConfigLoader
 {
 
 	private static final double DEFAULT_WEIGHT = 0.1;
+
 	/**
 	 * Returns the weight of the item from the custom configs
 	 * @param modid
@@ -20,10 +21,16 @@ public class CustomConfigLoader
 	 */
 	public static double getItemWeight(String modid, Item item)
 	{
-		if (ConfigReader.getConfig(modid + ".cfg") != null)
+		File jsonFile = new File(HeavyInventories.getWeightFileDirectory(), modid + ".json");
+		if (jsonFile.isFile() && jsonFile.exists())
+		{
+			return JsonUtils.readJson(jsonFile, item.getRegistryName().getResourcePath());
+		}
+
+		/*if (ConfigReader.getConfig(modid + ".cfg") != null)
 		{
 			return ConfigReader.getConfig(modid + ".cfg").get(Configuration.CATEGORY_GENERAL, item.getRegistryName().getResourcePath(), DEFAULT_WEIGHT).getDouble();
-		}
+		}*/
 
 		return DEFAULT_WEIGHT;
 	}
@@ -31,6 +38,11 @@ public class CustomConfigLoader
 	public static double getItemWeight(String modid, ItemStack stack)
 	{
 		return getItemWeight(modid, stack.getItem());
+	}
+
+	public static double getItemWeight(ItemStack stack)
+	{
+		return getItemWeight(Toolkit.getModName(stack), stack);
 	}
 
 }

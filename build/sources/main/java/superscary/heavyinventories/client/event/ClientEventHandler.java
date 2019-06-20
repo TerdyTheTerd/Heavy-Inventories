@@ -13,10 +13,10 @@ import net.minecraftforge.event.entity.EntityMountEvent;
 import net.minecraftforge.event.entity.living.EnderTeleportEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.entity.player.PlayerSleepInBedEvent;
 import net.minecraftforge.fml.common.eventhandler.Event;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -32,6 +32,9 @@ import superscary.heavyinventories.common.capability.offsets.IOffset;
 import superscary.heavyinventories.common.capability.offsets.OffsetProvider;
 import superscary.heavyinventories.common.capability.weight.IWeighable;
 import superscary.heavyinventories.common.capability.weight.WeightProvider;
+import superscary.heavyinventories.common.network.PlayerEncumberedMessage;
+import superscary.heavyinventories.common.network.PlayerNotEncumberedMessage;
+import superscary.heavyinventories.common.network.PlayerOverEncumberedMessage;
 import superscary.heavyinventories.compat.mods.travellersbackpack.HITravellersBackpack;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.configs.PumpingIronCustomOffsetConfig;
@@ -65,7 +68,7 @@ public class ClientEventHandler
 					event.getToolTip().add(form(weight));
 					if (stack.getCount() > 1)
 					{
-						event.getToolTip().add(I18n.format("hi.gui.weight") + " " + (weight * stack.getCount()) + label);
+						event.getToolTip().add(I18n.format("hi.gui.weight") + " " + Toolkit.roundDouble(weight * stack.getCount()) + label);
 					}
 
 					if (Minecraft.getMinecraft().currentScreen != null)
@@ -83,7 +86,7 @@ public class ClientEventHandler
 				}
 				else
 				{
-					addShiftTip(event, stack, 0.1);
+					addShiftTip(event, stack, Toolkit.getWeightFromStack(stack));
 					if (tooltipKeyCheck(event.getItemStack()))
 					{
 						addTextToTooltip(event, I18n.format("hi.defaultWeight"));
@@ -114,7 +117,7 @@ public class ClientEventHandler
 	 */
 	private void addShiftTip(ItemTooltipEvent event, ItemStack stack, double weight)
 	{
-		if (stack.getMaxStackSize() > 1) event.getToolTip().add(I18n.format("hi.gui.maxStackWeight", stack.getMaxStackSize()) + " " + (weight * stack.getMaxStackSize()) + label);
+		if (stack.getMaxStackSize() > 1) event.getToolTip().add(I18n.format("hi.gui.maxStackWeight", stack.getMaxStackSize()) + " " + Toolkit.roundDouble(weight * stack.getMaxStackSize()) + label);
 		if (HeavyInventoriesConfig.pumpingIron && PumpingIronCustomOffsetConfig.hasItem(stack.getItem())) event.getToolTip().add(I18n.format("hi.gui.offset", PumpingIronCustomOffsetConfig.getOffsetFor(stack) + label));
 	}
 
@@ -203,15 +206,18 @@ public class ClientEventHandler
 		if (player.getRelativeWeight() >= 1.0)
 		{
 			player.setOverEncumbered(true);
+			HeavyInventories.getNetwork().sendToServer(new PlayerOverEncumberedMessage(player.isOverEncumbered()));
 		}
 		else if (player.getRelativeWeight() < 1.0 && player.getRelativeWeight() >= 0.85)
 		{
 			player.setEncumbered(true);
 			player.setOverEncumbered(false);
+			HeavyInventories.getNetwork().sendToServer(new PlayerEncumberedMessage(player.isEncumbered()));
 		}
 		else
 		{
 			player.setEncumbered(false);
+			HeavyInventories.getNetwork().sendToServer(new PlayerNotEncumberedMessage(player.isNotEncumbered()));
 		}
 	}
 
@@ -296,15 +302,16 @@ public class ClientEventHandler
 	{
 		if (player.isOverEncumbered())
 		{
-			if (player.getPlayer().isServerWorld()) new Toast(new TextComponentTranslation("hi.splash.noJump"));
+			player.sendToast("hi.splash.noJump");
 			player.getPlayer().motionY = 0D;
 			player.getPlayer().jumpMovementFactor = 0;
 		}
 		else if (player.isEncumbered())
 		{
-			if (player.getPlayer().isServerWorld()) new Toast(new TextComponentTranslation("hi.splash.noJumpEncumbered"));
+			player.sendToast("hi.splash.noJumpEncumbered");
 			player.getPlayer().motionY /= 5;
 		}
+
 	}
 
 	/**
@@ -319,12 +326,12 @@ public class ClientEventHandler
 		if (!HeavyInventoriesConfig.canSleepWhileOverEncumbered && player.isOverEncumbered())
 		{
 			event.setResult(EntityPlayer.SleepResult.OTHER_PROBLEM);
-			new Toast(new TextComponentTranslation("hi.splash.loseWeightMax"));
+			player.sendToast(new TextComponentTranslation("hi.splash.loseWeightMax"));
 		}
 		else if (!HeavyInventoriesConfig.canSleepWhileEncumbered && player.isEncumbered())
 		{
 			event.setResult(EntityPlayer.SleepResult.OTHER_PROBLEM);
-			new Toast(new TextComponentTranslation("hi.splash.loseWeight"));
+			player.sendToast(new TextComponentTranslation("hi.splash.loseWeight"));
 		}
 	}
 
@@ -531,7 +538,7 @@ public class ClientEventHandler
 			if (player.isEncumbered() || player.isOverEncumbered())
 			{
 				event.setResult(Event.Result.DENY);
-				new Toast(new TextComponentTranslation("hi.splash.entityMount"));
+				player.sendToast(new TextComponentTranslation("hi.splash.entityMount"));
 			}
 		}
 	}

@@ -4,9 +4,11 @@ import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.text.TextComponentTranslation;
+import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import superscary.heavyinventories.client.gui.Toast;
@@ -105,6 +107,21 @@ public class PlayerHelper
     public void sendToast(String component)
     {
         sendToast(new TextComponentTranslation(component));
+    }
+
+    public static PlayerHelper getDefaultHelper()
+    {
+        return new PlayerHelper(Minecraft.getMinecraft().player);
+    }
+
+    public boolean hasCapability(Capability<?> capability)
+    {
+        return getPlayer().hasCapability(capability, null);
+    }
+
+    public boolean hasCapability(Capability<?> capability, EnumFacing facing)
+    {
+        return getPlayer().hasCapability(capability, facing);
     }
 
 }

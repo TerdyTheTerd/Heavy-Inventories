@@ -151,12 +151,12 @@ public class Toolkit
 
 	public static int getWeightColor(EntityPlayer player)
 	{
-		IWeighable weighable = player.getCapability(WeightProvider.WEIGHABLE_CAPABILITY, null);
-		if (weighable.isOverEncumbered())
+		PlayerHelper helper = new PlayerHelper(player);
+		if (helper.isOverEncumbered())
 		{
 			return Integer.parseInt("FF0000", 16);
 		}
-		else if (weighable.isEncumbered())
+		else if (helper.isEncumbered())
 		{
 			return Integer.parseInt("FFFF00", 16);
 		}
@@ -168,10 +168,7 @@ public class Toolkit
 
 	public static double getWeightFromStack(ItemStack stack)
 	{
-		Item item = stack.getItem();
-		String modid = getModNameFromItem(item);
-
-		return CustomConfigLoader.getItemWeight(modid, item);
+		return CustomConfigLoader.getItemWeight(getModNameFromItem(stack.getItem()), stack.getItem());
 	}
 
 	/**

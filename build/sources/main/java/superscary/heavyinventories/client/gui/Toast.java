@@ -18,11 +18,15 @@ public class Toast extends GuiScreen
     private static int overlayMessageTime;
     private static int partialTicks = 60;
 
+    private Minecraft minecraft;
+
     public Toast(String text)
     {
         theText = text;
         overlayMessageTime = 160;
-        renderText(Minecraft.getMinecraft());
+
+        minecraft = Minecraft.getMinecraft();
+        renderText(minecraft);
     }
 
     public Toast(TextComponentTranslation component)
@@ -42,7 +46,8 @@ public class Toast extends GuiScreen
 
     public static void renderTextToScreen(Minecraft minecraft, String text)
     {
-        Minecraft.getMinecraft().mcProfiler.startSection("weightText");
+        if (!minecraft.world.isRemote) return;
+        minecraft.mcProfiler.startSection("weightText");
         ScaledResolution scaledResolution = new ScaledResolution(Minecraft.getMinecraft());
 
         int i = scaledResolution.getScaledWidth();
@@ -77,7 +82,7 @@ public class Toast extends GuiScreen
         }
 
         updateTick();
-        Minecraft.getMinecraft().mcProfiler.endSection();
+        minecraft.mcProfiler.endSection();
 
     }
 

@@ -17,6 +17,7 @@ import superscary.heavyinventories.compat.CompatLoader;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.configs.PumpingIronCustomOffsetConfig;
 import superscary.heavyinventories.configs.builder.ConfigBuilder;
+import superscary.heavyinventories.configs.builder.JsonBuilder;
 import superscary.heavyinventories.util.Constants;
 import superscary.heavyinventories.util.Logger;
 import superscary.heavyinventories.util.Toolkit;

@@ -15,7 +15,7 @@ public class HIWailaInfoProvider implements IWailaDataProvider
     @Override
     public List<String> getWailaBody(ItemStack itemStack, List<String> tooltip, IWailaDataAccessor accessor, IWailaConfigHandler config)
     {
-        double weight = WeightCalculator.getWeight(Toolkit.getModNameFromItem(itemStack.getItem()), itemStack.getItem());
+        double weight = WeightCalculator.getWeight(Toolkit.getModName(itemStack.getItem()), itemStack.getItem());
         tooltip.add("Weight: " + weight);
         return tooltip;
     }

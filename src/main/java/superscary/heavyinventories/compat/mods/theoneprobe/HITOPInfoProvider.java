@@ -81,7 +81,7 @@ public class HITOPInfoProvider implements IProbeInfoProvider
 	 */
 	private double getWeightOfBlock(Block block)
 	{
-		String modid = Toolkit.getModNameFromBlock(block);
+		String modid = Toolkit.getModName(block);
 		return WeightCalculator.getWeight(modid, block);
 	}
 
