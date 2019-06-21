@@ -7,11 +7,17 @@ import superscary.heavyinventories.util.JsonUtils;
 import superscary.heavyinventories.util.Toolkit;
 
 import java.io.File;
+import java.util.HashMap;
 
 public class CustomConfigLoader
 {
 
 	private static final double DEFAULT_WEIGHT = 0.1;
+
+	/**
+	 * stores item weights that have been picked up. reduces lag.
+	 */
+	public static HashMap<Item, Double> loadedWeights = new HashMap<>();
 
 	/**
 	 * Returns the weight of the item from the custom configs
@@ -21,10 +27,15 @@ public class CustomConfigLoader
 	 */
 	public static double getItemWeight(String modid, Item item)
 	{
-		File jsonFile = new File(HeavyInventories.getWeightFileDirectory(), modid + ".json");
-		if (jsonFile.isFile() && jsonFile.exists())
+		if (loadedWeights.containsKey(item)) return loadedWeights.get(item);
+		else
 		{
-			return JsonUtils.readJson(jsonFile, item);
+			File jsonFile = new File(HeavyInventories.getWeightFileDirectory(), modid + ".json");
+			if (jsonFile.isFile() && jsonFile.exists())
+			{
+				loadedWeights.put(item, JsonUtils.readJson(jsonFile, item));
+				return loadedWeights.get(item);
+			}
 		}
 
 		/*if (ConfigReader.getConfig(modid + ".cfg") != null)

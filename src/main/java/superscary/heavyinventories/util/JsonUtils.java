@@ -15,6 +15,8 @@ import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class JsonUtils
@@ -54,18 +56,25 @@ public class JsonUtils
         return o != null;
     }
 
+    /**
+     * Writes data to a json file
+     * @param object
+     * @param path
+     * @param modid
+     * @throws Exception
+     * TODO: somehow, an unexpected character ($) is being written into this. not sure whats causing this.
+     */
     public static void writeJsonToFile(JSONObject object, File path, String modid) throws Exception
     {
         File tester = new File(path, modid);
         Logger.log(Level.INFO, tester.getName());
-        if (tester.exists() && tester.isFile()) return;
-        //FileWriter writer = new FileWriter(tester);
-        OutputStreamWriter writer1 = new OutputStreamWriter(new FileOutputStream(tester), StandardCharsets.UTF_8);
+        if (tester.exists() && tester.isFile()) return; //returns if the file exists so it isn't overridden with a default value
+        OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(tester), StandardCharsets.UTF_8);
         try
         {
-            writer1.write(makePretty(object.toJSONString()));
+            writer.write(makePretty(object.toJSONString()));
             Logger.log(Level.INFO, object.toJSONString());
-            writer1.flush();
+            writer.flush();
         }
         catch (IOException e)
         {
@@ -73,7 +82,7 @@ public class JsonUtils
         }
         finally
         {
-            writer1.close();
+            writer.close();
         }
     }
 
@@ -101,18 +110,18 @@ public class JsonUtils
     private static double readJson(File file, String key)
     {
         JSONParser parser = new JSONParser();
-
-        try (JsonReader jsonReader = new JsonReader(new InputStreamReader(new FileInputStream(file), "UTF-8")))
+        try (JsonReader jsonReader = new JsonReader(new InputStreamReader(new FileInputStream(file), StandardCharsets.UTF_8)))
         {
-            JSONObject jsonObject = (JSONObject) parser.parse(jsonReader.getPath().split("$")[0]);
+            JSONObject jsonObject = (JSONObject) parser.parse(new InputStreamReader(new FileInputStream(file.getAbsolutePath())));
             while (jsonReader.hasNext())
             {
-                double w = Double.valueOf(String.valueOf((double) jsonObject.get(key)));
+                double w = Double.valueOf(String.valueOf(jsonObject.get(key)));
+                jsonReader.close();
                 return w;
             }
         } catch (Exception e)
         {
-            //e.printStackTrace();
+            e.printStackTrace();
         }
 
         parser.reset();
@@ -147,6 +156,20 @@ public class JsonUtils
         else if (object instanceof ItemStack) return readJson(file, (ItemStack) object);
         else if (object instanceof Block) return readJson(file, (Block) object);
         else return HeavyInventoriesConfig.DEFAULT_WEIGHT;
+    }
+
+    public static void writeNew(File file, Item item, double newWeight)
+    {
+        try
+        {
+            JSONObject object = new JSONObject();
+            object.put(item.getRegistryName().getResourcePath(), newWeight);
+
+            Files.write(Paths.get(file.getAbsolutePath()), object.toJSONString().getBytes());
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
 }

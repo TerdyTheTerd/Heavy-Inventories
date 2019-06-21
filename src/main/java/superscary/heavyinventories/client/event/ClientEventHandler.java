@@ -39,6 +39,7 @@ import superscary.heavyinventories.common.network.PlayerOverEncumberedMessage;
 import superscary.heavyinventories.compat.mods.travellersbackpack.HITravellersBackpack;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.configs.PumpingIronCustomOffsetConfig;
+import superscary.heavyinventories.configs.weights.CustomConfigLoader;
 import superscary.heavyinventories.util.*;
 import superscary.supercore.tools.EnumColor;
 
@@ -507,6 +508,7 @@ public class ClientEventHandler
 		Logger.info("Unloading key: %s", EnumTagID.WEIGHT.getId());
 		player.getEntityData().setDouble(EnumTagID.WEIGHT.getId(), weighable.getMaxWeight());
 		Logger.info("Player %s weight = %s", player.getPlayer().getDisplayNameString(), weighable.getMaxWeight());
+		CustomConfigLoader.loadedWeights.clear();
 	}
 
 	/**

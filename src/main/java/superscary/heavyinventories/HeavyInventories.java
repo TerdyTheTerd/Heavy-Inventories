@@ -54,7 +54,6 @@ public class HeavyInventories
         Logger.info("PreInit...");
 
         Generator.Info.create(Constants.class, event);
-        ConfigBuilder.setFile(event.getModConfigurationDirectory());
         HeavyInventoriesConfig.init(event.getModConfigurationDirectory());
         PumpingIronCustomOffsetConfig.init(event.getModConfigurationDirectory());
 
@@ -81,25 +80,18 @@ public class HeavyInventories
 
         findItemMods();
 
-        ProgressManager.ProgressBar heavyBar = ProgressManager.push("Loading", itemMods.size());
-
-        for (String s : itemMods)
-        {
-            //Logger.log(Level.INFO, "Building %s", s);
-            heavyBar.step("Building: " + s + ".json");
-            //ConfigBuilder.build(s);
-            ConfigBuilder.buildJson(s);
-        }
-
-        ProgressManager.pop(heavyBar);
-
         if (HeavyInventoriesConfig.autoGenerateWeightConfigFiles)
         {
             Logger.log(Level.INFO, "Auto Weight Generation is enabled!");
-        }
-        else
-        {
-            ConfigBuilder.existing();
+            ProgressManager.ProgressBar heavyBar = ProgressManager.push("Loading", itemMods.size());
+
+            for (String s : itemMods)
+            {
+                ConfigBuilder.buildJson(s);
+                heavyBar.step("Building: " + s + ".json");
+            }
+
+            ProgressManager.pop(heavyBar);
         }
 
         CompatLoader.build();

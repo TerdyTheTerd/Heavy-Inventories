@@ -3,12 +3,9 @@ package superscary.heavyinventories.configs;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import superscary.heavyinventories.configs.reader.ConfigReader;
-import superscary.heavyinventories.configs.weights.CustomConfigLoader;
 import superscary.heavyinventories.util.Toolkit;
 
 import java.io.File;
-import java.util.ArrayList;
 
 import static superscary.heavyinventories.util.Constants.MODID;
 
