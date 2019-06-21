@@ -14,6 +14,8 @@ import superscary.heavyinventories.common.capability.weight.WeightProvider;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.configs.weights.CustomConfigLoader;
 
+import java.util.ArrayList;
+
 public class Toolkit
 {
 
@@ -223,6 +225,34 @@ public class Toolkit
 	public static boolean checkNumericalWeight(String string)
 	{
 		return string.matches("^[0-9.]*$");
+	}
+
+	/**
+	 * Gets all items and blocks for a given mod
+	 * @param modid
+	 * @return
+	 */
+	public static ArrayList<Object> getAllItemsFromMod(String modid)
+	{
+		ArrayList<Object> objects = new ArrayList<>();
+
+		for (Item item : Item.REGISTRY)
+		{
+			if (item.getRegistryName().getResourceDomain().equalsIgnoreCase(modid))
+			{
+				objects.add(item);
+			}
+		}
+
+		for (Block block : Block.REGISTRY)
+		{
+			if (block.getRegistryName().getResourceDomain().equalsIgnoreCase(modid))
+			{
+				objects.add(block);
+			}
+		}
+
+		return objects;
 	}
 
 }

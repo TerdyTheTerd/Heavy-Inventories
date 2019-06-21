@@ -57,6 +57,8 @@ public class HeavyInventoriesCommands extends CommandBase
 
                     JsonUtils.writeNew(file, item, newWeight);
 
+                    CustomConfigLoader.loadedWeights.clear();
+
                     Logger.log(Level.INFO, "Player: %s changed %s from weight %s to %s", player.getDisplayNameString(), item.getRegistryName().getResourcePath(), currentWeight, newWeight);
                     player.sendMessage(new TextComponentTranslation("hi.splash.setWeight", item.getRegistryName().getResourceDomain() + ":" + item.getRegistryName().getResourcePath(), newWeight));
                 }

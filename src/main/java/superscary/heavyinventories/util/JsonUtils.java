@@ -15,8 +15,7 @@ import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class JsonUtils
@@ -160,12 +159,56 @@ public class JsonUtils
 
     public static void writeNew(File file, Item item, double newWeight)
     {
+        ArrayList<Object> objects = Toolkit.getAllItemsFromMod(item.getRegistryName().getResourceDomain());
+        JSONObject object = new JSONObject();
+
+        System.out.println(file.getAbsolutePath());
+
+        for (Object o : objects)
+        {
+            if (o instanceof Item)
+            {
+                Item testItem = (Item) o;
+                if (testItem == item)
+                {
+                    if (object.containsKey(item.getRegistryName().getResourcePath()))
+                    {
+                        object.replace(testItem.getRegistryName().getResourcePath(), "" + newWeight);
+                    }
+                    else
+                    {
+                        object.put(testItem.getRegistryName().getResourcePath(), "" + newWeight);
+                    }
+                }
+                else
+                {
+                    object.putIfAbsent(testItem.getRegistryName().getResourcePath(), "" + readJson(file, testItem));
+                }
+            }
+            else if (o instanceof Block)
+            {
+                Block block = (Block) o;
+                object.putIfAbsent(block.getRegistryName().getResourcePath(), "" + readJson(file, block));
+            }
+        }
+
         try
         {
-            JSONObject object = new JSONObject();
-            object.put(item.getRegistryName().getResourcePath(), newWeight);
-
-            Files.write(Paths.get(file.getAbsolutePath()), object.toJSONString().getBytes());
+            OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8);
+            try
+            {
+                writer.write(makePretty(object.toJSONString()));
+                Logger.log(Level.INFO, object.toJSONString());
+                writer.flush();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+            finally
+            {
+                writer.close();
+            }
         } catch (Exception e)
         {
             e.printStackTrace();

@@ -8,12 +8,9 @@ import superscary.heavyinventories.HeavyInventories;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.util.JsonUtils;
 import superscary.heavyinventories.util.Logger;
+import superscary.heavyinventories.util.Toolkit;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 
 public class ConfigBuilder
 {
@@ -24,20 +21,12 @@ public class ConfigBuilder
 
         JSONObject object = new JSONObject();
 
-        for (Item item : Item.REGISTRY)
-        {
-            if (item.getRegistryName().getResourceDomain().equalsIgnoreCase(modid))
-            {
-                object.putIfAbsent(item.getRegistryName().getResourcePath(), "" + HeavyInventoriesConfig.DEFAULT_WEIGHT);
-            }
-        }
+        ArrayList<Object> objects = Toolkit.getAllItemsFromMod(modid);
 
-        for (Block block : Block.REGISTRY)
+        for (Object o : objects)
         {
-            if (block.getRegistryName().getResourceDomain().equalsIgnoreCase(modid))
-            {
-                object.putIfAbsent(block.getRegistryName().getResourcePath(), "" + HeavyInventoriesConfig.DEFAULT_WEIGHT);
-            }
+            if (o instanceof Item) object.put(((Item) o).getRegistryName().getResourcePath(), "" + HeavyInventoriesConfig.DEFAULT_WEIGHT);
+            if (o instanceof Block) object.put(((Block) o).getRegistryName().getResourcePath(), "" + HeavyInventoriesConfig.DEFAULT_WEIGHT);
         }
 
         try
@@ -48,34 +37,6 @@ public class ConfigBuilder
             e.printStackTrace();
         }
 
-    }
-
-    public static JSONObject getAllItemsFromMod(String modid)
-    {
-        JSONObject object = new JSONObject();
-        return null;
-    }
-
-    public static JSONObject read(File file) throws Exception
-    {
-        JSONObject object = new JSONObject();
-        OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8);
-
-        try
-        {
-            writer.write(object.toJSONString());
-            writer.flush();
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-        finally
-        {
-            writer.close();
-        }
-
-        return null;
     }
 
 }
