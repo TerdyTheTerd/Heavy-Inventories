@@ -4,6 +4,8 @@ import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.inventory.IInventory;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
@@ -72,6 +74,11 @@ public class PlayerHelper
         getWeightCapability().setEncumbered(bool);
     }
 
+    public void setOffset(double offset)
+    {
+        getWeightOffsetCapability().setOffset(offset);
+    }
+
     public boolean isOverEncumbered()
     {
         return getWeightCapability().isOverEncumbered();
@@ -87,7 +94,7 @@ public class PlayerHelper
         return !isOverEncumbered() && !isEncumbered();
     }
 
-    public IOffset getWeightOffset()
+    public IOffset getWeightOffsetCapability()
     {
         return player.getCapability(OffsetProvider.OFFSET_CAPABILITY, null);
     }
@@ -122,6 +129,21 @@ public class PlayerHelper
     public boolean hasCapability(Capability<?> capability, EnumFacing facing)
     {
         return getPlayer().hasCapability(capability, facing);
+    }
+
+    public void setPlayerWalkSpeed(float speed)
+    {
+        getPlayer().capabilities.setPlayerWalkSpeed(speed);
+    }
+
+    public NBTTagCompound getEntityData()
+    {
+        return getPlayer().getEntityData();
+    }
+
+    public IInventory getInventory()
+    {
+        return getPlayer().inventory;
     }
 
 }

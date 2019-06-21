@@ -181,7 +181,7 @@ public class Toolkit
 
 	public static double getWeightFromStack(ItemStack stack)
 	{
-		return CustomConfigLoader.getItemWeight(getModNameFromItem(stack.getItem()), stack.getItem());
+		return CustomConfigLoader.getItemWeight(stack);
 	}
 
 	/**

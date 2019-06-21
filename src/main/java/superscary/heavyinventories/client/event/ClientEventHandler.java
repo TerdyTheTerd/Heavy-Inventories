@@ -5,6 +5,7 @@ import com.tiviacz.travellersbackpack.items.ItemTravellersBackpack;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.TextComponentTranslation;
@@ -38,7 +39,6 @@ import superscary.heavyinventories.common.network.PlayerOverEncumberedMessage;
 import superscary.heavyinventories.compat.mods.travellersbackpack.HITravellersBackpack;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.configs.PumpingIronCustomOffsetConfig;
-import superscary.heavyinventories.configs.reader.ConfigReader;
 import superscary.heavyinventories.util.*;
 import superscary.supercore.tools.EnumColor;
 
@@ -60,41 +60,18 @@ public class ClientEventHandler
 			ItemStack stack = event.getItemStack();
 			if (stack != null)
 			{
-				if (ConfigReader.getLoadedMods().contains(Toolkit.getModName(stack) + ".cfg") && !isIgnored(Toolkit.getModName(stack)))
+				String modid = Toolkit.getModName(stack.getItem());
+
+				double weight = Toolkit.getWeightFromStack(stack);
+				event.getToolTip().add(form(weight));
+
+				if (tooltipKeyCheck(event.getItemStack()))
 				{
-					String modid = Toolkit.getModName(stack.getItem());
-
-					double weight = Toolkit.getWeightFromStack(stack);
-					event.getToolTip().add(form(weight));
-					if (stack.getCount() > 1)
-					{
-						event.getToolTip().add(I18n.format("hi.gui.weight") + " " + Toolkit.roundDouble(weight * stack.getCount()) + label);
-					}
-
-					if (Minecraft.getMinecraft().currentScreen != null)
-					{
-						if (tooltipKeyCheck(event.getItemStack()))
-						{
-							addShiftTip(event, stack, weight);
-							doInventoryWeightCalc(event);
-						}
-						else
-						{
-							addNoShift(event);
-						}
-					}
+					addShiftTip(event, stack, Toolkit.getWeightFromStack(stack));
 				}
 				else
 				{
-					addShiftTip(event, stack, Toolkit.getWeightFromStack(stack));
-					if (tooltipKeyCheck(event.getItemStack()))
-					{
-						addTextToTooltip(event, I18n.format("hi.defaultWeight"));
-					}
-					else
-					{
-						addNoShift(event);
-					}
+					addNoShift(event);
 				}
 			}
 		}
@@ -187,15 +164,20 @@ public class ClientEventHandler
 	}
 
 	private double playersCalculatedWeight = -1;
+	private IInventory previousInventory = null;
 
 	/**
 	 * Sends message if the player is encumbered
 	 * @param event
+	 * TODO: Seems to cause frame rate issues (reading json through an inputstream instead of dynamically reading the file.)
 	 */
 	@SubscribeEvent
 	public void handleEncumberance(TickEvent.PlayerTickEvent event)
 	{
 		PlayerHelper player = new PlayerHelper(event.player);
+
+		if (player.getPlayer().inventory == previousInventory) return;
+		else previousInventory = player.getPlayer().inventory;
 
 		if (player.getWeight() != playersCalculatedWeight)
 		{
@@ -223,7 +205,7 @@ public class ClientEventHandler
 
 	public double getPlayersCalculatedWeight(PlayerHelper player)
 	{
-		return WeightCalculator.calculateWeight(player.getPlayer());
+		return WeightCalculator.calculateWeight(player);
 	}
 
 	/**
@@ -234,7 +216,7 @@ public class ClientEventHandler
 	public void onPlayerMove(TickEvent.PlayerTickEvent event)
 	{
 		PlayerHelper player = new PlayerHelper(event.player);
-		player.getWeightCapability().setWeight(WeightCalculator.calculateWeight(player.getPlayer()));
+		player.setWeight(WeightCalculator.calculateWeight(player));
 
 		if (!player.getPlayer().isCreative())
 		{
@@ -256,15 +238,15 @@ public class ClientEventHandler
 	{
 		if (player.isOverEncumbered())
 		{
-			player.getPlayer().capabilities.setPlayerWalkSpeed(HeavyInventoriesConfig.overEncumberedSpeed);
+			player.setPlayerWalkSpeed(HeavyInventoriesConfig.overEncumberedSpeed);
 		}
 		else if (player.isEncumbered())
 		{
-			player.getPlayer().capabilities.setPlayerWalkSpeed(HeavyInventoriesConfig.encumberedSpeed / 10);
+			player.setPlayerWalkSpeed(HeavyInventoriesConfig.encumberedSpeed / 10);
 		}
 		else
 		{
-			player.getPlayer().capabilities.setPlayerWalkSpeed((float) 0.1);
+			player.setPlayerWalkSpeed(0.1f);
 		}
 	}
 
@@ -343,14 +325,17 @@ public class ClientEventHandler
 	@SubscribeEvent
 	public void onPlayerClone(PlayerEvent.Clone event)
 	{
-		EntityPlayer player = event.getEntityPlayer();
-		IWeighable weighable = player.getCapability(WeightProvider.WEIGHABLE_CAPABILITY, null);
-		IWeighable weighableOld = event.getOriginal().getCapability(WeightProvider.WEIGHABLE_CAPABILITY, null);
-		IOffset offset = player.getCapability(OffsetProvider.OFFSET_CAPABILITY, null);
-		IOffset offsetOld = event.getOriginal().getCapability(OffsetProvider.OFFSET_CAPABILITY, null);
+		if (!HeavyInventoriesConfig.loseOffsetOnDeath)
+		{
+			PlayerHelper player = new PlayerHelper(event.getEntityPlayer());
+			IWeighable weighable = player.getWeightCapability();
+			IWeighable weighableOld = event.getOriginal().getCapability(WeightProvider.WEIGHABLE_CAPABILITY, null);
+			IOffset offset = player.getWeightOffsetCapability();
+			IOffset offsetOld = event.getOriginal().getCapability(OffsetProvider.OFFSET_CAPABILITY, null);
 
-		weighable.setWeight(weighableOld.getWeight());
-		if (!HeavyInventoriesConfig.loseOffsetOnDeath) offset.setOffset(offsetOld.getOffset());
+			player.setWeight(weighableOld.getWeight());
+			player.setOffset(offsetOld.getOffset());
+		}
 	}
 
 	/**
@@ -393,11 +378,11 @@ public class ClientEventHandler
 	{
 		PlayerHelper player = new PlayerHelper(event.player);
 
-		if (player.isOverEncumbered() && isPlayerMoving(player.getPlayer()))
+		if (player.isOverEncumbered() && isPlayerMoving(player))
 		{
 			player.getPlayer().addExhaustion(HeavyInventoriesConfig.overEncumberedExhaustion);
 		}
-		else if (player.isEncumbered() && isPlayerMoving(player.getPlayer()))
+		else if (player.isEncumbered() && isPlayerMoving(player))
 		{
 			player.getPlayer().addExhaustion(HeavyInventoriesConfig.encumberedExhaustion);
 		}
@@ -416,9 +401,9 @@ public class ClientEventHandler
 
 		if (player.getPlayer().isSprinting() && !player.getPlayer().isCreative() && (player.isOverEncumbered() || player.isEncumbered()))
 		{
-			player.getPlayer().setSprinting(canPlayerRun(player.getPlayer()));
+			player.getPlayer().setSprinting(canPlayerRun(player));
 
-			if (!sendRunMessage && canPlayerRun(player.getPlayer()))
+			if (!sendRunMessage && canPlayerRun(player))
 			{
 				new Toast(new TextComponentTranslation("hi.splash.noRun"));
 				sendRunMessage = true;
@@ -435,9 +420,9 @@ public class ClientEventHandler
 	 * @param player
 	 * @return true if player is moving
 	 */
-	public static boolean isPlayerMoving(EntityPlayer player)
+	public static boolean isPlayerMoving(PlayerHelper player)
 	{
-		return player.moveForward != 0 || player.moveStrafing != 0 || player.moveVertical != 0;
+		return player.getPlayer().moveForward != 0 || player.getPlayer().moveStrafing != 0 || player.getPlayer().moveVertical != 0;
 	}
 
 	/**
@@ -445,9 +430,9 @@ public class ClientEventHandler
 	 * @param player
 	 * @return
 	 */
-	public static boolean canPlayerRun(EntityPlayer player)
+	public static boolean canPlayerRun(PlayerHelper player)
 	{
-		IWeighable weighable = player.getCapability(WeightProvider.WEIGHABLE_CAPABILITY, null);
+		IWeighable weighable = player.getWeightCapability();
 		return !weighable.isEncumbered() || !weighable.isOverEncumbered();
 	}
 
@@ -463,9 +448,9 @@ public class ClientEventHandler
 	@SubscribeEvent
 	public void getPlayerWeightOffset(net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent event)
 	{
-		EntityPlayer player = event.player;
-		IWeighable weighable = player.getCapability(WeightProvider.WEIGHABLE_CAPABILITY, null);
-		IOffset offset = player.getCapability(OffsetProvider.OFFSET_CAPABILITY, null);
+		PlayerHelper player = new PlayerHelper(event.player);
+		IWeighable weighable = player.getWeightCapability();
+		IOffset offset = player.getWeightOffsetCapability();
 
 		if (player.getEntityData().hasKey(EnumTagID.WEIGHT.getId()))
 		{
@@ -479,7 +464,7 @@ public class ClientEventHandler
 			Logger.info("Loading key: %s", EnumTagID.WEIGHT.getId());
 			weighable.setMaxWeight(player.getEntityData().getDouble(EnumTagID.WEIGHT.getId()));
 
-			Logger.info("Player %s weight = %s", player.getDisplayNameString(), weighable.getMaxWeight());
+			Logger.info("Player %s weight = %s", player.getPlayer().getDisplayNameString(), weighable.getMaxWeight());
 		}
 		else
 		{
@@ -517,11 +502,11 @@ public class ClientEventHandler
 	@SubscribeEvent
 	public void savePlayerWeightOffset(net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedOutEvent event)
 	{
-		EntityPlayer player = event.player;
-		IWeighable weighable = player.getCapability(WeightProvider.WEIGHABLE_CAPABILITY, null);
+		PlayerHelper player = new PlayerHelper(event.player);
+		IWeighable weighable = player.getWeightCapability();
 		Logger.info("Unloading key: %s", EnumTagID.WEIGHT.getId());
 		player.getEntityData().setDouble(EnumTagID.WEIGHT.getId(), weighable.getMaxWeight());
-		Logger.info("Player %s weight = %s", player.getDisplayNameString(), weighable.getMaxWeight());
+		Logger.info("Player %s weight = %s", player.getPlayer().getDisplayNameString(), weighable.getMaxWeight());
 	}
 
 	/**

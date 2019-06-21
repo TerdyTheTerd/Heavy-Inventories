@@ -3,7 +3,7 @@ package superscary.heavyinventories.configs.weights;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import superscary.heavyinventories.HeavyInventories;
-import superscary.heavyinventories.JsonUtils;
+import superscary.heavyinventories.util.JsonUtils;
 import superscary.heavyinventories.util.Toolkit;
 
 import java.io.File;
@@ -24,7 +24,7 @@ public class CustomConfigLoader
 		File jsonFile = new File(HeavyInventories.getWeightFileDirectory(), modid + ".json");
 		if (jsonFile.isFile() && jsonFile.exists())
 		{
-			return JsonUtils.readJson(jsonFile, item.getRegistryName().getResourcePath());
+			return JsonUtils.readJson(jsonFile, item);
 		}
 
 		/*if (ConfigReader.getConfig(modid + ".cfg") != null)

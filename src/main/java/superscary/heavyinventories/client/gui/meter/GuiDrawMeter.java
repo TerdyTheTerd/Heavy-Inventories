@@ -7,8 +7,8 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import superscary.heavyinventories.common.capability.weight.IWeighable;
-import superscary.heavyinventories.common.capability.weight.WeightProvider;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
+import superscary.heavyinventories.util.PlayerHelper;
 
 @SideOnly(Side.CLIENT)
 public class GuiDrawMeter extends Gui
@@ -21,7 +21,7 @@ public class GuiDrawMeter extends Gui
 
     public void renderMeter(Minecraft minecraft)
     {
-        if (HeavyInventoriesConfig.showWeightBar)
+        if ((PlayerHelper.getDefaultHelper().getPlayer().isCreative() && HeavyInventoriesConfig.allowInCreative && HeavyInventoriesConfig.showWeightBar) || HeavyInventoriesConfig.showWeightBar)
         {
             ScaledResolution scaledResolution = new ScaledResolution(minecraft);
             ResourceLocation resourceLocation = new ResourceLocation("textures/gui/bars.png");
@@ -29,11 +29,13 @@ public class GuiDrawMeter extends Gui
             minecraft.mcProfiler.startSection("weightMeter");
             minecraft.getTextureManager().bindTexture(resourceLocation);
 
-            IWeighable weighable = minecraft.player.getCapability(WeightProvider.WEIGHABLE_CAPABILITY, null);
+            PlayerHelper player = new PlayerHelper(minecraft.player);
+
+            IWeighable weighable = player.getWeightCapability();
             int i = (int) weighable.getMaxWeight();
             int x = (int) weighable.getWeight();
 
-            if (i > 0 && minecraft.player.getCapability(WeightProvider.WEIGHABLE_CAPABILITY, null).getWeight() > 0)
+            if (i > 0 && player.getWeightCapability().getWeight() > 0)
             {
                 int j = 182;
                 int k = 1 + ((x + 99) / 100 * 100) / 100;

@@ -4,7 +4,6 @@ import baubles.api.BaublesApi;
 import baubles.api.cap.IBaublesItemHandler;
 import com.tiviacz.travellersbackpack.items.ItemTravellersBackpack;
 import net.minecraft.block.Block;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Loader;
@@ -12,6 +11,7 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import superscary.heavyinventories.compat.mods.travellersbackpack.HITravellersBackpack;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.configs.weights.CustomConfigLoader;
+import superscary.heavyinventories.util.PlayerHelper;
 import superscary.heavyinventories.util.Toolkit;
 
 public class WeightCalculator
@@ -22,12 +22,12 @@ public class WeightCalculator
 	 * @param player the player to weigh
 	 * @return the weight of the player
 	 */
-	public static double calculateWeight(EntityPlayer player)
+	public static double calculateWeight(PlayerHelper player)
 	{
 		double weight = 0;
-		for (int i = 0; i < player.inventory.getSizeInventory(); i++)
+		for (int i = 0; i < player.getInventory().getSizeInventory(); i++)
 		{
-			ItemStack stack = player.inventory.getStackInSlot(i);
+			ItemStack stack = player.getInventory().getStackInSlot(i);
 			if (stack != null)
 			{
 				weight += (getWeight(Toolkit.getModName(stack.getItem()), stack.getItem()) * stack.getCount());
@@ -53,16 +53,16 @@ public class WeightCalculator
 	 * Only used for calculating the weight for Baubles slots (0-7)
 	 * @param player
 	 */
-	public static double calculateWeightForBaublesInventory(EntityPlayer player)
+	public static double calculateWeightForBaublesInventory(PlayerHelper player)
 	{
 		double weight = 0;
-		IBaublesItemHandler handler = BaublesApi.getBaublesHandler(player);
+		IBaublesItemHandler handler = BaublesApi.getBaublesHandler(player.getPlayer());
 		for (int i = 0; i < 7; i++)
 		{
 			ItemStack stack = handler.getStackInSlot(i);
 			if (handler.getStackInSlot(i) != null)
 			{
-				weight += (getWeight(Toolkit.getModName(stack.getItem()), stack.getItem()) * stack.getCount());
+				weight += (getWeight(stack) * stack.getCount());
 			}
 		}
 		return Toolkit.roundDouble(weight);

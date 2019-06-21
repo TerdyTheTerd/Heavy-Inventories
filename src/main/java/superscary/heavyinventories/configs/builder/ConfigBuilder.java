@@ -8,9 +8,9 @@ import net.minecraftforge.fml.common.ProgressManager;
 import org.apache.logging.log4j.Level;
 import org.json.simple.JSONObject;
 import superscary.heavyinventories.HeavyInventories;
-import superscary.heavyinventories.JsonUtils;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.configs.reader.ConfigReader;
+import superscary.heavyinventories.util.JsonUtils;
 import superscary.heavyinventories.util.Logger;
 
 import java.io.File;
@@ -98,7 +98,7 @@ public class ConfigBuilder
         {
             if (item.getRegistryName().getResourceDomain().equalsIgnoreCase(modid))
             {
-                object.putIfAbsent(item.getRegistryName().getResourcePath(), HeavyInventoriesConfig.DEFAULT_WEIGHT);
+                object.putIfAbsent(item.getRegistryName().getResourcePath(), "" + HeavyInventoriesConfig.DEFAULT_WEIGHT);
             }
         }
 
@@ -106,7 +106,7 @@ public class ConfigBuilder
         {
             if (block.getRegistryName().getResourceDomain().equalsIgnoreCase(modid))
             {
-                object.putIfAbsent(block.getRegistryName().getResourcePath(), HeavyInventoriesConfig.DEFAULT_WEIGHT);
+                object.putIfAbsent(block.getRegistryName().getResourcePath(), "" + HeavyInventoriesConfig.DEFAULT_WEIGHT);
             }
         }
 
