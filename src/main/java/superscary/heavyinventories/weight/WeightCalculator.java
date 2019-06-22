@@ -1,4 +1,4 @@
-package superscary.heavyinventories.calc;
+package superscary.heavyinventories.weight;
 
 import baubles.api.BaublesApi;
 import baubles.api.cap.IBaublesItemHandler;
@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.items.CapabilityItemHandler;
 import superscary.heavyinventories.compat.mods.travellersbackpack.HITravellersBackpack;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
-import superscary.heavyinventories.configs.weights.CustomConfigLoader;
+import superscary.heavyinventories.util.JsonUtils;
 import superscary.heavyinventories.util.PlayerHelper;
 import superscary.heavyinventories.util.Toolkit;
 
@@ -76,7 +76,7 @@ public class WeightCalculator
 	 */
 	public static double getWeight(String modid, Item item)
 	{
-		return CustomConfigLoader.getItemWeight(modid, item);
+		return CustomLoader.getItemWeight(modid, item, JsonUtils.Type.WEIGHT);
 	}
 
 	public static double getWeight(String modid, ItemStack stack)

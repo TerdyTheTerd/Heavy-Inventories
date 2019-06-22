@@ -3,14 +3,14 @@ package superscary.heavyinventories.util;
 import java.io.File;
 import java.io.InputStream;
 
-public class FileHandle
+public class FileHandler
 {
 
     public static InputStream inputStreamFromFile(String path)
     {
         try
         {
-            InputStream inputStream = FileHandle.class.getResourceAsStream(path);
+            InputStream inputStream = FileHandler.class.getResourceAsStream(path);
             return inputStream;
         } catch (Exception e)
         {

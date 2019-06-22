@@ -4,8 +4,8 @@ import mcp.mobius.waila.api.IWailaConfigHandler;
 import mcp.mobius.waila.api.IWailaDataAccessor;
 import mcp.mobius.waila.api.IWailaDataProvider;
 import net.minecraft.item.ItemStack;
-import superscary.heavyinventories.calc.WeightCalculator;
 import superscary.heavyinventories.util.Toolkit;
+import superscary.heavyinventories.weight.WeightCalculator;
 
 import java.util.List;
 

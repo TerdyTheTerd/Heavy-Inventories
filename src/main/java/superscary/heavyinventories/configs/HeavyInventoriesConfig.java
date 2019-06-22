@@ -15,6 +15,7 @@ public class HeavyInventoriesConfig
 	public static Configuration config;
 
 	public static final double DEFAULT_WEIGHT = 0.1;
+	public static final double DEFAULT_OFFSET = 0.5;
 
 	public static final String GENERAL = Configuration.CATEGORY_GENERAL;
 	public static final String SETUP = "Setup";

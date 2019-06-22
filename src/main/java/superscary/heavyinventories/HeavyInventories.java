@@ -11,15 +11,14 @@ import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import org.apache.logging.log4j.Level;
-import superscary.heavyinventories.client.command.HeavyInventoriesCommandRegistry;
 import superscary.heavyinventories.common.CommonProxy;
 import superscary.heavyinventories.compat.CompatLoader;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
-import superscary.heavyinventories.configs.PumpingIronCustomOffsetConfig;
-import superscary.heavyinventories.configs.builder.ConfigBuilder;
+import superscary.heavyinventories.server.command.HeavyInventoriesCommandRegistry;
 import superscary.heavyinventories.util.Constants;
 import superscary.heavyinventories.util.Logger;
 import superscary.heavyinventories.util.Toolkit;
+import superscary.heavyinventories.weight.CustomBuilder;
 import superscary.supercore.SuperCore;
 import superscary.supercore.info.Generator;
 
@@ -55,7 +54,6 @@ public class HeavyInventories
 
         Generator.Info.create(Constants.class, event);
         HeavyInventoriesConfig.init(event.getModConfigurationDirectory());
-        PumpingIronCustomOffsetConfig.init(event.getModConfigurationDirectory());
 
         readerDirectory = event.getModConfigurationDirectory();
 
@@ -87,7 +85,7 @@ public class HeavyInventories
 
             for (String s : itemMods)
             {
-                ConfigBuilder.buildJson(s);
+                CustomBuilder.buildJson(s);
                 heavyBar.step("Building: " + s + ".json");
             }
 

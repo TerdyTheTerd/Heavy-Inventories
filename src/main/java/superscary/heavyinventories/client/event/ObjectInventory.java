@@ -4,8 +4,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
-import superscary.heavyinventories.calc.WeightCalculator;
 import superscary.heavyinventories.util.Toolkit;
+import superscary.heavyinventories.weight.WeightCalculator;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package superscary.heavyinventories.calc;
+package superscary.heavyinventories.weight;
 
 import com.tiviacz.travellersbackpack.gui.inventory.InventoryTravellersBackpack;
 import com.tiviacz.travellersbackpack.items.ItemTravellersBackpack;

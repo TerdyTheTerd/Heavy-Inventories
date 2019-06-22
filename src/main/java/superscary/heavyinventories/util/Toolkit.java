@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import superscary.heavyinventories.common.capability.weight.IWeighable;
 import superscary.heavyinventories.common.capability.weight.WeightProvider;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
-import superscary.heavyinventories.configs.weights.CustomConfigLoader;
+import superscary.heavyinventories.weight.CustomLoader;
 
 import java.util.ArrayList;
 
@@ -183,7 +183,12 @@ public class Toolkit
 
 	public static double getWeightFromStack(ItemStack stack)
 	{
-		return CustomConfigLoader.getItemWeight(stack);
+		return CustomLoader.getItemWeight(stack, JsonUtils.Type.WEIGHT);
+	}
+
+	public static double getOffsetFromStack(ItemStack stack)
+	{
+		return CustomLoader.getItemWeight(stack, JsonUtils.Type.OFFSET);
 	}
 
 	/**

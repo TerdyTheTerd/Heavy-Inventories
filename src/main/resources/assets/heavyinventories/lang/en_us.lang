@@ -10,6 +10,7 @@ hi.splash.noRun=You're carrying to much to run!
 hi.splash.entityMount=You can't ride this while encumbered!
 hi.splash.setWeight=Set the weight of %s to %s
 hi.splash.setOffset=Set the offset of %s to %s
+hi.splash.reload=Reloaded Heavy Inventories!
 
 # GUI
 hi.gui.shift=Hold %s for more information.

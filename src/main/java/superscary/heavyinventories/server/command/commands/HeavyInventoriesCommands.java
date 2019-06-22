@@ -1,4 +1,4 @@
-package superscary.heavyinventories.client.command.commands;
+package superscary.heavyinventories.server.command.commands;
 
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
@@ -6,17 +6,15 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.text.TextComponentTranslation;
-import net.minecraftforge.common.config.Configuration;
 import org.apache.logging.log4j.Level;
 import superscary.heavyinventories.HeavyInventories;
-import superscary.heavyinventories.calc.WeightCalculator;
 import superscary.heavyinventories.client.gui.HeavyInventoriesGuiConfig;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
-import superscary.heavyinventories.configs.PumpingIronCustomOffsetConfig;
-import superscary.heavyinventories.configs.weights.CustomConfigLoader;
 import superscary.heavyinventories.util.JsonUtils;
 import superscary.heavyinventories.util.Logger;
 import superscary.heavyinventories.util.Toolkit;
+import superscary.heavyinventories.weight.CustomLoader;
+import superscary.heavyinventories.weight.WeightCalculator;
 import superscary.supercore.tools.gui.DisplayDelayedGui;
 
 import java.io.File;
@@ -55,9 +53,9 @@ public class HeavyInventoriesCommands extends CommandBase
 
                     System.out.println(file.getAbsolutePath());
 
-                    JsonUtils.writeNew(file, item, newWeight);
+                    JsonUtils.writeNew(file, item, newWeight, JsonUtils.Type.WEIGHT);
 
-                    CustomConfigLoader.loadedWeights.clear();
+                    CustomLoader.reloadAll();
 
                     Logger.log(Level.INFO, "Player: %s changed %s from weight %s to %s", player.getDisplayNameString(), item.getRegistryName().getResourcePath(), currentWeight, newWeight);
                     player.sendMessage(new TextComponentTranslation("hi.splash.setWeight", item.getRegistryName().getResourceDomain() + ":" + item.getRegistryName().getResourcePath(), newWeight));
@@ -67,19 +65,21 @@ public class HeavyInventoriesCommands extends CommandBase
                     EntityPlayer player = (EntityPlayer) sender.getCommandSenderEntity();
                     Item item = player.getHeldItem(player.getActiveHand()).getItem();
 
-                    float currentOffset = PumpingIronCustomOffsetConfig.getOffsetFor(item);
                     float newOffset = Toolkit.checkNumericalWeight(args[2]) ? Float.valueOf(args[2]) : HeavyInventoriesConfig.pumpingIronWeightIncrease;
-                    Configuration configuration = PumpingIronCustomOffsetConfig.getConfiguration();
 
-                    configuration.load();
-                    configuration.get(PumpingIronCustomOffsetConfig.GENERAL, PumpingIronCustomOffsetConfig.getSuit(item), "", null).set(newOffset);
-                    configuration.save();
+                    File file = new File(HeavyInventories.getWeightFileDirectory(), Toolkit.getModName(item) + ".json");
 
-                    player.sendMessage(new TextComponentTranslation("hi.splash.setOffset", PumpingIronCustomOffsetConfig.getSuit(item), newOffset));
+                    JsonUtils.writeNew(file, item, newOffset, JsonUtils.Type.OFFSET);
+                    CustomLoader.reloadAll();
+
+                    player.sendMessage(new TextComponentTranslation("hi.splash.setOffset", item.getRegistryName().toString(), newOffset));
                 }
                 else if (args[0].equalsIgnoreCase("reload"))
                 {
-                    CustomConfigLoader.loadedWeights.clear();
+                    CustomLoader.reloadAll();
+
+                    EntityPlayer player = (EntityPlayer) sender.getCommandSenderEntity();
+                    player.sendMessage(new TextComponentTranslation("hi.splash.reload"));
                 }
                 else if (args[0].equalsIgnoreCase("config"))
                 {

@@ -1,10 +1,10 @@
-package superscary.heavyinventories.client.command;
+package superscary.heavyinventories.server.command;
 
 import net.minecraft.command.ICommand;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import superscary.heavyinventories.client.command.commands.HeavyInventoriesCommands;
+import superscary.heavyinventories.server.command.commands.HeavyInventoriesCommands;
 
 @SideOnly(Side.CLIENT)
 public class HeavyInventoriesCommandRegistry

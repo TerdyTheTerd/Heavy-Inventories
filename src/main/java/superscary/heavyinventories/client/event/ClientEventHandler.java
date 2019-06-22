@@ -24,8 +24,6 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.items.CapabilityItemHandler;
 import org.lwjgl.input.Keyboard;
 import superscary.heavyinventories.HeavyInventories;
-import superscary.heavyinventories.calc.ItemInventoryWeight;
-import superscary.heavyinventories.calc.WeightCalculator;
 import superscary.heavyinventories.client.gui.InventoryWeightText;
 import superscary.heavyinventories.client.gui.Toast;
 import superscary.heavyinventories.client.gui.meter.GuiDrawMeter;
@@ -38,9 +36,10 @@ import superscary.heavyinventories.common.network.PlayerNotEncumberedMessage;
 import superscary.heavyinventories.common.network.PlayerOverEncumberedMessage;
 import superscary.heavyinventories.compat.mods.travellersbackpack.HITravellersBackpack;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
-import superscary.heavyinventories.configs.PumpingIronCustomOffsetConfig;
-import superscary.heavyinventories.configs.weights.CustomConfigLoader;
 import superscary.heavyinventories.util.*;
+import superscary.heavyinventories.weight.CustomLoader;
+import superscary.heavyinventories.weight.ItemInventoryWeight;
+import superscary.heavyinventories.weight.WeightCalculator;
 import superscary.supercore.tools.EnumColor;
 
 @SuppressWarnings("all")
@@ -96,7 +95,7 @@ public class ClientEventHandler
 	private void addShiftTip(ItemTooltipEvent event, ItemStack stack, double weight)
 	{
 		if (stack.getMaxStackSize() > 1) event.getToolTip().add(I18n.format("hi.gui.maxStackWeight", stack.getMaxStackSize()) + " " + Toolkit.roundDouble(weight * stack.getMaxStackSize()) + label);
-		if (HeavyInventoriesConfig.pumpingIron && PumpingIronCustomOffsetConfig.hasItem(stack.getItem())) event.getToolTip().add(I18n.format("hi.gui.offset", PumpingIronCustomOffsetConfig.getOffsetFor(stack) + label));
+		if (HeavyInventoriesConfig.pumpingIron) event.getToolTip().add(I18n.format("hi.gui.offset", CustomLoader.getItemWeight(Toolkit.getModName(stack), stack, JsonUtils.Type.OFFSET) + label));
 	}
 
 	/**
@@ -508,7 +507,7 @@ public class ClientEventHandler
 		Logger.info("Unloading key: %s", EnumTagID.WEIGHT.getId());
 		player.getEntityData().setDouble(EnumTagID.WEIGHT.getId(), weighable.getMaxWeight());
 		Logger.info("Player %s weight = %s", player.getPlayer().getDisplayNameString(), weighable.getMaxWeight());
-		CustomConfigLoader.loadedWeights.clear();
+		CustomLoader.loadedWeights.clear();
 	}
 
 	/**
