@@ -79,6 +79,12 @@ public class WeightCalculator
 		return CustomLoader.getItemWeight(modid, item, JsonUtils.Type.WEIGHT);
 	}
 
+	/**
+	 * Gets the weight for custom itemstacks
+	 * @param modid
+	 * @param stack
+	 * @return
+	 */
 	public static double getWeight(String modid, ItemStack stack)
 	{
 		return getWeight(modid, stack.getItem());
@@ -95,16 +101,31 @@ public class WeightCalculator
 		return getWeight(modid, Item.getItemFromBlock(block));
 	}
 
+	/**
+	 * Gets the weight for custom items (auto-fetches the modid)
+	 * @param item
+	 * @return
+	 */
 	public static double getWeight(Item item)
 	{
 		return getWeight(Toolkit.getModName(item), item);
 	}
 
+	/**
+	 * Gets the weight for custom itemstacks (auto-fetches the modid)
+	 * @param stack
+	 * @return
+	 */
 	public static double getWeight(ItemStack stack)
 	{
 		return getWeight(Toolkit.getModName(stack), stack);
 	}
 
+	/**
+	 * Gets the weight for custom blocks (auto-fetches the modid)
+	 * @param block
+	 * @return
+	 */
 	public static double getWeight(Block block)
 	{
 		return getWeight(Toolkit.getModName(block), block);

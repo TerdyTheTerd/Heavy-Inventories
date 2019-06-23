@@ -6,6 +6,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
 import superscary.heavyinventories.client.event.ClientEventHandler;
 import superscary.heavyinventories.client.event.PumpingIronHandler;
+import superscary.heavyinventories.client.item.HIItemRegistry;
 import superscary.heavyinventories.common.CommonProxy;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 
@@ -19,6 +20,8 @@ public class ClientProxy extends CommonProxy
 		MinecraftForge.EVENT_BUS.register(new ClientEventHandler());
 		MinecraftForge.EVENT_BUS.register(new HeavyInventoriesConfig());
 		MinecraftForge.EVENT_BUS.register(new PumpingIronHandler());
+		MinecraftForge.EVENT_BUS.register(new HIItemRegistry());
+		HIItemRegistry.get();
 	}
 
 	@Override

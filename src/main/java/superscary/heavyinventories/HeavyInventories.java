@@ -1,7 +1,10 @@
 package superscary.heavyinventories;
 
 import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.ProgressManager;
@@ -28,6 +31,10 @@ import java.util.Collections;
 
 import static superscary.heavyinventories.util.Constants.*;
 
+/**
+ * This mod uses the json-simple library for json file creation and handling
+ */
+
 @SuppressWarnings("unused")
 @Mod(modid = MODID, version = VERSION, name = NAME, guiFactory = "superscary.heavyinventories.client.gui.ModGuiFactory", dependencies = SuperCore.SET_REQUIRED_AFTER, updateJSON = "https://raw.githubusercontent.com/SuperScary/Heavy-Inventories/master/update.json")
 public class HeavyInventories
@@ -44,6 +51,15 @@ public class HeavyInventories
     public static HeavyInventories instance;
 
     public static SimpleNetworkWrapper networkWrapper;
+
+    public static final CreativeTabs TAB = new CreativeTabs(MODID)
+    {
+        @Override
+        public ItemStack getTabIconItem()
+        {
+            return new ItemStack(Items.POTIONITEM);
+        }
+    };
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
@@ -75,8 +91,6 @@ public class HeavyInventories
     public void postInit(FMLPostInitializationEvent event)
     {
         Logger.info("PostInit...");
-
-        findItemMods();
 
         if (HeavyInventoriesConfig.autoGenerateWeightConfigFiles)
         {

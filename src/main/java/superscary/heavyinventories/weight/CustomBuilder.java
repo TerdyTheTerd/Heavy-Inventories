@@ -2,6 +2,7 @@ package superscary.heavyinventories.weight;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import org.apache.logging.log4j.Level;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -16,6 +17,10 @@ import java.util.ArrayList;
 public class CustomBuilder
 {
 
+    /**
+     * builds the json file for a given modid. this is automatically called by {@link HeavyInventories#postInit(FMLPostInitializationEvent)}
+     * @param modid the modid for a given mod. this will also become the files name.
+     */
     public static void buildJson(String modid)
     {
         Logger.log(Level.INFO, modid);
@@ -28,7 +33,6 @@ public class CustomBuilder
         {
             if (o instanceof Item)
             {
-                //((Item) o).getRegistryName().getResourcePath()
                 JSONArray array = new JSONArray();
                 JSONObject object = new JSONObject();
                 object.put("weight", "" + HeavyInventoriesConfig.DEFAULT_WEIGHT);
@@ -38,7 +42,6 @@ public class CustomBuilder
             }
             else if (o instanceof Block)
             {
-                //((Block) o).getRegistryName().getResourcePath()
                 JSONArray array = new JSONArray();
                 JSONObject object = new JSONObject();
                 object.put("weight", "" + HeavyInventoriesConfig.DEFAULT_WEIGHT);

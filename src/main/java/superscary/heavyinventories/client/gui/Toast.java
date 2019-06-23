@@ -15,14 +15,14 @@ public class Toast extends GuiScreen
 
     private static String theText;
     private static int overlayMessageTime;
-    private static int partialTicks = 60;
+    private static int partialTicks = 20;
 
     private Minecraft minecraft;
 
     public Toast(String text)
     {
         theText = text;
-        overlayMessageTime = 160;
+        overlayMessageTime = 650;
 
         minecraft = Minecraft.getMinecraft();
         renderText(minecraft);

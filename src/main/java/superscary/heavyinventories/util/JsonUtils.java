@@ -237,6 +237,9 @@ public class JsonUtils
         else return HeavyInventoriesConfig.DEFAULT_WEIGHT;
     }
 
+    /**
+     * Returns the type of data that is being requested for ease.
+     */
     public enum Type
     {
         OFFSET("offset"),

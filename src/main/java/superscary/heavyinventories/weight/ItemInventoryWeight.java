@@ -21,6 +21,11 @@ import superscary.heavyinventories.util.Toolkit;
 public class ItemInventoryWeight
 {
 
+    /**
+     * Gets the weight of an item that stores items. Getters for the inventories are custom made.
+     * @param stack
+     * @return
+     */
     public static double getWeight(ItemStack stack)
     {
         double stored = 0;
@@ -97,6 +102,7 @@ public class ItemInventoryWeight
      * Gets the weight of a WearableBackpack's backpack
      * @param stack
      * @return
+     * TODO: is not loading the inventory of the backpack. need to see how copygirl does this.
      */
     public static double getWearableBackpacksWeight(ItemStack stack)
     {

@@ -11,7 +11,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.event.entity.EntityMountEvent;
-import net.minecraftforge.event.entity.living.EnderTeleportEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
@@ -75,15 +74,6 @@ public class ClientEventHandler
 				}
 			}
 		}
-	}
-
-	private boolean isIgnored(String modid)
-	{
-		for (String s : HeavyInventoriesConfig.ignoredMods)
-		{
-			if (s.equalsIgnoreCase(modid)) return true;
-		}
-		return false;
 	}
 
 	/**
@@ -507,7 +497,7 @@ public class ClientEventHandler
 		Logger.info("Unloading key: %s", EnumTagID.WEIGHT.getId());
 		player.getEntityData().setDouble(EnumTagID.WEIGHT.getId(), weighable.getMaxWeight());
 		Logger.info("Player %s weight = %s", player.getPlayer().getDisplayNameString(), weighable.getMaxWeight());
-		CustomLoader.loadedWeights.clear();
+		CustomLoader.loadedWeightsCache.clear();
 	}
 
 	/**
@@ -526,21 +516,6 @@ public class ClientEventHandler
 				event.setResult(Event.Result.DENY);
 				player.sendToast(new TextComponentTranslation("hi.splash.entityMount"));
 			}
-		}
-	}
-
-	@SubscribeEvent
-	public void playerTeleportEnderPearl(EnderTeleportEvent event)
-	{
-		if (event.getEntityLiving() instanceof EntityPlayer)
-		{
-			EntityPlayer player = (EntityPlayer) event.getEntityLiving();
-			Coords thrownCoords = new Coords(event);
-			Coords playerCoords = new Coords(player.posX, player.posY, player.posZ);
-			PlayerHelper helper = new PlayerHelper(player);
-			double distance = Toolkit.getDistance(thrownCoords, playerCoords);
-
-
 		}
 	}
 

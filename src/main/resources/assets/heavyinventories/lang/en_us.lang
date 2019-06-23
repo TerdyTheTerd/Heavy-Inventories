@@ -11,6 +11,7 @@ hi.splash.entityMount=You can't ride this while encumbered!
 hi.splash.setWeight=Set the weight of %s to %s
 hi.splash.setOffset=Set the offset of %s to %s
 hi.splash.reload=Reloaded Heavy Inventories!
+hi.splash.upgradeToken=Added %s to your carry weight!
 
 # GUI
 hi.gui.shift=Hold %s for more information.
@@ -40,3 +41,12 @@ maxCarryWeight.name=Max Carry Weight
 maxCarryWeight.comment=The maximum weight the player can carry.
 autoGenerateWeightConfigFiles.name=Auto Generate Weight Config Files
 autoGenerateWeightConfigFiles.comment=Will create configs for every mod with auto generated weights.
+
+#Creative Tabs
+itemGroup.heavyinventories=Heavy Inventories
+
+# Item
+item.itemUpgradeToken.name=Upgrade Token
+
+# Tooltip
+item.itemUpgradeToken.tooltip=Upgrades the player's max carry weight

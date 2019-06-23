@@ -19,8 +19,12 @@ public class CustomLoader
 	/**
 	 * stores item weights that have been picked up. reduces lag.
 	 */
-	public static HashMap<Item, Double> loadedWeights = new HashMap<>();
-	public static HashMap<Item, Double> loadedOffsets = new HashMap<>();
+	public static HashMap<Item, Double> loadedWeightsCache = new HashMap<>();
+
+	/**
+	 * stores item offsets. reduces lag.
+	 */
+	public static HashMap<Item, Double> loadedOffsetsCache = new HashMap<>();
 
 	/**
 	 * Returns the weight of the item from the custom configs
@@ -32,35 +36,30 @@ public class CustomLoader
 	{
 		if (type == JsonUtils.Type.WEIGHT)
 		{
-			if (loadedWeights.containsKey(item)) return loadedWeights.get(item);
+			if (loadedWeightsCache.containsKey(item)) return loadedWeightsCache.get(item);
 			else
 			{
 				File jsonFile = new File(HeavyInventories.getWeightFileDirectory(), modid + ".json");
 				if (jsonFile.isFile() && jsonFile.exists())
 				{
-					loadedWeights.put(item, JsonUtils.readJson(jsonFile, item, type));
-					return loadedWeights.get(item);
+					loadedWeightsCache.put(item, JsonUtils.readJson(jsonFile, item, type));
+					return loadedWeightsCache.get(item);
 				}
 			}
 		}
 		else if (type == JsonUtils.Type.OFFSET)
 		{
-			if (loadedOffsets.containsKey(item)) return loadedOffsets.get(item);
+			if (loadedOffsetsCache.containsKey(item)) return loadedOffsetsCache.get(item);
 			else
 			{
 				File jsonFile = new File(HeavyInventories.getWeightFileDirectory(), modid + ".json");
 				if (jsonFile.isFile() && jsonFile.exists())
 				{
-					loadedOffsets.put(item, JsonUtils.readJson(jsonFile, item, type));
-					return loadedOffsets.get(item);
+					loadedOffsetsCache.put(item, JsonUtils.readJson(jsonFile, item, type));
+					return loadedOffsetsCache.get(item);
 				}
 			}
 		}
-
-		/*if (ConfigReader.getConfig(modid + ".cfg") != null)
-		{
-			return ConfigReader.getConfig(modid + ".cfg").get(Configuration.CATEGORY_GENERAL, item.getRegistryName().getResourcePath(), DEFAULT_WEIGHT).getDouble();
-		}*/
 
 		return DEFAULT_WEIGHT;
 	}
@@ -75,10 +74,13 @@ public class CustomLoader
 		return getItemWeight(Toolkit.getModName(stack), stack, type);
 	}
 
+	/**
+	 * Reloads the cache of weights and offsets
+	 */
 	public static void reloadAll()
 	{
-		loadedOffsets.clear();
-		loadedWeights.clear();
+		loadedOffsetsCache.clear();
+		loadedWeightsCache.clear();
 	}
 
 }
