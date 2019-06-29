@@ -46,6 +46,7 @@ public class ClientEventHandler
 {
 
 	public static String label = Toolkit.checkFormatOfRenderText(HeavyInventoriesConfig.weightText);
+	public static PlayerHelper defaultHelper = null;
 
 	/**
 	 * For adding the weights to the items tooltip
@@ -168,6 +169,8 @@ public class ClientEventHandler
 
 		if (player.getPlayer().inventory == previousInventory) return;
 		else previousInventory = player.getPlayer().inventory;
+
+		//player.getWeightCapability().setMaxWeight(getPlayerWeight());
 
 		if (player.getWeight() != playersCalculatedWeight)
 		{
@@ -436,34 +439,26 @@ public class ClientEventHandler
 	 * @param event
 	 */
 	@SubscribeEvent
-	public void getPlayerWeightOffset(net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent event)
+	public void loadPlayerWeightOffset(net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent event)
 	{
 		PlayerHelper player = new PlayerHelper(event.player);
-		IWeighable weighable = player.getWeightCapability();
-		IOffset offset = player.getWeightOffsetCapability();
 
-		if (player.getEntityData().hasKey(EnumTagID.WEIGHT.getId()))
+		defaultHelper = player;
+
+		if (player.getEntityData().hasKey(EnumTagID.MAX_WEIGHT.getId()))
 		{
+			Logger.info("Loading key: %s", EnumTagID.MAX_WEIGHT.getId());
+			player.setMaxWeight(player.getEntityData().getDouble(EnumTagID.MAX_WEIGHT.getId()));
 
-			if (player.getEntityData().getDouble(EnumTagID.WEIGHT.getId()) != HeavyInventoriesConfig.maxCarryWeight)
-			{
-				weighable.setMaxWeight(HeavyInventoriesConfig.maxCarryWeight);
-				player.getEntityData().setDouble(EnumTagID.WEIGHT.getId(), HeavyInventoriesConfig.maxCarryWeight);
-			}
-
-			Logger.info("Loading key: %s", EnumTagID.WEIGHT.getId());
-			weighable.setMaxWeight(player.getEntityData().getDouble(EnumTagID.WEIGHT.getId()));
-
-			Logger.info("Player %s weight = %s", player.getPlayer().getDisplayNameString(), weighable.getMaxWeight());
+			Logger.info("Player %s weight = %s", player.getPlayer().getDisplayNameString(), player.getMaxWeight());
 		}
 		else
 		{
-			player.getEntityData().setDouble(EnumTagID.WEIGHT.getId(), HeavyInventoriesConfig.maxCarryWeight);
-			weighable.setMaxWeight(HeavyInventoriesConfig.maxCarryWeight);
+			player.setMaxWeight(HeavyInventoriesConfig.maxCarryWeight);
 		}
 
-		weighable.setMaxWeight(Toolkit.roundDouble(weighable.getMaxWeight()));
-		playerWeight = weighable.getMaxWeight();
+		player.setMaxWeight(Toolkit.roundDouble(player.getMaxWeight()));
+		playerWeight = player.getMaxWeight();
 	}
 
 	/**
@@ -494,10 +489,11 @@ public class ClientEventHandler
 	{
 		PlayerHelper player = new PlayerHelper(event.player);
 		IWeighable weighable = player.getWeightCapability();
-		Logger.info("Unloading key: %s", EnumTagID.WEIGHT.getId());
-		player.getEntityData().setDouble(EnumTagID.WEIGHT.getId(), weighable.getMaxWeight());
+		Logger.info("Unloading key: %s", EnumTagID.MAX_WEIGHT.getId());
+		player.setMaxWeight(getPlayerWeight());
+		player.getEntityData().setDouble(EnumTagID.MAX_WEIGHT.getId(), getPlayerWeight());
 		Logger.info("Player %s weight = %s", player.getPlayer().getDisplayNameString(), weighable.getMaxWeight());
-		CustomLoader.loadedWeightsCache.clear();
+		CustomLoader.reloadAll();
 	}
 
 	/**

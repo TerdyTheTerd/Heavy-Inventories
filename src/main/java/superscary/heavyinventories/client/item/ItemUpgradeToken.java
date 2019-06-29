@@ -7,38 +7,37 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
-import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import org.apache.logging.log4j.Level;
 import superscary.heavyinventories.HeavyInventories;
 import superscary.heavyinventories.client.event.ClientEventHandler;
 import superscary.heavyinventories.common.capability.offsets.IOffset;
 import superscary.heavyinventories.common.capability.weight.IWeighable;
 import superscary.heavyinventories.util.EnumTagID;
+import superscary.heavyinventories.util.Logger;
 import superscary.heavyinventories.util.PlayerHelper;
+import superscary.heavyinventories.util.Toolkit;
 
 import javax.annotation.Nullable;
 import java.util.List;
+import java.util.Random;
 
 import static superscary.heavyinventories.util.Constants.MODID;
 
 public class ItemUpgradeToken extends Item
 {
 
-    private double upgradeAmount;
-
-    public ItemUpgradeToken(String name, double upgradeAmount)
+    public ItemUpgradeToken(String name)
     {
         super();
         this.setUnlocalizedName(name);
         this.setRegistryName(MODID, name);
         this.setCreativeTab(HeavyInventories.TAB);
         this.setMaxStackSize(16);
-        this.upgradeAmount = upgradeAmount;
 
         HIItemRegistry.register(this);
     }
@@ -48,18 +47,22 @@ public class ItemUpgradeToken extends Item
     {
         ItemStack stack = playerIn.getHeldItem(handIn);
 
-        PlayerHelper helper = new PlayerHelper(playerIn);
-        IOffset offset = helper.getWeightOffsetCapability();
-        offset.setOffset(offset.getOffset() + getUpgradeAmount());
+        Random random = new Random();
+        double upgrade = Toolkit.roundDouble(1 + (10 - 1) * random.nextDouble());
 
+        PlayerHelper helper = new PlayerHelper(playerIn);
         IWeighable weighable = helper.getWeightCapability();
+        IOffset offset = helper.getWeightOffsetCapability();
+        offset.setOffset(offset.getOffset() + upgrade);
+
         if (helper.getEntityData().hasKey(EnumTagID.WEIGHT.getId()))
         {
-            weighable.setMaxWeight(weighable.getMaxWeight() + getUpgradeAmount());
+            weighable.setMaxWeight(weighable.getMaxWeight() + upgrade);
             helper.getEntityData().setDouble(EnumTagID.WEIGHT.getId(), weighable.getMaxWeight());
             ClientEventHandler.setPlayerWeight(weighable.getMaxWeight());
 
-            if (worldIn.isRemote) helper.sendToast(new TextComponentTranslation("hi.splash.upgradeToken", this.upgradeAmount));
+            if (worldIn.isRemote) helper.sendToast(new TextComponentTranslation("hi.splash.upgradeToken", upgrade));
+            Logger.log(Level.INFO, "Updated player weight from %s to %s by %s", Toolkit.roundDouble(weighable.getMaxWeight()), Toolkit.roundDouble(weighable.getMaxWeight() + upgrade), upgrade);
 
             stack.shrink(1);
 
@@ -67,15 +70,6 @@ public class ItemUpgradeToken extends Item
         }
 
         return new ActionResult<>(EnumActionResult.PASS, playerIn.getHeldItem(handIn));
-    }
-
-    @Override
-    public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
-    {
-        PlayerHelper helper = new PlayerHelper(player);
-        helper.setOffset(helper.getWeightOffsetCapability().getOffset() + upgradeAmount);
-
-        return EnumActionResult.PASS;
     }
 
     @Override
@@ -91,8 +85,4 @@ public class ItemUpgradeToken extends Item
         tooltip.add("Upgrades the player's max carry weight");
     }
 
-    public double getUpgradeAmount()
-    {
-        return upgradeAmount;
-    }
 }

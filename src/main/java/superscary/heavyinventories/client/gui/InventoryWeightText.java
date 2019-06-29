@@ -5,10 +5,9 @@ import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import superscary.heavyinventories.client.event.ClientEventHandler;
 import superscary.heavyinventories.common.capability.weight.IWeighable;
-import superscary.heavyinventories.common.capability.weight.WeightProvider;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
+import superscary.heavyinventories.util.PlayerHelper;
 import superscary.heavyinventories.util.Toolkit;
 
 @SideOnly(Side.CLIENT)
@@ -19,17 +18,17 @@ public class InventoryWeightText extends Gui
 
 	public static void renderText(Minecraft minecraft)
 	{
-		IWeighable weighable = minecraft.player.getCapability(WeightProvider.WEIGHABLE_CAPABILITY, null);
+		IWeighable weighable = PlayerHelper.getDefaultHelper().getWeightCapability();
 		ScaledResolution scaledResolution = new ScaledResolution(minecraft);
 		int attackIndicator = minecraft.gameSettings.attackIndicator;
 
 		if (attackIndicator == EnumAttackIndicator.CROSSHAIR.getAttackIndicator())
 		{
-			renderTextToScreen(minecraft, weighable, scaledResolution, 15, ClientEventHandler.getPlayerWeight());
+			renderTextToScreen(minecraft, weighable, scaledResolution, 15, Toolkit.roundDouble(weighable.getMaxWeight()));
 		}
 		else if (attackIndicator == EnumAttackIndicator.BAR.getAttackIndicator())
 		{
-			renderTextToScreen(minecraft, weighable, scaledResolution, 30, ClientEventHandler.getPlayerWeight());
+			renderTextToScreen(minecraft, weighable, scaledResolution, 30, Toolkit.roundDouble(PlayerHelper.getDefaultHelper().getMaxWeight()));
 		}
 	}
 

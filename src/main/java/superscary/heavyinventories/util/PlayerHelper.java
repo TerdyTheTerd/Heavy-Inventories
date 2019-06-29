@@ -13,6 +13,7 @@ import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import superscary.heavyinventories.client.event.ClientEventHandler;
 import superscary.heavyinventories.client.gui.Toast;
 import superscary.heavyinventories.common.capability.offsets.IOffset;
 import superscary.heavyinventories.common.capability.offsets.OffsetProvider;
@@ -57,6 +58,13 @@ public class PlayerHelper
     public void setWeight(double newWeight)
     {
         getWeightCapability().setWeight(newWeight);
+        getEntityData().setDouble(EnumTagID.WEIGHT.getId(), newWeight);
+    }
+
+    public void setMaxWeight(double newMax)
+    {
+        getWeightCapability().setMaxWeight(newMax);
+        getEntityData().setDouble(EnumTagID.MAX_WEIGHT.getId(), newMax);
     }
 
     public double getRelativeWeight()
@@ -118,7 +126,7 @@ public class PlayerHelper
 
     public static PlayerHelper getDefaultHelper()
     {
-        return new PlayerHelper(Minecraft.getMinecraft().player);
+        return ClientEventHandler.defaultHelper != null ? ClientEventHandler.defaultHelper : new PlayerHelper(Minecraft.getMinecraft().player);
     }
 
     public boolean hasCapability(Capability<?> capability)

@@ -3,7 +3,8 @@ package superscary.heavyinventories.util;
 public enum EnumTagID
 {
 
-	WEIGHT("HIWeight");
+	WEIGHT("HIWeight"),
+	MAX_WEIGHT("HIMaxWeight");
 
 	private String id;
 	EnumTagID(String id)

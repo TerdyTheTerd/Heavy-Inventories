@@ -29,7 +29,7 @@ public class HIItemRegistry
 
     public static void get()
     {
-        upgradeToken = new ItemUpgradeToken("itemUpgradeToken", 5.0d);
+        upgradeToken = new ItemUpgradeToken("itemUpgradeToken");
     }
 
     public static void register(Item item)
