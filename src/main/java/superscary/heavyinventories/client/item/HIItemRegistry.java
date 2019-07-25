@@ -22,7 +22,6 @@ import static superscary.heavyinventories.util.Constants.MODID;
 public class HIItemRegistry
 {
 
-    public static ArrayList<Item> itemRegistry = new ArrayList<>();
     public static ArrayList<Item> bakery = new ArrayList<>();
 
     public static ItemUpgradeToken upgradeToken;
