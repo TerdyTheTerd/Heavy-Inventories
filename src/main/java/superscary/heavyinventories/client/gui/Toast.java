@@ -43,45 +43,51 @@ public class Toast extends GuiScreen
         if (minecraft.world.isRemote) renderTextToScreen(minecraft, theText);
     }
 
-    public static void renderTextToScreen(Minecraft minecraft, String text)
+    public static void renderTextToScreen(Minecraft minecraft, String text) throws RuntimeException
     {
-        if (!minecraft.world.isRemote) return;
-        minecraft.mcProfiler.startSection("weightText");
-        ScaledResolution scaledResolution = new ScaledResolution(Minecraft.getMinecraft());
 
-        int i = scaledResolution.getScaledWidth();
-        int j = scaledResolution.getScaledHeight();
-
-        if (overlayMessageTime > 0)
+        try
         {
-            GlStateManager.enableBlend();
+            if (!minecraft.world.isRemote) return;
+            minecraft.mcProfiler.startSection("weightText");
+            ScaledResolution scaledResolution = new ScaledResolution(Minecraft.getMinecraft());
 
-            minecraft.mcProfiler.startSection("overlayMessage");
-            float f2 = (float) overlayMessageTime - partialTicks;
-            int l1 = (int)(f2 * 255.0F / 20.0F);
+            int i = scaledResolution.getScaledWidth();
+            int j = scaledResolution.getScaledHeight();
 
-            if (l1 > 255)
+            if (overlayMessageTime > 0)
             {
-                l1 = 255;
-            }
-
-            if (l1 > 8)
-            {
-                GlStateManager.pushMatrix();
-                GlStateManager.translate((float)(i / 2), (float)(j - 68), 0.0F);
                 GlStateManager.enableBlend();
-                GlStateManager.tryBlendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 
-                Minecraft.getMinecraft().fontRenderer.drawStringWithShadow(text, -Minecraft.getMinecraft().fontRenderer.getStringWidth(text) / 2, -4, Toolkit.getWeightColor(Minecraft.getMinecraft().player) + (l1 << 24 & -16777216));
-                GlStateManager.disableBlend();
-                GlStateManager.popMatrix();
+                minecraft.mcProfiler.startSection("overlayMessage");
+                float f2 = (float) overlayMessageTime - partialTicks;
+                int l1 = (int)(f2 * 255.0F / 20.0F);
+
+                if (l1 > 255)
+                {
+                    l1 = 255;
+                }
+
+                if (l1 > 8)
+                {
+                    GlStateManager.pushMatrix();
+                    GlStateManager.translate((float)(i / 2), (float)(j - 68), 0.0F);
+                    GlStateManager.enableBlend();
+                    GlStateManager.tryBlendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
+
+                    Minecraft.getMinecraft().fontRenderer.drawStringWithShadow(text, -Minecraft.getMinecraft().fontRenderer.getStringWidth(text) / 2, -4, Toolkit.getWeightColor(Minecraft.getMinecraft().player) + (l1 << 24 & -16777216));
+                    GlStateManager.disableBlend();
+                    GlStateManager.popMatrix();
+                }
+
+                minecraft.mcProfiler.endSection();
             }
 
+            updateTick();
             minecraft.mcProfiler.endSection();
         }
-
-        updateTick();
-        minecraft.mcProfiler.endSection();
+        catch (RuntimeException e)
+        {}
 
     }
 

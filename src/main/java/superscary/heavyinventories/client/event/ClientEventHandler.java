@@ -21,6 +21,7 @@ import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.items.CapabilityItemHandler;
+import org.apache.logging.log4j.Level;
 import org.lwjgl.input.Keyboard;
 import superscary.heavyinventories.HeavyInventories;
 import superscary.heavyinventories.client.gui.InventoryWeightText;
@@ -279,12 +280,21 @@ public class ClientEventHandler
 		{
 			player.sendToast("hi.splash.noJump");
 			player.getPlayer().motionY = 0D;
-			player.getPlayer().jumpMovementFactor = 0;
+			player.getPlayer().jumpMovementFactor = -5;
+
+			if (player.getPlayer().isInWater() || player.getPlayer().isOverWater())
+			{
+				Logger.log(Level.INFO, String.format("%s (%s: %s) attempted to jump while in water", player.getPlayer().getName(), HeavyInventoriesConfig.weightText, player.getWeight()));
+			}
 		}
 		else if (player.isEncumbered())
 		{
 			player.sendToast("hi.splash.noJumpEncumbered");
 			player.getPlayer().motionY /= 5;
+		}
+		else
+		{
+			player.getPlayer().jumpMovementFactor = 0.02f;
 		}
 
 	}
