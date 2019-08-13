@@ -2,6 +2,7 @@
 
 	"homepage": "https://minecraft.curseforge.com/projects/heavy-inventories",
 	"1.12.2": {
+		"2.5": "-JSon is now used for weight management.",
 		"2.4.3": "- Traveller's Backpacks are now weighable.",
 		"2.4.2": "- IItemHandlers are now weighable
 				  - Pumping Iron Offsets are now configurable",

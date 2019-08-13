@@ -64,11 +64,24 @@ public class CustomLoader
 		return DEFAULT_WEIGHT;
 	}
 
+	/**
+	 * gets the item weight of an itemstack
+	 * @param modid modid from the item stack
+	 * @param stack the actual stack being calculated
+	 * @param type the data type that is being gotten
+	 * @return
+	 */
 	public static double getItemWeight(String modid, ItemStack stack, @Nonnull JsonUtils.Type type)
 	{
 		return getItemWeight(modid, stack.getItem(), type);
 	}
 
+	/**
+	 * gets the item weight of an itemstack
+	 * @param stack the actual stack being calculated
+	 * @param type the data type that is being gotten
+	 * @return
+	 */
 	public static double getItemWeight(ItemStack stack, @Nonnull JsonUtils.Type type)
 	{
 		return getItemWeight(Toolkit.getModName(stack), stack, type);

@@ -19,10 +19,23 @@ import java.util.ArrayList;
 public class Toolkit
 {
 
+	/**
+	 * the default location that the config is being read at
+	 */
 	public static final String SETUP = HeavyInventoriesConfig.SETUP;
 
+	/**
+	 * the key used to get the max weight of a player (used in nbt)
+	 */
 	public static final String DATA_MAXWEIGHT = "maxWeight";
 
+	/**
+	 * saves data to a player
+	 * @param player
+	 * @param dataName
+	 * @param data
+	 */
+	@Deprecated
 	public static void saveDataToPlayer(EntityPlayer player, String dataName, float data)
 	{
 		NBTTagCompound compound = new NBTTagCompound();
@@ -30,6 +43,13 @@ public class Toolkit
 		player.writeToNBT(compound);
 	}
 
+	/**
+	 * gets data from a player
+	 * @param player
+	 * @param dataName
+	 * @return
+	 */
+	@Deprecated
 	public static float getDataFromPlayer(EntityPlayer player, String dataName)
 	{
 		NBTTagCompound compound = player.getEntityData();
@@ -69,11 +89,21 @@ public class Toolkit
 		return item.getRegistryName().getResourceDomain();
 	}
 
+	/**
+	 * Gets the modid from an ItemStack
+	 * @param stack
+	 * @return
+	 */
 	private static String getModNameFromItem(ItemStack stack)
 	{
 		return getModNameFromItem(stack.getItem());
 	}
 
+	/**
+	 * Gets the translation from a translation key
+	 * @param par1Str
+	 * @return
+	 */
 	@SideOnly(Side.CLIENT)
 	public static String translate(String par1Str)
 	{
@@ -149,6 +179,12 @@ public class Toolkit
 		player.playSound(SoundEvent.REGISTRY.getObjectById(soundID), volume, pitch);
 	}
 
+	/**
+	 * Rounds a double to a defined number of places
+	 * @param value the double to be rounded
+	 * @param places the number of digits allowed after the decimal
+	 * @return
+	 */
 	public static double roundDouble(double value, int places)
 	{
 		if (places == 0) throw new IllegalArgumentException();
@@ -159,11 +195,21 @@ public class Toolkit
 		return (double) temp / factor;
 	}
 
+	/**
+	 * Rounds a double to the nearest tenth of a place
+	 * @param value the double to be rounded
+	 * @return
+	 */
 	public static double roundDouble(double value)
 	{
 		return roundDouble(value, 1);
 	}
 
+	/**
+	 * Sets the color of the text on screen based on the players weight
+	 * @param player
+	 * @return
+	 */
 	public static int getWeightColor(EntityPlayer player)
 	{
 		PlayerHelper helper = new PlayerHelper(player);
@@ -181,11 +227,21 @@ public class Toolkit
 		}
 	}
 
+	/**
+	 * Gets the weight from an ItemStack
+	 * @param stack
+	 * @return
+	 */
 	public static double getWeightFromStack(ItemStack stack)
 	{
 		return CustomLoader.getItemWeight(stack, JsonUtils.Type.WEIGHT);
 	}
 
+	/**
+	 * Gets the pumping iron offset from an ItemStack
+	 * @param stack
+	 * @return
+	 */
 	public static double getOffsetFromStack(ItemStack stack)
 	{
 		return CustomLoader.getItemWeight(stack, JsonUtils.Type.OFFSET);
@@ -218,6 +274,11 @@ public class Toolkit
 		return Math.sqrt(coords.getX() + coords.getY() + coords.getZ());
 	}
 
+	/**
+	 * Checks if there is a space at the first character in the custom string
+	 * @param string
+	 * @return
+	 */
 	public static String checkFormatOfRenderText(String string)
 	{
 		if (string.charAt(0) != ' ')
@@ -227,6 +288,11 @@ public class Toolkit
 		return string;
 	}
 
+	/**
+	 * Makes sure that an inputted string only contains numbers and decimals
+	 * @param string
+	 * @return
+	 */
 	public static boolean checkNumericalWeight(String string)
 	{
 		return string.matches("^[0-9.]*$");

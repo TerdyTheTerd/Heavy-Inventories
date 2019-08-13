@@ -2,6 +2,11 @@ package superscary.heavyinventories.util;
 
 import net.minecraftforge.event.entity.living.EnderTeleportEvent;
 
+/**
+ * used to generated the new coordinates when a player teleports with an enderpearl
+ */
+
+@Deprecated
 public class Coords
 {
 

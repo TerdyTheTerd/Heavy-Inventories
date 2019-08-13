@@ -40,8 +40,14 @@ import static superscary.heavyinventories.util.Constants.*;
 public class HeavyInventories
 {
 
+    /**
+     * the directory that the mod attempts to read files in
+     */
     private static File readerDirectory;
 
+    /**
+     * stores all mod modid's that contains items
+     */
     private static ArrayList<String> itemMods = new ArrayList<>();
 
     @SidedProxy(serverSide = PROXY_SERVER, clientSide = PROXY_CLIENT)
@@ -61,6 +67,10 @@ public class HeavyInventories
         }
     };
 
+    /**
+     * Sets the mods logger, generates the mod info, and attempts to interface with other mods
+     * @param event
+     */
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
@@ -87,6 +97,10 @@ public class HeavyInventories
         proxy.init();
     }
 
+    /**
+     * finds all mods with items that have already been generated
+     * @param event
+     */
     @EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
@@ -94,6 +108,8 @@ public class HeavyInventories
 
         if (HeavyInventoriesConfig.autoGenerateWeightConfigFiles)
         {
+            findItemMods();
+
             Logger.log(Level.INFO, "Auto Weight Generation is enabled!");
             ProgressManager.ProgressBar heavyBar = ProgressManager.push("Loading", itemMods.size());
 
@@ -111,6 +127,9 @@ public class HeavyInventories
         proxy.postInit();
     }
 
+    /**
+     * finds mods with items
+     */
     private void findItemMods()
     {
         for (Object item : Item.REGISTRY)
@@ -134,6 +153,10 @@ public class HeavyInventories
         Collections.sort(itemMods);
     }
 
+    /**
+     * registers commands
+     * @param event
+     */
     @SideOnly(Side.CLIENT)
     @EventHandler
     public void serverStarting(FMLServerStartingEvent event)
@@ -146,16 +169,28 @@ public class HeavyInventories
         return networkWrapper;
     }
 
+    /**
+     * gets the reader directory
+     * @return
+     */
     public static File getReaderDirectory()
     {
         return readerDirectory;
     }
 
+    /**
+     * gets the weights folder created by the mod
+     * @return
+     */
     public static File getWeightFileDirectory()
     {
         return new File(getReaderDirectory() + File.separator + "Heavy Inventories" + File.separator + "Weights");
     }
 
+    /**
+     * gets all mods with items
+     * @return
+     */
     public static ArrayList<String> getItemMods()
     {
         return itemMods;

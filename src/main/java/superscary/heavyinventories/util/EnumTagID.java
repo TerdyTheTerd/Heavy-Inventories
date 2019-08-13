@@ -1,5 +1,8 @@
 package superscary.heavyinventories.util;
 
+/**
+ * The data tags used to get weights from a players nbt
+ */
 public enum EnumTagID
 {
 

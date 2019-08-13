@@ -10,9 +10,11 @@ import superscary.heavyinventories.HeavyInventories;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
 import superscary.heavyinventories.util.JsonUtils;
 import superscary.heavyinventories.util.Logger;
+import superscary.heavyinventories.util.ObjectSortingComparator;
 import superscary.heavyinventories.util.Toolkit;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class CustomBuilder
 {
@@ -28,6 +30,7 @@ public class CustomBuilder
         JSONObject mainObject = new JSONObject();
 
         ArrayList<Object> objects = Toolkit.getAllItemsFromMod(modid);
+        Collections.sort(objects, new ObjectSortingComparator());
 
         for (Object o : objects)
         {
@@ -53,12 +56,13 @@ public class CustomBuilder
 
         try
         {
-
             JsonUtils.writeJsonToFile(mainObject, HeavyInventories.getWeightFileDirectory(), modid + ".json");
         } catch (Exception e)
         {
             e.printStackTrace();
         }
+
+        Logger.log(Level.INFO, "Building %s", modid);
 
     }
 

@@ -13,10 +13,12 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import superscary.heavyinventories.configs.HeavyInventoriesConfig;
+import superscary.heavyinventories.weight.CustomLoader;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 import java.util.Scanner;
 
@@ -115,55 +117,84 @@ public class JsonUtils
 
         JSONParser parser = new JSONParser();
 
+        JSONObject jsonObject = null;
+
         try (JsonReader jsonReader = new JsonReader(new InputStreamReader(new FileInputStream(file), StandardCharsets.UTF_8)))
         {
-            JSONObject jsonObject = (JSONObject) parser.parse(new InputStreamReader(new FileInputStream(file.getAbsolutePath())));
+            jsonObject = (JSONObject) parser.parse(new InputStreamReader(new FileInputStream(file.getAbsolutePath())));
+            JSONArray jsonArray = null;
+            Iterator iterator = null;
             while (jsonReader.hasNext())
             {
-                JSONArray jsonArray = (JSONArray) jsonObject.get(item.getRegistryName().getResourcePath());
-                Iterator iterator = jsonArray.iterator();
+                jsonArray = (JSONArray) jsonObject.get(item.getRegistryName().getResourcePath());
+                iterator = jsonArray.iterator();
 
                 while (iterator.hasNext())
                 {
                     if (type == Type.WEIGHT)
                     {
+                        CustomLoader.reloadAll();
                         JSONObject object = (JSONObject) iterator.next();
+                        jsonArray.remove(object);
                         object.put("weight", "" + newWeight);
                         object.put("offset", "" + readJson(file, item.getRegistryName().getResourcePath(), Type.OFFSET));
                         jsonArray.add(object);
+                        break;
                     }
                     else if (type == Type.OFFSET)
                     {
+                        CustomLoader.reloadAll();
                         JSONObject object = (JSONObject) iterator.next();
                         object.put("offset", "" + newWeight);
                         object.put("weight", "" + readJson(file, item.getRegistryName().getResourcePath(), Type.WEIGHT));
                         jsonArray.add(object);
+                        break;
                     }
                 }
-
-                jsonObject.replace(item.getRegistryName().getResourcePath(), jsonArray);
-                iterator.remove();
+                break;
             }
 
-            OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8);
-            try
-            {
-                writer.write(makePretty(jsonObject.toJSONString()));
-                Logger.log(Level.INFO, jsonObject.toJSONString());
-                writer.flush();
-            }
-            catch (IOException e)
+            jsonObject.put(item.getRegistryName().getResourcePath(), jsonArray);
+            iterator.remove();
+
+            CustomLoader.reloadAll();
+
+        }
+        catch (Exception e)
+        {
+            if (e instanceof ConcurrentModificationException)
+            {}
+            else
             {
                 e.printStackTrace();
             }
-            finally
-            {
-                writer.close();
-            }
+        }
 
-        } catch (Exception e)
+        try
+        {
+            writeObject(file, jsonObject);
+        }
+        catch (Exception e)
         {
             e.printStackTrace();
+        }
+    }
+
+    private static void writeObject(File file, JSONObject jsonObject) throws Exception
+    {
+        OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8);
+        try
+        {
+            writer.write(makePretty(jsonObject.toJSONString()));
+            writer.flush();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+            writer.close();
         }
     }
 

@@ -1,5 +1,8 @@
 package superscary.heavyinventories.compat;
 
+/**
+ * All mods that have built in compatibility with HI
+ */
 public enum EnumCompatMods
 {
 

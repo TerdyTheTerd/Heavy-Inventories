@@ -23,6 +23,9 @@ import superscary.heavyinventories.common.capability.weight.WeightProvider;
 public class PlayerHelper
 {
 
+    /**
+     * the player stored
+     */
     private EntityPlayer player;
 
     public PlayerHelper(EntityPlayer player)
@@ -35,6 +38,10 @@ public class PlayerHelper
         this.player = playerMP;
     }
 
+    /**
+     * returns the weight capability
+     * @return
+     */
     public IWeighable getWeightCapability()
     {
         return player.getCapability(WeightProvider.WEIGHABLE_CAPABILITY, null);

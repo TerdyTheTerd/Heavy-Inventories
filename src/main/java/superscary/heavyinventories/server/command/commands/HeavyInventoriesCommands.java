@@ -72,6 +72,8 @@ public class HeavyInventoriesCommands extends CommandBase
                     JsonUtils.writeNew(file, item, newOffset, JsonUtils.Type.OFFSET);
                     CustomLoader.reloadAll();
 
+                    Logger.log(Level.INFO, "Player: %s changed %s to offset %s", player.getDisplayNameString(), item.getRegistryName().toString(), newOffset);
+
                     player.sendMessage(new TextComponentTranslation("hi.splash.setOffset", item.getRegistryName().toString(), newOffset));
                 }
                 else if (args[0].equalsIgnoreCase("reload"))
