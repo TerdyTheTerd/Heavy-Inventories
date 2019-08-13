@@ -46,7 +46,7 @@ autoGenerateWeightConfigFiles.comment=Will create configs for every mod with aut
 itemGroup.heavyinventories=Heavy Inventories
 
 # Item
-item.itemUpgradeToken.name=Upgrade Token
+item.token.name=Upgrade Token
 
 # Tooltip
 item.itemUpgradeToken.tooltip=Upgrades the player's max carry weight

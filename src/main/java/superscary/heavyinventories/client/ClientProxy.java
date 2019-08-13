@@ -17,11 +17,13 @@ public class ClientProxy extends CommonProxy
 	public void preInit()
 	{
 		super.preInit();
+
+		HIItemRegistry.get();
+
 		MinecraftForge.EVENT_BUS.register(new ClientEventHandler());
 		MinecraftForge.EVENT_BUS.register(new HeavyInventoriesConfig());
 		MinecraftForge.EVENT_BUS.register(new PumpingIronHandler());
 		MinecraftForge.EVENT_BUS.register(new HIItemRegistry());
-		HIItemRegistry.get();
 	}
 
 	@Override

@@ -35,7 +35,7 @@ public class ItemUpgradeToken extends Item
     {
         super();
         this.setUnlocalizedName(name);
-        this.setRegistryName(MODID, name);
+        this.setRegistryName(MODID + ":" + name);
         this.setCreativeTab(HeavyInventories.TAB);
         this.setMaxStackSize(16);
 

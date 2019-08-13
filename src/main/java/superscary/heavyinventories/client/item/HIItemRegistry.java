@@ -12,8 +12,8 @@ import net.minecraft.world.storage.loot.functions.SetCount;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.LootTableLoadEvent;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 import java.util.ArrayList;
 
@@ -22,18 +22,29 @@ import static superscary.heavyinventories.util.Constants.MODID;
 public class HIItemRegistry
 {
 
+    public static ArrayList<Item> itemRegistry = new ArrayList<>();
     public static ArrayList<Item> bakery = new ArrayList<>();
 
     public static ItemUpgradeToken upgradeToken;
 
     public static void get()
     {
-        upgradeToken = new ItemUpgradeToken("itemUpgradeToken");
+        upgradeToken = new ItemUpgradeToken("token");
     }
 
     public static void register(Item item)
     {
-        ForgeRegistries.ITEMS.register(item);
+        itemRegistry.add(item);
+    }
+
+    @SubscribeEvent
+    public void registerItems(RegistryEvent.Register<Item> event)
+    {
+        for (Item i : itemRegistry)
+        {
+            event.getRegistry().register(i);
+            bakery.add(i);
+        }
     }
 
     @SubscribeEvent
