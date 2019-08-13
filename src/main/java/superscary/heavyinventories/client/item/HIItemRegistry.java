@@ -48,7 +48,7 @@ public class HIItemRegistry
     }
 
     @SubscribeEvent
-    public static void bakeModels(ModelRegistryEvent event)
+    public void bakeModels(ModelRegistryEvent event)
     {
         for (Item item : bakery)
         {
