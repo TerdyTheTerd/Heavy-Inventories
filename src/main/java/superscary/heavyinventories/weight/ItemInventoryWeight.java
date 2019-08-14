@@ -2,21 +2,19 @@ package superscary.heavyinventories.weight;
 
 import com.tiviacz.travellersbackpack.gui.inventory.InventoryTravellersBackpack;
 import com.tiviacz.travellersbackpack.items.ItemTravellersBackpack;
-import net.mcft.copy.backpacks.block.BlockBackpack;
-import net.mcft.copy.backpacks.misc.BackpackCapability;
-import net.mcft.copy.backpacks.misc.BackpackDataItems;
-import net.mcft.copy.backpacks.misc.BackpackSize;
-import net.minecraft.block.Block;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraftforge.common.util.Constants;
 import net.minecraftforge.items.CapabilityItemHandler;
 import superscary.heavyinventories.compat.mods.travellersbackpack.HITravellersBackpack;
-import superscary.heavyinventories.compat.mods.wearablebackpacks.HIWearableBackpacks;
 import superscary.heavyinventories.util.PlayerHelper;
 import superscary.heavyinventories.util.Toolkit;
+
+//import net.mcft.copy.backpacks.block.BlockBackpack;
+//import net.mcft.copy.backpacks.misc.BackpackCapability;
+//import net.mcft.copy.backpacks.misc.BackpackDataItems;
+//import net.mcft.copy.backpacks.misc.BackpackSize;
 
 public class ItemInventoryWeight
 {
@@ -36,10 +34,10 @@ public class ItemInventoryWeight
             stored += getTravellersBackpackWeight(stack);
         }
         //gets Wearable Backpacks compatibility (returns the entire weight of the contents)
-        else if (HIWearableBackpacks.isLoaded() && PlayerHelper.getDefaultHelper().hasCapability(BackpackCapability.CAPABILITY))
-        {
-            stored += getWearableBackpacksWeight(stack);
-        }
+//        else if (HIWearableBackpacks.isLoaded() && PlayerHelper.getDefaultHelper().hasCapability(BackpackCapability.CAPABILITY))
+//        {
+//            stored += getWearableBackpacksWeight(stack);
+//        }
         else if (stack.hasCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null))
         {
             int slots = stack.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).getSlots();
@@ -110,32 +108,32 @@ public class ItemInventoryWeight
 
         PlayerHelper helper = PlayerHelper.getDefaultHelper();
 
-        if (helper.hasCapability(BackpackCapability.CAPABILITY))
-        {
-            if (stack.getItem() instanceof ItemBlock)
-            {
-                Block block = ((ItemBlock) stack.getItem()).getBlock();
-                if (block instanceof BlockBackpack)
-                {
-                    NBTTagCompound compound = stack.getTagCompound();
-                    if (compound.hasKey("size"))
-                    {
-                        BackpackSize size = BackpackSize.parse(compound.getTag("size"));
-                        if (compound.hasKey("items"))
-                        {
-                            BackpackDataItems dataItems = new BackpackDataItems(size);
-                            dataItems.getItems().deserializeNBT(compound.getCompoundTag("items"));
-
-                            for (int i = 0; i < dataItems.getItems().getSlots(); i++)
-                            {
-                                stored += Toolkit.roundDouble(WeightCalculator.getWeight(Toolkit.getModName(stack), dataItems.getItems().getStackInSlot(i)) * dataItems.getItems().getStackInSlot(i).getCount());
-                            }
-                        }
-                    }
-
-                }
-            }
-        }
+//        if (helper.hasCapability(BackpackCapability.CAPABILITY))
+//        {
+//            if (stack.getItem() instanceof ItemBlock)
+//            {
+//                Block block = ((ItemBlock) stack.getItem()).getBlock();
+//                if (block instanceof BlockBackpack)
+//                {
+//                    NBTTagCompound compound = stack.getTagCompound();
+//                    if (compound.hasKey("size"))
+//                    {
+//                        BackpackSize size = BackpackSize.parse(compound.getTag("size"));
+//                        if (compound.hasKey("items"))
+//                        {
+//                            BackpackDataItems dataItems = new BackpackDataItems(size);
+//                            dataItems.getItems().deserializeNBT(compound.getCompoundTag("items"));
+//
+//                            for (int i = 0; i < dataItems.getItems().getSlots(); i++)
+//                            {
+//                                stored += Toolkit.roundDouble(WeightCalculator.getWeight(Toolkit.getModName(stack), dataItems.getItems().getStackInSlot(i)) * dataItems.getItems().getStackInSlot(i).getCount());
+//                            }
+//                        }
+//                    }
+//
+//                }
+//            }
+//        }
 
         return stored;
     }

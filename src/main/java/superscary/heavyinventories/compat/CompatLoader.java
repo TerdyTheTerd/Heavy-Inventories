@@ -71,8 +71,8 @@ public class CompatLoader
 				              break;*/
 				case "travellersbackpack":
 								unloaded.remove(s);
-				case "wearablebackpacks":
-								unloaded.remove(s);
+				//case "wearablebackpacks":
+								//unloaded.remove(s);
 				default: break;
 			}
 		}

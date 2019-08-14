@@ -205,6 +205,17 @@ public class Toolkit
 		return roundDouble(value, 1);
 	}
 
+	public static int placesAfterDecimal(double value)
+	{
+		String string = "" + value;
+		if (string.contains("."))
+		{
+			return string.split(".")[1].length();
+		}
+
+		return 1;
+	}
+
 	/**
 	 * Sets the color of the text on screen based on the players weight
 	 * @param player

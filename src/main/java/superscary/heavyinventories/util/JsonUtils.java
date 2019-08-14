@@ -136,7 +136,7 @@ public class JsonUtils
                         CustomLoader.reloadAll();
                         JSONObject object = (JSONObject) iterator.next();
                         jsonArray.remove(object);
-                        object.put("weight", "" + newWeight);
+                        object.put("weight", "" + Toolkit.roundDouble(newWeight, Toolkit.placesAfterDecimal(newWeight)));
                         object.put("offset", "" + readJson(file, item.getRegistryName().getResourcePath(), Type.OFFSET));
                         jsonArray.add(object);
                         break;
@@ -145,7 +145,7 @@ public class JsonUtils
                     {
                         CustomLoader.reloadAll();
                         JSONObject object = (JSONObject) iterator.next();
-                        object.put("offset", "" + newWeight);
+                        object.put("offset", "" + Toolkit.roundDouble(newWeight, Toolkit.placesAfterDecimal(newWeight)));
                         object.put("weight", "" + readJson(file, item.getRegistryName().getResourcePath(), Type.WEIGHT));
                         jsonArray.add(object);
                         break;
